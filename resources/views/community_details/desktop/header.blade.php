@@ -46,15 +46,10 @@
 
 
 
-<header>
+<header class="xl:mt-[6vh]">
     <div class="w-full bg-cover bg-center" style="height: 60vh; background-image: url('https://mis.esnaad.com/storage/communities/{{$response[0]['id']}}/images/{{$response[0]['header_image']}}'), url('{{ URL::asset('assets/img/img-error2.webp')}}');">
         <div class="flex items-center justify-center h-full w-full bg-gray-900 bg-opacity-30">
             
         </div>
     </div>
 </header>
-
-{{-- <img class="h-20" src="https://mis.esnaad.com/communities/{{$response[0]['id']}}/header_image/{{$response[0]['header_image']}}"
-> --}}
-
-

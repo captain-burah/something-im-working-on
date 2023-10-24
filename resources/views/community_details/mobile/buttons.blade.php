@@ -72,7 +72,7 @@
                             <div class="flex my-8 w-full text-center mx-auto">
 
                                 <div class="flex-1 mx-auto">
-                                    <div class="w-6 xl:w-10 bg-white rounded-3xl p-1 mx-auto">
+                                    <div class="w-8 xl:w-10 bg-white rounded-3xl p-1 mx-auto">
                                         <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fedgerealty.ae%2F" target="_blank" ria-label="facebook-share-community">
                                             <img
                                                 src="{{ asset('front/icons/fb.png')}}"
@@ -84,7 +84,7 @@
                                 </div>
 
                                 <div class="flex-1 mx-auto">
-                                    <div class="w-6 xl:w-10 bg-white rounded-3xl p-1 mx-auto">
+                                    <div class="w-8 xl:w-10 bg-white rounded-3xl p-1 mx-auto">
                                         <a href="whatsapp://send?text={{$actual_link}}" data-action="share/whatsapp/share" aria-label="whatsapp-share-community">
                                             <img
                                                 src="{{ asset('front/icons/wa.png')}}"
@@ -96,7 +96,7 @@
                                 </div>
 
                                 <div class="flex-1 mx-auto">
-                                    <div class="w-6 xl:w-10 bg-white rounded-3xl p-1 mx-auto">
+                                    <div class="w-8 xl:w-10 bg-white rounded-3xl p-1 mx-auto">
                                         <a href="https://www.linkedin.com/sharing/share-offsite/?url={{$actual_link}}" aria-label="community-linkedin-share">
                                             <img
                                                 src="{{ asset('front/icons/in.png')}}"
@@ -108,7 +108,7 @@
                                 </div>
 
                                 <div class="flex-1 mx-auto">
-                                    <div class="w-6 xl:w-10 bg-white rounded-3xl p-1 mx-auto">
+                                    <div class="w-8 xl:w-10 bg-white rounded-3xl p-1 mx-auto">
                                         <a href="https://twitter.com/intent/tweet?url={{$actual_link}}" aria-label="twitter-X-share-community">
                                             <img
                                                 src="{{ asset('front/icons/x.png')}}"

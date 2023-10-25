@@ -85,7 +85,7 @@
 </style>
 @tablet
     <!-- Primary Navigation Menu -->
-    <div class=" container  mx-auto px-8">
+    <div class=" container  mx-auto px-0">
         <div class="flex justify-between h-15">
 
             <div class="flex items-center">

@@ -80,7 +80,7 @@
 
             @tablet
                 <nav x-data="{ open: false }" class="bg-white border-b border-gray-100 sm:block sticky top-0 z-50 shadow " >
-                    @include('layout.navigation_tablet')s
+                    @include('layout.navigation_tablet')
                 </nav>
             @endtablet
 

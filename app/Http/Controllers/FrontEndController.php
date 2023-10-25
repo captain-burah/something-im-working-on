@@ -217,6 +217,13 @@ class FrontEndController extends Controller
     }
 
 
+    public function about() {
+        $this->data['long'] =  55.265547;
+        $this->data['lat'] = 25.206984;
+        return view('contact', $this->data);
+    }
+
+
 
 
 

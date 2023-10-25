@@ -46,10 +46,24 @@
 
 
 
-<header class="xl:mt-[6vh]">
-    <div class="w-full bg-cover bg-center" style="height: 60vh; background-image: url('https://mis.esnaad.com/storage/communities/{{$response[0]['id']}}/images/{{$response[0]['header_image']}}'), url('{{ URL::asset('assets/img/img-error2.webp')}}');">
-        <div class="flex items-center justify-center h-full w-full bg-gray-900 bg-opacity-30">
-            
+<header class="xl:mt-[2 0vh]">
+    
+    <div class="w-full bg-cover bg-center" style="height: 60vh; background-image: url({{ asset('home/3.jpg') }}), url('{{ URL::asset('assets/img/img-error2.webp')}}');">
+        <div class="flex items-center justify-center h-full w-full bg-gray-900 bg-opacity-50">
+            <div class="md:container">
+                    
+                <h1 class="xl:text-4xl md:text-4xl text-white font-light uppercase">
+                    GET IN TOUCH
+                </h1>
+
+                <br>
+                
+                <p class="w-[75%] text-white font-bold text-base">
+                    Thank you for considering ESNAAD Developments for your real estate needs in Dubai. 
+                    We're excited to assist you with your inquiries, 
+                    provide information about our properties, and answer any questions you may have.
+                </p>
+            </div>
         </div>
     </div>
 </header>

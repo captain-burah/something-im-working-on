@@ -84,7 +84,7 @@
 
 </style>
 
-<div class="fixed top-0 w-full bg-white w-full  mx-auto px-8 site-content " style="z-index: 10 !important;">
+<div class="fixed top-0 w-full bg-white w-full  mx-auto px-8 site-content " style="display:none; z-index: 10 !important;">
     <div class="flex justify-between h-20">
         <div class="flex items-center">
 

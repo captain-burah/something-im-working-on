@@ -106,19 +106,5 @@
     </script>
 
 
-    @desktop
-        <script>
-            window.addEventListener("scroll", function(event) {
-
-                let footer = document.querySelector(".site-content");
-
-                if ( window.scrollY < window.innerHeight) {
-                    footer.style.display = "none";
-                } else {
-                    footer.style.display = "block";
-                }
-            });
-        </script>
-    @enddesktop
 
 </html>

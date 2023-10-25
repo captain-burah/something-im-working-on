@@ -25,7 +25,7 @@
         <li ><a href="#" class="text-dark">Communities</a></li>
         <li ><a href="#" class="text-dark">Developments</a></li>
         <li ><a href="#" class="text-dark">Events</a></li>
-        <li ><a href="#" class="text-dark">About</a></li>
+        <li ><a href="{{ url('about-esnaad') }}" class="text-dark">About</a></li>
         <li ><a href="#" class="text-dark">Contact</a></li>
         <li ><a href="#" class="text-dark">Invest in Dubai</a></li>
       </ul>

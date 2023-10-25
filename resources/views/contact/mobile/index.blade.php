@@ -23,14 +23,14 @@
 @section('content')
     @mobile
         <section class="my-3">
-             @include('community_details.mobile.header')
+             @include('contact.mobile.header')
         </section>
 
         <section class="my-3">
-            @include('community_details.mobile.body')
+            @include('contact.mobile.body')
         </section>
 
-        <section class="my-3">
+       {{-- <section class="my-3">
             @include('community_details.mobile.buttons')
         </section>
 
@@ -40,7 +40,7 @@
 
         <section class="my-3" id="project_detail_map_section">
             @include('community_details.mobile.map')
-        </section>
+        </section> --}}
 
     @endmobile
 
@@ -50,7 +50,6 @@
 
 
 @section('luxe_asset_js')
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
     @yield('intel-input')
 

@@ -22,12 +22,12 @@
     </div>
     
     <ul class="hidden bg-white lg:block space-y-6 pt-8 pb-4 pl-[10vw]  ">
+        <li ><a href="#" class="text-dark">About</a></li>
         <li ><a href="#" class="text-dark">Communities</a></li>
         <li ><a href="#" class="text-dark">Developments</a></li>
-        <li ><a href="#" class="text-dark">Events</a></li>
-        <li ><a href="#" class="text-dark">About</a></li>
-        <li ><a href="{{ url('contact') }}" class="text-dark">Contact</a></li>
         <li ><a href="#" class="text-dark">Invest in Dubai</a></li>
+        <li ><a href="{{ url('/media-center') }}" class="text-dark">Media Center</a></li>
+        <li ><a href="{{ url('contact') }}" class="text-dark">Contact</a></li>
       </ul>
     
   </nav>

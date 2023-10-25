@@ -172,13 +172,13 @@
             <div class=" flex items-center ">
                 <div class="shrink-0 flex items-center hidden md:hidden lg:block text-2xl font-thin">
                     @tablet
-                        <a href="{{ route('esnaad.home') }}" aria-label="home-route">
+                        <a href="{{ url('/') }}" aria-label="home-route">
                             <img style="height: 30px !important;" src="{{ asset('logo-dark.png') }}" alt="esnaad-logo-navbar">
                         </a>
                     @endtablet
 
                     @desktop
-                        <a href="{{ route('esnaad.home') }}" aria-label="home-route">
+                        <a href="{{ url('/') }}" aria-label="home-route">
                             <img style="height: 70px !important;" src="{{ asset('logo-dark.png') }}" alt="esnaad-logo-navbar">
                         </a>
                     @enddesktop
@@ -195,7 +195,7 @@
 
 
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex text-center">
-                    <x-nav-link href="#"  aria-label="navbar-route">
+                    <x-nav-link href="{{ url('/media-center') }}"  aria-label="navbar-route">
                         {{ __('MEDIA CENTER') }}
                     </x-nav-link>
                 </div>

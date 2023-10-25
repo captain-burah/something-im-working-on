@@ -127,7 +127,7 @@
 
 
                 <div class="hidden space-x-8 sm:flex text-center">
-                    <x-nav-link-tablet href="#" :active="request()->routeIs('home')">
+                    <x-nav-link-tablet href="{{ url('/media-center') }}" :active="request()->routeIs('home')">
                         {{ __('MEDIA CENTER') }}
                     </x-nav-link-tablet>
                 </div>

@@ -72,41 +72,7 @@
     </script>
 
 
-    {{-- INTEL INPUT --}}
-    <script>
-
-        var input = document.querySelector("#phone");
-
-        const iti = window.intlTelInput(input, {
-
-            initialCountry: "auto",
-
-            separateDialCode: true,
-
-            // utilsScript: "/build/js/utils.js", // for editing placeholders
-
-            geoIpLookup: function(success) {
-
-                fetch("https://api.ipdata.co/?api-key=1f9ecc1670c915b3ddd397d233297968ccf720c0861abf9ecac1a8ef")
-                .then(function(response) {
-                    if (!response.ok) return success("");
-                    return response.json();
-                })
-                .then(function(ipdata) {
-                    success(ipdata.country_code);
-                });
-            },
-        });
-
-        input.addEventListener("countrychange", function() {
-            // console.log(document.getElementById('phone').value);
-            console.log(document.querySelector('[name="phone"]').value);
-            document.getElementById('country_code').value = iti.getSelectedCountryData().dialCode;
-        })
-
-
-    </script>
-
+   
     {{-- FORM SUBMIT --}}
     <script>
         /**

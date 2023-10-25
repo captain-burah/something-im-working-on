@@ -14,17 +14,17 @@
             <div class="row">
                 <div class="grid xl:grid-cols-4 grid-cols-2 gap-2 xl:gap-4 text-dark ">
                     <div class="border-b border-gray-500">
-                        <input class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none focus:border-gray-400 focus:ring-gray-400" type="text" placeholder="Jane Doe" name="name" aria-label="Full name">
+                        <input class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none focus:border-gray-400 focus:ring-gray-400" type="text" placeholder="Jane Doe" name="name" aria-label="Full name" autocomplete="off">
                     </div>
 
                     <div class="grid grid-cols-3 gap-4">
                         <div class="relative border-b border-gray-500">
-                            <select class="block bg-transparent appearance-none w-full border-0 text-gray-700 pt-1 px-4 pr-8 rounded leading-tight focus:outline-none focus:border-gray-400 focus:ring-gray-400" id="grid-state" name="country_code">
+                            <select class="block bg-transparent appearance-none w-full border-0 text-gray-700 pt-1 px-4 pr-8 rounded leading-tight focus:outline-none focus:border-gray-400 focus:ring-gray-400" id="grid-state" name="country_code" aria-label="Country_code" autocomplete="off">
                             <option value="">Country</option>
                             </select>
                         </div>
                         <div class="col-span-2 border-b border-gray-500">
-                            <input class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none focus:border-gray-400 focus:ring-gray-400" type="tel" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="Contact" name="phone" aria-label="Email">
+                            <input class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none focus:border-gray-400 focus:ring-gray-400" type="tel" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="Contact" name="phone" aria-label="Contact" autocomplete="off">
                         </div>
                     </div>
 

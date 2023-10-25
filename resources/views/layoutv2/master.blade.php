@@ -70,11 +70,9 @@
 
             @desktop
                 @if($route_name == 'esnaad.home')
-                    <nav x-data="{ open: false }" class="absolute bg-white border-b border-gray-100 sm:block sticky top-0 z-50 shadow bottomMenu site-content" style="display:none; z-index: 10 !important" id="sample" >
-                        @include('layout.navigation')
-                    </nav>
+                    @include('layout.navigationHome')
                 @else
-                    <nav x-data="{ open: false }" class="absolute bg-white border-b border-gray-100 sm:block sticky top-0 z-50 shadow bottomMenu" id="sample" style="position: fixed; width: 100vw !important" >
+                    <nav x-data="{ open: false }" class="absolute bg-white border-b border-gray-100 sm:block sticky top-0 z-50 shadow " id="sample" style="position: fixed; width: 100vw !important" >
                         @include('layout.navigation')
                     </nav>
                 @endif
@@ -82,7 +80,7 @@
 
             @tablet
                 <nav x-data="{ open: false }" class="bg-white border-b border-gray-100 sm:block sticky top-0 z-50 shadow " >
-                    @include('layout.navigation_tablet')
+                    @include('layout.navigation_tablet')s
                 </nav>
             @endtablet
 
@@ -90,30 +88,15 @@
                 @include('layout.mobileNavigation2')
             @endmobile
 
-
-
-
-
-
             <div class="relative">
                 @yield('content')
             </div>
 
-
-
-
             {{-- @include('layoutv2.appInquiryModal') --}}
             
-
-
-
             @include('layout.footer')
 
         </div>
-
-
-
-
 
 
     <script>

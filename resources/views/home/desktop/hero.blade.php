@@ -40,7 +40,7 @@
 
                                 <!-- Navigation Links -->
                                 <div class="hidden space-x-8 sm:-my-px sm:flex mx-auto no-underline pr-5">
-                                    <x-nav-link2 href="{{ url('about-esnaad') }}" :active="request()->routeIs('dashboard')">
+                                    <x-nav-link2 href="#" :active="request()->routeIs('dashboard')">
                                         {{ __('ABOUT') }}
                                     </x-nav-link2>
                                 </div>
@@ -81,7 +81,7 @@
                                 </div>
 
                                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex text-center">
-                                    <x-nav-link2 href="#" :active="request()->routeIs('home')">
+                                    <x-nav-link2 href="{{ url('contact') }}" :active="request()->routeIs('home')">
                                         {{ __('CONTACT US') }}
                                     </x-nav-link2>
                                 </div>

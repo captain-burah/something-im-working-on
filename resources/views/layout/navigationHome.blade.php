@@ -89,7 +89,7 @@
         <div class="flex items-center">
 
             <div class="hidden space-x-8 sm:-my-px sm:flex mx-auto no-underline pr-5">
-                <x-nav-link href="{{ url('about-esnaad') }}" aria-label="navbar-route">
+                <x-nav-link href="#" aria-label="navbar-route">
                     {{ __('ABOUT ESNAAD') }}
                 </x-nav-link>
             </div>
@@ -140,7 +140,7 @@
             </div>
 
             <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex text-center">
-                <x-nav-link href="#"   aria-label="navbar-route">
+                <x-nav-link href="{{ url('contact') }}"   aria-label="navbar-route">
                     {{ __('CONTACT') }}
                 </x-nav-link>
             </div>

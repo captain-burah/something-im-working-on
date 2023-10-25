@@ -92,7 +92,7 @@
 
                 <!-- Navigation Links -->
                 <div class="hidden space-x-8 sm:flex mx-auto no-underline ">
-                    <x-nav-link-tablet href="{{ url('about-esnaad') }}" :active="request()->routeIs('dashboard')">
+                    <x-nav-link-tablet href="#" :active="request()->routeIs('dashboard')">
                         {{ __('ABOUT') }}
                     </x-nav-link-tablet>
                 </div>
@@ -133,7 +133,7 @@
                 </div>
 
                 <div class="hidden space-x-8 sm:flex text-center">
-                    <x-nav-link-tablet href="#" :active="request()->routeIs('home')">
+                    <x-nav-link-tablet href="{{ url('contact') }}" :active="request()->routeIs('home')">
                         {{ __('CONTACT') }}
                     </x-nav-link-tablet>
                 </div>

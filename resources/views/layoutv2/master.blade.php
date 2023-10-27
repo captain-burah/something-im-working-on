@@ -14,7 +14,7 @@
         @if(isset($jsonSEOData))
             <title>{{$jsonSEOData['title_en']}}</title>
             <meta name="description" content="{{$jsonSEOData['description_en']}}" />
-            <meta name="keywords" content="{{$jsonSEOData['keywords_en']}}" />\
+            <meta name="keywords" content="{{$jsonSEOData['keywords_en']}}" />
         @endif
 
 
@@ -104,12 +104,6 @@
 
         </div>
 
-
-    <script>
-        $(document).ready(function () {
-            sessionStorage.setItem("form_submission", "false");
-        });
-    </script>
 
 
 

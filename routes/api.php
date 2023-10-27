@@ -17,3 +17,7 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::middleware(['auth.check'])->prefix('v1/esnaad')->namespace('App\Http\Controllers')->group(function () {
+    Route::post('/contact-form', 'FormSubmissionController@contact_form');
+});

@@ -7,8 +7,9 @@
     }
 </style>
 
-
-    @include('layout.footer_form')
+    @if($route_name != 'esnaad.contact')
+        @include('layout.footer_form')
+    @endif
 
     @tablet
         <div class="block py-24 sm:py-12  text-gray-50 bg-footer" id="footer" style="visibility:hidden">
@@ -655,11 +656,15 @@
 
 
 
-
+    
     <script>
         setTimeout(function(){
-            document.getElementById('footer').style.visibility = "visible";
-            document.getElementById('footer_form').style.visibility = "visible";
+            if(document.getElementById('footer')) {
+                document.getElementById('footer').style.visibility = "visible";
+            }
+            if(document.getElementById('footer_form')) {
+                document.getElementById('footer_form').style.visibility = "visible";
+            }
         },1000);
     </script>
 

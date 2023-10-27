@@ -44,11 +44,3 @@
 
 @endsection
 
-@section('luxe_asset_js')
-    <script>
-        $(document).ready(function() {
-            sessionStorage.removeItem("form_submission");
-            sessionStorage.setItem("form_submission", "true");
-        });
-    </script>
-@endsection

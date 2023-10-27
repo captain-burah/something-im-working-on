@@ -1,77 +1,118 @@
-<div class="container mx-0 px-0 mx-auto">
-    
+<div class="sm:container sm:mx-auto mx-0 px-0 sm:px-4 my-20 sm:my-4 mx-auto">
+    <div class="container mx-auto my-16">
+        <form class="flex flex-col items-start w-full"  method="post" action="{{ url('/communities/register-your-interest') }}" id="contact-desktop-form">
+            @csrf
+               
+            <div class="icon bg-black text-white w-6 h-6 absolute flex items-center justify-center p-5" style="left:-40px"><i class="fal fa-phone-volume fa-fw text-2xl transform -rotate-45"></i></div>
+            <h3 class="text-2xl text-gray-900 font-semibold">Lorem ipsum dolor sit amet,</h3>
+            <p class="text-gray-600 mb-4"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rhoncus augue ut ligula</p>
+            <input type="hidden" name="country_code" id="country_code">
+            <input type="text" name="name" id="name" placeholder="Full Name" class="border p-2  w-full">
+            <input type="text" name="name" id="phone" placeholder="Phone Number" class="border p-2 mt-3  w-full">
+            <input type="email" name="email" id="email" placeholder="Email" class="border p-2 mt-3 w-full mt-3">
+            <textarea name="msg" id="" cols="10" rows="3" placeholder="Tell us about your inquiry" class="border p-2 mt-3 w-full"></textarea>
+            <button type="submit"  class="w-full mt-6 bg-black hover:bg-white border hover:border-gray-500 text-white hover:text-black font-semibold p-3">Submit</button>
+        </form>
 
-    <h2 class="text-esnaad_text text-justify font-light my-8 text-base">
-        Welcome to ESNAAD Developments, a trusted name in the 
-        world of premier real estate in Dubai. 
-    </h2>
-
-    <p class="text-esnaad_text text-justify font-light my-8 w-full">
-        Our mission is to bring your dreams of 
-        luxurious living to life through meticulously designed and beautifully crafted 
-        properties. Whether you're searching for your dream home, a lucrative investment property, or 
-        a vibrant business space, we're here to guide you every step of the way. 
-    </p>
-
-    <div class="row">
-        <div class="grid sm:grid-cols-3 space-y-10">
-            <div class="text-center">
-                <p class="leading-8">
-                    <b class="underline text-xl">Address</b><br>
-                    <span>ESNAAD Real Estate Development</span><br>
-                    <span>Unit G07, City Walk Building #1, Al Wasl, Dubai, United Arab Emirates</span><br>
-                </p>
-            </div>
-            <div class="text-center">
-                <p class="leading-8">
-                    <b class="underline text-xl">Contact</b><br>
-                    <span>+971 04 123 4567</span><br>
-                    <span>+971 58 123 4567 </span><br>
-                </p>
-            </div>
-            <div class="text-center">
-                <p class="leading-8">
-                    <b class="underline text-xl">Email</b><br>
-                    <span>info@esnaad.com</span><br>
-                    <span>hr@esnaad.com </span><br>
-                </p>
-            </div>
-            
-        </div>
-        
     </div>
-
-    <div class="row my-8">
-        <div class="mx-0 px-0">
-
-            <div id='map' class="map" style='width: 100%; height: 250px !important;'></div>
-
-        </div>
-    </div>
-
-    <p class="text-esnaad_text text-justify font-light my-8 w-full">
-        Explore our portfolio of high-quality developments, meticulously planned 
-        communities, and unrivaled amenities that promise a lifestyle beyond compare. 
-        Welcome to a world of real estate excellence – welcome to ESNAAD Developments.
-    </p>
-
-    <h3 class="text-esnaad_text text-justify font-light  text-2xl underline">
-        Who We Are?
-    </h3>
-
-    <p class="text-esnaad_text text-justify font-light my-4 w-full">
-        At ESNAAD, we understand that the foundation of a 
-        successful real estate venture is trust, transparency, and a commitment to delivering on 
-        promises. Our team of expert professionals is dedicated to providing you with the utmost 
-        support and information to make informed decisions. We are proud to be part of Dubai's 
-        thriving real estate landscape, a city known for its innovation and architectural wonders. 
-        As you navigate our website, you'll find detailed information on our current and 
-        upcoming projects, each designed to exceed your expectations. We invite you to explore 
-        our property listings, view 3D walkthroughs, and learn more about the various facilities 
-        and services that set us apart. ESNAAD is not just a developer; we're your partner in achieving your real estate aspirations.
-    </p>
-
-    
-
 </div>
 
+
+@section('intel-input')
+    {{-- INTEL INPUT --}}
+    <script>
+
+        var input = document.querySelector("#phone");
+
+        const iti = window.intlTelInput(input, {
+
+            initialCountry: "auto",
+
+            separateDialCode: true,
+
+            // utilsScript: "/build/js/utils.js", // for editing placeholders
+
+            geoIpLookup: function(success) {
+
+                fetch("https://api.ipdata.co/?api-key=1f9ecc1670c915b3ddd397d233297968ccf720c0861abf9ecac1a8ef")
+                .then(function(response) {
+                    if (!response.ok) return success("");
+                    return response.json();
+                })
+                .then(function(ipdata) {
+                    success(ipdata.country_code);
+                });
+            },
+        });
+
+        input.addEventListener("countrychange", function() {
+            console.log(document.getElementById('phone').value);
+            document.getElementById('country_code').value = iti.getSelectedCountryData().dialCode;
+        })
+
+
+    </script>
+
+    {{-- FORM SUBMIT --}}
+    <script>
+        /**
+         * INITIATE HEADERS WITH CSRF TOKENIZATION
+         * FOR FORM SUBMISSION
+         */
+        $.ajaxSetup({
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="XSRF-TOKEN"]').attr('content')
+            }
+        });
+        $('#contact-desktop-form').on('submit', function(e){
+
+            e.preventDefault();
+
+            var name = $("#name").val();
+
+            var email = $("#email").val();
+
+            var phone = $("#phone").val();
+
+            var country_code = $("#country_code").val();
+
+            var msg = $("#msg").val();
+
+
+
+            /**
+             * INITIATE AN AJAX SCRIPT FOR THE FORM SUBMISSION
+             * ALONG WITH POST ROUTE METHOD AND URL. IF RESPONSE
+             * IS A SUCCESS DISPLAY THE THANK YOU MODAL AND
+             * UPDATE THE FORM SESSION IN SESSION-STORAGE OF BROWSER
+             *
+            */
+            $.ajax({
+                type:'POST',
+                url:"{{ URL('api/v1/esnaad/contact-form') }}",
+                headers : {
+                    'Authorizatio' : 'Bearer ' + 'schDv?8qat`6zLVZ;8Lwoy(g`/Asm%D88$a>7Wl,20amt[=uN1',
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                },
+                contentType : 'application/x-www-form-urlencoded',
+                data:{
+                    name:name,
+                    email:email,
+                    phone:phone,
+                    country_code:country_code,
+                    msg:msg,
+                    
+                },
+                error : function(xhr, status, error) {
+                    var err = eval("(" + xhr.responseText + ")");
+                }
+            }).done(function(data){  
+                alert('Successfully');  
+             }).fail(function(jqXHR, ajaxOptions, thrownError){  
+                alert(jqXHR.responseText);  
+            });  
+
+        });
+    </script>
+
+@endsection

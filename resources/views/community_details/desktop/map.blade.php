@@ -5,8 +5,14 @@
         <p class="mt-18 mb-4 text-3xl font-thin mx-auto w-full text-center">
             Community Map of {{ $response[0]['title'] }}
         </p>
+        
+        @desktop
+            <div id='map' class="map" style='width: 100%; height: 550px !important;'></div>
+        @enddesktop
 
-        <div id='map' class="map" style='width: 100%; height: 250px !important;'></div>
+        @tablet
+            <div id='map' class="map" style='width: 100%; height: 250px !important;'></div>
+        @endtablet
 
 </div>
 

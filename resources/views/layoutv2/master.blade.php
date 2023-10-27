@@ -11,6 +11,12 @@
             $route_name = request()->route()->getName();
         ?>
 
+        @if(isset($jsonSEOData))
+            <title>{{$jsonSEOData['title_en']}}</title>
+            <meta name="description" content="{{$jsonSEOData['description_en']}}" />
+            <meta name="keywords" content="{{$jsonSEOData['keywords_en']}}" />\
+        @endif
+
 
         <!-- Styles -->
         <style>

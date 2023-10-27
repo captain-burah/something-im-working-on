@@ -77,9 +77,13 @@ class FrontEndController extends Controller
 
     private function landingpageseos($id) {
 
-        $this->data['landingpageseo'] = Landingpageseos::select('id', 'meta_title_en', 'meta_description_en', 'meta_keywords_en')->findorFail($id);
+        // $this->data['landingpageseo'] = Landingpageseos::select('id', 'meta_title_en', 'meta_description_en', 'meta_keywords_en')->findorFail($id);
+        
+       $response = Http::withHeaders([
+            'authkey' => 'YOUR_SECRET_KEY'
+        ])->get('www.mis.esnaad.com/api/v1/esnaad/seo/'.$id);
 
-        return $this->data;
+        return $response;
     }
 
 
@@ -118,7 +122,6 @@ class FrontEndController extends Controller
             $lat = $properties[0]->property_locations->latitude;
         }
 
-
         $this->data['long'] = $long;
 
         $this->data['lat'] = $lat;
@@ -130,9 +133,10 @@ class FrontEndController extends Controller
 
     public function home() {
 
-        // $this->landingpageseos(12);
+        $jsonSEOData = $this->landingpageseos(1);
+        $this->data['jsonSEOData'] =  $jsonSEOData->json();
 
-        return view('welcome3');
+        return view('welcome3', $this->data);
     }
 
 
@@ -147,6 +151,9 @@ class FrontEndController extends Controller
 
     public function communities_details($slug)
     {
+
+        $jsonSEOData = $this->landingpageseos(3);
+        $this->data['jsonSEOData'] =  $jsonSEOData->json();
 
         // CALL API FROM MIS
         $response = Http::withHeaders([
@@ -164,7 +171,6 @@ class FrontEndController extends Controller
 
         $this->data['long'] =  55.156860;
         $this->data['lat'] = 25.101131;
-
 
         return view('communityDetails', $this->data);
     }

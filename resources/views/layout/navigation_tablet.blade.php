@@ -120,7 +120,7 @@
             <div class="flex items-center">
 
                 <div class="hidden space-x-8 sm:flex text-center">
-                    <x-nav-link-tablet href="#" :active="request()->routeIs('home')">
+                    <x-nav-link-tablet href="{{ url('invest-in-dubai') }}" :active="request()->routeIs('home')">
                         {{ __('INVEST IN DUBAI') }}
                     </x-nav-link-tablet>
                 </div>

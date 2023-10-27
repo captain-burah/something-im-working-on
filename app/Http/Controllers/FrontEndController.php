@@ -230,17 +230,12 @@ class FrontEndController extends Controller
     }
 
     public function contact() {
-        $this->data['long'] =  55.265547;
-        $this->data['lat'] = 25.206984;
-        return view('contact', $this->data);
+        return view('contact');
     }
 
 
-    public function media_center() {
-        
-        $this->data['long'] =  55.265547;
-        $this->data['lat'] = 25.206984;
-        return view('contact', $this->data);
+    public function invest_in_dubai() {
+        return view('contact');
     }
 
 

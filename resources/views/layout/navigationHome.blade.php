@@ -127,7 +127,7 @@
         <div class="flex items-center">
 
             <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex text-center">
-                <x-nav-link href="#"  aria-label="navbar-route">
+                <x-nav-link href="{{ url('invest-in-dubai') }}"  aria-label="navbar-route">
                     {{ __('INVEST IN DUBAI') }}
                 </x-nav-link>
             </div>

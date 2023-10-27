@@ -31,7 +31,7 @@ Route::get('/media-center', [FrontEndController::class, 'media_center'])->name('
 
 Route::get('/contact', [FrontEndController::class, 'contact'])->name('esnaad.contact');
 
-Route::get('/invest-in-dubai', [FrontEndController::class, 'invest_in_dubai)'])->name('esnaad.invest_in_dubai');
+Route::get('/invest-in-dubai', [FrontEndController::class, 'invest'])->name('esnaad.invest_in_dubai');
 
 Route::post('/communities/register-your-interest', [FrontEndController::class, 'communities_registration'])->name('esnaad.communities.registration');
 

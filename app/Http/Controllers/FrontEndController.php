@@ -234,8 +234,8 @@ class FrontEndController extends Controller
     }
 
 
-    public function invest_in_dubai() {
-        return view('contact');
+    public function invest() {
+        return view('invest_in_dubai');
     }
 
 

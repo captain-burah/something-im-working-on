@@ -15,7 +15,8 @@
             Home
         </a>
         /
-        Blogs
+        
+        
     </div>
     <hr class="container mx-auto">
 

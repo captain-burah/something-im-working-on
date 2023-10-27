@@ -22,7 +22,7 @@
     </div>
     
     <ul class="hidden bg-white lg:block space-y-6 pt-8 pb-4 pl-[10vw]  ">
-        <li ><a href="#" class="text-dark">About</a></li>
+        <li ><a href="{{ url('about-esnaad') }}" class="text-dark">About</a></li>
         <li ><a href="#" class="text-dark">Communities</a></li>
         <li ><a href="#" class="text-dark">Developments</a></li>
         <li ><a href="#" class="text-dark">Invest in Dubai</a></li>

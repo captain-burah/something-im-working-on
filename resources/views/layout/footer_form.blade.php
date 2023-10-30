@@ -33,8 +33,8 @@
                     </div>
 
                     <div class="">
-                        <button class=" w-full bg-gray-900 hover:bg-gray-700 border-gray-900 hover:border-gray-700 text-sm border-4 text-white py-1 px-2 rounded-0" type="button">
-                            Sign Up
+                        <button class=" w-full text-sm text-white hover:text-black px-2 py-2 bg-black hover:bg-transparent border border-black hover:border-black rounded-0" type="button">
+                            SUBMIT
                         </button>
                     </div>
                 </div>
@@ -79,8 +79,8 @@
                     </div>
 
                     <div class=" my-2">
-                        <button class=" w-full bg-gray-900 hover:bg-gray-700 border-gray-900 hover:border-gray-700 text-sm border-4 text-white py-1 px-2 rounded-0" type="button">
-                            Sign Up
+                        <button class=" w-full text-sm text-white hover:text-black px-2 py-2 bg-black hover:bg-transparent border border-black hover:border-black rounded-0" type="button">
+                            SUBMIT
                         </button>
                     </div>
                 </div>

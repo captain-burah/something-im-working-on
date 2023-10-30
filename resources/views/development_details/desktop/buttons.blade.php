@@ -14,7 +14,7 @@
 <div class="sm:container sm:mx-auto mx-0 px-0 my-20 sm:my-4 mx-auto">
     <div class="flex justify-left ...">
         <div class="mr-4">
-            <button onclick="openModal('mymodalcentered-community-register')"  class="x-full xl:w-100 bg-gray-900 hover:bg-gray-700 border-gray-900 hover:border-gray-700 text-sm xl:text-base border-4 text-white py-3 px-2 rounded-0" type="button">
+            <button onclick="openModal('mymodalcentered-community-register')"  class=" lg:w-100 text-base text-white font-bold hover:text-black px-2 lg:py-4 bg-black hover:bg-transparent border border-black hover:border-black rounded-0" type="button">
                 Register Your Interest
             </button>
         </div>
@@ -127,7 +127,7 @@
                         <div class="w-full font-base text-base border border-gray-500 rounded-0 py-2 px-4 mr-2">
                             {{{$actual_link}}}
                         </div>
-                        <button type="button" onclick="modalClose('mymodalcentered-community-share')" class="bg-transparent hover:bg-gray-500 text-gray-800 font-semibold hover:text-white py-2 px-4 border border-gray-500 hover:border-transparent rounded-0"   >
+                        <button type="button" onclick="modalClose('mymodalcentered-community-share')" class="bg-transparent hover:bg-gray-500 text-gray-800 font-semibold hover:text-white py-2 px-3 border border-gray-500 hover:border-transparent rounded-0"   >
                             Close
                         </button>
                     </div>
@@ -170,15 +170,16 @@
                         <div class="mb-6">
                             <input type="tel" id="phone" name="phone" class="w-max px-4 py-2 border rounded-0 focus:outline-none focus:ring-2 focus:ring-gray-500" placeholder="Phone" style="width: 100% !important" required>
                         </div>
+
+                        <div>
+                            <button type="submit" class="bg-black w-[100%] hover:bg-white border border-black text-white hover:text-black font-bold py-2 rounded-0">
+                                Register Your Interest
+                            </button>
+                        </div>
                     </div>
 
                     <div class="p-7 flex justify-end items-center w-full">
-                        <button type="button" onclick="modalClose('mymodalcentered-community-register')" class="bg-transparent hover:bg-black text-black font-semibold hover:text-white py-2 px-4 border border-black hover:border-transparent rounded-0"   >
-                            Close
-                        </button>
-                        <button type="submit" class="bg-black hover:bg-white border border-black text-white hover:text-black font-bold py-2 px-4 rounded-0 ml-3">
-                            Register Your Interest
-                        </button>
+                        
                         
                     </div>
                 </form>

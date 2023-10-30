@@ -23,17 +23,7 @@
                     </p>
                 </div>
 
-                <div>
-                    <h2 class="text-esnaad_text text-justify font-thin text-xl xl:text-2xl w-[90%]">
-                        Available Units
-                    </h2>
-                    <p class="text-xl xl:text-2xl text-justify font-semibold w-[90%]">
-                        60
-                    </p>
-                </div>
-            </div>
 
-            <div class="row-span-2 grid sm:grid-cols-2 gap-4 w-[100%]  mb-8">
                 <div>
                     <h2 class="text-esnaad_text text-justify font-thin text-xl xl:text-2xl w-[90%]">
                         Area (Sq.Ft) 
@@ -42,6 +32,13 @@
                         1,235 - 1,235
                     </p>
                 </div>
+
+                
+            </div>
+
+            <div class="row-span-2 grid sm:grid-cols-2 gap-4 w-[100%]  mb-8">
+                
+                <div></div>
 
                 <div>
                     <h2 class="text-esnaad_text text-justify font-thin text-xl xl:text-2xl w-[90%]">

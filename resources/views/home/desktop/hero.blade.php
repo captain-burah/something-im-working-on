@@ -26,72 +26,70 @@
 </div> --}}
 
 <div class="bg-hero bg-cover bg-no-repeat bg-top object-cover overflow-hidden max-w-full h-[100vh]">
-    <div class="relative isolate px-6 lg:px-8 h-full flex flex-1 flex-col justify-between">
+    <div class="relative isolate  h-full flex flex-1 flex-col justify-between">
         <div></div>
 
         @desktop
-            <div>
-                <nav x-data="{ open: false }" class="bg-transparent border-b border-gray-100 hidden sm:block ">
-                    <!-- Primary Navigation Menu -->
-                    <div class=" container mx-auto px-8">
-                        <div class="flex justify-between h-30">
+            <nav x-data="{ open: false }" class="bg-gradient-to-t from-[rgb(0,0,0,.5)] hidden sm:block  ">
+                <!-- Primary Navigation Menu -->
+                <div class=" container mx-auto px-8">
+                    <div class="flex justify-between h-30">
 
-                            <div class="flex items-center">
+                        <div class="flex items-center">
 
-                                <!-- Navigation Links -->
-                                <div class="hidden space-x-8 sm:-my-px sm:flex mx-auto no-underline pr-5">
-                                    <x-nav-link2 href="#" :active="request()->routeIs('dashboard')">
-                                        {{ __('ABOUT') }}
-                                    </x-nav-link2>
-                                </div>
-                                
+                            <!-- Navigation Links -->
+                            <div class="hidden space-x-8 sm:-my-px sm:flex mx-auto no-underline pr-8">
+                                <x-nav-link2 href="#" :active="request()->routeIs('dashboard')">
+                                    {{ __('ABOUT') }}
+                                </x-nav-link2>
+                            </div>
+                            
 
-                                <div class="hidden space-x-8 sm:-my-px sm:flex mx-auto no-underline px-5">
-                                    <x-nav-link2 href="#" :active="request()->routeIs('dashboard')">
-                                        {{ __('DEVELOPMENT') }}
-                                    </x-nav-link2>
-                                </div>
-
+                            <div class="hidden space-x-8 sm:-my-px sm:flex mx-auto no-underline px-8">
+                                <x-nav-link2 href="#" :active="request()->routeIs('dashboard')">
+                                    {{ __('DEVELOPMENT') }}
+                                </x-nav-link2>
                             </div>
 
-                            <div class=" flex items-center ">
-                                <div class="shrink-0 flex items-center hidden md:hidden lg:block text-2xl font-thin">
-                                    <img style="height: 100px !important;" src="{{ asset('logo-light.png') }}" alt="esnaad-logo-navbar">
-                                </div>
-                            </div>
-
-                            <div class="flex items-center">
-
-                                <div class="hidden space-x-8 sm:-my-px sm:flex mx-auto no-underline px-5">
-                                    <x-nav-link2 href="#" :active="request()->routeIs('dashboard')">
-                                        {{ __('COMMUNITY') }}
-                                    </x-nav-link2>
-                                </div>
-
-                                {{-- <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex text-center">
-                                    <x-nav-link2 href="#" :active="request()->routeIs('home')">
-                                        {{ __('INVEST IN DUBAI') }}
-                                    </x-nav-link2>
-                                </div>
-
-
-                                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex text-center">
-                                    <x-nav-link2 href="#" :active="request()->routeIs('home')">
-                                        {{ __('MEDIA CENTER') }}
-                                    </x-nav-link2>
-                                </div> --}}
-
-                                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex text-center">
-                                    <x-nav-link2 href="{{ url('contact') }}" :active="request()->routeIs('home')">
-                                        {{ __('CONTACT US') }}
-                                    </x-nav-link2>
-                                </div>
-                            </div>
-                   
                         </div>
+
+                        <div class=" flex items-center ">
+                            <div class="shrink-0 flex items-center hidden md:hidden lg:block text-2xl font-thin">
+                                <img style="height: 100px !important;" src="{{ asset('logo-light.png') }}" alt="esnaad-logo-navbar">
+                            </div>
+                        </div>
+
+                        <div class="flex items-center">
+
+                            <div class="hidden space-x-8 sm:-my-px sm:flex mx-auto no-underline px-8">
+                                <x-nav-link2 href="#" :active="request()->routeIs('dashboard')">
+                                    {{ __('COMMUNITY') }}
+                                </x-nav-link2>
+                            </div>
+
+                            {{-- <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex text-center">
+                                <x-nav-link2 href="#" :active="request()->routeIs('home')">
+                                    {{ __('INVEST IN DUBAI') }}
+                                </x-nav-link2>
+                            </div>
+
+
+                            <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex text-center">
+                                <x-nav-link2 href="#" :active="request()->routeIs('home')">
+                                    {{ __('MEDIA CENTER') }}
+                                </x-nav-link2>
+                            </div> --}}
+
+                            <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex text-center pl-8">
+                                <x-nav-link2 href="{{ url('contact') }}" :active="request()->routeIs('home')">
+                                    {{ __('CONTACT') }}
+                                </x-nav-link2>
+                            </div>
+                        </div>
+                
                     </div>
-                </nav>
-            </div>
+                </div>
+            </nav>
         @enddesktop
 
 

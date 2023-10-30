@@ -84,18 +84,18 @@
 
 </style>
 
-<div class="fixed top-0 w-full bg-white w-full mx-auto px-8 site-content " style="display:none; z-index: 10 !important;">
+<div class="fixed top-0 w-full bg-white w-full mx-auto px-8 site-content shadow " style="display:none; z-index: 10 !important;">
     <div class="container px-8 mx-auto">
         <div class="flex justify-between h-20">
             <div class="flex items-center">
 
-                <div class="hidden space-x-8 sm:-my-px sm:flex mx-auto no-underline pr-5">
+                <div class="hidden space-x-8 sm:-my-px sm:flex mx-auto no-underline pr-8">
                     <x-nav-link href="{{ url('about-esnaad') }}" aria-label="navbar-route">
                         {{ __('ABOUT') }}
                     </x-nav-link>
                 </div>            
 
-                <div class="hidden space-x-8 sm:-my-px sm:flex mx-auto no-underline px-5">
+                <div class="hidden space-x-8 sm:-my-px sm:flex mx-auto no-underline px-8">
                     <x-nav-link href="{{ url('developments/Feil-Cummerata') }}" aria-label="navbar-route">
                         {{ __('DEVELOPMENT') }}
                     </x-nav-link>
@@ -121,7 +121,7 @@
 
             <div class="flex items-center">
 
-                <div class="hidden space-x-8 sm:-my-px sm:flex mx-auto no-underline px-5">
+                <div class="hidden space-x-8 sm:-my-px sm:flex mx-auto no-underline px-8">
                     <x-nav-link href="{{ url('communities/fdsad') }}"  aria-label="navbar-route">
                         {{ __('COMMUNITY') }}
                     </x-nav-link>
@@ -140,7 +140,7 @@
                     </x-nav-link>
                 </div> --}}
 
-                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex text-center">
+                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex text-center pl-8">
                     <x-nav-link href="{{ url('contact') }}"   aria-label="navbar-route">
                         {{ __('CONTACT') }}
                     </x-nav-link>

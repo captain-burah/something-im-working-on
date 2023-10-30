@@ -90,7 +90,7 @@
             <div class="flex items-center">
 
                 <!-- Navigation Links -->
-                <div class="hidden space-x-8 sm:-my-px sm:flex mx-auto no-underline pr-5">
+                <div class="hidden space-x-8 sm:-my-px sm:flex mx-auto no-underline pr-8">
                     <x-nav-link href="{{ url('about-esnaad') }}" aria-label="navbar-route">
                         {{ __('ABOUT') }}
                     </x-nav-link>
@@ -98,7 +98,7 @@
 
                 
 
-                <div class="hidden space-x-8 sm:-my-px sm:flex mx-auto no-underline px-5">
+                <div class="hidden space-x-8 sm:-my-px sm:flex mx-auto no-underline px-8">
                     <x-nav-link href="{{ url('developments/Feil-Cummerata') }}" aria-label="navbar-route">
                         {{ __('DEVELOPMENTS') }}
                     </x-nav-link>
@@ -183,7 +183,7 @@
 
             <div class="flex items-center">
 
-                <div class="hidden space-x-8 sm:-my-px sm:flex mx-auto no-underline px-5">
+                <div class="hidden space-x-8 sm:-my-px sm:flex mx-auto no-underline px-8">
                     <x-nav-link href="{{ url('communities/fdsad') }}"  aria-label="navbar-route">
                         {{ __('COMMUNITY') }}
                     </x-nav-link>
@@ -202,7 +202,7 @@
                     </x-nav-link>
                 </div> --}}
 
-                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex text-center">
+                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex text-center pl-8">
                     <x-nav-link href="{{ url('contact') }}"   aria-label="navbar-route">
                         {{ __('CONTACT') }}
                     </x-nav-link>

@@ -88,6 +88,19 @@
                                         </div>
                                     </div>
 
+                                    <div class="flex-1">
+                                        <div class="w-8 bg-footer rounded-3xl p-1">
+                                            <a href="https://wa.link/etkc3f">
+                                                <img
+                                                    src="{{ asset('front/icons/wa.png') }}"
+                                                    class="w-fit rounded"
+                                                    alt="social-media-wa"
+                                                >
+                                            </a>
+                                        </div>
+                                    </div>
+                                    
+
                                 </div>
 
                             </div>
@@ -213,7 +226,7 @@
                     <div class="flex justify-left my-2">
                         <div>
                             <p class="text-base text-gray-700">
-                                © {{ now()->year }} ESNAAD. ALL RIGHTS RESERVED. | Terms & Conditions | Privacy & Policy
+                                ESNAAD © {{ now()->year }} All Rights Reserved | Terms & Conditions | Privacy & Policy
                             </p>
                         </div>
                     </div>
@@ -253,7 +266,7 @@
                                 <div class="flex my-8 text-justify my-auto inline-block align-middle w-[50%]">
 
                                     <div class="flex-1">
-                                        <div class="w-8 bg-white rounded-3xl p-1">
+                                        <div class="w-8 bg-footer rounded-3xl p-1">
                                                 <a href="https://www.facebook.com/edgerealtydubai">
                                                 <img
                                                     src="{{ asset('front/icons/fb.png') }}"
@@ -265,7 +278,7 @@
                                     </div>
 
                                     <div class="flex-1">
-                                        <div class="w-8 bg-white rounded-3xl p-1">
+                                        <div class="w-8 bg-footer rounded-3xl p-1">
                                             <a href="https://www.instagram.com/edgerealtydubai/" target="_blank">
                                                 <img
                                                     src="{{ asset('front/icons/ig.png') }}"
@@ -277,7 +290,7 @@
                                     </div>
 
                                     <div class="flex-1">
-                                        <div class="w-8 bg-white rounded-3xl p-1">
+                                        <div class="w-8 bg-footer rounded-3xl p-1">
                                             <a href="https://twitter.com/i/flow/login?redirect_after_login=%2Fedgerealtydubai">
                                                 <img
                                                     src="{{ asset('front/icons/x.png') }}"
@@ -289,12 +302,24 @@
                                     </div>
 
                                     <div class="flex-1">
-                                        <div class="w-8 bg-white rounded-3xl p-1">
+                                        <div class="w-8 bg-footer rounded-3xl p-1">
                                             <a href="https://www.linkedin.com/company/edgerealtydubai">
                                                 <img
                                                     src="{{ asset('front/icons/in.png') }}"
                                                     class="w-fit rounded"
                                                     alt="social-media-in"
+                                                >
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="flex-1">
+                                        <div class="w-8 bg-footer rounded-3xl p-1">
+                                            <a href="https://wa.link/etkc3f">
+                                                <img
+                                                    src="{{ asset('front/icons/wa.png') }}"
+                                                    class="w-fit rounded"
+                                                    alt="social-media-wa"
                                                 >
                                             </a>
                                         </div>
@@ -407,7 +432,7 @@
                                         </svg>
                                         &nbsp;
                                         <?php //EMAIL IS BELOW ENCODED OR IN OBFUSCATION ?>
-                                        &#105;&#110;&#102;&#111;&#064;&#101;&#115;&#110;&#097;&#097;&#100;&#046;&#099;&#111;&#109;
+                                        {{env('COMPANY_EMAIL')}}
                                     </div>
                                 </li>
                             </ul>
@@ -425,7 +450,7 @@
                     <div class="flex justify-left my-2">
                         <div>
                             <p class="text-base text-gray-700">
-                                © {{ now()->year }} ESNAAD. ALL RIGHTS RESERVED. | Terms & Conditions | Privacy & Policy
+                                ESNAAD © {{ now()->year }} All Rights Reserved | Terms & Conditions | Privacy & Policy
                             </p>
                         </div>
                     </div>
@@ -468,7 +493,7 @@
                                 <div class="flex my-8 text-justify my-auto inline-block align-middle w-[50%]">
 
                                     <div class="flex-1">
-                                        <div class="w-8 bg-white rounded-3xl p-1">
+                                        <div class="w-8 bg-white rounded-3xl p-1 mx-3">
                                                 <a href="https://www.facebook.com/edgerealtydubai">
                                                 <img
                                                     src="{{ asset('front/icons/fb.png') }}"
@@ -480,7 +505,7 @@
                                     </div>
 
                                     <div class="flex-1">
-                                        <div class="w-8 bg-white rounded-3xl p-1">
+                                        <div class="w-8 bg-white rounded-3xl p-1 mx-3">
                                             <a href="https://www.instagram.com/edgerealtydubai/" target="_blank">
                                                 <img
                                                     src="{{ asset('front/icons/ig.png') }}"
@@ -492,7 +517,7 @@
                                     </div>
 
                                     <div class="flex-1">
-                                        <div class="w-8 bg-white rounded-3xl p-1">
+                                        <div class="w-8 bg-white rounded-3xl p-1 mx-3">
                                             <a href="https://twitter.com/i/flow/login?redirect_after_login=%2Fedgerealtydubai">
                                                 <img
                                                     src="{{ asset('front/icons/x.png') }}"
@@ -504,12 +529,24 @@
                                     </div>
 
                                     <div class="flex-1">
-                                        <div class="w-8 bg-white rounded-3xl p-1">
+                                        <div class="w-8 bg-white rounded-3xl p-1 mx-3">
                                             <a href="https://www.linkedin.com/company/edgerealtydubai">
                                                 <img
                                                     src="{{ asset('front/icons/in.png') }}"
                                                     class="w-fit rounded"
                                                     alt="social-media-in"
+                                                >
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="flex-1">
+                                        <div class="w-8 bg-footer rounded-3xl p-1 mx-3">
+                                            <a href="https://wa.link/etkc3f">
+                                                <img
+                                                    src="{{ asset('front/icons/wa.png') }}"
+                                                    class="w-fit rounded"
+                                                    alt="social-media-wa"
                                                 >
                                             </a>
                                         </div>
@@ -545,7 +582,7 @@
 
                         </ul>
                     </div>
-                    <div class="row py-4">
+                    {{-- <div class="row py-4">
 
                         <p class="text-md font-bold text-gray-800 underline">
                             <a href="{{ URL('/dubai-new-projects') }}">{{ __('Contact') }}</a>
@@ -629,7 +666,7 @@
                             </li>
                         </ul>
 
-                    </div>
+                    </div> --}}
 
                 </div>
 
@@ -640,8 +677,8 @@
                     <div class="flex justify-left my-2">
                         <div>
                             <p class="text-base text-gray-700">
-                                © {{ now()->year }} ESNAAD. ALL RIGHTS RESERVED. 
-                                <a>| Terms & Conditions</a>
+                                ESNAAD © {{ now()->year }} All Rights Reserved <br>
+                                <a>Terms & Conditions</a>
                                 <a>| Privacy & Policy</a>
                             </p>
                             

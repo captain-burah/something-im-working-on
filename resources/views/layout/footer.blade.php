@@ -228,7 +228,7 @@
             <div class="container mx-auto px-2 lg:px-8">
 
                 <!-- Footer Links -->
-                <div class="mx-auto mt-4 max-w-full lg:mt-24 lg:max-w-full">
+                <div class="mx-auto mt-4 max-w-full lg:mt-0 lg:max-w-full">
 
                     <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 reverse">
 

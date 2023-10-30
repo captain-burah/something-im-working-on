@@ -97,8 +97,6 @@
             <div class="relative">
                 @yield('content')
             </div>
-
-            {{-- @include('layoutv2.appInquiryModal') --}}
             
             @include('layout.footer')
 

@@ -14,7 +14,7 @@
             overflow: visible;
         }
         .bg-hero {
-            background-image: url(/home/8.jpg)
+            background-image: url(/home/HOME2.webp)
         }
     </style>
 @endsection

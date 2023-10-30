@@ -32,7 +32,7 @@
                                     <div class="relative flex items-center space-x-4 justify-left">
                                         <a href="#" aria-label="property-link-mobile-view">
                                             <span class="block w-max font-semibold tracking-wide text-gray-700 text-sm sm:text-base">
-                                                New Projects
+                                                Project Name
                                             </span>
                                         </a>
                                     </div>

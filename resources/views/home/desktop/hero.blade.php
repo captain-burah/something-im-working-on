@@ -44,16 +44,11 @@
                                         {{ __('ABOUT') }}
                                     </x-nav-link2>
                                 </div>
+                                
 
                                 <div class="hidden space-x-8 sm:-my-px sm:flex mx-auto no-underline px-5">
                                     <x-nav-link2 href="#" :active="request()->routeIs('dashboard')">
-                                        {{ __('COMMUNITIES') }}
-                                    </x-nav-link2>
-                                </div>
-
-                                <div class="hidden space-x-8 sm:-my-px sm:flex mx-auto no-underline px-5">
-                                    <x-nav-link2 href="#" :active="request()->routeIs('dashboard')">
-                                        {{ __('DEVELOPMENTS') }}
+                                        {{ __('DEVELOPMENT') }}
                                     </x-nav-link2>
                                 </div>
 
@@ -67,7 +62,13 @@
 
                             <div class="flex items-center">
 
-                                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex text-center">
+                                <div class="hidden space-x-8 sm:-my-px sm:flex mx-auto no-underline px-5">
+                                    <x-nav-link2 href="#" :active="request()->routeIs('dashboard')">
+                                        {{ __('COMMUNITY') }}
+                                    </x-nav-link2>
+                                </div>
+
+                                {{-- <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex text-center">
                                     <x-nav-link2 href="#" :active="request()->routeIs('home')">
                                         {{ __('INVEST IN DUBAI') }}
                                     </x-nav-link2>
@@ -78,7 +79,7 @@
                                     <x-nav-link2 href="#" :active="request()->routeIs('home')">
                                         {{ __('MEDIA CENTER') }}
                                     </x-nav-link2>
-                                </div>
+                                </div> --}}
 
                                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex text-center">
                                     <x-nav-link2 href="{{ url('contact') }}" :active="request()->routeIs('home')">

@@ -85,30 +85,20 @@
 </style>
 @tablet
     <!-- Primary Navigation Menu -->
-    <div class=" container  mx-auto px-0">
+    <div class="sm:container  mx-auto px-0">
         <div class="flex justify-between h-15">
-
             <div class="flex items-center">
-
-                <!-- Navigation Links -->
-                <div class="hidden space-x-8 sm:flex mx-auto no-underline ">
+                <div class="hidden space-x-10 sm:flex mx-auto no-underline ">
                     <x-nav-link-tablet href="{{ url('about-esnaad') }}" :active="request()->routeIs('dashboard')">
                         {{ __('ABOUT') }}
                     </x-nav-link-tablet>
                 </div>
 
-                <div class="hidden space-x-8 sm:flex mx-auto no-underline ">
+                <div class="hidden space-x-10 sm:flex mx-auto no-underline ">
                     <x-nav-link-tablet href="#" :active="request()->routeIs('dashboard')">
-                        {{ __('COMMUNITIES') }}
+                        {{ __('DEVELOPMENT') }}
                     </x-nav-link-tablet>
                 </div>
-
-                <div class="hidden space-x-8 sm:flex mx-auto no-underline ">
-                    <x-nav-link-tablet href="#" :active="request()->routeIs('dashboard')">
-                        {{ __('DEVELOPMENTS') }}
-                    </x-nav-link-tablet>
-                </div>
-
             </div>
 
             <div class=" flex items-center ">
@@ -119,20 +109,14 @@
 
             <div class="flex items-center">
 
-                <div class="hidden space-x-8 sm:flex text-center">
-                    <x-nav-link-tablet href="{{ url('invest-in-dubai') }}" :active="request()->routeIs('home')">
-                        {{ __('INVEST IN DUBAI') }}
+                <div class="hidden space-x-10 sm:flex mx-auto no-underline ">
+                    <x-nav-link-tablet href="#" :active="request()->routeIs('dashboard')">
+                        {{ __('COMMUNITy') }}
                     </x-nav-link-tablet>
                 </div>
 
 
-                <div class="hidden space-x-8 sm:flex text-center">
-                    <x-nav-link-tablet href="{{ url('/media-center') }}" :active="request()->routeIs('home')">
-                        {{ __('MEDIA CENTER') }}
-                    </x-nav-link-tablet>
-                </div>
-
-                <div class="hidden space-x-8 sm:flex text-center">
+                <div class="hidden space-x-10 sm:flex text-center">
                     <x-nav-link-tablet href="{{ url('contact') }}" :active="request()->routeIs('home')">
                         {{ __('CONTACT') }}
                     </x-nav-link-tablet>

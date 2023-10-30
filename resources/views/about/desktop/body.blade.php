@@ -20,10 +20,10 @@
 
 
 <div class="bg-footer_form w-full p-6">
-    <div class="sm:container sm:mx-auto mx-0 px-0 sm:px-4 my-20 sm:my-4 mx-auto sm:h-[25vh] xl:h-[50vh]">
+    <div class="sm:container sm:mx-auto mx-0 px-0 sm:px-4 my-20 sm:my-4 mx-auto xl:h-[50vh]">
         <div class="row-span-2 grid sm:grid-cols-2 gap-4 h-[100%] w-[100%]">
             <div>
-                <img src="{{ asset('home/6.jpeg') }}" height="100%" width="100%" alt="image" class="h-full w-full object-cover md:h-full md:w-full hover:shadow-lg hover:shadow-gray/0" />
+                <img src="{{ asset('home/3.jpg') }}" height="100%" width="100%" alt="image" class="h-full w-full object-cover md:h-full md:w-full hover:shadow-lg hover:shadow-gray/0" />
                 
             </div>
             <div class="p-8">

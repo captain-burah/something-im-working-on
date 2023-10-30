@@ -48,7 +48,7 @@
 
 <header class="xl:mt-[2 0vh]">
     
-    <div class="w-full bg-cover bg-center" style="height: 100vh; background-image: url({{ asset('home/3.jpg') }}), url('{{ URL::asset('assets/img/img-error2.webp')}}');">
+    <div class="w-full bg-cover bg-center" style="height: 100vh; background-image: url({{ asset('home/About Us 2.webp') }}), url('{{ URL::asset('assets/img/img-error2.webp')}}');">
         <div class="flex items-center justify-center h-full w-full bg-gray-900 bg-opacity-50">
             <div class="md:container mx-auto">
                     

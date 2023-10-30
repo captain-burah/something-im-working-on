@@ -84,6 +84,10 @@
 
 </style>
 
+
+
+
+@desktop
 <div class="fixed top-0 w-full bg-white w-full mx-auto px-8 site-content shadow " style="display:none; z-index: 10 !important;">
     <div class="container px-8 mx-auto">
         <div class="flex justify-between h-20">
@@ -104,10 +108,10 @@
             </div>
 
             <div class=" flex items-center ">
-                <div class="shrink-0 flex items-center hidden md:hidden lg:block text-2xl font-thin">
+                <div class="shrink-0 flex items-center  text-2xl font-thin">
                     @tablet
                         <a href="{{ url('/') }}" aria-label="home-route">
-                            <img style="height: 30px !important;" src="{{ asset('logo-dark.png') }}" alt="esnaad-logo-navbar">
+                            <img style="height: 50px !important;" src="{{ asset('logo-dark.png') }}" alt="esnaad-logo-navbar">
                         </a>
                     @endtablet
 
@@ -159,7 +163,72 @@
         </div>
     </div>
 </div>
+@enddesktop
 
+@tablet
+<div class="fixed top-0 w-full bg-white w-full mx-auto px-8 site-content shadow " style="display:none; z-index: 10 !important;">
+    <div class="container px-8 mx-auto">
+        <div class="flex justify-between h-20">
+            <div class="flex items-center">
+
+                <div class="hidden space-x-8 sm:-my-px sm:flex mx-auto no-underline pr-4">
+                    <x-nav-link href="{{ url('about-esnaad') }}" aria-label="navbar-route">
+                        {{ __('ABOUT') }}
+                    </x-nav-link>
+                </div>            
+
+                <div class="hidden space-x-8 sm:-my-px sm:flex mx-auto no-underline px-4">
+                    <x-nav-link href="{{ url('developments/Feil-Cummerata') }}" aria-label="navbar-route">
+                        {{ __('DEVELOPMENT') }}
+                    </x-nav-link>
+                </div>
+
+            </div>
+
+            <div class=" flex items-center ">
+                <div class="shrink-0 flex items-center  text-2xl font-thin">
+                    @tablet
+                        <a href="{{ url('/') }}" aria-label="home-route">
+                            <img style="height: 50px !important;" src="{{ asset('logo-dark.png') }}" alt="esnaad-logo-navbar">
+                        </a>
+                    @endtablet
+
+                    @desktop
+                        <a href="{{ url('/') }}" aria-label="home-route">
+                            <img style="height: 70px !important;" src="{{ asset('logo-dark.png') }}" alt="esnaad-logo-navbar">
+                        </a>
+                    @enddesktop
+                </div>
+            </div>
+
+            <div class="flex items-center">
+
+                <div class="hidden space-x-8 sm:-my-px sm:flex mx-auto no-underline px-4">
+                    <x-nav-link href="{{ url('communities/fdsad') }}"  aria-label="navbar-route">
+                        {{ __('COMMUNITY') }}
+                    </x-nav-link>
+                </div>
+
+                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex text-center pl-4">
+                    <x-nav-link href="{{ url('contact') }}"   aria-label="navbar-route">
+                        {{ __('CONTACT') }}
+                    </x-nav-link>
+                </div>
+            </div>
+
+            <!-- Hamburger -->
+            <div class="-mr-2 flex items-center sm:hidden">
+                <button @click="open = ! open" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-700 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-700 transition duration-150 ease-in-out">
+                    <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                        <path :class="{'hidden': open, 'inline-flex': ! open }" class="inline-flex" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        <path :class="{'hidden': ! open, 'inline-flex': open }" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+@endtablet
 <script>
     window.addEventListener("scroll", function(event) {
 

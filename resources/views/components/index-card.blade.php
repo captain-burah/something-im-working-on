@@ -12,11 +12,11 @@
                         onerror="this.onerror=null;this.src='{{ URL::asset('assets/img/img-error2 (1).jpg')}}';"
                     >
                 </div>
-                <div class="absolute bottom-0 left-0 m-3 z-10">
-                    <footer class="text-xl text-white font-semibold z-10 ">{{ $base }}</footer>
+                <div class="absolute bg-gradient-to-t from-[rgb(0,0,0,.6)] bottom-0 left-0 p-3 z-9 w-full">
+                    <footer class="text-xl text-white font-semibold z-9 ">{{ $base }}</footer>
                 </div>
             </div>
-            <div class="absolute h-full w-full bg-black/20 flex items-center justify-center -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
+            <div class="absolute h-full w-full bg-black/50 flex items-center justify-center -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
                 <span class="text-white py-2 px-4 text-justify text-md font-base">
                     {{$description}}
                 </span>

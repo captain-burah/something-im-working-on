@@ -12,7 +12,7 @@
     @endif
 
     @tablet
-        <div class="block py-24 sm:py-12  text-gray-50 bg-footer" id="footer" style="visibility:hidden">
+        <div class="block py-24 sm:py-8  text-gray-50 bg-footer" id="footer" style="visibility:hidden">
             <div class="container mx-auto px-2 lg:px-8">
 
                 <!-- Footer Links -->
@@ -113,19 +113,22 @@
 
                             <ul class="list-none footer-li" style="padding-left:    0px !important;">
                                 <li class="text-md text-gray-700 my-2">
-                                    <a href="#">About ESNAAD</a>
+                                    <a href="{{ url('about-esnaad') }}">About ESNAAD</a>
                                 </li>
                                 <li class="text-md text-gray-700 my-2">
-                                    <a href="#">Our Communities</a>
+                                    <a href="{{ url('invest-in-dubai') }}">Invest In Dubai</a>
                                 </li>
                                 <li class="text-md text-gray-700 my-2">
-                                    <a href="#">Our Developments</a>
+                                    <a href="{{ url('communities/') }}">Our Communities</a>
                                 </li>
                                 <li class="text-md text-gray-700 my-2">
-                                    <a href="#">Media Center</a>
+                                    <a href="{{ url('developments/') }}">Our Developments</a>
                                 </li>
                                 <li class="text-md text-gray-700 my-2">
-                                    <a href="#">Contact Us</a>
+                                    <a href="{{ url('media-center') }}">Media Center</a>
+                                </li>
+                                <li class="text-md text-gray-700 my-2">
+                                    <a href="{{ url('contact') }}">Contact Us</a>
                                 </li>
 
                             </ul>
@@ -221,7 +224,7 @@
 
                 <div class="col-span-2 mx-auto">
 
-                    <div class="flex-grow border-t border-gray-400 mt-10"></div>
+                    <div class="flex-grow border-t border-gray-400 mt-4"></div>
 
                     <div class="flex justify-left my-2">
                         <div>
@@ -237,7 +240,7 @@
     @endtablet
 
     @desktop
-        <div class="block py-24 sm:py-12  text-gray-50 bg-footer" id="footer" style="visibility:hidden">
+        <div class="block py-12 sm:py-8  text-gray-50 bg-footer" id="footer" style="visibility:hidden">
             <div class="container mx-auto px-2 lg:px-8">
 
                 <!-- Footer Links -->
@@ -337,19 +340,22 @@
 
                             <ul class="list-none footer-li" style="padding-left:    0px !important;">
                                 <li class="text-md text-gray-700 my-2">
-                                    <a href="#">About ESNAAD</a>
+                                    <a href="{{ url('about-esnaad') }}">About ESNAAD</a>
                                 </li>
                                 <li class="text-md text-gray-700 my-2">
-                                    <a href="#">Communities</a>
+                                    <a href="{{ url('invest-in-dubai') }}">Invest In Dubai</a>
                                 </li>
                                 <li class="text-md text-gray-700 my-2">
-                                    <a href="#">Developments</a>
+                                    <a href="{{ url('communities/') }}">Our Communities</a>
                                 </li>
                                 <li class="text-md text-gray-700 my-2">
-                                    <a href="#">Media Center</a>
+                                    <a href="{{ url('developments/') }}">Our Developments</a>
                                 </li>
                                 <li class="text-md text-gray-700 my-2">
-                                    <a href="#">Contact Us</a>
+                                    <a href="{{ url('media-center') }}">Media Center</a>
+                                </li>
+                                <li class="text-md text-gray-700 my-2">
+                                    <a href="{{ url('contact') }}">Contact Us</a>
                                 </li>
 
                             </ul>
@@ -391,48 +397,52 @@
                                 </li>
                                 <li class="text-md text-gray-700 my-2">
                                     <div class="inline-flex items-center">
-                                        <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
-                                            width="13.000000pt" height="13.000000pt" viewBox="0 0 512.000000 512.000000"
-                                            preserveAspectRatio="xMidYMid meet">
+                                        <a href="tel:{{env('COMPANY_PHONE')}}" class="inline-flex items-center"></a>
+                                            <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+                                                width="13.000000pt" height="13.000000pt" viewBox="0 0 512.000000 512.000000"
+                                                preserveAspectRatio="xMidYMid meet">
 
-                                            <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
-                                            fill="#000000" stroke="none">
-                                            <path d="M894 5105 c-124 -27 -147 -45 -470 -369 -282 -281 -304 -306 -337
-                                            -376 -55 -116 -68 -178 -74 -342 -6 -165 7 -274 57 -464 301 -1143 1647 -2647
-                                            2935 -3279 382 -187 671 -269 955 -270 174 0 262 18 383 77 78 38 98 57 379
-                                            337 314 314 332 337 372 470 21 70 21 202 0 272 -36 120 -51 138 -448 537
-                                            -209 211 -408 403 -441 427 -198 141 -453 121 -619 -48 -50 -51 -70 -81 -104
-                                            -162 -24 -54 -55 -115 -70 -135 -96 -130 -280 -212 -437 -196 -234 25 -583
-                                            237 -879 533 -358 358 -569 770 -518 1010 24 112 103 229 196 291 22 16 70 41
-                                            106 56 104 44 129 59 178 101 166 145 202 417 81 610 -35 57 -725 754 -809
-                                            819 -67 51 -155 91 -234 105 -75 14 -125 13 -202 -4z"/>
-                                            </g>
-                                        </svg>
-                                        &nbsp;
-                                        +97145807142
+                                                <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
+                                                fill="#000000" stroke="none">
+                                                <path d="M894 5105 c-124 -27 -147 -45 -470 -369 -282 -281 -304 -306 -337
+                                                -376 -55 -116 -68 -178 -74 -342 -6 -165 7 -274 57 -464 301 -1143 1647 -2647
+                                                2935 -3279 382 -187 671 -269 955 -270 174 0 262 18 383 77 78 38 98 57 379
+                                                337 314 314 332 337 372 470 21 70 21 202 0 272 -36 120 -51 138 -448 537
+                                                -209 211 -408 403 -441 427 -198 141 -453 121 -619 -48 -50 -51 -70 -81 -104
+                                                -162 -24 -54 -55 -115 -70 -135 -96 -130 -280 -212 -437 -196 -234 25 -583
+                                                237 -879 533 -358 358 -569 770 -518 1010 24 112 103 229 196 291 22 16 70 41
+                                                106 56 104 44 129 59 178 101 166 145 202 417 81 610 -35 57 -725 754 -809
+                                                819 -67 51 -155 91 -234 105 -75 14 -125 13 -202 -4z"/>
+                                                </g>
+                                            </svg>
+                                            &nbsp;
+                                            +971 4 580 7142
+                                        </a>
                                     </div>
                                 </li>
+                                <?php //EMAIL IS BELOW ENCODED OR IN OBFUSCATION ?>
                                 <li class="text-md text-gray-700 my-2">
                                     <div class="inline-flex items-center" aria-label="email-us">
-                                        <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
-                                            width="15.000000pt" height="15.000000pt" viewBox="0 0 512.000000 512.000000"
-                                            preserveAspectRatio="xMidYMid meet">
+                                        <a href="mailto:{{env('COMPANY_EMAIL')}}" class="inline-flex items-center">
+                                            <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+                                                width="15.000000pt" height="15.000000pt" viewBox="0 0 512.000000 512.000000"
+                                                preserveAspectRatio="xMidYMid meet">
 
-                                            <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
-                                            fill="#000000" stroke="none">
-                                            <path d="M366 4464 c-255 -62 -415 -322 -351 -569 20 -75 57 -143 107 -195 45
-                                            -46 2175 -1471 2253 -1506 119 -54 260 -52 382 5 95 45 2182 1442 2235 1496
-                                            249 254 113 686 -243 770 -94 22 -4291 21 -4383 -1z"/>
-                                            <path d="M0 2236 c0 -810 3 -1181 11 -1218 37 -176 179 -320 360 -363 94 -22
-                                            4267 -22 4372 0 182 38 329 184 366 363 13 61 16 2386 3 2380 -4 -1 -487 -323
-                                            -1074 -715 -587 -392 -1099 -729 -1139 -748 -110 -56 -204 -77 -339 -77 -135
-                                            0 -229 21 -339 77 -40 19 -552 356 -1139 748 -587 392 -1070 714 -1074 715 -5
-                                            2 -8 -521 -8 -1162z"/>
-                                            </g>
-                                        </svg>
-                                        &nbsp;
-                                        <?php //EMAIL IS BELOW ENCODED OR IN OBFUSCATION ?>
-                                        {{env('COMPANY_EMAIL')}}
+                                                <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
+                                                fill="#000000" stroke="none">
+                                                <path d="M366 4464 c-255 -62 -415 -322 -351 -569 20 -75 57 -143 107 -195 45
+                                                -46 2175 -1471 2253 -1506 119 -54 260 -52 382 5 95 45 2182 1442 2235 1496
+                                                249 254 113 686 -243 770 -94 22 -4291 21 -4383 -1z"/>
+                                                <path d="M0 2236 c0 -810 3 -1181 11 -1218 37 -176 179 -320 360 -363 94 -22
+                                                4267 -22 4372 0 182 38 329 184 366 363 13 61 16 2386 3 2380 -4 -1 -487 -323
+                                                -1074 -715 -587 -392 -1099 -729 -1139 -748 -110 -56 -204 -77 -339 -77 -135
+                                                0 -229 21 -339 77 -40 19 -552 356 -1139 748 -587 392 -1070 714 -1074 715 -5
+                                                2 -8 -521 -8 -1162z"/>
+                                                </g>
+                                            </svg>
+                                            &nbsp;
+                                            &#105;&#110;&#102;&#111;&#064;&#101;&#115;&#110;&#097;&#097;&#100;&#046;&#099;&#111;&#109;
+                                        </a>
                                     </div>
                                 </li>
                             </ul>
@@ -443,9 +453,9 @@
 
                 </div>
 
-                <div class="col-span-2 mx-auto my-16">
+                <div class="col-span-2 mx-auto">
 
-                    <div class="flex-grow border-t border-gray-400 mt-10"></div>
+                    <div class="flex-grow border-t border-gray-400 mt-4"></div>
 
                     <div class="flex justify-left my-2">
                         <div>
@@ -564,20 +574,23 @@
                         </p>
 
                         <ul class="list-none footer-li capitalize" style="padding-left:    0px !important;">
-                            <li class="text-md text-gray-700 my-4">
-                                <a href="#">About ESNAAD</a>
+                            <li class="text-md text-gray-700 my-2">
+                                <a href="{{ url('about-esnaad') }}">About ESNAAD</a>
                             </li>
-                            <li class="text-md text-gray-700 my-4">
-                                <a href="#">Communities</a>
+                            <li class="text-md text-gray-700 my-2">
+                                <a href="{{ url('invest-in-dubai') }}">Invest In Dubai</a>
                             </li>
-                            <li class="text-md text-gray-700 my-4">
-                                <a href="#">Developments</a>
+                            <li class="text-md text-gray-700 my-2">
+                                <a href="{{ url('communities/') }}">Our Communities</a>
                             </li>
-                            <li class="text-md text-gray-700 my-4">
-                                <a href="#">Media Center</a>
+                            <li class="text-md text-gray-700 my-2">
+                                <a href="{{ url('developments/') }}">Our Developments</a>
                             </li>
-                            <li class="text-md text-gray-700 my-4">
-                                <a href="#">Contact Us</a>
+                            <li class="text-md text-gray-700 my-2">
+                                <a href="{{ url('media-center') }}">Media Center</a>
+                            </li>
+                            <li class="text-md text-gray-700 my-2">
+                                <a href="{{ url('contact') }}">Contact Us</a>
                             </li>
 
                         </ul>

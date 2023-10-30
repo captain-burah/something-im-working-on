@@ -6,25 +6,25 @@
         <x-index-card
             description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rhoncus augue ut ligula accumsan"
             base="Quality"
-            url="home/images/"
+            url="{{ asset('home/amenities/Quality5.webp') }}"
         />
 
         <x-index-card
             description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rhoncus augue ut ligula accumsan"
             base="EXCELENCE"
-            url="home/images/"
+            url="{{ asset('home/amenities/Ecelence.webp') }}"
         />
 
         <x-index-card
             description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rhoncus augue ut ligula accumsan"
             base="INTERIOR"
-            url="home/images/"
+            url="{{ asset('home/amenities/Interior 4.webp') }}"
         />
 
         <x-index-card
             description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rhoncus augue ut ligula accumsan"
             base="AMENITIES"
-            url="home/images/"
+            url="{{ asset('home/amenities/Amenities 2.webp') }}"
         />
     </div>
 

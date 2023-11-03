@@ -175,7 +175,7 @@
 
                     @desktop
                         <a href="{{ url('/') }}" aria-label="home-route">
-                            <img style="height: 70px !important;" src="{{ asset('logo-dark.png') }}" alt="esnaad-logo-navbar">
+                            <img style="height: 60px !important;" src="{{ asset('logo-dark.png') }}" alt="esnaad-logo-navbar">
                         </a>
                     @enddesktop
                 </div>

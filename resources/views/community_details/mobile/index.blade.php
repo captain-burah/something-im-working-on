@@ -22,10 +22,10 @@
 
 @section('content')
     @mobile
-        <section class="my-3">
+        <section class="my-0">
              @include('community_details.mobile.header')
         </section>
-
+{{-- 
         <section class="my-3">
             @include('community_details.mobile.body')
         </section>
@@ -40,7 +40,7 @@
 
         <section class="my-3" id="project_detail_map_section">
             @include('community_details.mobile.map')
-        </section>
+        </section> --}}
 
     @endmobile
 

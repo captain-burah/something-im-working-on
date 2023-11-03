@@ -45,8 +45,16 @@
 @endsection
 
 <header>
-    <div class="w-full bg-cover bg-center" style="height:24rem; background-image: url('{{URL::asset('assets/img/img-error2.webp')}}'), url('{{ URL::asset('assets/img/img-error2.webp')}}');">
-        <div class="flex items-center justify-center h-full w-full bg-gray-900 bg-opacity-10">
+    <div class="w-full bg-cover bg-center" style="height:24rem; background-image: url('home/1.jpg'), url('{{ URL::asset('assets/img/img-error2.webp')}}');">
+        <div class="flex items-center justify-center h-full w-full bg-gray-900 bg-opacity-50">
+            <div class="container mx-0 px-0 mx-auto text-white">
+                <h1 class="text-4xl font-semibold px-2">
+                    Coming Soon
+                </h1>
+                <h2 class="text-2xl font-light mt-2 px-2">
+                    With Diversified Communities
+                </h2>
+            </div>
         </div>
     </div>
 </header>

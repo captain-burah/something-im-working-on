@@ -78,14 +78,14 @@
                 @if($route_name == 'esnaad.home')
                     @include('layout.navigationHome')
                 @else
-                    <nav x-data="{ open: false }" class="absolute bg-white border-b border-gray-100 sm:block sticky top-0 z-50 shadow " id="sample" style="position: fixed; width: 100vw !important" >
+                    <nav x-data="{ open: false }" class="absolute bg-white p-0 m-0 border-b sm:block sticky top-0 z-50 shadow " id="sample" style="position: fixed; width: 100vw !important" >
                         @include('layout.navigation')
                     </nav>
                 @endif
             @enddesktop
 
             @tablet
-                <nav x-data="{ open: false }" class="bg-white border-b border-gray-100 sm:block sticky top-0 z-50 shadow " >
+                <nav x-data="{ open: false }" class="bg-white border-b  p-0 m-0sm:block sticky top-0 z-50 shadow " >
                     @include('layout.navigationHome')
                 </nav>
             @endtablet

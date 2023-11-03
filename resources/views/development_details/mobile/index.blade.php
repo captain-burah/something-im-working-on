@@ -23,7 +23,7 @@
      <section class="my-0">
         @include('development_details.mobile.header')
     </section>
-
+{{-- 
     <section class="my-2">
         @include('development_details.mobile.bodyOne')
     </section>
@@ -39,7 +39,7 @@
 
     <section class="my-0" id="project_detail_map_section">
         @include('development_details.mobile.map')
-    </section>
+    </section> --}}
 @endsection
 
 

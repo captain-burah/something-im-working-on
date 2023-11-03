@@ -88,7 +88,7 @@
 
 
 @desktop
-<div class="fixed top-0 w-full bg-white w-full mx-auto px-8 site-content shadow " style="display:none; z-index: 10 !important;">
+<div class="fixed top-0 w-full bg-white w-full m    x-auto px-8 site-content shadow " style="display:none; z-index: 10 !important;">
     <div class="container px-8 mx-auto">
         <div class="flex justify-between h-20">
             <div class="flex items-center">

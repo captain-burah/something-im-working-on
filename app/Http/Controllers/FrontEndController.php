@@ -140,13 +140,13 @@ class FrontEndController extends Controller
     }
 
 
-    public function communities() {
-        $client = new \GuzzleHttp\Client();
-        $response = $client->get('https://jsonplaceholder.typicode.com/posts');
-        $this->data['response'] = $response;
+    // public function communities() {
+    //     $client = new \GuzzleHttp\Client();
+    //     $response = $client->get('https://jsonplaceholder.typicode.com/posts');
+    //     $this->data['response'] = $response;
 
-        return view('communities', $this->data);
-    }
+    //     return view('communities', $this->data);
+    // }
 
 
     public function communities_details($slug)
@@ -169,6 +169,20 @@ class FrontEndController extends Controller
         // $this->data['long'] = $jsonData[0]['longitude'];
         // $this->data['lat'] = $jsonData[0]['latitude'];
 
+        $this->data['long'] =  55.156860;
+        $this->data['lat'] = 25.101131;
+
+        return view('communityDetails', $this->data);
+    }
+
+
+    public function developments() {
+        $this->data['long'] =  55.156860;
+        $this->data['lat'] = 25.101131;
+        return view('developmentDetails', $this->data);
+    }
+
+    public function communities() {
         $this->data['long'] =  55.156860;
         $this->data['lat'] = 25.101131;
 

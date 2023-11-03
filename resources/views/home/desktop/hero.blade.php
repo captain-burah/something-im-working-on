@@ -111,7 +111,7 @@
     <div class="relative isolate  h-full flex flex-1 flex-col justify-between">
         <div></div>
     
-        <video playsinline autoplay muted loop poster="/home/HOME2.webp">
+        <video playsinline autoplay muted loop poster="/developments/6.jpg">
             {{-- <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4"> --}}
             <source src="{{ asset('home/HERO.mp4') }}" type="video/mp4">
             Your browser does not support the video tag.
@@ -133,7 +133,7 @@
                             
 
                             <div class="hidden space-x-8 sm:-my-px sm:flex mx-auto no-underline px-8">
-                                <x-nav-link2 href="#" :active="request()->routeIs('dashboard')">
+                                <x-nav-link2 href="{{ url('our-developments') }}" >
                                     {{ __('DEVELOPMENT') }}
                                 </x-nav-link2>
                             </div>
@@ -143,7 +143,7 @@
                         <div class=" flex items-center ">
                             <div class="shrink-0 flex items-center text-2xl font-thin">
                                 @desktop
-                                    <img style="height: 100px !important;" src="{{ asset('logo-light.png') }}" alt="esnaad-logo-navbar">
+                                    <img style="height: 70px !important;" src="{{ asset('logo-light.png') }}" alt="esnaad-logo-navbar">
                                 @enddesktop
                                 @tablet
                                     <img style="height: 50px !important;" src="{{ asset('logo-light.png') }}" alt="esnaad-logo-navbar">
@@ -154,7 +154,7 @@
                         <div class="flex items-center">
 
                             <div class="hidden space-x-8 sm:-my-px sm:flex mx-auto no-underline px-8">
-                                <x-nav-link2 href="#" :active="request()->routeIs('dashboard')">
+                                <x-nav-link2 href="{{ url('our-communities') }}" :active="request()->routeIs('dashboard')">
                                     {{ __('COMMUNITY') }}
                                 </x-nav-link2>
                             </div>

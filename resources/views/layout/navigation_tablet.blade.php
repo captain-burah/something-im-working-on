@@ -95,7 +95,7 @@
                 </div>
 
                 <div class="hidden space-x-10 sm:flex mx-auto no-underline ">
-                    <x-nav-link-tablet href="#" :active="request()->routeIs('dashboard')">
+                    <x-nav-link-tablet href="{{ url('our-developments') }}" :active="request()->routeIs('dashboard')">
                         {{ __('DEVELOPMENT') }}
                     </x-nav-link-tablet>
                 </div>
@@ -110,8 +110,8 @@
             <div class="flex items-center">
 
                 <div class="hidden space-x-10 sm:flex mx-auto no-underline ">
-                    <x-nav-link-tablet href="#" :active="request()->routeIs('dashboard')">
-                        {{ __('COMMUNITy') }}
+                    <x-nav-link-tablet href="{{ url('our-communities') }}" :active="request()->routeIs('dashboard')">
+                        {{ __('COMMUNITY') }}
                     </x-nav-link-tablet>
                 </div>
 

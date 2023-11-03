@@ -43,8 +43,8 @@
             <div class="w-full flex-grow bg-white py-2 px-4 mt-1 rounded shadow-lg">
                 <ul class="flex flex-col space-y-2">
                     <li ><a href="{{ url('about-esnaad') }}" class="block px-2 py-1 text-gray-800 rounded hover:bg-gray-200"">About</a></li>
-                    <li ><a href="#" class="block px-2 py-1 text-gray-800 rounded hover:bg-gray-200">Communities</a></li>
-                    <li ><a href="#" class="block px-2 py-1 text-gray-800 rounded hover:bg-gray-200">Developments</a></li>
+                    <li ><a href="{{ url('our-communities') }}" class="block px-2 py-1 text-gray-800 rounded hover:bg-gray-200">Communities</a></li>
+                    <li ><a href="{{ url('our-developments') }}" class="block px-2 py-1 text-gray-800 rounded hover:bg-gray-200">Developments</a></li>
                     <li ><a href="{{ url('invest-in-dubai') }}" class="block px-2 py-1 text-gray-800 rounded hover:bg-gray-200">Invest in Dubai</a></li>
                     <li ><a href="{{ url('/media-center') }}" class="block px-2 py-1 text-gray-800 rounded hover:bg-gray-200">Media Center</a></li>
                     <li ><a href="{{ url('contact') }}" class="block px-2 py-1 text-gray-800 rounded hover:bg-gray-200">Contact</a></li>

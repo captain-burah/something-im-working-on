@@ -99,7 +99,7 @@
                 
 
                 <div class="hidden space-x-8 sm:-my-px sm:flex mx-auto no-underline px-8">
-                    <x-nav-link href="{{ url('developments/Feil-Cummerata') }}" aria-label="navbar-route">
+                    <x-nav-link href="{{ url('our-developments') }}" aria-label="navbar-route">
                         {{ __('DEVELOPMENTS') }}
                     </x-nav-link>
                 </div>
@@ -184,7 +184,7 @@
             <div class="flex items-center">
 
                 <div class="hidden space-x-8 sm:-my-px sm:flex mx-auto no-underline px-8">
-                    <x-nav-link href="{{ url('communities/fdsad') }}"  aria-label="navbar-route">
+                    <x-nav-link href="{{ url('our-communities') }}"  aria-label="navbar-route">
                         {{ __('COMMUNITY') }}
                     </x-nav-link>
                 </div>

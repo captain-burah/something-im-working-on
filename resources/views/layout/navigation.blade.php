@@ -228,9 +228,4 @@
     </div>
 @endnotmobile
 
-@mobile
-    @include('layout.mobileNavigation')
-@endmobile
-
-
 

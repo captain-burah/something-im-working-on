@@ -27,9 +27,9 @@ Route::get('/communities/{slug}', [FrontEndController::class, 'communities_detai
 
 Route::get('/developments/{slug}', [FrontEndController::class, 'developments_details'])->name('esnaad.developments');
 
-Route::get('/our-developments', [FrontEndController::class, 'developments'])->name('esnaad.developments.comingsoon');
+Route::get('/projects', [FrontEndController::class, 'developments'])->name('esnaad.developments.comingsoon');
 
-Route::get('/our-communities', [FrontEndController::class, 'communities'])->name('esnaad.communities.comingsoon');
+Route::get('/communities', [FrontEndController::class, 'communities'])->name('esnaad.communities.comingsoon');
 
 Route::get('/media-center', [FrontEndController::class, 'media_center'])->name('esnaad.media_center');
 

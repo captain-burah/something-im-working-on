@@ -107,7 +107,7 @@
 </style>
 
 
-<div class="video-wrapper bg-hero bg-cover bg-no-repeat bg-top object-cover overflow-hidden max-w-full h-[100vh]">
+<div class="video-wrapper bg-hero bg-cover bg-no-repeat bg-top object-cover overflow-hidden max-w-full h-[70vh] ">
     <div class="relative isolate  h-full flex flex-1 flex-col justify-between">
         <div></div>
     
@@ -118,7 +118,7 @@
 
         </video>
 
-        @notmobile
+        {{-- @notmobile
             <nav x-data="{ open: false }" class="bg-gradient-to-t from-[rgb(0,0,0,.5)] hidden sm:block  " style="z-index: 100 !important;">
                 <div class=" container mx-auto px-8">
                     <div class="flex justify-between h-30">
@@ -169,7 +169,7 @@
                     </div>
                 </div>
             </nav>
-        @endnotmobile
+        @endnotmobile --}}
 
     </div>
 </div>

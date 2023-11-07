@@ -91,16 +91,22 @@
 
                 <!-- Navigation Links -->
                 <div class="hidden space-x-8 sm:-my-px sm:flex mx-auto no-underline pr-8">
-                    <x-nav-link href="{{ url('about-esnaad') }}" aria-label="navbar-route">
-                        {{ __('ABOUT') }}
+                    <x-nav-link href="{{ url('about-us') }}" aria-label="navbar-route">
+                        {{ __('ABOUT US') }}
                     </x-nav-link>
                 </div>
 
                 
 
                 <div class="hidden space-x-8 sm:-my-px sm:flex mx-auto no-underline px-8">
-                    <x-nav-link href="{{ url('our-developments') }}" aria-label="navbar-route">
-                        {{ __('DEVELOPMENTS') }}
+                    <x-nav-link href="{{ url('projects') }}" aria-label="navbar-route">
+                        {{ __('PROJECTS') }}
+                    </x-nav-link>
+                </div>
+
+                <div class="hidden space-x-8 sm:-my-px sm:flex mx-auto no-underline px-8">
+                    <x-nav-link href="{{ url('communities') }}" aria-label="navbar-route">
+                        {{ __('COMMUNITIES') }}
                     </x-nav-link>
                 </div>
 
@@ -184,8 +190,8 @@
             <div class="flex items-center">
 
                 <div class="hidden space-x-8 sm:-my-px sm:flex mx-auto no-underline px-8">
-                    <x-nav-link href="{{ url('our-communities') }}"  aria-label="navbar-route">
-                        {{ __('COMMUNITY') }}
+                    <x-nav-link href="{{ url('constructions') }}"  aria-label="navbar-route">
+                        {{ __('CONSTRUCTIONS') }}
                     </x-nav-link>
                 </div>
 
@@ -193,18 +199,18 @@
                     <x-nav-link href="{{ url('invest-in-dubai') }}"  aria-label="navbar-route">
                         {{ __('INVEST IN DUBAI') }}
                     </x-nav-link>
-                </div>
+                </div>--}}
 
 
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex text-center">
-                    <x-nav-link href="{{ url('/media-center') }}"  aria-label="navbar-route">
-                        {{ __('MEDIA CENTER') }}
+                    <x-nav-link href="{{ url('/news') }}"  aria-label="navbar-route">
+                        {{ __('NEWS') }}
                     </x-nav-link>
-                </div> --}}
+                </div> 
 
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex text-center pl-8">
                     <x-nav-link href="{{ url('contact') }}"   aria-label="navbar-route">
-                        {{ __('CONTACT') }}
+                        {{ __('CONTACT US') }}
                     </x-nav-link>
                 </div>
             </div>

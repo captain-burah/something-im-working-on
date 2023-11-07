@@ -74,21 +74,19 @@
     <body class="font-body bg-white" style="background-color: #fff !important;">
         <div class="min-h-screen ">
 
-            @desktop
-                @if($route_name == 'esnaad.home')
+            @notmobile
+                {{-- @if($route_name == 'esnaad.home')
                     @include('layout.navigationHome')
                 @else
                     <nav x-data="{ open: false }" class="absolute bg-white p-0 m-0 border-b sm:block sticky top-0 z-50 shadow " id="sample" style="position: fixed; width: 100vw !important" >
                         @include('layout.navigation')
                     </nav>
-                @endif
-            @enddesktop
-
-            @tablet
-                <nav x-data="{ open: false }" class="bg-white border-b  p-0 m-0sm:block sticky top-0 z-50 shadow " >
-                    @include('layout.navigationHome')
+                @endif --}}
+                
+                <nav x-data="{ open: false }" class="bg-white p-0 m-0 z-50 shadow " id="sample" style="position: fixed; width: 100vw !important" >
+                    @include('layout.navigation')
                 </nav>
-            @endtablet
+            @endnotmobile
 
             @mobile
                 @include('layout.mobileNavigation2')

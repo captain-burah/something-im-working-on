@@ -16,12 +16,18 @@
                     <footer class="text-xl text-white font-semibold z-9 ">{{ $base }}</footer>
                 </div>
             </div>
-            <div class="absolute h-full w-full bg-black/50 flex items-center justify-center -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
+            
+            {{-- <div class="absolute h-full w-full bg-black/50 flex items-center justify-center -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
                 <span class="text-white py-2 px-4 text-justify text-md font-base">
                     {{$description}}
                 </span>
-            </div>
+            </div> --}}
         </div>
+        <div class=" h-full w-full flex items-center justify-center">
+                <span class="my-4 px-0 text-justify text-md font-base leading-8">
+                    {{$description}}
+                </span>
+            </div>
     </div>
 
 </div>

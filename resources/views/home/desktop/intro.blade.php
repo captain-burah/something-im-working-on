@@ -4,7 +4,7 @@
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
         <div class="mx-auto max-w-2xl lg:mx-auto text-center">
 
-            <p class=" text-base leading-5 text-gray-600 text-center">
+            <p class=" text-base leading-5 text-base     text-center leading-8">
                 {{ __('
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rhoncus augue ut ligula
                     accumsan dictum. Phasellus euismod in lectus nec cursus. Curabitur in sem et elit dignissim

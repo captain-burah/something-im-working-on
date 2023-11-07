@@ -1,30 +1,27 @@
 <div class="sm:container sm:mx-auto mx-0 px-0 sm:px-4 my-20 sm:my-4 mx-auto">
 
-    <div class="grid md:grid-cols-4 gap-3 mb-5 mx-auto" >
+    <div class="grid md:grid-cols-3 gap-3 mb-5 mx-auto" >
 
         <?php //LOAD COMPONENT INDEX CARD ?>
         <x-index-card
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rhoncus augue ut ligula accumsan"
-            base="Quality"
-            url="{{ asset('home/amenities/Quality5.webp') }}"
-        />
-
-        <x-index-card
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rhoncus augue ut ligula accumsan"
-            base="EXCELENCE"
+            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rhoncus augue ut ligula accumsan.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rhoncus augue ut ligula accumsan."
+            base="VISION"
             url="{{ asset('home/amenities/Ecelence.webp') }}"
         />
 
         <x-index-card
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rhoncus augue ut ligula accumsan"
-            base="INTERIOR"
-            url="{{ asset('home/amenities/Interior 4.webp') }}"
+            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rhoncus augue ut ligula accumsan.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rhoncus augue ut ligula accumsan."
+            base="QUALITY"
+            url="{{ asset('home/amenities/Quality5.webp') }}"
         />
 
         <x-index-card
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rhoncus augue ut ligula accumsan"
-            base="AMENITIES"
-            url="{{ asset('home/amenities/Amenities 2.webp') }}"
+            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rhoncus augue ut ligula accumsan. 
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. ."
+            base="EXCELENCE"
+            url="{{ asset('home/amenities/Interior 4.webp') }}"
         />
     </div>
 

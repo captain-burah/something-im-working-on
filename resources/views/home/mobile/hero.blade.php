@@ -1,26 +1,92 @@
 
 
-{{-- Mobile View --}}
-<div class="block sm:hidden bg-hero bg-cover bg-no-repeat bg-center h-screen object-cover overflow-hidden max-w-full">
-    <div class="relative isolate px-6 lg:px-8 h-full">
+<style>
+        video {
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
 
-        <div class="mx-auto max-w-4xl h-full">
-            <div class="h-screen flex items-center justify-center">
-                <h1 class="text-2xl text-gray-50 font-light mt-10 w-">
-                    {{ __('A team of innovators and builders
-                    pioneering progressive forms of large-
-                    scale urban development') }}
-                </h1>
-            </div>
-            {{-- <div class="text-center h-full my-auto">
-                <h1 class="text-md text-gray-50 font-light mt-10 w-3/4 mx-auto my-auto h-full text-center">
-                    {{ __('A team of innovators and builders
-                    pioneering progressive forms of large-
-                    scale urban development') }}
-                </h1>
-            </div> --}}
-        </div>
+        }
+        .video-wrapper {
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+            overflow: hidden;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+</style>
+
+{{-- Mobile View --}}
+<div class="video-wrapper bg-hero bg-cover bg-no-repeat bg-top object-cover overflow-hidden max-w-full h-[70vh] ">
+    <div class="relative isolate  h-full flex flex-1 flex-col justify-between">
+        <div></div>
+    
+        <video playsinline autoplay muted loop poster="/developments/6.jpg">
+            {{-- <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4"> --}}
+            {{-- <source src="{{ asset('home/HERO.mp4') }}" type="video/mp4"> --}}
+            Your browser does not support the video tag.
+
+        </video>
+
+        {{-- @notmobile
+            <nav x-data="{ open: false }" class="bg-gradient-to-t from-[rgb(0,0,0,.5)] hidden sm:block  " style="z-index: 100 !important;">
+                <div class=" container mx-auto px-8">
+                    <div class="flex justify-between h-30">
+
+                        <div class="flex items-center">
+
+                            <div class="hidden space-x-8 sm:-my-px sm:flex mx-auto no-underline pr-8">
+                                <x-nav-link2 href="{{ url('about-esnaad') }}" :active="request()->routeIs('dashboard')">
+                                    {{ __('ABOUT') }}
+                                </x-nav-link2>
+                            </div>
+                            
+
+                            <div class="hidden space-x-8 sm:-my-px sm:flex mx-auto no-underline px-8">
+                                <x-nav-link2 href="{{ url('our-developments') }}" >
+                                    {{ __('DEVELOPMENT') }}
+                                </x-nav-link2>
+                            </div>
+
+                        </div>
+
+                        <div class=" flex items-center ">
+                            <div class="shrink-0 flex items-center text-2xl font-thin">
+                                @desktop
+                                    <img style="height: 70px !important;" src="{{ asset('logo-light.png') }}" alt="esnaad-logo-navbar">
+                                @enddesktop
+                                @tablet
+                                    <img style="height: 50px !important;" src="{{ asset('logo-light.png') }}" alt="esnaad-logo-navbar">
+                                @endtablet
+                            </div>
+                        </div>
+
+                        <div class="flex items-center">
+
+                            <div class="hidden space-x-8 sm:-my-px sm:flex mx-auto no-underline px-8">
+                                <x-nav-link2 href="{{ url('our-communities') }}" :active="request()->routeIs('dashboard')">
+                                    {{ __('COMMUNITY') }}
+                                </x-nav-link2>
+                            </div>
+
+                            <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex text-center pl-8">
+                                <x-nav-link2 href="{{ url('contact') }}" :active="request()->routeIs('home')">
+                                    {{ __('CONTACT') }}
+                                </x-nav-link2>
+                            </div>
+                        </div>
+                
+                    </div>
+                </div>
+            </nav>
+        @endnotmobile --}}
 
     </div>
-
 </div>

@@ -45,6 +45,13 @@ Route::get('/news/{id}', [FrontEndController::class, 'news_details'])->name('esn
 
 Route::post('/communities/register-your-interest', [FrontEndController::class, 'communities_registration'])->name('esnaad.communities.registration');
 
+
+Route::get('/terms-and-conditions', [FrontEndController::class, 'terms_and_conditions'])->name('website.terms-and-conditions');
+// Route::get('/terms', function(){
+//     return view('terms_and_conditions.desktop.index');
+// });
+Route::get('/privacy-and-policy', [FrontEndController::class, 'privacy_and_policy'])->name('website.privacy-and-policy');
+
 Route::get('/thankyou', function() {
     return view('thankyou');
 });

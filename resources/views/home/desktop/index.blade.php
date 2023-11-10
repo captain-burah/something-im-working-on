@@ -73,14 +73,15 @@
         @include('home.desktop.intro')
     </div> --}}
 
-    @include('home.desktop.community')
+    @include('home.desktop.sectionOne')
 
 
     <div class="py-8">
-        @include('home.desktop.featured')
+        @include('home.desktop.sectionTwo')
     </div>
 
-    <div class="mt-10"></div>
+    @include('home.desktop.sectionThree')
+    
 
     
 

@@ -134,6 +134,7 @@ class FrontEndController extends Controller
     public function home() {
 
         $jsonSEOData = $this->landingpageseos(1);
+
         $this->data['jsonSEOData'] =  $jsonSEOData->json();
 
         return view('welcome3', $this->data);
@@ -354,6 +355,30 @@ class FrontEndController extends Controller
         $this->data['response'] = $jsonData[0];
 
         return view('constructions_details', $this->data);
+    }
+
+
+
+
+
+    public function privacy_and_policy() {
+
+        // $jsonSEOData = $this->landingpageseos(1);
+        
+        // $this->data['jsonSEOData'] =  $jsonSEOData->json();
+
+        return view('privacy-and-policy');        
+    }
+
+    public function terms_and_conditions() {
+
+        // dd('reached');
+        
+        // $jsonSEOData = $this->landingpageseos(1);
+        
+        // $this->data['jsonSEOData'] =  $jsonSEOData->json();
+
+        return view('terms-and-conditions');        
     }
 
 

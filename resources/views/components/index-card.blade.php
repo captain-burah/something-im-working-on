@@ -6,7 +6,7 @@
             <div class="grid grid-cols-1 border border-1 border-gray-300 ">
 
                 <img
-                    class="sm:w-full object-cover "
+                    class="sm:w-full object-cover"
                     src="{{ asset($url)}}"
                     alt="esnaad-quality-and-services"
                     onerror="this.onerror=null;this.src='{{ URL::asset('assets/img/img-error2 (1).jpg')}}';"
@@ -22,9 +22,10 @@
                     {{$description}}
                 </span>
             </div> --}}
+
         </div>
         <div class=" h-full w-full flex items-center justify-center">
-                <span class="my-10 px-4 text-center text-md font-base  leading-8">
+                <span class="mt-10 px-4 text-center text-base font-base  leading-8">
                     {{$description}}
                 </span>
             </div>

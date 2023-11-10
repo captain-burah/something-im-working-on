@@ -488,7 +488,7 @@
                                     <img style="height: 60px !important;" src="{{ asset('logo-dark-2.png') }}" alt="esnaad-logo-footer" class="mb-5">
                                 </span>
 
-                                <p class="text-md text-gray-700 text-justify mb-6 w-full">
+                                <p class="text-md text-gray-700 text-justify mb-6 w-full leading-8">
                                     {{ __('
                                         Lorem ipsum dolor sit amet, consectetur adipiscing
                                         elit. Vestibulum rhoncus augue ut ligula accumsan
@@ -569,27 +569,27 @@
                     </div>
                     <div class="row py-4">
 
-                        <p class="text-md font-bold text-gray-800 underline">
+                        <p class="text-md font-bold text-gray-800 underline mb-3">
                             <a href="{{ URL('/dubai-developers') }}">{{ __('Links') }}</a>
                         </p>
 
-                        <ul class="list-none footer-li capitalize" style="padding-left:    0px !important;">
-                            <li class="text-md text-gray-700 my-2">
+                        <ul class="list-none footer-li capitalize leading-8" style="padding-left: 0px !important;">
+                            <li class="text-md text-gray-700 my-3">
                                 <a href="{{ url('about-esnaad') }}">About ESNAAD</a>
                             </li>
-                            <li class="text-md text-gray-700 my-2">
+                            <li class="text-md text-gray-700 my-3">
                                 <a href="{{ url('invest-in-dubai') }}">Invest In Dubai</a>
                             </li>
-                            <li class="text-md text-gray-700 my-2">
-                                <a href="{{ url('communities/') }}">Our Communities</a>
+                            <li class="text-md text-gray-700 my-3">
+                                <a href="{{ url('communities/') }}">Communities</a>
                             </li>
-                            <li class="text-md text-gray-700 my-2">
-                                <a href="{{ url('developments/') }}">Our Developments</a>
+                            <li class="text-md text-gray-700 my-3">
+                                <a href="{{ url('developments/') }}">Projects</a>
                             </li>
-                            <li class="text-md text-gray-700 my-2">
+                            <li class="text-md text-gray-700 my-3">
                                 <a href="{{ url('media-center') }}">Media Center</a>
                             </li>
-                            <li class="text-md text-gray-700 my-2">
+                            <li class="text-md text-gray-700 my-3">
                                 <a href="{{ url('contact') }}">Contact Us</a>
                             </li>
 
@@ -689,10 +689,10 @@
 
                     <div class="flex justify-left my-2">
                         <div>
-                            <p class="text-base text-gray-700">
+                            <p class="text-base text-gray-700 leading-8">
                                 ESNAAD © {{ now()->year }} All Rights Reserved <br>
-                                <a>Terms & Conditions</a>
-                                <a>| Privacy & Policy</a>
+                                <a href="{{ url('terms-and-conditions') }}" aria-label="terms-and-conditions">Terms & Conditions</a>
+                                <a href="{{ url('privacy-and-policy') }}" aria-label="privacy-and-policy">| Privacy & Policy</a>
                             </p>
                             
                         </div>

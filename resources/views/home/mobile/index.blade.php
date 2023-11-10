@@ -23,13 +23,13 @@
 
     @include('home.mobile.hero')
 
-    @include('home.mobile.intro')
+    @include('home.mobile.sectionOne')
 
-    @include('home.mobile.featured')
+    @include('home.mobile.sectionTwo')
 
     <div class="mt-10"></div>
 
-    @include('home.mobile.community')
+    @include('home.mobile.sectionThree')
 
     <div class="hidden md:block">
         {{-- @include('home.mobile.community') --}}

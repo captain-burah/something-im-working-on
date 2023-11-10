@@ -6,14 +6,14 @@
         <x-index-card-mobile
             description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rhoncus augue ut ligula accumsan.
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rhoncus augue ut ligula accumsan."
-            base="VISION"
+            base="QUALITY"
             url="{{ asset('home/amenities/Ecelence.webp') }}"
         />
 
         <x-index-card-mobile
             description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rhoncus augue ut ligula accumsan.
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rhoncus augue ut ligula accumsan."
-            base="QUALITY"
+            base="CHOICE"
             url="{{ asset('home/amenities/Quality5.webp') }}"
         />
 

@@ -253,6 +253,110 @@ class FrontEndController extends Controller
     }
 
 
+    public function constructions() {
+        $jsonSEOData = $this->landingpageseos(3);
+        $this->data['jsonSEOData'] =  $jsonSEOData->json();
+
+        // CALL API FROM MIS
+        $response = Http::withHeaders([
+            'authkey' => 'YOUR_SECRET_KEY'
+        ])->get('www.mis.esnaad.com/api/v1/esnaad/constructions');
+        $jsonData = $response->json();
+        
+        // RETURN AS JSON
+        // dd($jsonData);
+        $this->data['response'] = $jsonData;
+
+        if(count($jsonData) > 0){
+            $this->data['available'] = '1';
+        }
+
+        return view('constructions', $this->data);
+
+    }
+
+
+    public function news() {
+        $jsonSEOData = $this->landingpageseos(3);
+        $this->data['jsonSEOData'] =  $jsonSEOData->json();
+
+        // CALL API FROM MIS
+        $response = Http::withHeaders([
+            'authkey' => 'YOUR_SECRET_KEY'
+        ])->get('www.mis.esnaad.com/api/v1/esnaad/news');
+        $jsonData = $response->json();  
+
+
+        if(count($jsonData) > 0){
+            $this->data['available'] = '1';
+        }
+        
+        // RETURN AS JSON
+        $this->data['response'] = $jsonData;
+
+        return view('news', $this->data);
+
+    }
+
+
+    public function news_details($id) {
+
+        $jsonSEOData = $this->landingpageseos(3);
+
+        $this->data['jsonSEOData'] =  $jsonSEOData->json();
+
+        // CALL API FROM MIS
+        $response = Http::withHeaders([
+            'authkey' => 'YOUR_SECRET_KEY'
+        ])->get('www.mis.esnaad.com/api/v1/esnaad/news/'.$id);
+
+        $jsonData = $response->json();  
+
+        if(count($jsonData) > 0){
+            $this->data['available'] = '1';
+        }
+
+        // dd($jsonData);
+        if(count($jsonData[0]['website_news_images']) > 0){
+            $this->data['available'] = '1';
+        }
+        
+        // RETURN AS JSON
+        $this->data['response'] = $jsonData[0];
+
+        return view('news_details', $this->data);
+    }
+
+
+    public function constructions_details($id) {
+
+        $jsonSEOData = $this->landingpageseos(3);
+
+        $this->data['jsonSEOData'] =  $jsonSEOData->json();
+
+        // CALL API FROM MIS
+        $response = Http::withHeaders([
+            'authkey' => 'YOUR_SECRET_KEY'
+        ])->get('www.mis.esnaad.com/api/v1/esnaad/constructions/'.$id);
+
+        $jsonData = $response->json();  
+
+        if(count($jsonData) > 0){
+            $this->data['available'] = '1';
+        }
+
+        // dd($jsonData);
+        if(count($jsonData[0]['website_construction_images']) > 0){
+            $this->data['available'] = '1';
+        }
+        
+        // RETURN AS JSON
+        $this->data['response'] = $jsonData[0];
+
+        return view('constructions_details', $this->data);
+    }
+
+
 
 
 

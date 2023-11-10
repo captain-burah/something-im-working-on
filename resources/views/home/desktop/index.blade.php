@@ -17,6 +17,51 @@
             /* background-image: url(/home/HOME2.webp) */
             background-image: url(/front/images/bg-hero2.jpg)
         }
+        .image-blurred-edge {
+            background-image: url({{ asset('assets/img/img-error2.webp') }});
+            height: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            box-shadow: 0 0 4px 4px white inset;
+        }
+
+        .placeholder {
+            margin-right: auto;
+            margin-left: auto;
+            margin-top: 20px;
+            width: 100%;
+            height: 100%;
+            min-height: 400px;
+            position: relative;
+            /* this is the only relevant part for the example */
+        }
+
+
+        /* both DIVs have the same image */
+
+        .bg-image-blur,
+        .bg-image {
+            background-image: url({{ asset('home/13.jpg') }});
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: absolute;
+            top: 0;
+            left: 0;
+            min-height: 400px;
+            width: 100%;
+            height: 100%;
+        }
+
+
+        /* blur the background, to make blurred edges that overflow the unblurred image that is on top */
+
+        .bg-image-blur {
+        -webkit-filter: blur(20px);
+        -moz-filter: blur(20px);
+        -o-filter: blur(20px);
+        -ms-filter: blur(20px);
+        filter: blur(20px);
+        }
     </style>
 @endsection
 
@@ -24,9 +69,12 @@
 
     @include('home.desktop.hero')
 
-    <div class="py-8">
+    {{-- <div class="py-8">
         @include('home.desktop.intro')
-    </div>
+    </div> --}}
+
+    @include('home.desktop.community')
+
 
     <div class="py-8">
         @include('home.desktop.featured')
@@ -34,9 +82,7 @@
 
     <div class="mt-10"></div>
 
-    <div class="hidden md:block py-8">
-        @include('home.desktop.community')
-    </div>
+    
 
 @endsection
 

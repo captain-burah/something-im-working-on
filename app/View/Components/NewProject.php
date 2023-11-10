@@ -13,30 +13,18 @@ class NewProject extends Component
      */
 
     public $id;
-    public $name;
-    public $img;
-    public $location;
-    public $price;
-    public $handover;
-    public $propertyreference;
-    public $type;
-    public $slug;
-    public $projtype;
-    public $developer;
+    public $title;
+    public $titlear;
+    public $sluglink;  
+    public $thumbnail;
 
-    public function __construct($id, $name, $img, $location, $price, $handover, $propertyreference, $type, $slug, $projtype, $developer)
+    public function __construct($id, $title, $titlear, $sluglink, $thumbnail)
     {
-        $this->id = $id;
-        $this->name = $name;
-        $this->img = $img;
-        $this->location = $location;
-        $this->price = $price;
-        $this->handover = $handover;
-        $this->propertyreference = $propertyreference;
-        $this->type = $type;
-        $this->slug = $slug;
-        $this->projtype = $projtype;
-        $this->developer = $developer;
+        $this->$id = $id;
+        $this->$title = $title;
+        $this->$titlear = $titlear;
+        $this->$sluglink = $sluglink;
+        $this->$thumbnail = $thumbnail;
     }
 
     /**

@@ -5,23 +5,23 @@
         <?php //LOAD COMPONENT INDEX CARD ?>
         <x-index-card
             description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rhoncus augue ut ligula accumsan.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rhoncus augue ut ligula accumsan."
-            base="VISION"
-            url="{{ asset('home/amenities/Ecelence.webp') }}"
+            "
+            base="QUALITY"
+            url="{{ asset('home/f1.webp') }}"
         />
 
         <x-index-card
             description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rhoncus augue ut ligula accumsan.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rhoncus augue ut ligula accumsan."
-            base="QUALITY"
-            url="{{ asset('home/amenities/Quality5.webp') }}"
+            "
+            base="CHOICE"
+            url="{{ asset('home/f2.webp') }}"
         />
 
         <x-index-card
             description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rhoncus augue ut ligula accumsan. 
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. ."
+             ."
             base="EXCELENCE"
-            url="{{ asset('home/amenities/Interior 4.webp') }}"
+            url="{{ asset('home/f3.webp') }}"
         />
     </div>
 

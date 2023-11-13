@@ -25,7 +25,6 @@
         <section class="my-0">
             @include('development_details.desktop.header')
         </section>
-{{-- 
         <section class="my-15">
             @include('development_details.desktop.bodyOne')
         </section>
@@ -41,7 +40,7 @@
 
         <section class="my-0" id="project_detail_map_section">
             @include('development_details.desktop.map')
-        </section>     --}}
+        </section>     
 @endsection
 
 

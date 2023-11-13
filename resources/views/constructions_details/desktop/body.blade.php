@@ -2,9 +2,10 @@
     <div class="mx-auto max-w-7xl lg:max-w-8xl xl:max-w-8xl 2xl:px-w-8xl">
         <div class="container mx-auto flex flex-col items-start md:flex-">
             
-            <div class="mt-8 lg:flex lg:gap-x-28 xl:gap-x-full w-full">
-                <div class="lg:w-4/5">
-                    <div class="space-y-10">
+            <div class="mt-8 sm:flex lg:gap-x-28 xl:gap-x-full w-full">
+                {{-- <div class="lg:w-4/5"> --}}
+                <div class="w-full">
+                    <div class="space-y-10 px-8 xl:px-0">
                         <div>
                             <img src="{{ URL("https://mis.esnaad.com/uploads/construction/".$id."/header_image/".$header_image)}}" alt="Ensaad-constructions-article-{{$title}}" class="object-cover w-full h-56 mb-6 rounded-0 shadow-md sm:h-80 2xl:h-96"> 
 
@@ -12,7 +13,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="hidden lg:w-1/4 lg:block">
+                {{-- <div class="hidden lg:w-1/4 lg:block">
                     <div>
                         <h3 class="font-medium text-gray-500 dark:text-gray-400">Categories</h3>
                         <div class="flex flex-col mt-2 space-y-1">
@@ -29,7 +30,7 @@
                             No Articles as yet
                         </div>
                     </div>
-                </div>            
+                </div> --}}
             </div>
 
             @if(isset($available))

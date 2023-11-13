@@ -1,12 +1,12 @@
 <div class="max-w-full rounded-0 overflow-hidden" >
 
-    <div class="w-full  group">
+    <div class="w-full group">
         <div class="relative overflow-hidden">
 
-            <div class="grid grid-cols-1 border border-1 border-gray-300 ">
+            <div class="grid grid-cols-1 ">
 
                 <img
-                    class="sm:w-full object-cover"
+                    class="sm:w-full object-cover shadow"
                     src="{{ asset($url)}}"
                     alt="esnaad-quality-and-services"
                     onerror="this.onerror=null;this.src='{{ URL::asset('assets/img/img-error2 (1).jpg')}}';"

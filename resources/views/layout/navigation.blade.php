@@ -191,7 +191,7 @@
 
                 <div class="hidden space-x-8 sm:-my-px sm:flex mx-auto no-underline px-8">
                     <x-nav-link href="{{ url('constructions') }}"  aria-label="navbar-route">
-                        {{ __('CONSTRUCTIONS') }}
+                        {{ __('CONSTRUCTION') }}
                     </x-nav-link>
                 </div>
 

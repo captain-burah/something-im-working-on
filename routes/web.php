@@ -21,7 +21,7 @@ use Illuminate\Support\Facades\Mail;
 
 Route::get('/', [FrontEndController::class, 'home'])->name('esnaad.home');
 
-Route::get('/about-esnaad', [FrontEndController::class, 'about'])->name('esnaad.about');
+Route::get('/about-us', [FrontEndController::class, 'about'])->name('esnaad.about');
 
 Route::get('/communities/{slug}', [FrontEndController::class, 'communities_details'])->name('esnaad.communities');
 

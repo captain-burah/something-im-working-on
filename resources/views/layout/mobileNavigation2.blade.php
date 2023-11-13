@@ -94,10 +94,11 @@
     
     <ul class="hidden bg-white lg:block space-y-6 pt-8 pb-4 pl-[10vw]  ">
         <li ><a href="{{ url('about-esnaad') }}" class="text-dark">About</a></li>
-        <li ><a href="{{ url('our-communities') }}" class="text-dark">Community</a></li>
-        <li ><a href="{{ url('our-developments') }}" class="text-dark">Development</a></li>
+        <li ><a href="{{ url('projects') }}" class="text-dark">Projects</a></li>
+        <li ><a href="{{ url('communities') }}" class="text-dark">Communities</a></li>
         <li ><a href="{{ url('invest-in-dubai') }}" class="text-dark">Invest in Dubai</a></li>
-        <li ><a href="{{ url('/media-center') }}" class="text-dark">Media Center</a></li>
+        <li ><a href="{{ url('/constructions') }}" class="text-dark">Construction</a></li>
+        <li ><a href="{{ url('/news') }}" class="text-dark">NEWS</a></li>
         <li ><a href="{{ url('contact') }}" class="text-dark">Contact</a></li>
       </ul>
     

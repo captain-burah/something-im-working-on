@@ -5,28 +5,28 @@
         </h3>
     </div>
 
-    <div class="grid md:grid-cols-3 gap-3 mb-5 mx-auto" >
+    <div class="grid md:grid-cols-3 gap-10 mb-5 mx-auto" >
 
         <?php //LOAD COMPONENT INDEX CARD ?>
         <x-index-card
             description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rhoncus augue ut ligula accumsan.
             "
             base="QUALITY"
-            url="{{ asset('home/1.png') }}"
+            url="{{ asset('home/DESIGN.webp') }}"
         />
 
         <x-index-card
             description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rhoncus augue ut ligula accumsan.
             "
-            base="CHOICE"
-            url="{{ asset('home/2.png') }}"
+            base="QUALITY"
+            url="{{ asset('home/QUALITY.webp') }}"
         />
 
         <x-index-card
             description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rhoncus augue ut ligula accumsan. 
              ."
             base="EXCELENCE"
-            url="{{ asset('home/3.png') }}"
+            url="{{ asset('home/EXCELENCE.webp') }}"
         />
     </div>
 

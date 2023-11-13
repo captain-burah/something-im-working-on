@@ -212,7 +212,7 @@ class FrontEndController extends Controller
         $this->data['lat'] = 25.101131;
 
 
-        return view('developmentDetails', $this->data);
+        return view('development', $this->data);
     }
 
 

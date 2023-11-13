@@ -52,7 +52,7 @@
     <div class="mx-auto max-w-7xl lg:max-w-8xl xl:max-w-8xl 2xl:px-w-8xl">
         <div class="container mx-auto flex flex-col items-start md:flex-">
             <div class="ml-0 md:mr-12 sticky">
-                <div class="container mx-auto w-full h-full xl:mt-[15vh]">
+                <div class="container mx-auto w-full h-full mt-[15vh] px-8 xl:px-0">
                     <style>
                         ul {
                             padding-left: 30px;

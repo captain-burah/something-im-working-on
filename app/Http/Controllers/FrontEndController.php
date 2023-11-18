@@ -383,6 +383,12 @@ class FrontEndController extends Controller
 
 
 
+    public function agency_registration() {
+        return view('brokers');
+    }
+
+
+
 
 
 

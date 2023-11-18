@@ -52,6 +52,9 @@ Route::get('/terms-and-conditions', [FrontEndController::class, 'terms_and_condi
 // });
 Route::get('/privacy-and-policy', [FrontEndController::class, 'privacy_and_policy'])->name('website.privacy-and-policy');
 
+Route::get('/agency-registration', [FrontEndController::class, 'agency_registration'])->name('agency.registration');
+
+
 Route::get('/thankyou', function() {
     return view('thankyou');
 });

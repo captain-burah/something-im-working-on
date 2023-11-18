@@ -26,7 +26,7 @@
         <section class="my-0">
             @include('community_details.desktop.header')
         </section>
-{{-- 
+
         <section class="m-0" cl>
             @include('community_details.desktop.body')
         </section>
@@ -41,7 +41,7 @@
 
         <section class="my-0" id="project_detail_map_section">
             @include('community_details.desktop.map')
-        </section> --}}
+        </section>
     @endnotmobile
 @endsection
 

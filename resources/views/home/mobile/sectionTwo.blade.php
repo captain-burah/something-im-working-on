@@ -13,19 +13,19 @@
         <x-index-card-mobile
             description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
             base="QUALITY"
-            url="{{ asset('home/1.png') }}"
+            url="{{ asset('home/DESIGN.webp') }}"
         />
 
         <x-index-card-mobile
             description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
             base="CHOICE"
-            url="{{ asset('home/2.png') }}"
+            url="{{ asset('home/QUALITY.webp') }}"
         />
 
         <x-index-card-mobile
             description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
             base="EXCELENCE"
-            url="{{ asset('home/3.png') }}"
+            url="{{ asset('home/EXCELLENCE.webp') }}"
         />
 
     </div>

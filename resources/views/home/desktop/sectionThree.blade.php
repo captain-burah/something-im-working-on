@@ -8,15 +8,15 @@
                     <!-- blurred background image for blurred edge -->
                     <div class="bg-image-blur"></div>
                     <!-- same image, no blur -->
-                    <div class="bg-image"></div>
+                    <div class="bg-image-1"></div>
                     <!-- content -->
                 </div>
             </div>
-            <div>
-                <h2 class=" text-xl xl:text-4xl">
+            <div class="flex h-full">
+                <h2 class="text-xl xl:text-5xl font-thin m-auto" style="line-height: 1.5">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rhoncus augue ut ligula accumsan
                 </h2>
-                <p class="text-sm xl:text-base leading-8 mt-10">
+                {{-- <p class="text-sm xl:text-base leading-8 mt-10">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rhoncus
                     augue ut ligula accumsan dictum. Phasellus euismod in lectus nec cursus.
                     Curabitur in sem et elit dignissim condimentum eget ac dui. Nulla non nisl mollis
@@ -24,7 +24,7 @@
                     adipiscing elit. Vestibulum rhoncus augue ut ligula accumsan dictum. Phasellus
                     euismod in lectus nec cursus. Curabitur in sem et elit dignissim condimentum eget
                     ac dui. Nulla non nisl mollis ipsum laoreet ultrices ac in sapien.
-                </p>
+                </p> --}}
             </div>
         </div>
     </div>

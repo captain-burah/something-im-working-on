@@ -18,5 +18,5 @@
 </div>
 
 <div>
-    <img style="height: 100%; object-fit: cover;"  src="{{ asset('assets/img/img-error2.webp') }}" alt="community-image-home-tablet">
+    <img style="height: 100%; object-fit: cover;"  src="{{ asset('home/13.jpg') }}" alt="community-image-home-tablet">
 </div>

@@ -48,8 +48,8 @@
 
 <header class="">
     <div class="w-full bg-cover bg-center" style="height: 40vh;">
-        <div class="flex items-center justify-center h-full w-full bg-black" style="padding-top: 10vh">
-            <div class="sm:container sm:mx-auto sm:px-4 sm:my-4 mx-auto  text-white">
+        <div class="flex items-center justify-center h-full w-full" style="padding-top: 10vh; background-color: #E9E9E9 !important">
+            <div class="sm:container sm:mx-auto sm:px-4 sm:my-4 mx-auto text-black">
                 <h1 class="text-xl font-semibold ">
                     NEWS UPDATES
                 </h1>

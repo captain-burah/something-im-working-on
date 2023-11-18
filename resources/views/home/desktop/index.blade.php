@@ -52,6 +52,18 @@
             height: 100%;
         }
 
+        .bg-image-1 {
+            background-image: url({{ asset('home/sec3.jpg') }});
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: absolute;
+            top: 0;
+            left: 0;
+            min-height: 400px;
+            width: 100%;
+            height: 100%;
+        }
+
 
         /* blur the background, to make blurred edges that overflow the unblurred image that is on top */
 

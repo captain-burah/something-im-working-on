@@ -3,7 +3,7 @@
 
 
         <p class="mt-18 mb-4 text-3xl font-thin mx-auto w-full text-center">
-            Community Map of {{ $response[0]['title'] }}
+            {{-- Community Map of {{ $response[0]['title'] }} --}}
         </p>
         
         @desktop

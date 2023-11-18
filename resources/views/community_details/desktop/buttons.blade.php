@@ -65,7 +65,7 @@
                     <div class="px-7  w-full" style="max-height: 40vh;">
 
                         <div class="mb-6">
-                            Living in {{$response[0]['title']}}
+                            {{-- Living in {{$response[0]['title']}} --}}
                         </div>
 
                         <div class="mb-6">

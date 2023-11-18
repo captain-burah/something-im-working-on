@@ -5,7 +5,7 @@
         </h3>
     </div>
 
-    <div class="grid md:grid-cols-3 gap-10 mb-5 mx-auto" >
+    <div class="grid md:grid-cols-3 gap-25 mb-5 mx-auto" >
 
         <?php //LOAD COMPONENT INDEX CARD ?>
         <x-index-card
@@ -26,7 +26,7 @@
             description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rhoncus augue ut ligula accumsan. 
              ."
             base="EXCELENCE"
-            url="{{ asset('home/EXCELENCE.webp') }}"
+            url="{{ asset('home/EXCELLENCE.webp') }}"
         />
     </div>
 

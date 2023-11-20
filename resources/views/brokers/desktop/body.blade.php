@@ -1,28 +1,33 @@
 <div class="sm:container sm:mx-auto mx-0 px-0 sm:px-4 my-20 sm:my-4 mx-auto">
     <div class="md:w-[80%] xl:w-[50%] mx-auto my-8">
-        <form class="flex flex-col items-start w-full"  method="post" action="{{ url('/brokers/registration') }}" id="contact-desktop-form">
+        <form id="uploadForm">
             @csrf
-               
             <div class="icon bg-black text-white w-6 h-6 absolute flex items-center justify-center p-5" style="left:-40px"><i class="fal fa-phone-volume fa-fw text-2xl transform -rotate-45"></i></div>
             <h3 class="text-2xl text-gray-900 font-semibold"> </h3>
             <p class="text-black mb-4">
                 We are excited to establish partnerships 
                 with esteemed real estate agencies or broker companies. Please complete the following form to initiate the registration process.
             </p>
+
+            <div id="status"></div>
+
             
             @include('brokers.desktop.companyInfo')
 
             @include('brokers.desktop.authorizedPerson')
 
-            @include('brokers.desktop.bankInfo')
+            @include('brokers.desktop.bankInfo')    
 
             @include('brokers.desktop.documents')
 
-            <button type="submit"  class="w-full mt-8 bg-black hover:bg-white border hover:border-gray-500 text-white hover:text-black font-semibold p-3">Register Now</button>
+            <button type="button" onclick="submitForm()" class="w-full mt-8 bg-black hover:bg-white border hover:border-gray-500 text-white hover:text-black font-semibold p-3">Register Now</button>
         </form>
 
     </div>
 </div>
+
+
+
 
 
 @section('intel-input')
@@ -52,16 +57,70 @@
             },
         });
 
-        input.addEventListener("countrychange", function() {
-            console.log(document.getElementById('phone').value);
+        input.addEventListener("countrychange", function() {    
             document.getElementById('country_code').value = iti.getSelectedCountryData().dialCode;
         })
 
 
     </script>
 
-    {{-- FORM SUBMIT --}}
     <script>
+        function submitForm() {
+            var form = document.getElementById('uploadForm');
+            var formData = new FormData(form);
+
+            var xhr = new XMLHttpRequest();
+            
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === XMLHttpRequest.DONE) {
+                    if (xhr.status === 200) {
+                        // Request was successful
+                        // document.getElementById('status').innerHTML = 'Form submitted successfully';
+                        Swal.fire({
+                            title: "Registration Completed",
+                            text: "Thank you for registering! An email has been sent to your inbox with further details about your account status.",
+                            icon: "success"
+                        }); 
+                    } else if (xhr.status >= 400 && xhr.status < 500) {
+                        // Client error (4xx): Handle errors related to user input or request structure
+                        // document.getElementById('status').innerHTML = 'Client error: ' + xhr.responseText;
+                        Swal.fire({
+                            title: 'Error!',
+                            text: 'Input Error. Please check the form data.',
+                            icon: 'error',
+                            confirmButtonText: 'Close'
+                        })
+                    } else if (xhr.status >= 500) {
+                        // Server error (5xx): Handle errors on the server side
+                        // document.getElementById('status').innerHTML = 'Server error: ' + xhr.responseText;
+                        Swal.fire({
+                            title: 'Error!',
+                            text: 'Server Error',
+                            icon: 'error',
+                            confirmButtonText: 'Close'
+                        })
+                    } else {
+                        // Handle other cases as needed
+                        // document.getElementById('status').innerHTML = 'Unexpected error: ' + xhr.responseText;
+
+                        Swal.fire({
+                            title: 'Error!',
+                            text: 'Unexpected Error',
+                            icon: 'error',
+                            confirmButtonText: 'Close'
+                        })
+                    }
+                }
+            };
+
+            xhr.open('POST', "{{ URL('/agency-registration-post') }}", true);
+            xhr.send(formData);
+        }
+
+    </script>
+
+    {{-- FORM SUBMIT --}}
+    {{-- <script>
         /**
          * INITIATE HEADERS WITH CSRF TOKENIZATION
          * FOR FORM SUBMISSION
@@ -75,33 +134,7 @@
 
             e.preventDefault();
 
-            var company_name = $("#company_name").val();
-            var company_type = $("#company_type").val();
-            var trade_license = $("#trade_license").val();
-            var trade_license_expiry = $("#trade_license_expiry").val();
-            var rera_certificate = $("#rera_certificate").val();
-            var rera_certificate_expiry = $("#rera_certificate_expiry").val();
-            var authorized_p_name = $("#authorized_p_name").val();
-            var authorized_p_country = $("#authorized_p_country").val();
-            var authorized_p_passport = $("#authorized_p_passport").val();
-            var authorized_p_position = $("#authorized_p_position").val();
-            var authorized_p_email = $("#authorized_p_email").val();
-            var authorized_p_contact = $("#phone").val();
-            var authorized_p_address = $("#authorized_p_address").val();
-            var authorized_p_city = $("#authorized_p_city").val();
-            var power_of_atty_or_moa_id = $("#power_of_atty_or_moa_id").val();
-            var valid_trade_license_id = $("#valid_trade_license_id").val();
-            var rera_certificate_id = $("#rera_certificate_id").val();
-            var broker_card_id = $("#broker_card_id").val();
-            var valid_vat_certificate_or_noc_id = $("#valid_vat_certificate_or_noc_id").val();
-            var passport_visa_eid_id = $("#passport_visa_eid_id").val();
-            var bank_name = $("#bank_name").val();
-            var bank_country = $("#bank_country").val();
-            var bank_city = $("#bank_city").val();
-            var account_no = $("#account_no").val();
-            var iban = $("#iban").val();
-            var account_title = $("#account_title").val();
-            var country_code = $("#country_code").val();
+            var formData = new FormData(this);
 
             /**
              * INITIATE AN AJAX SCRIPT FOR THE FORM SUBMISSION
@@ -112,52 +145,24 @@
             */
             $.ajax({
                 type:'POST',
-                url:"{{ URL('api/v1/esnaad/contact-form') }}",
+                url:"{{ URL('/agency-registration-post') }}",
                 headers : {
-                    'Authorizatio' : 'Bearer ' + 'schDv?8qat`6zLVZ;8Lwoy(g`/Asm%D88$a>7Wl,20amt[=uN1',
                     'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
                 },
                 contentType : 'application/x-www-form-urlencoded',
-                data:{
-                    company_name:company_name,
-                    company_type:company_type,
-                    trade_license:trade_license,
-                    trade_license_expiry:trade_license_expiry,
-                    rera_certificate:rera_certificate,
-                    rera_certificate_expiry:rera_certificate_expiry,
-                    authorized_p_name:authorized_p_name,
-                    authorized_p_country:authorized_p_country,
-                    authorized_p_passport:authorized_p_passport,
-                    authorized_p_position:authorized_p_position,
-                    authorized_p_email:authorized_p_email,
-                    authorized_p_contact:authorized_p_contact,
-                    authorized_p_address:authorized_p_address,
-                    authorized_p_city:authorized_p_city,
-                    power_of_atty_or_moa_id:power_of_atty_or_moa_id,
-                    valid_trade_license_id:valid_trade_license_id,
-                    rera_certificate_id:rera_certificate_id,
-                    broker_card_id:broker_card_id,
-                    valid_vat_certificate_or_noc_id:valid_vat_certificate_or_noc_id,
-                    passport_visa_eid_id:passport_visa_eid_id,
-                    bank_name:bank_name,
-                    bank_country:bank_country,
-                    bank_city:bank_city,
-                    account_no:account_no,
-                    iban:iban,
-                    account_title:account_title,
-                    country_code:country_code
-                    
-                },
+                data:formData,
+                
                 error : function(xhr, status, error) {
                     var err = eval("(" + xhr.responseText + ")");
                 }
             }).done(function(data){  
                 alert('Successfully');  
              }).fail(function(jqXHR, ajaxOptions, thrownError){  
+                console.log(jqXHR.responseText);
                 alert(jqXHR.responseText);  
             });  
 
         });
-    </script>
+    </script> --}}
 
 @endsection

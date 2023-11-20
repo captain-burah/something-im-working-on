@@ -5,7 +5,7 @@
 
     <div>
         <td style="width: 235px">Bank Name</td>
-        <td><input type="text" name="bank_name" id="bank_name" placeholder="eg: ABC Company L.L.C." class=" w-full"></td>
+        <td><input type="text" name="bank_name" id="bank_name" placeholder="eg: ABC Financial Institution" class=" w-full"></td>
     </div>
 
     <div>
@@ -264,22 +264,22 @@
 
     <div>
         <td>Bank City</td>
-        <td><input type="text" name="bank_city" id="bank_city" placeholder="ex: N123456789" class=" w-full"></td>
+        <td><input type="text" name="bank_city" id="bank_city" placeholder="ex: Dubai" class=" w-full"></td>
     </div>
 
     <div>
         <td>Account Number</td>
-        <td><input type="text" name="account_no" id="account_no" placeholder="ex: CEO & Financial Director of ABC" class=" w-full"></td>
+        <td><input type="text" name="account_no" id="account_no" placeholder="ex: xxxx-xxxx-xxxx-xxxx" class=" w-full"></td>
     </div>
 
     <div>
         <td>IBAN Number</td>
-        <td><input type="text" name="iban" id="iban" placeholder="ex: someone@abc-company.com" class=" w-full"></td>
+        <td><input type="text" name="iban" id="iban" placeholder="ex: xxxxxxxxxx" class=" w-full"></td>
     </div>
 
     <div>
         <td>Account Title</td>
-        <td><input type="text" name="account_title" id="account_title" placeholder="ex: Aprt. 000, One Building, Two Street, Somewhere, UAE." class=" w-full"></td>
+        <td><input type="text" name="account_title" id="account_title" placeholder="ex: JASON SMITH" class=" w-full"></td>
     </div>
 </div>
 

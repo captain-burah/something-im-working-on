@@ -55,6 +55,10 @@ Route::get('/privacy-and-policy', [FrontEndController::class, 'privacy_and_polic
 Route::get('/agency-registration', [FrontEndController::class, 'agency_registration'])->name('agency.registration');
 
 
+Route::post('/agency-registration-post', [FrontEndController::class, 'agency_registration_post'])->name('agency.registration.post');
+
+
+
 Route::get('/thankyou', function() {
     return view('thankyou');
 });

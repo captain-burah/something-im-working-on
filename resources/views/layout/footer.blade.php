@@ -116,7 +116,7 @@
                                     <a href="{{ url('about-esnaad') }}">About ESNAAD</a>
                                 </li>
                                 <li class="text-md text-gray-700 my-2">
-                                    <a href="{{ url('invest-in-dubai') }}">Invest In Dubai</a>
+                                    <a href="{{ url('invest-in-dubai') }}">Why Invest In Dubai?</a>
                                 </li>
                                 <li class="text-md text-gray-700 my-2">
                                     <a href="{{ url('communities/') }}">Our Communities</a>
@@ -125,7 +125,7 @@
                                     <a href="{{ url('developments/') }}">Our Developments</a>
                                 </li>
                                 <li class="text-md text-gray-700 my-2">
-                                    <a href="{{ url('media-center') }}">Media Center</a>
+                                    <a href="{{ url('agency-registration') }}">Broker Registration</a>
                                 </li>
                                 <li class="text-md text-gray-700 my-2">
                                     <a href="{{ url('contact') }}">Contact Us</a>
@@ -335,7 +335,7 @@
 
                         <div >
                             <p class="text-md font-bold text-gray-800">
-                                <a href="{{ URL('/dubai-developers') }}">{{ __('Links') }}</a>
+                                {{ __('Links') }}
                             </p>
 
                             <ul class="list-none footer-li" style="padding-left:    0px !important;">
@@ -343,7 +343,7 @@
                                     <a href="{{ url('about-esnaad') }}">About ESNAAD</a>
                                 </li>
                                 <li class="text-md text-gray-700 my-2">
-                                    <a href="{{ url('invest-in-dubai') }}">Invest In Dubai</a>
+                                    <a href="{{ url('invest-in-dubai') }}">Why Invest In Dubai?</a>
                                 </li>
                                 <li class="text-md text-gray-700 my-2">
                                     <a href="{{ url('communities/') }}">Our Communities</a>
@@ -352,7 +352,7 @@
                                     <a href="{{ url('developments/') }}">Our Developments</a>
                                 </li>
                                 <li class="text-md text-gray-700 my-2">
-                                    <a href="{{ url('media-center') }}">Media Center</a>
+                                    <a href="{{ url('agency-registration') }}">Broker Registration</a>
                                 </li>
                                 <li class="text-md text-gray-700 my-2">
                                     <a href="{{ url('contact') }}">Contact Us</a>
@@ -570,7 +570,7 @@
                     <div class="row py-4">
 
                         <p class="text-md font-bold text-gray-800 underline mb-3">
-                            <a href="{{ URL('/dubai-developers') }}">{{ __('Links') }}</a>
+                            {{ __('Links') }}
                         </p>
 
                         <ul class="list-none footer-li capitalize leading-8" style="padding-left: 0px !important;">
@@ -578,7 +578,7 @@
                                 <a href="{{ url('about-esnaad') }}">About ESNAAD</a>
                             </li>
                             <li class="text-md text-gray-700 my-3">
-                                <a href="{{ url('invest-in-dubai') }}">Invest In Dubai</a>
+                                <a href="{{ url('invest-in-dubai') }}">Why Invest In Dubai?</a>
                             </li>
                             <li class="text-md text-gray-700 my-3">
                                 <a href="{{ url('communities/') }}">Communities</a>
@@ -587,7 +587,7 @@
                                 <a href="{{ url('developments/') }}">Projects</a>
                             </li>
                             <li class="text-md text-gray-700 my-3">
-                                <a href="{{ url('media-center') }}">Media Center</a>
+                                <a href="{{ url('broker-registration') }}">Broker Registration</a>
                             </li>
                             <li class="text-md text-gray-700 my-3">
                                 <a href="{{ url('contact') }}">Contact Us</a>

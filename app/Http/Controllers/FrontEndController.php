@@ -40,6 +40,8 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Str;
 use Illuminate\Support\Facades\Http;
 
+use Response;
+
 class FrontEndController extends Controller
 {
 
@@ -385,6 +387,15 @@ class FrontEndController extends Controller
 
     public function agency_registration() {
         return view('brokers');
+    }
+
+
+    public function agency_registration_post(Request $request) {
+        dd($request);
+        // var_dump($request);
+
+        // return Response::json(['success' => 'success'], 200);
+
     }
 
 

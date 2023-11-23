@@ -11,7 +11,7 @@
         <tr>
             <td>Country of Origin</td>
             <td>
-                <select id="countries" name="authorized_p_country" class="w-full">
+                <select id="authorized_p_country" name="authorized_p_country" class="w-full">
                     <option value="">Choose a country</option>
                     <option value="Afghanistan">Afghanistan</option>
                     <option value="Åland Islands">Åland Islands</option>

@@ -11,7 +11,7 @@
         <tr>
             <td>Bank Country</td>
             <td>
-                <select id="countries" name="bank_country" class="w-full">
+                <select id="bank_country" name="bank_country" class="w-full">
                     <option value="">Choose a country</option>
                     <option value="Afghanistan">Afghanistan</option>
                     <option value="Åland Islands">Åland Islands</option>

@@ -1,4 +1,4 @@
-@extends('layoutv2-outbound.master')
+@extends('layoutv2.master')
 
 @section('luxe_asset_css')
 
@@ -11,7 +11,7 @@
             width: 100% !important;
             margin-top: 10px;
         }
-        .iti__flag-container{
+        .iti__flag-container{   
             overflow: visible;
         }
     </style>

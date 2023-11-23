@@ -1,4 +1,4 @@
-@extends('layoutv2-outbound.master')
+@extends('layoutv2.master')
 
 @section('luxe_asset_css')
 

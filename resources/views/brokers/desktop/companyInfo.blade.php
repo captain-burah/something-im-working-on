@@ -11,7 +11,7 @@
         <tr>
             <td style="width: 235px">Company Type</td>
             <td>
-                <select id="countries" name="bank_country" class="w-full">
+                <select id="country" name="country" class="w-full">
                     <option value="">Choose</option>
                     <option value="Limited Liability Company (LLC)">Limited Liability Company (LLC)</option>
                     <option value="Partnerships">Partnerships</option>

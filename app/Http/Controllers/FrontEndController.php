@@ -34,6 +34,7 @@ use App\Models\Landingpageseos;
 use Mail;
 use App\Mail\DemoEmail;
 use App\Mail\CommunityInquiry;
+use App\Mail\SubscriptionInquiry;
 use Validator;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\DB;
@@ -396,6 +397,27 @@ class FrontEndController extends Controller
 
         // return Response::json(['success' => 'success'], 200);
 
+    }
+
+
+
+    public function subscription_form(Request $request) {
+        
+        try{
+            $data = [
+                'name'      =>  $request->name, 
+                'email'     =>  $request->email
+            ];
+
+            // Mail::to('lead@edgerealty.ae')->send(new DemoEmail($mailData));
+            Mail::mailer('noreply')->to('lead@esnaad.com')->send(new SubscriptionInquiry($data));
+            Mail::mailer('noreply')->to('webmaster@esnaad.com')->send(new SubscriptionInquiry($data));
+
+        } catch (\Exception $e) {
+            dd($e->getMessage());
+        }
+        
+        return Response::json(['success' => 'success'], 200);
     }
 
 

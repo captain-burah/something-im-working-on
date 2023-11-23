@@ -12,7 +12,6 @@
                         :name="$data->name_en"
                         :updated="$data->updated_at"
                         :image="$data->image_url"
-
                     />
                 </div>
             @endif

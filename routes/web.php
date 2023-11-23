@@ -57,6 +57,9 @@ Route::get('/agency-registration', [FrontEndController::class, 'agency_registrat
 
 Route::post('/agency-registration-post', [FrontEndController::class, 'agency_registration_post'])->name('agency.registration.post');
 
+Route::post('/subscription-form', [FrontEndController::class, 'subscription_form'])->name('subscription.form');
+
+
 
 
 Route::get('/thankyou', function() {

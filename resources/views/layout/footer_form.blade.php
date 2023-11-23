@@ -1,48 +1,47 @@
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+
 @notmobile
     <div class="block py-24 sm:py-12 bg-footer_form" id="footer_form" style="visibility:hidden">
         <div class="container mx-auto px-2 lg:px-8">
 
             <div class="row mb-5">
                 <h3 class="text-4xl font-base">
-                    Unlock Your Dream Home: 
+                    Subscribe for Updates
                 </h3>
-                <p>
-                    Exclusive Real Estate Updates! Seize the moment and take the first step towards a brighter future
+                <p class="w-[75%] text-gray-800">
+                    Stay in the loop and be the first to know about exciting news, exclusive offers, and important updates. Subscribe to our newsletter for a curated dose of inspiration delivered directly to your inbox.
                 </p>
             </div>
 
             <div class="row">
-                <div class="grid xl:grid-cols-3 grid-cols-2 gap-2 xl:gap-4 text-dark ">
-                    <div class="border-b border-gray-500">
-                        <input class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none focus:border-gray-400 focus:ring-gray-400" type="text" placeholder="Full Name" name="name" aria-label="Full name" autocomplete="off">
-                    </div>
-
-                    {{-- <div class="grid grid-cols-3 gap-4">
-                        <div class="relative border-b border-gray-500">
-                            <select class="block bg-transparent appearance-none w-full border-0 text-gray-700 pt-1 px-4 pr-8 rounded leading-tight focus:outline-none focus:border-gray-400 focus:ring-gray-400" id="grid-state" name="country_code" aria-label="Country_code" autocomplete="off">
-                            <option value="">Country</option>
-                            </select>
+                <form id="subscriptionForm" >
+                    <div class="grid xl:grid-cols-3 grid-cols-2 gap-2 xl:gap-4 text-dark ">
+                    
+                        <div class="border-b border-gray-500">
+                            <input class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none focus:border-gray-400 focus:ring-gray-400" type="text" placeholder="Full Name" name="name" aria-label="Full name" autocomplete="off">
                         </div>
-                        <div class="col-span-2 border-b border-gray-500">
-                            <input class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none focus:border-gray-400 focus:ring-gray-400" type="tel" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="Contact" name="phone" aria-label="Contact" autocomplete="off">
+
+                        <div class="border-b border-gray-500">
+                            <input class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none focus:border-gray-400 focus:ring-gray-400" type="email" placeholder="Email" name="email" aria-label="Email">
                         </div>
-                    </div> --}}
 
-                    <div class="border-b border-gray-500">
-                        <input class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none focus:border-gray-400 focus:ring-gray-400" type="email" placeholder="Email" name="email" aria-label="Email">
+                        <div id="submitComplete">
+                            <button type="button" id="submitButtonDone" class=" w-full text-sm text-gray-500 px-2 py-2 bg-transparent border border-gray-500 rounded-0">
+                                SUBMISSION COMPLETED
+                            </button>
+                            <button type="submit" id="submitButton" class=" w-full text-sm text-white hover:text-black px-2 py-2 bg-black hover:bg-transparent border border-black hover:border-black rounded-0">
+                                SUBSCRIBE
+                            </button>
+                        </div>
                     </div>
-
-                    <div class="">
-                        <button class=" w-full text-sm text-white hover:text-black px-2 py-2 bg-black hover:bg-transparent border border-black hover:border-black rounded-0" type="button">
-                            SUBMIT
-                        </button>
-                    </div>
-                </div>
+                </form>
             </div>
 
         </div>
     </div>
 @endnotmobile
+
 
 @mobile
     <div class="block py-24 sm:py-12 bg-footer_form" id="footer_form" style="visibility:hidden">
@@ -58,34 +57,165 @@
             </div>
 
             <div class="row">
-                <div class="grid grid-cols-1 gap-2 xl:gap-4 text-dark ">
-                    <div class="border-b border-gray-500 my-2">
-                        <input class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none focus:border-gray-400 focus:ring-gray-400" type="text" placeholder="Full Name" name="name" aria-label="Full name">
-                    </div>
-                    {{-- 
-                    <div class="grid grid-cols-3 gap-4 my-2">
-                        <div class="relative border-b border-gray-500">
-                            <select class="block bg-transparent appearance-none w-full border-0 text-gray-700 pt-1 px-4 pr-8 rounded leading-tight focus:outline-none focus:border-gray-400 focus:ring-gray-400" id="grid-state" name="country_code">
-                            <option value="">Country</option>
-                            </select>
+                <form id="subscriptionFormMobile" >
+                    <div class="grid grid-cols-1 gap-2 xl:gap-4 text-dark ">
+                        <div class="border-b border-gray-500 my-2">
+                            <input class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none focus:border-gray-400 focus:ring-gray-400" type="text" placeholder="Full Name" name="name" aria-label="Full name">
                         </div>
-                        <div class="col-span-2 border-b border-gray-500">
-                            <input class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none focus:border-gray-400 focus:ring-gray-400" type="tel" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="Contact" name="phone" aria-label="Email">
+
+                        <div class="border-b border-gray-500 my-2">
+                            <input class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none focus:border-gray-400 focus:ring-gray-400" type="email" placeholder="Email" name="email" aria-label="Email">
                         </div>
-                    </div> --}}
 
-                    <div class="border-b border-gray-500 my-2">
-                        <input class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none focus:border-gray-400 focus:ring-gray-400" type="email" placeholder="Email" name="email" aria-label="Email">
+                        <div class=" my-2">
+                            <button type="submit" id="submitButtonMobile" class=" w-full text-sm text-white hover:text-black px-2 py-2 bg-black hover:bg-transparent border border-black hover:border-black rounded-0">
+                                SUBMIT
+                            </button>
+                            <button type="button" id="submitButtonMobileDone" class=" w-full text-sm text-black text-gray-500 px-2 py-2 bg-black bg-transparent border border-gray-500 rounded-0">
+                                SUBMISSION COMPLETED
+                            </button>
+                        </div>
                     </div>
-
-                    <div class=" my-2">
-                        <button class=" w-full text-sm text-white hover:text-black px-2 py-2 bg-black hover:bg-transparent border border-black hover:border-black rounded-0" type="button">
-                            SUBMIT
-                        </button>
-                    </div>
-                </div>
+                </form>
             </div>
 
         </div>
     </div>
 @endmobile
+
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script>
+    $( document ).ready(function() {
+        if (localStorage.getItem('subscriptionSubmitted')) {
+            $('#submitButtonDone').show();
+            $('#submitButton').hide(); 
+            $('#submitButtonMobileDone').show();
+            $('#submitButtonMobile').hide();  
+        } else {
+            $('#submitButtonDone').hide();
+            $('#submitButton').show();
+            $('#submitButtonMobileDone').hide();
+            $('#submitButtonMobile').show();              
+        }
+    });
+
+    // Check if the form has been submitted before
+    // if (localStorage.getItem('subscriptionSubmitted')) {
+    //     disableForm();
+    // }
+
+    $('#subscriptionForm').on('submit', function(e){
+        e.preventDefault();
+
+        if (localStorage.getItem('subscriptionSubmitted')) {
+            // alert('You have already submitted the form');
+            
+            return;
+        }
+
+        var formData = new FormData(this);
+
+        $.ajaxSetup({
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            }
+        });
+
+        $.ajax({
+            type:'POST',
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="XSRF-TOKEN"]').attr('content')            },
+            url:"{{ URL('/subscription-form') }}",
+            data: formData,
+            processData: false,
+            contentType: false,
+            success:function(data)
+            {
+                if($.isEmptyObject(data.error)){
+                    // sessionStorage.removeItem("form_submission");
+                    // sessionStorage.setItem("form_submission", "true");
+                    // modalClose('mymodalcentered');
+                    $('#submitButtonDone').show();
+                    $('#submitButton').hide();  
+                }else{
+                    printErrorMsg(data.error);
+                    alert(data.error);
+
+                }
+            }
+        });
+
+        // Simulate a successful submission
+        // alert('Subscription successful!');
+
+        // Disable the form to prevent further submissions
+        disableForm();
+
+        // Store the submission status in local storage
+        localStorage.setItem('subscriptionSubmitted', 'true');
+    });
+
+    $('#subscriptionFormMobile').on('submit', function(e){
+        e.preventDefault();
+
+        if (localStorage.getItem('subscriptionSubmitted')) {
+            // alert('You have already submitted the form');
+            
+            return;
+        }
+
+        var formData = new FormData(this);
+
+        $.ajaxSetup({
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            }
+        });
+
+        $.ajax({
+            type:'POST',
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="XSRF-TOKEN"]').attr('content')            },
+            url:"{{ URL('/subscription-form') }}",
+            data: formData,
+            processData: false,
+            contentType: false,
+            success:function(data)
+            {
+                if($.isEmptyObject(data.error)){
+                    // sessionStorage.removeItem("form_submission");
+                    // sessionStorage.setItem("form_submission", "true");
+                    // modalClose('mymodalcentered');
+                    $('#submitButtonMobileDone').show();
+                    $('#submitButtonMobile').hide();  
+                }else{
+                    printErrorMsg(data.error);
+                    alert(data.error);
+
+                }
+            }
+        });
+
+        // Simulate a successful submission
+        // alert('Subscription successful!');
+
+        // Disable the form to prevent further submissions
+        disableFormMobile();
+
+        // Store the submission status in local storage
+        localStorage.setItem('subscriptionSubmitted', 'true');
+    });
+
+    function disableForm() {
+        document.getElementById('submitButton').disabled = true;
+    }
+
+    function disableFormMobile() {
+        document.getElementById('submitButtonMobile').disabled = true;
+    }
+</script>

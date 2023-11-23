@@ -26,7 +26,7 @@ class CommunityInquiry extends Mailable
     public function envelope(): Envelope
     {
         return new Envelope(
-            subject: 'ESNAAD - Community Inquiry',
+            subject: 'ESNAAD - Community Inquiry Lead',
         );
     }
 

@@ -6,7 +6,7 @@
                 <h2 class=" text-2xl xl:text-4xl">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                 </h2>
-                <p class="text-sm xl:text-base leading-8 mt-5">
+                <p class="text-base xl:text-base leading-8 mt-5">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rhoncus
                     augue ut ligula accumsan dictum. Phasellus euismod in lectus nec cursus.
                     Curabitur in sem et elit dignissim condimentum eget ac dui. Nulla non nisl mollis

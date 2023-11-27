@@ -403,16 +403,45 @@ class FrontEndController extends Controller
 
     public function subscription_form(Request $request) {
         
+        // try{
+        //     $data = [
+        //         'name'      =>  $request->name, 
+        //         'email'     =>  $request->email,
+        //         'ip'     =>  $request->ip_address
+        //     ];
+
+        //     // Mail::to('lead@edgerealty.ae')->send(new DemoEmail($mailData));
+        //     Mail::mailer('noreply')->to('lead@esnaad.com')->send(new SubscriptionInquiry($data));
+        //     Mail::mailer('noreply')->to('webmaster@esnaad.com')->send(new SubscriptionInquiry($data));
+
+        // } catch (\Exception $e) {
+        //     dd($e->getMessage());
+        // }
+
+        return Response::json(['success' => 'success'], 200);
+        
+
         try{
-            $data = [
-                'name'      =>  $request->name, 
-                'email'     =>  $request->email
+            $formData = [
+                'name' => $request->name,
+                'email' => $request->email,
+                // Add other form fields as needed
             ];
+            
+            // API endpoint on another domain
+            $apiEndpoint = 'https://mis.esnaad.com/api/v1/email-subscription';
 
-            // Mail::to('lead@edgerealty.ae')->send(new DemoEmail($mailData));
-            Mail::mailer('noreply')->to('lead@esnaad.com')->send(new SubscriptionInquiry($data));
-            Mail::mailer('noreply')->to('webmaster@esnaad.com')->send(new SubscriptionInquiry($data));
+            // Send a POST request to the API
+            $response = Http::post($apiEndpoint, $formData);
 
+            // Check the response
+            if ($response->successful()) {
+                // The request was successful
+                return response()->json(['message' => 'Form submitted successfully']);
+            } else {
+                // Handle errors
+                return response()->json(['error' => 'Error submitting form'], $response->status());
+            }
         } catch (\Exception $e) {
             dd($e->getMessage());
         }

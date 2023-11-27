@@ -33,14 +33,14 @@
             </div>
 
             @if(isset($available))
-                                <div class="grid md:grid-cols-2 gap-3 mb-5 mx-auto" >
-                                    @foreach($images as $image)
-                                        <div>
-                                            <img src="{{ URL("https://mis.esnaad.com/uploads/news/".$id."/images/".$image['name'])}}" alt="Awesome Tailwind CSS Timelines to use for free Image" class="object-cover w-auto mb-6 rounded-lg shadow h-auto"> 
-                                        </div>
-                                    @endforeach
-                                </div>
-                            @endif
+                <div class="grid md:grid-cols-2 gap-3 mb-5 mx-auto" >
+                    @foreach($images as $image)
+                        <div>
+                            <img src="{{ URL("https://mis.esnaad.com/uploads/news/".$id."/images/".$image['name'])}}" alt="Awesome Tailwind CSS Timelines to use for free Image" class="object-cover w-auto mb-6 rounded-lg shadow h-auto"> 
+                        </div>
+                    @endforeach
+                </div>
+            @endif
         </div>
     </div>
 

@@ -1,6 +1,16 @@
 <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
 
+<?php
+    if (!empty($_SERVER['HTTP_CLIENT_IP'])) {
+        $ip_address = $_SERVER['HTTP_CLIENT_IP'];
+    } elseif (!empty($_SERVER['HTTP_X_FORWARDED_FOR'])) {
+        $ip_address = $_SERVER['HTTP_X_FORWARDED_FOR'];
+    } else {
+        $ip_address = $_SERVER['REMOTE_ADDR'];
+    }
+?>
+
 @notmobile
     <div class="block py-24 sm:py-12 bg-footer_form" id="footer_form" style="visibility:hidden">
         <div class="container mx-auto px-2 lg:px-8">
@@ -9,14 +19,24 @@
                 <h3 class="text-4xl font-base">
                     Subscribe for Updates
                 </h3>
-                <p class="w-[75%] text-gray-800">
+                <p class="w-[75%] text-gray-800" id="submitIncomplete">
                     Stay in the loop and be the first to know about exciting news, exclusive offers, and important updates. Subscribe to our newsletter for a curated dose of inspiration delivered directly to your inbox.
                 </p>
+
+                    
+                <p class="w-[75%] text-gray-800 my-10" id="submitComplete">
+                    Thank You!
+                    Your Email subscription has been recorded. Feel free to check your emails regularly for important news on our latest trends.
+                </p>
             </div>
+
+            
 
             <div class="row">
                 <form id="subscriptionForm" >
                     <div class="grid xl:grid-cols-3 grid-cols-2 gap-2 xl:gap-4 text-dark ">
+
+                        <input type="hidden" name="ip_address" value="{{$ip_address}}">
                     
                         <div class="border-b border-gray-500">
                             <input class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none focus:border-gray-400 focus:ring-gray-400" type="text" placeholder="Full Name" name="name" aria-label="Full name" autocomplete="off">
@@ -48,17 +68,26 @@
         <div class="container mx-auto px-2 lg:px-8">
 
             <div class="row mb-5">
-                <h3 class="text-3xl font-base">
-                    Unlock Your Dream Home: 
+                <h3 class="text-3xl font-base" >
+                    Subscribe for Updates
                 </h3>
-                <p>
-                    Exclusive Real Estate Updates! Seize the moment and take the first step towards a brighter future
+                <p id="submitIncompleteMobile" class="leading-8 text-justify">
+                    Stay in the loop and be the first to know about exciting news, exclusive offers, and important updates. Subscribe to our newsletter for a curated dose of inspiration delivered directly to your inbox.
+                </p>
+                <p class="my-5 leading-8 text-justify" id="submitCompleteMobile">
+                    Thank You!
+                    Your Email subscription has been recorded. Feel free to check your emails regularly for important news on our latest trends.
                 </p>
             </div>
+
+            
 
             <div class="row">
                 <form id="subscriptionFormMobile" >
                     <div class="grid grid-cols-1 gap-2 xl:gap-4 text-dark ">
+
+                        <input type="hidden" name="ip_address" value="{{$ip_address}}">
+
                         <div class="border-b border-gray-500 my-2">
                             <input class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none focus:border-gray-400 focus:ring-gray-400" type="text" placeholder="Full Name" name="name" aria-label="Full name">
                         </div>
@@ -96,11 +125,23 @@
             $('#submitButton').hide(); 
             $('#submitButtonMobileDone').show();
             $('#submitButtonMobile').hide();  
+            $('#submitCompleteMobile').show();
+            $('#submitIncompleteMobile').hide();
+            $('#submitComplete').show();
+            $('#submitIncomplete').hide();
+            $('#subscriptionForm').hide();
+            $('#subscriptionFormMobile').hide();
         } else {
             $('#submitButtonDone').hide();
             $('#submitButton').show();
             $('#submitButtonMobileDone').hide();
-            $('#submitButtonMobile').show();              
+            $('#submitButtonMobile').show();
+            $('#submitCompleteMobile').show();
+            $('#submitIncompleteMobile').hide();
+            $('#submitComplete').show();
+            $('#submitIncomplete').hide();          
+            $('#subscriptionForm').show();
+            $('#subscriptionFormMobile').show();
         }
     });
 
@@ -140,8 +181,12 @@
                     // sessionStorage.removeItem("form_submission");
                     // sessionStorage.setItem("form_submission", "true");
                     // modalClose('mymodalcentered');
+                    $('#submitComplete').show();
+                    $('#submitIncomplete').hide();
                     $('#submitButtonDone').show();
                     $('#submitButton').hide();  
+                    $('#subscriptionForm').hide();
+
                 }else{
                     printErrorMsg(data.error);
                     alert(data.error);
@@ -154,10 +199,10 @@
         // alert('Subscription successful!');
 
         // Disable the form to prevent further submissions
-        disableForm();
+        // disableForm();
 
         // Store the submission status in local storage
-        localStorage.setItem('subscriptionSubmitted', 'true');
+        // localStorage.setItem('subscriptionSubmitted', 'true');
     });
 
     $('#subscriptionFormMobile').on('submit', function(e){
@@ -191,8 +236,11 @@
                     // sessionStorage.removeItem("form_submission");
                     // sessionStorage.setItem("form_submission", "true");
                     // modalClose('mymodalcentered');
+                    $('#submitCompleteMobile').show();
+                    $('#submitIncompleteMobile').hide();
                     $('#submitButtonMobileDone').show();
                     $('#submitButtonMobile').hide();  
+                    $('#subscriptionFormMobile').hide();
                 }else{
                     printErrorMsg(data.error);
                     alert(data.error);

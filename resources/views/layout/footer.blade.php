@@ -26,7 +26,7 @@
                                     <img style="height: 60px !important;" src="{{ asset('logo-dark-2.png') }}" alt="esnaad-logo-footer" class="mb-5">
                                 </span>
 
-                                <p class="text-md text-gray-700 w-full text-justify mb-6">
+                                <p class="text-md text-black w-full text-justify mb-6">
                                     {{ __('
                                         Lorem ipsum dolor sit amet, consectetur adipiscing
                                         elit. Vestibulum rhoncus augue ut ligula accumsan
@@ -108,26 +108,26 @@
 
                         <div class="mt-5">
                             <p class="text-md font-bold text-gray-800">
-                                <a href="{{ URL('/dubai-developers') }}">{{ __('Links') }}</a>
+                                {{ __('Links') }}
                             </p>
 
                             <ul class="list-none footer-li" style="padding-left:    0px !important;">
-                                <li class="text-md text-gray-700 my-2">
+                                <li class="text-md text-black my-2">
                                     <a href="{{ url('about-esnaad') }}">About ESNAAD</a>
                                 </li>
-                                <li class="text-md text-gray-700 my-2">
+                                <li class="text-md text-black my-2">
                                     <a href="{{ url('invest-in-dubai') }}">Why Invest In Dubai?</a>
                                 </li>
-                                <li class="text-md text-gray-700 my-2">
+                                <li class="text-md text-black my-2">
                                     <a href="{{ url('communities/') }}">Our Communities</a>
                                 </li>
-                                <li class="text-md text-gray-700 my-2">
+                                <li class="text-md text-black my-2">
                                     <a href="{{ url('developments/') }}">Our Developments</a>
                                 </li>
-                                <li class="text-md text-gray-700 my-2">
+                                <li class="text-md text-black my-2">
                                     <a href="{{ url('agency-registration') }}">Broker Registration</a>
                                 </li>
-                                <li class="text-md text-gray-700 my-2">
+                                <li class="text-md text-black my-2">
                                     <a href="{{ url('contact') }}">Contact Us</a>
                                 </li>
 
@@ -136,11 +136,11 @@
 
                         <div class="mt-5">
                             <p class="text-md font-bold text-gray-800">
-                                <a href="{{ URL('/dubai-new-projects') }}">{{ __('Contacts') }}</a>
+                                {{ __('Contacts') }}
                             </p>
 
                             <ul class="list-none footer-li leading-10" style="padding-left: 0px !important;">
-                                <li class="text-md text-gray-700 my-2">
+                                <li class="text-md text-black my-2">
                                     <div  class="inline-flex items-center">
                                         <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
                                             width="15.000000pt" height="15.000000pt" viewBox="0 0 512.000000 512.000000"
@@ -168,7 +168,7 @@
                                         Building No. 1 - City Walk, Dubai
                                     </div>
                                 </li>
-                                <li class="text-md text-gray-700 my-2">
+                                <li class="text-md text-black my-2">
                                     <div class="inline-flex items-center">
                                         <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
                                             width="13.000000pt" height="13.000000pt" viewBox="0 0 512.000000 512.000000"
@@ -191,7 +191,7 @@
                                         +97145807142
                                     </div>
                                 </li>
-                                <li class="text-md text-gray-700 my-2">
+                                <li class="text-md text-black my-2">
                                     <div class="inline-flex items-center" >
                                         <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
                                             width="15.000000pt" height="15.000000pt" viewBox="0 0 512.000000 512.000000"
@@ -228,7 +228,7 @@
 
                     <div class="flex justify-left my-2">
                         <div>
-                            <p class="text-base text-gray-700">
+                            <p class="text-base text-black">
                                 ESNAAD © {{ now()->year }} All Rights Reserved | Terms & Conditions | Privacy & Policy
                             </p>
                         </div>
@@ -254,7 +254,7 @@
                                     <img style="height: 60px !important;" src="{{ asset('logo-dark-2.png') }}" alt="esnaad-logo-footer" class="mb-5">
                                 </span>
 
-                                <p class="text-md text-gray-700 text-justify mb-6 w-[80%]">
+                                <p class="text-md text-black text-justify mb-6 w-[80%]">
                                     {{ __('
                                         Lorem ipsum dolor sit amet, consectetur adipiscing
                                         elit. Vestibulum rhoncus augue ut ligula accumsan
@@ -268,13 +268,13 @@
                                 <div class="flex my-8 text-justify my-auto inline-block align-middle w-[50%]">
 
                                     <div class="flex-1">
-                                        <div class="w-8 bg-footer rounded-3xl p-1">
-                                                <a href="https://www.facebook.com/edgerealtydubai">
-                                                <img
-                                                    src="{{ asset('front/icons/fb.svg') }}"
-                                                    class="w-fit rounded"
-                                                    alt="social-media-fb"
-                                                >
+                                        <div class="w-8 bg-footer rounded-3xl">
+                                                <a href="https://www.facebook.com/edgerealtydubai" target="_blank" aria-label="esnaad-facebook">
+                                                    <img
+                                                        src="{{ asset('front/icons/fb.svg') }}"
+                                                        class="w-fit rounded"
+                                                        alt="social-media-fb"
+                                                    >
                                                 </a>
                                         </div>
                                     </div>
@@ -333,27 +333,27 @@
                         </div>
 
                         <div >
-                            <p class="text-md font-bold text-gray-800">
+                            <p class="text-md font-bold text-black">
                                 {{ __('Links') }}
                             </p>
 
                             <ul class="list-none footer-li" style="padding-left: 0px !important;">
-                                <li class="text-md text-gray-700 my-2">
+                                <li class="text-md text-black my-2">
                                     <a href="{{ url('about-esnaad') }}">About ESNAAD</a>
                                 </li>
-                                <li class="text-md text-gray-700 my-2">
+                                <li class="text-md text-black my-2">
                                     <a href="{{ url('invest-in-dubai') }}">Why Invest In Dubai?</a>
                                 </li>
-                                <li class="text-md text-gray-700 my-2">
+                                <li class="text-md text-black my-2">
                                     <a href="{{ url('communities/') }}">Our Communities</a>
                                 </li>
-                                <li class="text-md text-gray-700 my-2">
+                                <li class="text-md text-black my-2">
                                     <a href="{{ url('developments/') }}">Our Developments</a>
                                 </li>
-                                <li class="text-md text-gray-700 my-2">
+                                <li class="text-md text-black my-2">
                                     <a href="{{ url('agency-registration') }}">Broker Registration</a>
                                 </li>
-                                <li class="text-md text-gray-700 my-2">
+                                <li class="text-md text-black my-2">
                                     <a href="{{ url('contact') }}">Contact Us</a>
                                 </li>
 
@@ -361,12 +361,12 @@
                         </div>
 
                         <div >
-                            <p class="text-md font-bold text-gray-800">
-                                <a href="{{ URL('/dubai-new-projects') }}">{{ __('Contacts') }}</a>
+                            <p class="text-md font-bold text-black">
+                                {{ __('Contacts') }}
                             </p>
 
                             <ul class="list-none footer-li leading-10" style="padding-left: 0px !important;">
-                                <li class="text-md text-gray-700 my-2">
+                                <li class="text-md text-black my-2">
                                     <div  class="inline-flex items-center">
                                         <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
                                             width="15.000000pt" height="15.000000pt" viewBox="0 0 512.000000 512.000000"
@@ -394,7 +394,7 @@
                                         Building No. 1 - City Walk, Dubai
                                     </div>
                                 </li>
-                                <li class="text-md text-gray-700 my-2">
+                                <li class="text-md text-black my-2">
                                     <div class="inline-flex items-center">
                                         <a href="tel:{{ env('COMPANY_PHONE') }}" class="inline-flex items-center"></a>
                                             <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
@@ -420,7 +420,7 @@
                                     </div>
                                 </li>
                                 <?php //EMAIL IS BELOW ENCODED OR IN OBFUSCATION ?>
-                                <li class="text-md text-gray-700 my-2">
+                                <li class="text-md text-black my-2">
                                     <div class="inline-flex items-center" >
                                         <a href="mailto:{{env('COMPANY_EMAIL')}}" class="inline-flex items-center">
                                             <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
@@ -458,7 +458,7 @@
 
                     <div class="flex justify-left my-2">
                         <div>
-                            <p class="text-base text-gray-700">
+                            <p class="text-base text-black">
                                 ESNAAD © {{ now()->year }} All Rights Reserved | Terms & Conditions | Privacy & Policy
                             </p>
                         </div>
@@ -487,7 +487,7 @@
                                     <img style="height: 60px !important;" src="{{ asset('logo-dark-2.png') }}" alt="esnaad-logo-footer" class="mb-5">
                                 </span>
 
-                                <p class="text-md text-gray-700 text-justify mb-6 w-full leading-8">
+                                <p class="text-md text-black text-justify mb-6 w-full leading-8">
                                     {{ __('
                                         Lorem ipsum dolor sit amet, consectetur adipiscing
                                         elit. Vestibulum rhoncus augue ut ligula accumsan
@@ -503,7 +503,7 @@
 
                                     <div class="flex-1">
                                         <div class="w-8 bg-white rounded-3xl p-0 mx-3">
-                                                <a href="https://www.facebook.com/edgerealtydubai" target="_blank" aria-label="esnaad-fb">
+                                                <a href="https://www.facebook.com/edgerealtydubai" target="_blank" aria-label="esnaad-facebook">
                                                 <img
                                                     src="{{ asset('front/icons/fb.svg') }}"
                                                     class="w-fit rounded"
@@ -573,22 +573,22 @@
                         </p>
 
                         <ul class="list-none footer-li capitalize leading-8" style="padding-left: 0px !important;">
-                            <li class="text-md text-gray-700 my-3">
+                            <li class="text-md text-black my-3">
                                 <a href="{{ url('about-esnaad') }}">About ESNAAD</a>
                             </li>
-                            <li class="text-md text-gray-700 my-3">
+                            <li class="text-md text-black my-3">
                                 <a href="{{ url('invest-in-dubai') }}">Why Invest In Dubai?</a>
                             </li>
-                            <li class="text-md text-gray-700 my-3">
+                            <li class="text-md text-black my-3">
                                 <a href="{{ url('communities/') }}">Communities</a>
                             </li>
-                            <li class="text-md text-gray-700 my-3">
+                            <li class="text-md text-black my-3">
                                 <a href="{{ url('developments/') }}">Projects</a>
                             </li>
-                            <li class="text-md text-gray-700 my-3">
+                            <li class="text-md text-black my-3">
                                 <a href="{{ url('broker-registration') }}">Broker Registration</a>
                             </li>
-                            <li class="text-md text-gray-700 my-3">
+                            <li class="text-md text-black my-3">
                                 <a href="{{ url('contact') }}">Contact Us</a>
                             </li>
 
@@ -602,7 +602,7 @@
 
                         <ul class="list-none footer-li leading-10" style="padding-left: 0px !important;">
                             
-                            <li class="text-md text-gray-700 my-2">
+                            <li class="text-md text-black my-2">
                                 <div class="inline-flex items-center">
                                     <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
                                         width="13.000000pt" height="13.000000pt" viewBox="0 0 512.000000 512.000000"
@@ -625,7 +625,7 @@
                                     +97145807142
                                 </div>
                             </li>
-                            <li class="text-md text-gray-700 my-2">
+                            <li class="text-md text-black my-2">
                                 <div class="inline-flex items-center" >
                                     <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
                                         width="15.000000pt" height="15.000000pt" viewBox="0 0 512.000000 512.000000"
@@ -648,7 +648,7 @@
                                     &#105;&#110;&#102;&#111;&#064;&#101;&#115;&#110;&#097;&#097;&#100;&#046;&#099;&#111;&#109;
                                 </div>
                             </li>
-                            <li class="text-md text-gray-700 my-2">
+                            <li class="text-md text-black my-2">
                                 <div  class="inline-flex items-center">
                                     <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
                                         width="15.000000pt" height="15.000000pt" viewBox="0 0 512.000000 512.000000"
@@ -688,7 +688,7 @@
 
                     <div class="flex justify-left my-2">
                         <div>
-                            <p class="text-base text-gray-700 leading-8">
+                            <p class="text-base text-black leading-8">
                                 ESNAAD © {{ now()->year }} All Rights Reserved <br>
                                 <a href="{{ url('terms-and-conditions') }}" aria-label="terms-and-conditions">Terms & Conditions</a>
                                 <a href="{{ url('privacy-and-policy') }}" aria-label="privacy-and-policy">| Privacy & Policy</a>

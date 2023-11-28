@@ -125,21 +125,28 @@
             $('#submitButton').hide(); 
             $('#submitButtonMobileDone').show();
             $('#submitButtonMobile').hide();  
+
             $('#submitCompleteMobile').show();
             $('#submitIncompleteMobile').hide();
+
             $('#submitComplete').show();
             $('#submitIncomplete').hide();
+            
             $('#subscriptionForm').hide();
             $('#subscriptionFormMobile').hide();
         } else {
             $('#submitButtonDone').hide();
             $('#submitButton').show();
+
             $('#submitButtonMobileDone').hide();
             $('#submitButtonMobile').show();
-            $('#submitCompleteMobile').show();
-            $('#submitIncompleteMobile').hide();
-            $('#submitComplete').show();
-            $('#submitIncomplete').hide();          
+
+            $('#submitCompleteMobile').hide();
+            $('#submitIncompleteMobile').show();
+
+            $('#submitComplete').hide();
+            $('#submitIncomplete').show();     
+
             $('#subscriptionForm').show();
             $('#subscriptionFormMobile').show();
         }
@@ -163,14 +170,13 @@
 
         $.ajaxSetup({
             headers: {
-                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content'),
+                'authkey': 'YOUR_SECRET_KEY',
             }
         });
 
         $.ajax({
             type:'POST',
-            headers: {
-                'X-CSRF-TOKEN': $('meta[name="XSRF-TOKEN"]').attr('content')            },
             url:"{{ URL('/subscription-form') }}",
             data: formData,
             processData: false,
@@ -204,6 +210,10 @@
         // Store the submission status in local storage
         // localStorage.setItem('subscriptionSubmitted', 'true');
     });
+
+
+
+
 
     $('#subscriptionFormMobile').on('submit', function(e){
         e.preventDefault();

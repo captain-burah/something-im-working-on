@@ -41,6 +41,9 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Str;
 use Illuminate\Support\Facades\Http;
 
+use Illuminate\Http\Client\RequestException;
+use GuzzleHttp\Client;
+
 use Response;
 
 class FrontEndController extends Controller
@@ -418,56 +421,85 @@ class FrontEndController extends Controller
         //     dd($e->getMessage());
         // }
 
-        return Response::json(['success' => 'success'], 200);
         
 
         try{
-            $formData = [
+            // $formData = [
+            //     'headers' => [
+            //         'Content-Type' => 'application/json',
+            //         'X-CSRF-TOKEN' => csrf_token(),
+            //         'authkey' => 'YOUR_SECRET_KEY',
+            //     ],
+            //     'body' => json_encode([
+            //         'name' => $request->name,
+            //         'email' => $request->email,
+            //         // Add other form fields as needed
+            //     ]),
+            // ];
+            
+            // // API endpoint on another domain
+            // $apiEndpoint = 'https://mis.esnaad.com/api/v1/esnaad/email-subscription';
+
+            // // Send a POST request to the API
+            // $response = Http::post($apiEndpoint, $formData);
+
+            // // Check the response
+            // if ($response->successful()) {
+            //     // The request was successful
+            //     return response()->json(['message' => 'Form submitted successfully']);
+            // } else {
+            //     // Handle errors
+            //     dd($response->body());
+            //     return response()->json(['error' => 'Error submitting form'], $response->status());
+            // }
+
+            
+
+            $data = [
+
                 'name' => $request->name,
                 'email' => $request->email,
-                // Add other form fields as needed
             ];
-            
-            // API endpoint on another domain
-            $apiEndpoint = 'https://mis.esnaad.com/api/v1/email-subscription';
 
-            // Send a POST request to the API
-            $response = Http::post($apiEndpoint, $formData);
 
-            // Check the response
-            if ($response->successful()) {
-                // The request was successful
-                return response()->json(['message' => 'Form submitted successfully']);
+            $curl = curl_init();
+
+            $url = 'https://mis.esnaad.com/api/email-subscription-v3';
+
+            curl_setopt_array($curl, array(
+                CURLOPT_URL => $url,    
+                CURLOPT_RETURNTRANSFER => true,
+                CURLOPT_ENCODING => '',
+                CURLOPT_MAXREDIRS => 10,
+                CURLOPT_TIMEOUT => 0,
+                CURLOPT_FOLLOWLOCATION => true,
+                CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+                CURLOPT_CUSTOMREQUEST => 'POST',
+                CURLOPT_POSTFIELDS => $data,
+                CURLOPT_HTTPHEADER => array(
+                    'Cookie: XSRF-TOKEN=eyJpdiI6ImdjVUpXbDhCbk9BSGFWOTZsTTZSL0E9PSIsInZhbHVlIjoiUUJrWTlWOVVnb00zWDhzVk1kQTBTWWNYcHlvZXA0OXpEMWVVREUyTlZXR3Z2dkNMSlZZb1JMK3ppNjROazMzYlczalc0NHVBKzZ6WWhPYTloT3d4UmI0U0ptZUR6S0JsbmRrdlZzSThQSVNOUi90WGw0WkRhYXpTUFVIQXZGS0wiLCJtYWMiOiIxMTA2OWI1ZmZjMjZiY2I5ZGRjZWQyNmIwNGY1ZTRmMjgwNTk5YWFmODE1YzU4ODg3MWNmN2ViZTkzNjg4ODEzIiwidGFnIjoiIn0%3D'
+                ),
+            ));
+
+            $response = curl_exec($curl);
+
+            if ($response === false) {
+                $error = curl_error($curl);
+                $errno = curl_errno($curl);
+
+                echo "Error: " . $error . " (Error code: " . $errno . ")";
             } else {
-                // Handle errors
-                return response()->json(['error' => 'Error submitting form'], $response->status());
+                // Process successful response
+                echo $response;
             }
+
+            curl_close($curl);
+
         } catch (\Exception $e) {
             dd($e->getMessage());
         }
         
-        return Response::json(['success' => 'success'], 200);
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

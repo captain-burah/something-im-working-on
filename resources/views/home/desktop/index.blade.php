@@ -53,7 +53,7 @@
         }
 
         .bg-image-1 {
-            background-image: url({{ asset('home/sec3.jpg') }});
+            background-image: url({{ asset('home/COMING_SOON.jpeg') }});
             background-size: cover;
             background-repeat: no-repeat;
             position: absolute;
@@ -68,11 +68,11 @@
         /* blur the background, to make blurred edges that overflow the unblurred image that is on top */
 
         .bg-image-blur {
-        -webkit-filter: blur(20px);
-        -moz-filter: blur(20px);
-        -o-filter: blur(20px);
-        -ms-filter: blur(20px);
-        filter: blur(20px);
+            -webkit-filter: blur(20px);
+            -moz-filter: blur(20px);
+            -o-filter: blur(20px);
+            -ms-filter: blur(20px);
+            filter: blur(20px);
         }
     </style>
 @endsection

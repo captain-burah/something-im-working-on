@@ -96,8 +96,6 @@
                     </x-nav-link>
                 </div>
 
-                
-
                 <div class="hidden space-x-8 sm:-my-px sm:flex mx-auto no-underline px-8">
                     <x-nav-link href="{{ url('projects') }}" aria-label="navbar-route">
                         {{ __('PROJECTS') }}

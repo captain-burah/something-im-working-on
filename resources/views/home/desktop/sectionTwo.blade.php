@@ -9,22 +9,24 @@
 
         <?php //LOAD COMPONENT INDEX CARD ?>
         <x-index-card
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rhoncus augue ut ligula accumsan.
+            description="Our designs blend aesthetics with functionality, creating homes that are as beautiful as they are comfortable while we weave architectural dreams into reality
             "
             base="QUALITY"
             url="{{ asset('home/DESIGN.webp') }}"
         />
 
         <x-index-card
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rhoncus augue ut ligula accumsan.
+            description="We are committed to delivering quality in every aspect of its projects, from the choice of materials and equipment, to the execution and supervision of the
+construction
             "
             base="QUALITY"
             url="{{ asset('home/QUALITY.webp') }}"
         />
 
         <x-index-card
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rhoncus augue ut ligula accumsan. 
-             ."
+            description="Relentless pursuit of the highest standards, achieved through dedication, skill and a commitment
+to surpassing expectations
+"
             base="EXCELENCE"
             url="{{ asset('home/EXCELLENCE.webp') }}"
         />

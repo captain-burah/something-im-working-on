@@ -27,7 +27,9 @@ Route::get('/communities/{slug}', [FrontEndController::class, 'communities_detai
 
 Route::get('/developments/{slug}', [FrontEndController::class, 'developments_details'])->name('esnaad.developments');
 
-Route::get('/projects', [FrontEndController::class, 'developments'])->name('esnaad.developments.comingsoon');
+Route::get('/projects', [FrontEndController::class, 'projects'])->name('esnaad.projects');
+
+Route::get('/project-details', [FrontEndController::class, 'developments'])->name('esnaad.developments.comingsoon');
 
 Route::get('/communities', [FrontEndController::class, 'communities'])->name('esnaad.communities.comingsoon');
 
@@ -52,8 +54,8 @@ Route::get('/terms-and-conditions', [FrontEndController::class, 'terms_and_condi
 // });
 Route::get('/privacy-and-policy', [FrontEndController::class, 'privacy_and_policy'])->name('website.privacy-and-policy');
 
-Route::get('/agency-registration', [FrontEndController::class, 'agency_registration'])->name('agency.registration');
 
+Route::get('/agency-registration', [FrontEndController::class, 'agency_registration'])->name('agency.registration');
 
 Route::post('/agency-registration-post', [FrontEndController::class, 'agency_registration_post'])->name('agency.registration.post');
 

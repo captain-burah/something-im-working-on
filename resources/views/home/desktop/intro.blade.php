@@ -6,9 +6,7 @@
 
             <p class=" text-base leading-5 text-base     text-center leading-8">
                 {{ __('
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rhoncus augue ut ligula
-                    accumsan dictum. Phasellus euismod in lectus nec cursus. Curabitur in sem et elit dignissim
-                    condimentum eget ac dui. Nulla non nisl mollis ipsum laoreet ultrices ac in sapien.
+                    Inspired by over  20 years of expertise within the real estate industry & construction .The brand is dedicated to the truly exceptional delivering each luxurious project with the highest levels of design, craftsmanship and service offering a tailor made and unique one-stop shop service to our clients from around the world, Looking beyond what is, to see what could be
                 ') }}
                 {{-- <br><br>
                 {{ __('Start your journey today and let us help you find your dream property in Dubai.')}} --}}

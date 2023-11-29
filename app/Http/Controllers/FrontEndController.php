@@ -199,7 +199,6 @@ class FrontEndController extends Controller
 
     public function developments_details($slug)
     {
-
         // CALL API FROM MIS
         // $response = Http::withHeaders([
         //     'authkey' => 'YOUR_SECRET_KEY'
@@ -219,6 +218,14 @@ class FrontEndController extends Controller
 
 
         return view('development', $this->data);
+    }
+
+
+    public function projects() {
+
+        $jsonSEOData = $this->landingpageseos(3);
+        $this->data['jsonSEOData'] =  $jsonSEOData->json();
+        return view('projects', $this->data);
     }
 
 

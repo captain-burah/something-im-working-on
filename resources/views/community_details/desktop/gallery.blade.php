@@ -38,9 +38,9 @@
     Alpine.data("imageSlider", () => ({
       currentIndex: 1,
       images: [
-        "https://unsplash.it/640/425?image=30",
-        "https://unsplash.it/640/425?image=40",
-        "https://unsplash.it/640/425?image=50",
+        "{{ asset('developments/3.jpg')}}",
+        "{{ asset('developments/2.jpg')}}",
+        "{{ asset('developments/7.jpg')}}",
       ],
       previous() {
         if (this.currentIndex > 1) {

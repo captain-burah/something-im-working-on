@@ -14,7 +14,7 @@
 <div class="sm:container sm:mx-auto mx-0 px-0 my-20 sm:my-4 mx-auto">
     <div class="flex justify-left ...">
         <div class="mr-4">
-            <button onclick="openModal('mymodalcentered-community-register')"  class=" lg:w-100 text-base text-white font-bold hover:text-black px-2 lg:py-4 bg-black hover:bg-transparent border border-black hover:border-black rounded-0" type="button">
+            <button onclick="openModal('mymodalcentered-community-register')"  class=" lg:w-100 text-xl text-white font-bold hover:text-black px-2 lg:py-6 bg-black hover:bg-transparent border border-black hover:border-black rounded-0" type="button">
                 Register Your Interest
             </button>
         </div>

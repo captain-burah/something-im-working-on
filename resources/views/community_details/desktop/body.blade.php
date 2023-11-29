@@ -7,7 +7,7 @@
     </h2>
 
 
-    <div class="text-esnaad_text text-justify font-light my-8 w-full">
+    <div class="text-esnaad_text text-justify font-light my-8 w-full leading-8">
         {{-- {!!html_entity_decode($properties->map_embed_code, ENT_COMPAT, 'UTF-8')!!} --}}
 
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rhoncus augue ut ligula accumsan dictum. Phasellus euismod in lectus nec cursus. Curabitur in sem et elit dignissim

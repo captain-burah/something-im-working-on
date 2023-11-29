@@ -4,16 +4,19 @@
         <div class="grid md:grid-cols-2 mx-auto">
             <div>
                 <h2 class=" text-2xl xl:text-4xl text-center">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    OUR STORY
                 </h2>
                 <p class="text-base xl:text-base text-justify leading-8 mt-5">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rhoncus
-                    augue ut ligula accumsan dictum. Phasellus euismod in lectus nec cursus.
-                    Curabitur in sem et elit dignissim condimentum eget ac dui. Nulla non nisl mollis
-                    ipsum laoreet ultrices ac in sapien. Lorem ipsum dolor sit amet, consectetur
-                    adipiscing elit. Vestibulum rhoncus augue ut ligula accumsan dictum. Phasellus
-                    euismod in lectus nec cursus. Curabitur in sem et elit dignissim condimentum eget
-                    ac dui. Nulla non nisl mollis ipsum laoreet ultrices ac in sapien.
+                    Inspired by over  20 years of expertise within the real estate industry & construction, elevating your living experiences
+                    with our thoughtfully crafted spaces, where every detail reflects our dedication to creating homes 
+                    that stand as a testament to sophistication and superior craftsmanship.
+                    The brand is dedicated to delivering luxurious projects with 
+                    levels of designs beyond imaginations, craftsmanship and services that offer unique and a tailored one-stop 
+                    shop to our clients from around the world, looking beyond what is, to see what could be.
+                </p>
+
+                <p class="text-base xl:text-base text-justify leading-8 mt-5">
+                    Our objective is to build market leading new luxury homes in locations ready for regeneration. Professional in our approach, entrepreneurial in our thinking and loyal in our relationships, Esnaad Real Estate Developments is all about mutual benefit,We combine innovation and outstanding design to deliver uniquely crafted homes and neighbourhoods.
                 </p>
             </div>
         </div>

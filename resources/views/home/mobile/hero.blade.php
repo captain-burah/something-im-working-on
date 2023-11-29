@@ -12,7 +12,7 @@
         }
         .video-wrapper {
             width: 100vw;
-            height: 100vh;
+            height: 80vh;
             position: relative;
             overflow: hidden;
             text-align: center;

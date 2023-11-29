@@ -8,8 +8,8 @@
                 </h2>
                 <p class="text-sm xl:text-base leading-8 mt-10 text-justify">
                     Inspired by over  20 years of expertise within the real estate industry & construction, elevating your living experiences
-                     with our thoughtfully crafted spaces, where every detail reflects our dedication to creating homes 
-                     that stand as a testament to sophistication and superior craftsmanship.
+                    with our thoughtfully crafted spaces, where every detail reflects our dedication to creating homes 
+                    that stand as a testament to sophistication and superior craftsmanship.
                     The brand is dedicated to delivering luxurious projects with 
                     levels of designs beyond imaginations, craftsmanship and services that offer unique and a tailored one-stop 
                     shop to our clients from around the world, looking beyond what is, to see what could be.

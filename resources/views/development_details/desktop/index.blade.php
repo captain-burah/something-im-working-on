@@ -25,16 +25,18 @@
         <section class="my-0">
             @include('development_details.desktop.header')
         </section>
-        <section class="my-15">
+        <section class="my-10">
             @include('development_details.desktop.bodyOne')
+        </section>
+
+        
+
+        <section class="my-15 ">
+            @include('development_details.desktop.bodyFour')
         </section>
 
         <section class="my-15">
             @include('development_details.desktop.bodyTwo')
-        </section>
-
-        <section class="my-15 ">
-            @include('development_details.desktop.bodyFour')
         </section>
 
 

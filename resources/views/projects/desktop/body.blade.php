@@ -89,7 +89,7 @@
                             </div>
                             <div class="text-center py-8 sm:py-6">
                                 <p class="text-xl text-gray-700 font-bold mb-2">Coming Soon</p>
-                                <p class="text-base text-gray-400 font-normal">Al Barari</p>
+                                <p class="text-base text-gray-400 font-normal">Location </p>
                             </div>
                         </div>
                     </div>

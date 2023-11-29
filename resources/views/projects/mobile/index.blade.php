@@ -19,10 +19,7 @@
 @section('content')
     @mobile
         <section>
-             @include('constructions.mobile.header')
-        </section>
-        <section>
-            @include('constructions.mobile.body')
+            @include('projects.mobile.body')
         </section>
 {{-- 
 

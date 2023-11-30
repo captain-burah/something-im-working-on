@@ -193,6 +193,13 @@ class FrontEndController extends Controller
         $this->data['long'] =  55.156860;
         $this->data['lat'] = 25.101131;
 
+        return view('communities', $this->data);
+    }
+
+    public function community_details() {
+        $this->data['long'] =  55.156860;
+        $this->data['lat'] = 25.101131;
+
         return view('communityDetails', $this->data);
     }
 

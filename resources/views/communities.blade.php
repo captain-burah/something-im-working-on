@@ -26,7 +26,7 @@
 
     {{-- @include('layoutv2.search') --}}
 
-    @include('communities.intro')
+    {{-- @include('communities.intro') --}}
 
     @include('communities.cards')
 

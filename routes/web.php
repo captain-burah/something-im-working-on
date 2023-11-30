@@ -33,6 +33,8 @@ Route::get('/project-details', [FrontEndController::class, 'developments'])->nam
 
 Route::get('/communities', [FrontEndController::class, 'communities'])->name('esnaad.communities.comingsoon');
 
+Route::get('/community-details', [FrontEndController::class, 'community_details'])->name('esnaad.community.details');
+
 Route::get('/media-center', [FrontEndController::class, 'media_center'])->name('esnaad.media_center');
 
 Route::get('/contact', [FrontEndController::class, 'contact'])->name('esnaad.contact');

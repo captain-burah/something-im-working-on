@@ -111,9 +111,9 @@
     <div class="relative isolate  h-full flex flex-1 flex-col justify-between">
         <div></div>
     
-        <video playsinline autoplay muted loop poster="/developments/6.jpg">
+        <video name="ESNAAD" playsinline autoplay muted loop poster="/developments/6.jpg" class="mt-[5rem]">
             {{-- <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4"> --}}
-            {{-- <source src="{{ asset('home/HERO.mp4') }}" type="video/mp4"> --}}
+            <source src="{{ asset('videos/1.mp4') }}" type="video/mp4">
             Your browser does not support the video tag.
 
         </video>

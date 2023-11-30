@@ -14,7 +14,7 @@
 <div class="container sm:mx-auto mx-0 px-0 my-8 mx-auto">
     <div class="">
         <div class="mx-0">
-            <button onclick="openModal('mymodalcentered-community-register')"   class=" w-full bg-gray-900 hover:bg-gray-700 border-gray-900 hover:border-gray-700 text-sm xl:text-base border-4 text-white py-1 px-2 rounded-0" type="button">
+            <button onclick="openModal('mymodalcentered-community-register')"   class=" w-full bg-gray-900 hover:bg-gray-700 border-gray-900 hover:border-gray-700 text-lg xl:text-base border-4 text-white py-1 px-2 rounded-0" type="button">
                 Register Your Interest
             </button>
         </div>
@@ -65,7 +65,7 @@
                     <div class="px-2 w-full" style="max-height: 40vh;">
 
                         <div class="mb-6">
-                            Living in {{$response[0]['title']}}
+                            Our Communities
                         </div>
 
                         <div class="mb-6">
@@ -199,6 +199,7 @@
 
     // Copy the text inside the text field
     navigator.clipboard.writeText(copyText.value);
+    }
 
 </script>
 

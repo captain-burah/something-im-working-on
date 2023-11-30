@@ -9,10 +9,10 @@
     <div class="row my-10">
         <div class="grid grid-cols-5 gap-12 mb-5 mx-auto">
             
-            <div class="col-span-2 w-full bg-white rounded-lg sahdow-lg overflow-hidden flex flex-col justify-center items-center ">
-                <div class="relative overflow-hidden rounded-xl max-h-[24rem] ">
+            <div class="col-span-2 w-full bg-white sahdow-lg overflow-hidden flex flex-col justify-center items-center ">
+                <div class="relative overflow-hidden max-h-[24rem] ">
                     <div
-                        class="text-white text-2xl rounded-xl absolute inset-0  bg-gray-950/90 flex justify-center items-center ">
+                        class="text-white text-2xl absolute inset-0  flex justify-center items-center shadow " style="background-color: #000; opacity: .9;">
                         COMING SOON 
                     </div>
                     <img class="max-h-[24rem] w-full object-cover "

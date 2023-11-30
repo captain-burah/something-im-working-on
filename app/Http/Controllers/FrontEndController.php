@@ -31,6 +31,8 @@ use App\Models\Project_image;
 use App\Models\ProjectLocation;
 use App\Models\Landingpageseos;
 
+  
+use PDF;
 use Mail;
 use App\Mail\DemoEmail;
 use App\Mail\CommunityInquiry;
@@ -415,51 +417,240 @@ class FrontEndController extends Controller
 
 
     public function agency_registration_post(Request $request) {
+        // dd($request->files);
+        // foreach($request->files as $file) {
+        //     dd($file);
+        // }
 
-        // dd($request->power_of_atty_or_moa_id);'
+        $data = [
+            'company_name'      =>  $request->company_name, 
+            'country'      =>  $request->country, 
+            'trade_license'      =>  $request->trade_license, 
+            'trade_license_expiry'      =>  $request->trade_license_expiry, 
+            'rera_certificate'      =>  $request->rera_certificate, 
+            'rera_certificate_expiry'      =>  $request->rera_certificate_expiry, 
+            
+            'authorized_p_name'      =>  $request->authorized_p_name, 
+            'authorized_p_country'      =>  $request->authorized_p_country, 
+            'authorized_p_passport'      =>  $request->authorized_p_passport, 
+            'authorized_p_position'      =>  $request->authorized_p_position, 
+            'authorized_p_email'      =>  $request->authorized_p_email, 
+            'authorized_p_contact'      =>  $request->authorized_p_contact, 
+            'authorized_p_address'      =>  $request->authorized_p_address, 
+            'authorized_p_city'      =>  $request->authorized_p_city, 
 
-        $power_of_atty_or_moa_id = $request->power_of_atty_or_moa_id;
+            'bank_name'      =>  $request->bank_name, 
+            'bank_country'      =>  $request->bank_country, 
+            'bank_city'      =>  $request->bank_city, 
+            'account_no'      =>  $request->account_no, 
+            'iban'      =>  $request->iban, 
+            'account_title'      =>  $request->account_title, 
+        ];
+        
+        // if($request->has('power_of_atty_or_moa_id')) {
+        //     $power_of_atty_or_moa_id = $request->power_of_atty_or_moa_id;
+        //     $this->data['power_of_atty_or_moa_id_path'] = $power_of_atty_or_moa_id->getRealPath();
+        //     $this->data['power_of_atty_or_moa_id_name'] = $power_of_atty_or_moa_id->getClientOriginalName();
+        //     $this->data['power_of_atty_or_moa_id_type'] = $power_of_atty_or_moa_id->getMimeType();
+        // } else {
+        //     $this->data['power_of_atty_or_moa_id_path'] = null;
+        //     $this->data['power_of_atty_or_moa_id_name'] = null;
+        //     $this->data['power_of_atty_or_moa_id_type'] = null;
+        // }
+        
+        // if($request->has('valid_trade_license_id')) {
+        //     $valid_trade_license_id = $request->valid_trade_license_id;
+        //     $this->data['valid_trade_license_id_path'] = $valid_trade_license_id->getRealPath();
+        //     $this->data['valid_trade_license_id_name'] = $valid_trade_license_id->getClientOriginalName();
+        //     $this->data['valid_trade_license_id_type'] = $valid_trade_license_id->getMimeType();
+        // } else {
+        //     $this->data['valid_trade_license_id_path'] = null;
+        //     $this->data['valid_trade_license_id_name'] = null;
+        //     $this->data['valid_trade_license_id_type'] = null;
+        // }
+        
+        // if($request->has('rera_certificate_id')) {
+        //     $valid_trade_license_id = $request->rera_certificate_id;
+        //     $this->data['rera_certificate_id_path'] = $rera_certificate_id->getRealPath();
+        //     $this->data['rera_certificate_id_name'] = $rera_certificate_id->getClientOriginalName();
+        //     $this->data['rera_certificate_id_type'] = $rera_certificate_id->getMimeType();
+        // } else {
+        //     $this->data['rera_certificate_id_path'] = null;
+        //     $this->data['rera_certificate_id_name'] = null;
+        //     $this->data['rera_certificate_id_type'] = null;
+        // }
+        
+        // if($request->has('broker_card_id')) {
+        //     $valid_trade_license_id = $request->broker_card_id;
+        //     $this->data['broker_card_id_path'] = $broker_card_id->getRealPath();
+        //     $this->data['broker_card_id_name'] = $broker_card_id->getClientOriginalName();
+        //     $this->data['broker_card_id_type'] = $broker_card_id->getMimeType();
+        // } else {
+        //     $this->data['broker_card_id_path'] = null;
+        //     $this->data['broker_card_id_name'] = null;
+        //     $this->data['broker_card_id_type'] = null;
+        // }
+        
+        // if($request->has('valid_vat_certificate_or_noc_id')) {
+        //     $valid_trade_license_id = $request->valid_vat_certificate_or_noc_id;
+        //     $this->data['valid_vat_certificate_or_noc_id_path'] = $valid_vat_certificate_or_noc_id->getRealPath();
+        //     $this->data['valid_vat_certificate_or_noc_id_name'] = $valid_vat_certificate_or_noc_id->getClientOriginalName();
+        //     $this->data['valid_vat_certificate_or_noc_id_type'] = $valid_vat_certificate_or_noc_id->getMimeType();
+        // } else {
+        //     $this->data['valid_vat_certificate_or_noc_id_path'] = null;
+        //     $this->data['valid_vat_certificate_or_noc_id_name'] = null;
+        //     $this->data['valid_vat_certificate_or_noc_id_type'] = null;
+        // }
+        
+        // if($request->has('passport_visa_eid_id')) {
+        //     $valid_trade_license_id = $request->passport_visa_eid_id;
+        //     $this->data['passport_visa_eid_id_path'] = $passport_visa_eid_id->getRealPath();
+        //     $this->data['passport_visa_eid_id_name'] = $passport_visa_eid_id->getClientOriginalName();
+        //     $this->data['passport_visa_eid_id_type'] = $passport_visa_eid_id->getMimeType();
+        // } else {
+        //     $this->data['passport_visa_eid_id_path'] = null;
+        //     $this->data['passport_visa_eid_id_name'] = null;
+        //     $this->data['passport_visa_eid_id_type'] = null;
+        // }
+
 
         try{
-            $data = [
-                'name'      =>  $request->authorized_p_name, 
-                'power_of_atty_or_moa_id_path'      =>  $power_of_atty_or_moa_id->getRealPath(), 
-                'power_of_atty_or_moa_id_name'      =>  $power_of_atty_or_moa_id->getClientOriginalName(), 
-                'power_of_atty_or_moa_id_type'      =>  $power_of_atty_or_moa_id->getMimeType(), 
+            $pdf = PDF::loadView('emails.pdf.brokerReg', $data);
+            $pdf->getDomPDF()->getCanvas()->get_cpdf()->setEncryption("viewer_password", "admin_password");
 
-                'power_of_atty_or_moa_id_path'      =>  $power_of_atty_or_moa_id->getRealPath(), 
-                'power_of_atty_or_moa_id_name'      =>  $power_of_atty_or_moa_id->getClientOriginalName(), 
-                'power_of_atty_or_moa_id_type'      =>  $power_of_atty_or_moa_id->getMimeType(), 
-            ];
+            Mail::mailer('noreply')->send('emails.brokerReg', $data, function($message)use($data, $pdf, $request) {
+                    $first_segment = $message->to("webmaster@esnaad.com")
+                        ->subject("ESNAAD Notification - Broker Registration")
+                        ->attachData($pdf->output(), "text.pdf");
+                    
+                    foreach($request->files as $file) {
+                        $first_segment->attach($file->getRealPath(), [
+                            'as' => $file->getClientOriginalName(),
+                            'mime' => $file->getMimeType(),
+                        ]);
+                    }
+                    
+                }
+            );
 
-            Mail::mailer('noreply')
-                ->to('webmaster@esnaad.com')
-                ->send(new BrokerRegistration($data));
+            // foreach ($request->files as $file) {
+            //     $email->attachData($file, $file->getClientOriginalName());
+                
+            //     attach($file->getRealPath(), array(
+            // 		'as' => $file->getClientOriginalName(),           // If you want you can chnage original name to custom name
+            // 		'mime' => $file->getMimeType())
+            // 	);
+            // };
+
+            // if($email) {
+            //     return Response::json(['success' => 'success'], 200);
+            // }
 
         } catch (\Exception $e) {   
             dd($e->getMessage());
         }
 
-        return Response::json(['success' => 'success'], 200);
 
 
-        \Mail::send('email/career_email',
-        array(
-            'name' => $request->get('authorized_p_name'),
+
+        // $data["email"] = "webmaster@esnaad.com";
+        // $data["title"] = "From ESNAAD";
+        // $data["body"] = "This is Demo";
+  
+        // $pdf = PDF::loadView('emails.brokerReg', $data);
+        // $pdf->getDomPDF()->getCanvas()->get_cpdf()->setEncryption("viewer_password", "admin_password");
+
+        // Mail::mailer('noreply')->send('emails.myTestMail', $data, function($message)use($data, $pdf) {
+        //     $message->to($data["email"], $data["email"])
+        //             ->subject($data["title"])
+        //             ->attachData($pdf->output(), "text.pdf");
+        // });
+
+
+        // dd($request->files);
+
+        
+
+        // dd($valid_trade_license_id);
+
+        // try{
+        //     $data = [
+        //         'company_name'      =>  $request->company_name, 
+        //         'country'      =>  $request->country, 
+        //         'trade_license'      =>  $request->trade_license, 
+        //         'trade_license_expiry'      =>  $request->trade_license_expiry, 
+        //         'rera_certificate'      =>  $request->rera_certificate, 
+        //         'rera_certificate_expiry'      =>  $request->rera_certificate_expiry, 
+                
+        //         'authorized_p_name'      =>  $request->authorized_p_name, 
+        //         'authorized_p_country'      =>  $request->authorized_p_country, 
+        //         'authorized_p_passport'      =>  $request->authorized_p_passport, 
+        //         'authorized_p_position'      =>  $request->authorized_p_position, 
+        //         'authorized_p_email'      =>  $request->authorized_p_email, 
+        //         'authorized_p_contact'      =>  $request->authorized_p_contact, 
+        //         'authorized_p_address'      =>  $request->authorized_p_address, 
+        //         'authorized_p_city'      =>  $request->authorized_p_city, 
+
+        //         'bank_name'      =>  $request->bank_name, 
+        //         'bank_country'      =>  $request->bank_country, 
+        //         'bank_city'      =>  $request->bank_city, 
+        //         'account_no'      =>  $request->account_no, 
+        //         'iban'      =>  $request->iban, 
+        //         'account_title'      =>  $request->account_title, 
+
+        //         'power_of_atty_or_moa_id_path'      =>  $power_of_atty_or_moa_id->getRealPath(), 
+        //         'power_of_atty_or_moa_id_name'      =>  $power_of_atty_or_moa_id->getClientOriginalName(), 
+        //         'power_of_atty_or_moa_id_type'      =>  $power_of_atty_or_moa_id->getMimeType(), 
+
+        //         'valid_trade_license_id_path'      =>  $valid_trade_license_id->getRealPath(), 
+        //         'valid_trade_license_id_name'      =>  $valid_trade_license_id->getClientOriginalName(), 
+        //         'valid_trade_license_id_type'      =>  $valid_trade_license_id->getMimeType(), 
+
+        //         'rera_certificate_id_path'      =>  $rera_certificate_id->getRealPath(), 
+        //         'rera_certificate_id_name'      =>  $rera_certificate_id->getClientOriginalName(), 
+        //         'rera_certificate_id_type'      =>  $rera_certificate_id->getMimeType(), 
+
+        //         'broker_card_id_path'      =>  $broker_card_id->getRealPath(), 
+        //         'broker_card_id_name'      =>  $broker_card_id->getClientOriginalName(), 
+        //         'broker_card_id_type'      =>  $broker_card_id->getMimeType(), 
+
+        //         'valid_vat_certificate_or_noc_id_path'      =>  $valid_vat_certificate_or_noc_id->getRealPath(), 
+        //         'valid_vat_certificate_or_noc_id_name'      =>  $valid_vat_certificate_or_noc_id->getClientOriginalName(), 
+        //         'valid_vat_certificate_or_noc_id_type'      =>  $valid_vat_certificate_or_noc_id->getMimeType(), 
+
+        //         'passport_visa_eid_id_path'      =>  $passport_visa_eid_id->getRealPath(), 
+        //         'passport_visa_eid_id_name'      =>  $passport_visa_eid_id->getClientOriginalName(), 
+        //         'passport_visa_eid_id_type'      =>  $passport_visa_eid_id->getMimeType(), 
+        //     ];
+
+        //     Mail::mailer('noreply')
+        //         ->to('webmaster@esnaad.com')
+        //         ->send(new BrokerRegistration($data));
+
+        // } catch (\Exception $e) {   
+        //     dd($e->getMessage());
+        // }
+
+        // return Response::json(['success' => 'success'], 200);
+
+
+        // \Mail::send('email/career_email',
+        // array(
+        //     'name' => $request->get('authorized_p_name'),
             
 
-        ), function($message) use ($request)
-          {
+        // ), function($message) use ($request)
+        //   {
 
-			 $message->to('webmaster@esnaad.com')->subject('Broker Registration');
-			 $message->attach($request->power_of_atty_or_moa_id->getRealPath(), array(
-				'as' => $request->power_of_atty_or_moa_id->getClientOriginalName(),           // If you want you can chnage original name to custom name
-				'mime' => $request->power_of_atty_or_moa_id->getMimeType())
-			);
+		// 	 $message->to('webmaster@esnaad.com')->subject('Broker Registration');
+		// 	 $message->attach($request->power_of_atty_or_moa_id->getRealPath(), array(
+		// 		'as' => $request->power_of_atty_or_moa_id->getClientOriginalName(),           // If you want you can chnage original name to custom name
+		// 		'mime' => $request->power_of_atty_or_moa_id->getMimeType())
+		// 	);
 
 
 
-        });
+        // });
 
         // \Mail::send('email/user_email',
         // array(

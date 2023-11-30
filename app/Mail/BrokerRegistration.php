@@ -49,9 +49,29 @@ class BrokerRegistration extends Mailable
     public function attachments(): array
     {
         return [
-            Attachment::fromPath($this->data['power_of_atty_or_moa_id_path'])
-                ->as($this->data['power_of_atty_or_moa_id_name'])
-                ->withMime($this->data['power_of_atty_or_moa_id_type']),
+            // Attachment::fromPath($this->data['power_of_atty_or_moa_id_path'])
+            //     ->as($this->data['power_of_atty_or_moa_id_name'])
+            //     ->withMime($this->data['power_of_atty_or_moa_id_type']),
+
+            Attachment::fromPath($this->data['valid_trade_license_id_path'])
+                ->as($this->data['valid_trade_license_id_name'])
+                ->withMime($this->data['valid_trade_license_id_type']),    
+
+            // Attachment::fromPath($this->data['rera_certificate_id_path'])
+            //     ->as($this->data['rera_certificate_id_name'])
+            //     ->withMime($this->data['rera_certificate_id_type']),
+
+            // Attachment::fromPath($this->data['broker_card_id_path'])
+            //     ->as($this->data['broker_card_id_name'])
+            //     ->withMime($this->data['broker_card_id_type']),
+
+            // Attachment::fromPath($this->data['valid_vat_certificate_or_noc_id_path'])
+            //     ->as($this->data['valid_vat_certificate_or_noc_id_name'])
+            //     ->withMime($this->data['valid_vat_certificate_or_noc_id_type']),
+
+            // Attachment::fromPath($this->data['passport_visa_eid_id_path'])
+            //     ->as($this->data['passport_visa_eid_id_name'])
+            //     ->withMime($this->data['passport_visa_eid_id_type']),                
         ];
     }
 }

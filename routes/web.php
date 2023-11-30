@@ -66,8 +66,16 @@ Route::post('/subscription-form', [FrontEndController::class, 'subscription_form
 
 
 
+
+
 Route::get('/thankyou', function() {
     return view('thankyou');
 });
+
+
+Route::get('/email', function() {
+    return view('emails.brokerReg');
+});
+
 
 require __DIR__.'/auth.php';

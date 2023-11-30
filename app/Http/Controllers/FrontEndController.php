@@ -35,6 +35,7 @@ use Mail;
 use App\Mail\DemoEmail;
 use App\Mail\CommunityInquiry;
 use App\Mail\SubscriptionInquiry;
+use App\Mail\BrokerRegistration;
 use Validator;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\DB;
@@ -408,11 +409,68 @@ class FrontEndController extends Controller
     }
 
 
-    public function agency_registration_post(Request $request) {
-        dd($request);
-        // var_dump($request);
 
-        // return Response::json(['success' => 'success'], 200);
+
+
+
+
+    public function agency_registration_post(Request $request) {
+
+        // dd($request->power_of_atty_or_moa_id);'
+
+        $power_of_atty_or_moa_id = $request->power_of_atty_or_moa_id;
+
+        try{
+            $data = [
+                'name'      =>  $request->authorized_p_name, 
+                'power_of_atty_or_moa_id_path'      =>  $power_of_atty_or_moa_id->getRealPath(), 
+                'power_of_atty_or_moa_id_name'      =>  $power_of_atty_or_moa_id->getClientOriginalName(), 
+                'power_of_atty_or_moa_id_type'      =>  $power_of_atty_or_moa_id->getMimeType(), 
+
+                'power_of_atty_or_moa_id_path'      =>  $power_of_atty_or_moa_id->getRealPath(), 
+                'power_of_atty_or_moa_id_name'      =>  $power_of_atty_or_moa_id->getClientOriginalName(), 
+                'power_of_atty_or_moa_id_type'      =>  $power_of_atty_or_moa_id->getMimeType(), 
+            ];
+
+            Mail::mailer('noreply')
+                ->to('webmaster@esnaad.com')
+                ->send(new BrokerRegistration($data));
+
+        } catch (\Exception $e) {   
+            dd($e->getMessage());
+        }
+
+        return Response::json(['success' => 'success'], 200);
+
+
+        \Mail::send('email/career_email',
+        array(
+            'name' => $request->get('authorized_p_name'),
+            
+
+        ), function($message) use ($request)
+          {
+
+			 $message->to('webmaster@esnaad.com')->subject('Broker Registration');
+			 $message->attach($request->power_of_atty_or_moa_id->getRealPath(), array(
+				'as' => $request->power_of_atty_or_moa_id->getClientOriginalName(),           // If you want you can chnage original name to custom name
+				'mime' => $request->power_of_atty_or_moa_id->getMimeType())
+			);
+
+
+
+        });
+
+        // \Mail::send('email/user_email',
+        // array(
+
+        // ), function($message) use ($request)
+        //   {
+
+        //      $message->to($request->email)->subject('Edge Realty Registration');
+        //   });
+
+        return Response::json(['success' => 'success'], 200);
 
     }
 
@@ -420,20 +478,20 @@ class FrontEndController extends Controller
 
     public function subscription_form(Request $request) {
         
-        // try{
-        //     $data = [
-        //         'name'      =>  $request->name, 
-        //         'email'     =>  $request->email,
-        //         'ip'     =>  $request->ip_address
-        //     ];
+        try{
+            $data = [
+                'name'      =>  $request->name, 
+                'email'     =>  $request->email,
+                'ip'     =>  $request->ip_address
+            ];
 
-        //     // Mail::to('lead@edgerealty.ae')->send(new DemoEmail($mailData));
-        //     Mail::mailer('noreply')->to('lead@esnaad.com')->send(new SubscriptionInquiry($data));
-        //     Mail::mailer('noreply')->to('webmaster@esnaad.com')->send(new SubscriptionInquiry($data));
+            // Mail::to('lead@edgerealty.ae')->send(new DemoEmail($mailData));
+            Mail::mailer('noreply')->to('lead@esnaad.com')->send(new SubscriptionInquiry($data));
+            Mail::mailer('noreply')->to('webmaster@esnaad.com')->send(new SubscriptionInquiry($data));
 
-        // } catch (\Exception $e) {
-        //     dd($e->getMessage());
-        // }
+        } catch (\Exception $e) {
+            dd($e->getMessage());
+        }
 
         
 
@@ -514,6 +572,28 @@ class FrontEndController extends Controller
         }
         
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

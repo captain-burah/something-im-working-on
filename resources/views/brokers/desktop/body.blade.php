@@ -159,10 +159,8 @@
                     'X-CSRF-TOKEN': $('meta[name="XSRF-TOKEN"]').attr('content'),
                     'Access-Control-Allow-Origin': 'https://esnaad.com/agency-registration'
                 },
-                url:"{{ URL('http://mis.esnaad.com/api/v1/esnaad/agency-registration') }}",
+                url:"{{ URL('/agency-registration-post') }}",
                 data: formData,
-                crossDomain: true,
-                type: 'json',   
                 processData: false,
                 contentType: false,
                 success:function(data) 
@@ -172,10 +170,10 @@
                         console.log(data.success); // TEST THE DATA
 
                         // UPDATE LOCAL STORAGE
-                        sessionStorage.removeItem("form_submission");
-                        sessionStorage.setItem("form_submission", "true");
+                        // sessionStorage.removeItem("form_submission");
+                        // sessionStorage.setItem("form_submission", "true");
 
-                        modalClose('mymodalcentered'); // CLOSE THE MODAL
+                        // modalClose('mymodalcentered'); // CLOSE THE MODAL
 
                     }else{
                         printErrorMsg(data.error);

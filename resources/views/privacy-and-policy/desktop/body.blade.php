@@ -1,16 +1,97 @@
 <div class="sm:container max-w-8xl my-10 mx-auto">
-    <div class="mb-5">
+    <div class="mb-5 px-8 ">
 
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tristique ex quis tristique sodales. Cras sit amet sem sed nibh lacinia auctor quis et diam. Suspendisse non pellentesque nisi. Sed a sagittis quam. Donec nec pharetra eros. Duis sem ipsum, porttitor ut sem eget, auctor sollicitudin mi. Proin at sagittis tortor. Nullam tincidunt erat quis risus finibus, sit amet varius turpis sollicitudin. Praesent pretium fermentum nibh eu maximus. Donec lobortis justo sapien, sed posuere neque dapibus eu. Maecenas et condimentum arcu. Sed vehicula, ex eu maximus maximus, diam nisl efficitur massa, ornare eleifend ex ipsum vitae arcu. Nam hendrerit urna massa, eget sollicitudin lectus pellentesque non. Vivamus id sapien ac orci egestas commodo.
-
-            Fusce id ex elementum, mollis justo sit amet, elementum tellus. Proin tincidunt ultricies erat, in vestibulum nulla finibus at. Suspendisse ex enim, fringilla et odio vel, semper scelerisque velit. Nunc vitae tortor ex. Proin et fringilla magna, vitae dignissim nibh. Curabitur vulputate nunc mi, vel vestibulum mauris commodo at. Morbi leo sapien, aliquam fermentum purus at, luctus placerat mi. Etiam euismod est urna, quis commodo dolor semper eget. Phasellus eget dui non ligula mattis elementum non id eros.
-
-            Vestibulum ut mi ac magna dignissim auctor. Morbi et metus magna. Nunc sed lectus metus. Nullam in convallis urna, vel gravida tortor. Sed rutrum mauris sit amet libero finibus cursus. Sed aliquam non ex id dignissim. Phasellus vehicula arcu elit, id laoreet felis blandit ac. Aenean porta, enim sed sollicitudin finibus, nibh erat gravida metus, id fermentum lorem leo quis justo. Pellentesque sed sem vel metus aliquet mattis efficitur sit amet nisi. Donec vestibulum sapien urna, ut ornare metus tincidunt non. Nullam pulvinar risus eget metus vulputate consectetur. Aliquam semper mauris nulla, at congue ipsum efficitur sed. Curabitur et tortor nibh. In consectetur ante libero, vitae posuere nibh facilisis sed. Praesent ornare id erat in consequat. Aenean ex massa, ornare vel ultricies at, bibendum ut lorem.
-
-            Sed scelerisque ac urna quis rhoncus. Mauris posuere imperdiet ullamcorper. Quisque placerat arcu lacus, eget tincidunt mauris porttitor et. Suspendisse fringilla metus accumsan augue aliquet hendrerit. Donec varius enim vel est bibendum, auctor sollicitudin velit malesuada. Integer lorem ante, semper vel luctus finibus, tempus in lacus. Sed tincidunt nisl ipsum, nec placerat ligula condimentum ac.
-
-            Nam blandit elit justo, id lobortis nunc hendrerit a. Vestibulum consectetur turpis ac ex convallis, at hendrerit sapien tempus. Nam euismod tincidunt scelerisque. Ut gravida at enim quis pulvinar. Vivamus nunc tortor, consectetur quis dapibus sit amet, dapibus sit amet sapien. Donec et ex tellus. Vivamus non finibus ex, ut porttitor ipsum. Maecenas interdum, odio viverra accumsan venenatis, lectus nibh ultricies orci, eu lacinia quam orci sed est.
-        </p>
+<p><br></p>
+<p><span style="font-size:11pt;">Effective Date: 21st of November 2023</span></p>
+<p><br></p>
+<p><span style="font-size:11pt;">ESNAAD Real Estate Development L.L.C. (&quot;we,&quot; &quot;our,&quot; or &quot;us&quot;) is committed to protecting the privacy and security of your personal information. This Privacy Policy explains how we collect, use, disclose, and protect information gathered through www.esnaad.com (the &quot;Website&quot;).</span></p>
+<h2><strong><span style="font-size:11pt;">Information We Collect:</span></strong></h2>
+<h5><u><span style="font-size:11pt;">Personal Information</span></u></h5>
+<p><span style="font-size:11pt;">We may collect personal information that you voluntarily provide when using our Website, such as when you fill out forms, subscribe to newsletters, or engage in other activities. This may include:</span></p>
+<ul>
+    <li style="list-style-type:disc;font-size:11pt;">
+        <p><span style="font-size:11pt;">Name</span></p>
+    </li>
+    <li style="list-style-type:disc;font-size:11pt;">
+        <p><span style="font-size:11pt;">Contact Information (email address, phone number)</span></p>
+    </li>
+</ul>
+<p><br></p>
+<h5><u><span style="font-size:11pt;">Usage Data</span></u></h5>
+<p><span style="font-size:11pt;">We automatically collect information about your interactions with the Website, including:</span></p>
+<ul>
+    <li style="list-style-type:square;font-size:11pt;">
+        <p><span style="font-size:11pt;">IP address</span></p>
+    </li>
+    <li style="list-style-type:square;font-size:11pt;">
+        <p><span style="font-size:11pt;">Browser type</span></p>
+    </li>
+    <li style="list-style-type:square;font-size:11pt;">
+        <p><span style="font-size:11pt;">Pages visited</span></p>
+    </li>
+    <li style="list-style-type:square;font-size:11pt;">
+        <p><span style="font-size:11pt;">Date and time of access</span></p>
+    </li>
+</ul>
+<p><br></p>
+<h5><strong><span style="font-size:11pt;">How We Use Your Information:</span></strong></h5>
+<p><span style="font-size:11pt;">We use the collected information for the following purposes:</span></p>
+<ul>
+    <li style="list-style-type:square;font-size:11pt;">
+        <p><span style="font-size:11pt;">To provide and maintain our services</span></p>
+    </li>
+    <li style="list-style-type:square;font-size:11pt;">
+        <p><span style="font-size:11pt;">To improve and optimize the Website</span></p>
+    </li>
+    <li style="list-style-type:square;font-size:11pt;">
+        <p><span style="font-size:11pt;">To send newsletters, updates, and marketing communications (if you have opted in)</span></p>
+    </li>
+    <li style="list-style-type:square;font-size:11pt;">
+        <p><span style="font-size:11pt;">To respond to your inquiries and provide customer support</span></p>
+    </li>
+    <li style="list-style-type:square;font-size:11pt;">
+        <p><span style="font-size:11pt;">To comply with legal obligations</span></p>
+    </li>
+</ul>
+<p><br></p>
+<h5><strong><span style="font-size:11pt;">Cookies:</span></strong></h5>
+<p><span style="font-size:11pt;">We use cookies and similar tracking technologies to enhance your experience on the Website. You can control cookies through your browser settings. Cookies may also be used to track how you use the site to target ads to you on other websites.</span></p>
+<h5><strong><span style="font-size:11pt;">Data Sharing:</span></strong></h5>
+<p><span style="font-size:11pt;">We may share your information with third parties in the following cases:</span></p>
+<ul>
+    <li style="list-style-type:square;font-size:11pt;">
+        <p><span style="font-size:11pt;">With your consent</span></p>
+    </li>
+    <li style="list-style-type:square;font-size:11pt;">
+        <p><span style="font-size:11pt;">To comply with legal obligations</span></p>
+    </li>
+    <li style="list-style-type:square;font-size:11pt;">
+        <p><span style="font-size:11pt;">To protect and defend our rights and property</span></p>
+    </li>
+</ul>
+<p><br></p>
+<h5><strong><span style="font-size:11pt;">Data Security:</span></strong></h5>
+<p><span style="font-size:11pt;">We implement security measures to protect your information from unauthorized access and maintain its accuracy.</span></p>
+<p><br></p>
+<h5><strong><span style="font-size:11pt;">Your Choices:</span></strong></h5>
+<p><span style="font-size:11pt;">You have the right to:</span></p>
+<ul>
+    <li style="list-style-type:square;font-size:11pt;">
+        <p><span style="font-size:11pt;">Access, correct, or delete your personal information</span></p>
+    </li>
+    <li style="list-style-type:square;font-size:11pt;">
+        <p><span style="font-size:11pt;">Opt-out of marketing communications</span></p>
+    </li>
+    <li style="list-style-type:square;font-size:11pt;">
+        <p><span style="font-size:11pt;">Disable cookies through your browser settings</span></p>
+    </li>
+</ul>
+<p><br></p>
+<h5><strong><span style="font-size:11pt;">Changes to This Privacy Policy:</span></strong></h5>
+<p><span style="font-size:11pt;">We may update this Privacy Policy to reflect changes in our practices. Check this page for the latest version.</span></p>
+<p><br></p>
+<h5><strong><span style="font-size:11pt;">Contact Us:</span></strong></h5>
+<p><span style="font-size:11pt;">If you have any questions regarding this Privacy Policy or the practices of this Site, please contact us by sending an email.</span></p>
+<p><br></p>
     </div>
 </div>

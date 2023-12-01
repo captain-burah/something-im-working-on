@@ -8,7 +8,7 @@
       </div>
 
       <?php //LOCATION ?>
-      <div class="my-auto">
+      {{-- <div class="my-auto">
         <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
             width="15.000000pt" height="15.000000pt" viewBox="0 0 512.000000 512.000000"
             preserveAspectRatio="xMidYMid meet">
@@ -31,7 +31,7 @@
             -132 -34z"/>
             </g>
         </svg>
-      </div>
+      </div> --}}
 
       <?php //EMAIL ?>
       <div class="my-auto">

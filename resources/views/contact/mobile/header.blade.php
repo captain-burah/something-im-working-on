@@ -45,7 +45,7 @@
 @endsection
 
 <header>
-    <div class="w-full bg-cover bg-center" style="height:100vh; background-image: url({{ asset('home/CONTACT.webp') }}), url('{{ URL::asset('assets/img/img-error2.webp')}}');">
+    <div class="w-full bg-cover bg-center" style="height:60vh; background-image: url({{ asset('home/CONTACT.webp') }}), url('{{ URL::asset('assets/img/img-error2.webp')}}');">
         <div class="flex items-center justify-center h-full w-full">
             <div class="container">
                     
@@ -55,9 +55,14 @@
 
                 <br>
                 
-                <p class="w-[100%] text-white font-semibold text-base mx-auto text-center">
-                    We're excited to assist you with your inquiries, 
-                    provide information about our properties, and answer any questions you may have.
+                <p class="w-[75%] mx-auto text-white font-base leading-8 text-base text-center">
+                    Address: Unit G07, City Walk Building #1, Al Wasl, Dubai.
+                </p>
+                <p class="w-[75%] mx-auto text-white font-base leading-8 text-base text-center">
+                    Phone:  971 4 123 4567
+                </p>
+                <p class="w-[75%] mx-auto text-white font-base leading-8 text-base text-center">
+                    Email: info@esnaad.com
                 </p>
             </div>
         </div>

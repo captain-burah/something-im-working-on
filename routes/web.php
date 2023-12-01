@@ -63,6 +63,9 @@ Route::post('/agency-registration-post', [FrontEndController::class, 'agency_reg
 
 Route::post('/subscription-form', [FrontEndController::class, 'subscription_form'])->name('subscription.form');
 
+Route::post('/contact-form-post', [FrontEndController::class, 'contact_form_post'])->name('contact.form.post');
+
+
 
 
 
@@ -74,7 +77,7 @@ Route::get('/thankyou', function() {
 
 
 Route::get('/email', function() {
-    return view('emails.brokerReg');
+    return view('emails.pdf.brokerReg');
 });
 
 

@@ -25,7 +25,9 @@
                                         <tbody>
                                             <tr style="border-collapse:collapse">
                                             <td align="center" style="Margin:0;padding-left:10px;padding-right:10px;padding-top:25px;padding-bottom:25px;font-size:0">
-                                                <img src="http://mis.esnaad.com/logo-light.png" alt="" style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic" width="400">
+                                                <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:28px;font-family:lato, 'helvetica neue', helvetica, arial, sans-serif;line-height:27px;color:#666666">
+                                                    ESNAAD
+                                                </p>
                                             </td>
                                             </tr>
                                         </tbody>
@@ -169,19 +171,19 @@
                                             </td>
                                             <td class="es-m-txt-l" bgcolor="#ffffff" align="left" style="Margin:0;padding-bottom:15px;padding-top:20px;padding-left:30px;padding-right:30px">
                                                 <p style="text-align: right; Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:14px;font-family:lato, 'helvetica neue', helvetica, arial, sans-serif;line-height:27px;color:#666666">
-                                                    Company Name <br>
-                                                    Company Type <br>
-                                                    Trade License Number : <br>
-                                                    Trade License Expiry : <br>
-                                                    RERA Certificate Number : <br>
-                                                    RERA Certificate Expiry	: <br>
+                                                    {{ $company_name }}<br>
+                                                    {{ $company_type }}<br> 
+                                                    {{ $trade_license }} : <br>
+                                                    {{ $trade_license_expiry}} : <br>
+                                                    {{ $rera_certificate }} : <br>
+                                                    {{ $rera_certificate_expiry }}	: <br>
                                                 </p>
                                             </td>
                                             </tr>
                                             <tr style="border-collapse:collapse">
                                             <td class="es-m-txt-l" bgcolor="#ffffff" align="left" style="Margin:0;padding-bottom:15px;padding-top:20px;padding-left:30px;padding-right:30px">
                                                 <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:14px;font-family:lato, 'helvetica neue', helvetica, arial, sans-serif;line-height:27px;color:#666666">
-                                                    Authorized Person Name :	<br>
+                                                    Authorized Person Name	 :	<br>
                                                     Country of Origin	 :	<br>
                                                     Passport Numner	 :	<br>
                                                     Designation / Posi :tion :	<br>
@@ -192,12 +194,14 @@
                                             </td>
                                             <td class="es-m-txt-l" bgcolor="#ffffff" align="left" style="Margin:0;padding-bottom:15px;padding-top:20px;padding-left:30px;padding-right:30px">
                                                 <p style="text-align: right; Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:14px;font-family:lato, 'helvetica neue', helvetica, arial, sans-serif;line-height:27px;color:#666666">
-                                                    Company Name : <br>
-                                                    Company Type : <br>
-                                                    Trade License Number : <br>
-                                                    Trade License Expiry : <br>
-                                                    RERA Certificate Number : <br>
-                                                    RERA Certificate Expiry	: <br>
+                                                    {{ $authorized_p_name }} :	<br>
+                                                    {{ $authorized_p_country }} :	<br>
+                                                    {{ $authorized_p_passport }} :	<br>
+                                                    {{ $authorized_p_position }} :	<br>
+                                                    {{ $authorized_p_email }} :	<br>
+                                                    {{ $authorized_p_contact }} :	<br>
+                                                    {{ $authorized_p_address }} :	<br>
+                                                    {{ $authorized_p_email }} :	<br>
                                                 </p>
                                             </td>
                                             </tr>                                           
@@ -215,12 +219,12 @@
                                             </td>
                                             <td class="es-m-txt-l" bgcolor="#ffffff" align="left" style="Margin:0;padding-bottom:15px;padding-top:20px;padding-left:30px;padding-right:30px">
                                                 <p style="text-align: right; Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:14px;font-family:lato, 'helvetica neue', helvetica, arial, sans-serif;line-height:27px;color:#666666">
-                                                    Company Name : <br>
-                                                    Company Type : <br>
-                                                    Trade License Number : <br>
-                                                    Trade License Expiry : <br>
-                                                    RERA Certificate Number : <br>
-                                                    RERA Certificate Expiry	: <br>
+                                                    {{ $bank_name }} : <br>
+                                                    {{ $bank_country }} : <br>
+                                                    {{ $bank_city }} : <br>
+                                                    {{ $account_no }} : <br>
+                                                    {{ $iban }} : <br>
+                                                    {{ $account_title }} : <br>
                                                 </p>
                                             </td>
                                             </tr>
@@ -247,12 +251,36 @@
                                             </td>
                                             <td class="es-m-txt-l" bgcolor="#ffffff" align="left" style="Margin:0;padding-bottom:15px;padding-top:20px;padding-left:30px;padding-right:30px">
                                                 <p style="text-align: right; Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:14px;font-family:lato, 'helvetica neue', helvetica, arial, sans-serif;line-height:27px;color:#666666">
-                                                    Company Name : <br>
-                                                    Company Type : <br>
-                                                    Trade License Number : <br>
-                                                    Trade License Expiry : <br>
-                                                    RERA Certificate Number : <br>
-                                                    RERA Certificate Expiry	: <br>
+                                                    @if($power_of_atty_or_moa_id == true)
+                                                        Attached<br>
+                                                    @else
+                                                        N/A
+                                                    @endif
+                                                    @if($valid_trade_license_id == true)
+                                                        Attached<br>
+                                                    @else
+                                                        N/A
+                                                    @endif
+                                                    @if($rera_certificate_id == true)
+                                                        Attached<br>
+                                                    @else
+                                                        N/A
+                                                    @endif
+                                                    @if($broker_card_id == true)
+                                                        Attached<br>
+                                                    @else
+                                                        N/A
+                                                    @endif
+                                                    @if($valid_vat_certificate_or_noc_id == true)
+                                                        Attached<br>
+                                                    @else
+                                                        N/A
+                                                    @endif
+                                                    @if($passport_visa_eid_id == true)
+                                                        Attached<br>
+                                                    @else
+                                                        N/A
+                                                    @endif
                                                 </p>
                                             </td>
                                             </tr>

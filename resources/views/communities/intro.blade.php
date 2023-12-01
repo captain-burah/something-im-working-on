@@ -1,4 +1,4 @@
-<div class="block relative isolate overflow-hidden py-0 xl:top-[5vh]">
+<div class="block relative isolate overflow-hidden py-0 ">
 
     <div class="mx-auto max-w-7xl px-6 lg:px-8 mb-4">
         <div class="mx-auto max-w-2xl lg:mx-auto text-center">

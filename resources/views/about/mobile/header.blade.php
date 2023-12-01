@@ -45,22 +45,22 @@
 @endsection
 
 <header>
-    <div class="w-full bg-cover bg-center" style="height:100vh; background-image: url({{ asset('home/ABOUT.webp') }}), url('{{ URL::asset('assets/img/img-error2.webp')}}');">
+    <div class="w-full bg-cover bg-center" style="height:30vh; background-image: url({{ asset('home/10.jpg') }}), url('{{ URL::asset('assets/img/img-error2.webp')}}');">
         <div class="flex items-center justify-center h-full w-full">
             <div class="container">
                     
-                <h1 class="text-3xl text-white font-light uppercase mx-auto text-center">
+                {{-- <h1 class="text-3xl text-white font-light uppercase mx-auto text-center">
                     About ESNAAD
                 </h1>
 
                 <br>
                 
                 <p class="text-white font-thin leading-8 text-base text-center">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rhoncus augue ut
-                        ligula accumsan dictum. Phasellus euismod in lectus nec cursus. Curabitur in sem et elit
-                        dignissim condimentum eget ac dui. Nulla non nisl mollis ipsum laoreet ultrices ac in
-                        sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rhoncus
-                    </p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rhoncus augue ut
+                    ligula accumsan dictum. Phasellus euismod in lectus nec cursus. Curabitur in sem et elit
+                    dignissim condimentum eget ac dui. Nulla non nisl mollis ipsum laoreet ultrices ac in
+                    sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rhoncus
+                </p> --}}
             </div>
         </div>
     </div>

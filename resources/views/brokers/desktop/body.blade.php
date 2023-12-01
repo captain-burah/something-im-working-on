@@ -131,6 +131,12 @@
     <script>
         $(document).ready(function () {
 
+        sessionStorage.setItem("agency_registration_submitted", "false");
+
+        var agency_reg_form_bool = sessionStorage.getItem('agency_registration_submitted');
+
+
+
         /**
          * INITIATE HEADERS WITH CSRF TOKENIZATION
          * FOR FORM SUBMISSION

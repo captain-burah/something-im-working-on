@@ -23,8 +23,8 @@
             <div class="col-span-3 my-auto">
                 <h2 class=" text-xl xl:text-4xl">
                 </h2>
-                <p class="text-sm xl:text-base leading-8 mt-10 text-justify">
-                    Morbi et nisi lacinia, feugiat lacus mollis, hendrerit dolor. Nullam nunc velit, maximus id nisi non, pulvinar lobortis felis. Cras eget nulla egestas, elementum arcu vel, cursus massa. Etiam fringilla, orci eu aliquet ultrices, turpis neque facilisis orci, non commodo elit lorem nec neque. Donec tincidunt consectetur augue, quis interdum enim sagittis a. Duis ut dui non ligula pulvinar convallis ut sit amet nunc. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porttitor venenatis libero, ut efficitur orci dapibus at. Fusce malesuada justo hendrerit quam hendrerit placerat.
+                <p class="text-sm xl:text-2xl mt-10 text-justify">
+                    <i>Embrace the Journey of Life and Investments: Building a Home, Nurturing Dreams, and Securing Futures - Where Every Brick Holds the Promise of a Lifetime</i>
                 </p>
             </div>
         </div>

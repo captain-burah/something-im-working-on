@@ -28,14 +28,7 @@
 
                                 <p class="text-md text-black w-full text-justify mb-6">
                                     {{ __('
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing
-                                        elit. Vestibulum rhoncus augue ut ligula accumsan
-                                        dictum. Phasellus euismod in lectus nec cursus.
-                                        Curabitur in sem et elit dignissim condimentum eget
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing
-                                        elit. Vestibulum rhoncus augue ut ligula accumsan
-                                        dictum. Phasellus euismod in lectus nec cursus.
-                                        Curabitur in sem et elit dignissim condimentum eget
+                                        With a commitment to excellence and a passion for innovation, ESNAAD has carved a distinctive niche in the real estate industry, setting new standards in luxury living, urban development, and sustainable design
                                     ') }}
                                 </p>
                                 <div class="flex my-8 w-full text-justify my-auto inline-block align-middle w-50">
@@ -119,10 +112,10 @@
                                     <a href="{{ url('invest-in-dubai') }}">Why Invest In Dubai?</a>
                                 </li>
                                 <li class="text-md text-black my-2">
-                                    <a href="{{ url('communities/') }}">Our Communities</a>
+                                    <a href="{{ url('communities/') }}">Communities</a>
                                 </li>
                                 <li class="text-md text-black my-2">
-                                    <a href="{{ url('developments/') }}">Our Developments</a>
+                                    <a href="{{ url('developments/') }}">Developments</a>
                                 </li>
                                 <li class="text-md text-black my-2">
                                     <a href="{{ url('agency-registration') }}">Broker Registration</a>
@@ -256,13 +249,7 @@
 
                                 <p class="text-md text-black text-justify mb-6 w-[80%]">
                                     {{ __('
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing
-                                        elit. Vestibulum rhoncus augue ut ligula accumsan
-                                        dictum. Phasellus euismod in lectus nec cursus.
-                                        Curabitur in sem et elit dignissim condimentum eget
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing
-                                        elit. Vestibulum rhoncus augue ut ligula accumsan
-                                        dictum. Phasellus euismod in lectus nec cursus.
+                                        With a commitment to excellence and a passion for innovation, ESNAAD has carved a distinctive niche in the real estate industry, setting new standards in luxury living, urban development, and sustainable design
                                     ') }}
                                 </p>
                                 <div class="flex my-8 text-justify my-auto inline-block align-middle w-[50%]">
@@ -345,10 +332,10 @@
                                     <a href="{{ url('invest-in-dubai') }}">Why Invest In Dubai?</a>
                                 </li>
                                 <li class="text-md text-black my-2">
-                                    <a href="{{ url('communities/') }}">Our Communities</a>
+                                    <a href="{{ url('communities/') }}">Communities</a>
                                 </li>
                                 <li class="text-md text-black my-2">
-                                    <a href="{{ url('developments/') }}">Our Developments</a>
+                                    <a href="{{ url('developments/') }}">Developments</a>
                                 </li>
                                 <li class="text-md text-black my-2">
                                     <a href="{{ url('agency-registration') }}">Broker Registration</a>
@@ -489,14 +476,7 @@
 
                                 <p class="text-md text-black text-justify mb-6 w-full leading-8">
                                     {{ __('
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing
-                                        elit. Vestibulum rhoncus augue ut ligula accumsan
-                                        dictum. Phasellus euismod in lectus nec cursus.
-                                        Curabitur in sem et elit dignissim condimentum eget
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing
-                                        elit. Vestibulum rhoncus augue ut ligula accumsan
-                                        dictum. Phasellus euismod in lectus nec cursus.
-                                        Curabitur in sem et elit dignissim condimentum eget
+                                        With a commitment to excellence and a passion for innovation, ESNAAD has carved a distinctive niche in the real estate industry, setting new standards in luxury living, urban development, and sustainable design
                                     ') }}
                                 </p>
                                 <div class="flex my-8 text-justify my-auto inline-block align-middle w-[50%]">

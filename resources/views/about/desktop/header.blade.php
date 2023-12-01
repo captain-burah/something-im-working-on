@@ -46,27 +46,21 @@
 
 
 
-<header class="xl:mt-[2 0vh]">
+<header class="">
     
-    <div class="w-full bg-cover bg-center" style="height: 100vh; background-image: url({{ asset('home/ABOUT.webp') }}), url('{{ URL::asset('assets/img/img-error2.webp')}}');">
-        <div class="flex items-center justify-center h-full w-full">
+    {{-- <div class="w-full bg-cover bg-center" style="height: 60vh; background-image: url({{ asset('home/ABOUT.webp') }}), url('{{ URL::asset('assets/img/img-error2.webp')}}');"> --}}
+    <div class="w-full bg-cover bg-center" style="height: 50vh; background-image: url({{ asset('home/10.jpg') }}), url('{{ URL::asset('assets/img/img-error2.webp')}}');">
+        <div class="flex items-center justify-center xl:h-[50vh] h-[30vh] w-full">
             <div class="md:container mx-auto">
                     
-                <h1 class="xl:text-6xl md:text-4xl mx-auto text-white font-light uppercase text-center">
-                    About ESNAAD
-                </h1>
-
                 <br>
                 <br>
                 
-                <div class="w-[50%] mx-auto">
+                {{-- <div class="w-[50%] mx-auto">
                     <p class="text-white font-thin leading-8 text-base text-center">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rhoncus augue ut
-                        ligula accumsan dictum. Phasellus euismod in lectus nec cursus. Curabitur in sem et elit
-                        dignissim condimentum eget ac dui. Nulla non nisl mollis ipsum laoreet ultrices ac in
-                        sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rhoncus
+                        A  beacon of opulence in real estate development, redefining luxury living through unparalleled design, unwavering quality, and a commitment to excellence
                     </p>
-                </div>
+                </div> --}}
             </div>
         </div>
     </div>

@@ -98,7 +98,7 @@
         <li ><a href="{{ url('communities') }}" class="text-dark">Communities</a></li>
         <li ><a href="{{ url('invest-in-dubai') }}" class="text-dark">Invest in Dubai</a></li>
         <li ><a href="{{ url('/constructions') }}" class="text-dark">Construction</a></li>
-        <li ><a href="{{ url('/news') }}" class="text-dark">NEWS</a></li>
+        <li ><a href="{{ url('/news') }}" class="text-dark">News</a></li>
         <li ><a href="{{ url('contact') }}" class="text-dark">Contact</a></li>
       </ul>
     

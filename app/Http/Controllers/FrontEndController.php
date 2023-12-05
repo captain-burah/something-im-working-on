@@ -193,6 +193,9 @@ class FrontEndController extends Controller
     }
 
     public function communities() {
+        $jsonSEOData = $this->landingpageseos(5);
+        $this->data['jsonSEOData'] =  $jsonSEOData->json();
+
         $this->data['long'] =  55.156860;
         $this->data['lat'] = 25.101131;
 
@@ -233,7 +236,7 @@ class FrontEndController extends Controller
 
     public function projects() {
 
-        $jsonSEOData = $this->landingpageseos(3);
+        $jsonSEOData = $this->landingpageseos(2);
         $this->data['jsonSEOData'] =  $jsonSEOData->json();
         return view('projects', $this->data);
     }
@@ -262,23 +265,30 @@ class FrontEndController extends Controller
 
 
     public function about() {
+        $jsonSEOData = $this->landingpageseos(3);
+        $this->data['jsonSEOData'] =  $jsonSEOData->json();
         $this->data['long'] =  55.265547;
         $this->data['lat'] = 25.206984;
         return view('about', $this->data);
     }
 
     public function contact() {
-        return view('contact');
+        $jsonSEOData = $this->landingpageseos(4);
+        $this->data['jsonSEOData'] =  $jsonSEOData->json();
+        return view('contact', $this->data);
     }
 
 
     public function invest() {
-        return view('invest_in_dubai');
+        $jsonSEOData = $this->landingpageseos(8);
+        $this->data['jsonSEOData'] =  $jsonSEOData->json();
+
+        return view('invest_in_dubai', $this->data);
     }
 
 
     public function constructions() {
-        $jsonSEOData = $this->landingpageseos(3);
+        $jsonSEOData = $this->landingpageseos(6);
         $this->data['jsonSEOData'] =  $jsonSEOData->json();
 
         // CALL API FROM MIS
@@ -301,7 +311,7 @@ class FrontEndController extends Controller
 
 
     public function news() {
-        $jsonSEOData = $this->landingpageseos(3);
+        $jsonSEOData = $this->landingpageseos(7);
         $this->data['jsonSEOData'] =  $jsonSEOData->json();
 
         // CALL API FROM MIS
@@ -386,22 +396,20 @@ class FrontEndController extends Controller
 
     public function privacy_and_policy() {
 
-        // $jsonSEOData = $this->landingpageseos(1);
+        $jsonSEOData = $this->landingpageseos(9);
         
-        // $this->data['jsonSEOData'] =  $jsonSEOData->json();
+        $this->data['jsonSEOData'] =  $jsonSEOData->json();
 
-        return view('privacy-and-policy');        
+        return view('privacy-and-policy', $this->data);        
     }
 
     public function terms_and_conditions() {
-
-        // dd('reached');
         
-        // $jsonSEOData = $this->landingpageseos(1);
+        $jsonSEOData = $this->landingpageseos(10);
         
-        // $this->data['jsonSEOData'] =  $jsonSEOData->json();
+        $this->data['jsonSEOData'] =  $jsonSEOData->json();
 
-        return view('terms-and-conditions');        
+        return view('terms-and-conditions', $this->data);        
     }
 
 

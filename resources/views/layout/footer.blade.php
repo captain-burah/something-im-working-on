@@ -106,22 +106,22 @@
 
                             <ul class="list-none footer-li" style="padding-left:    0px !important;">
                                 <li class="text-md text-black my-2">
-                                    <a href="{{ url('about-esnaad') }}">About ESNAAD</a>
+                                    <a href="{{ url('about-us') }}" aria-label="about-esnaad">About ESNAAD</a>
                                 </li>
                                 <li class="text-md text-black my-2">
-                                    <a href="{{ url('invest-in-dubai') }}">Why Invest In Dubai?</a>
+                                    <a href="{{ url('invest-in-dubai') }}" aria-label="invest-in-dubai">Why Invest In Dubai?</a>
                                 </li>
                                 <li class="text-md text-black my-2">
-                                    <a href="{{ url('communities/') }}">Communities</a>
+                                    <a href="{{ url('communities/') }}" aria-label="communities">Communities</a>
                                 </li>
                                 <li class="text-md text-black my-2">
-                                    <a href="{{ url('developments/') }}">Developments</a>
+                                    <a href="{{ url('projects/') }}" aria-label="projects">Projects</a>
                                 </li>
                                 <li class="text-md text-black my-2">
-                                    <a href="{{ url('agency-registration') }}">Broker Registration</a>
+                                    <a href="{{ url('agency-registration') }}" aria-label="broker-registration">Broker Registration</a>
                                 </li>
                                 <li class="text-md text-black my-2">
-                                    <a href="{{ url('contact') }}">Contact Us</a>
+                                    <a href="{{ url('contact') }}" aria-label="contact-us">Contact Us</a>
                                 </li>
 
                             </ul>
@@ -268,7 +268,7 @@
 
                                     <div class="flex-1">
                                         <div class="w-8 bg-footer rounded-3xl p-1">
-                                            <a href="https://www.instagram.com/edgerealtydubai/" target="_blank" aria-label="esnaad-instagram">
+                                            <a href="https://www.instagram.com/esnaaddevelopments/" target="_blank" aria-label="esnaad-instagram">
                                                 <img
                                                     src="{{ asset('front/icons/ig.png') }}"
                                                     class="w-fit rounded"
@@ -280,7 +280,7 @@
 
                                     <div class="flex-1">
                                         <div class="w-8 bg-footer rounded-3xl p-1">
-                                            <a href="https://twitter.com/i/flow/login?redirect_after_login=%2Fedgerealtydubai" target="_blank" aria-label="esnaad-x">
+                                            <a href="https://twitter.com/EsnaadD" target="_blank" aria-label="esnaad-x">
                                                 <img
                                                     src="{{ asset('front/icons/x-logo-black.png') }}"
                                                     class="w-fit rounded"
@@ -292,7 +292,7 @@
 
                                     <div class="flex-1">
                                         <div class="w-8 bg-footer rounded-3xl p-1">
-                                            <a href="https://www.linkedin.com/company/edgerealtydubai" target="_blank" aria-label="esnaad-linkedin">
+                                            <a href="https://www.linkedin.com/company/esnaad-developments" target="_blank" aria-label="esnaad-linkedin">
                                                 <img
                                                     src="{{ asset('front/icons/in2.png') }}"
                                                     class="w-fit rounded"
@@ -326,22 +326,22 @@
 
                             <ul class="list-none footer-li" style="padding-left: 0px !important;">
                                 <li class="text-md text-black my-2">
-                                    <a href="{{ url('about-esnaad') }}">About ESNAAD</a>
+                                    <a href="{{ url('about-us') }}" aria-label="about-us">About ESNAAD</a>
                                 </li>
                                 <li class="text-md text-black my-2">
-                                    <a href="{{ url('invest-in-dubai') }}">Why Invest In Dubai?</a>
+                                    <a href="{{ url('invest-in-dubai') }}" aria-label="invest-in-dubai">Why Invest In Dubai?</a>
                                 </li>
                                 <li class="text-md text-black my-2">
-                                    <a href="{{ url('communities/') }}">Communities</a>
+                                    <a href="{{ url('communities/') }}" aria-label="communities">Communities</a>
                                 </li>
                                 <li class="text-md text-black my-2">
-                                    <a href="{{ url('developments/') }}">Developments</a>
+                                    <a href="{{ url('projects/') }}" aria-label="projects">Projects</a>
+                                </li>
+                                <li class="text-md text-black my-2" aria-label="">
+                                    <a href="{{ url('agency-registration') }}" aria-label="broker-registration">Broker Registration</a>
                                 </li>
                                 <li class="text-md text-black my-2">
-                                    <a href="{{ url('agency-registration') }}">Broker Registration</a>
-                                </li>
-                                <li class="text-md text-black my-2">
-                                    <a href="{{ url('contact') }}">Contact Us</a>
+                                    <a href="{{ url('contact') }}" aria-label="contact-us">Contact Us</a>
                                 </li>
 
                             </ul>
@@ -446,7 +446,7 @@
                     <div class="flex justify-left my-2">
                         <div>
                             <p class="text-base text-black">
-                                ESNAAD © {{ now()->year }} All Rights Reserved | Terms & Conditions | Privacy & Policy
+                                ESNAAD © {{ now()->year }} All Rights Reserved | <a href="{{ url('terms-and-conditions') }}" aria-label="terms-and-conditions" > Terms & Conditions</a> | <a href="{{ url('privacy-and-policy') }}" aria-label="privacy-and-policy" > Privacy & Policy </a>
                             </p>
                         </div>
                     </div>
@@ -554,22 +554,22 @@
 
                         <ul class="list-none footer-li capitalize leading-8" style="padding-left: 0px !important;">
                             <li class="text-md text-black my-3">
-                                <a href="{{ url('about-esnaad') }}">About ESNAAD</a>
+                                <a href="{{ url('about-us') }}" aria-label="about-us">About ESNAAD</a>
                             </li>
                             <li class="text-md text-black my-3">
-                                <a href="{{ url('invest-in-dubai') }}">Why Invest In Dubai?</a>
+                                <a href="{{ url('invest-in-dubai') }}" aria-label="invest-in-dubai">Why Invest In Dubai?</a>
                             </li>
                             <li class="text-md text-black my-3">
-                                <a href="{{ url('communities/') }}">Communities</a>
+                                <a href="{{ url('communities/') }}" aria-label="communities">Communities</a>
                             </li>
                             <li class="text-md text-black my-3">
-                                <a href="{{ url('developments/') }}">Projects</a>
+                                <a href="{{ url('projects/') }}" aria-label="projects">Projects</a>
                             </li>
                             <li class="text-md text-black my-3">
-                                <a href="{{ url('broker-registration') }}">Broker Registration</a>
+                                <a href="{{ url('broker-registration') }}" aria-label="broker-registration">Broker Registration</a>
                             </li>
                             <li class="text-md text-black my-3">
-                                <a href="{{ url('contact') }}">Contact Us</a>
+                                <a href="{{ url('contact') }}" aria-label="contact-us">Contact Us</a>
                             </li>
 
                         </ul>

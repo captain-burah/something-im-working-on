@@ -53,8 +53,8 @@
                 
                 <section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-4 py-12">
                     <div class="text-center pb-12">
-                        <h1 class="font-bold text-3xl md:text-4xl lg:text-5xl font-heading text-dark">
-                            Our Projects
+                        <h1 class="text-2xl md:text-4xl lg:text-4xl mb-5 font-heading text-dark">
+                            Projects
                         </h1>
                         <p class="text-base font-thin text-black">
                             Our projects are a reflection of our commitment to excellence. From luxurious

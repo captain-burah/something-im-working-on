@@ -23,8 +23,8 @@
             <div class="col-span-3 my-auto">
                 <h2 class=" text-xl xl:text-4xl">
                 </h2>
-                <p class="text-sm xl:text-2xl mt-10 text-justify">
-                    <i>Embrace the Journey of Life and Investments: Building a Home, Nurturing Dreams, and Securing Futures - Where Every Brick Holds the Promise of a Lifetime</i>
+                <p class="text-xl mt-10 text-justify leading-8">
+                    Embrace the Journey of Life and Investments: Building a Home, Nurturing Dreams, and Securing Futures - Where Every Brick Holds the Promise of a Lifetime
                 </p>
             </div>
         </div>

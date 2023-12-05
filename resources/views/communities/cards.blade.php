@@ -3,8 +3,8 @@
 <div class="container mx-auto md:px-4 my-8 pt-12 ">
     <section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-4 lg:py-12">
         <div class="text-center pb-12">
-            <h1 class="font-bold text-3xl md:text-4xl lg:text-5xl mb-5 font-heading text-dark">
-                Our Communities
+            <h1 class=" text-2xl md:text-4xl lg:text-4xl mb-5 font-heading text-dark">
+                Communities
             </h1>
             <p class="text-base font-thin text-black leading-8 md:text-center">
                 At ESNAAD, we're not just a real estate developer; we're a new player in the Dubai property market. Our focus goes beyond constructing homes to shaping vibrant communities. Our projects are meticulously designed to go beyond mere living spaces, aiming to cultivate a profound sense of belonging and identity for those who reside and work within them. With abundant amenities and open spaces, ESNAAD is dedicated to fostering a strong sense of community among its residents

@@ -487,34 +487,46 @@ class FrontEndController extends Controller
         ];
 
         if($request->hasFile('power_of_atty_or_moa_id')) {
-            $this->data['power_of_atty_or_moa_id'] = 'true';
+            $data['power_of_atty_or_moa_id'] = 'true';
+        } else {
+            $data['power_of_atty_or_moa_id'] = 'false';
         }
-        if($request->hasFile('valid_trade_license_id')) {
-            $this->data['valid_trade_license_id'] = 'true';
-        }
-        if($request->hasFile('rera_certificate_id')) {
-            $this->data['rera_certificate_id'] = 'true';
-        }
-        if($request->hasFile('broker_card_id')) {
-            $this->data['broker_card_id'] = 'true';
-        }
-        if($request->hasFile('valid_vat_certificate_or_noc_id')) {
-            $this->data['valid_vat_certificate_or_noc_id'] = 'true';
-        }
-        if($request->hasFile('passport_visa_eid_id')) {
-            $this->data['passport_visa_eid_id'] = 'true';
-        }
+        // if($request->hasFile('valid_trade_license_id')) {
+        //     $data['valid_trade_license_id'] = 'true';
+        // } else {
+        //     $data['valid_trade_license_id'] = 'false';
+        // }
+        // if($request->hasFile('rera_certificate_id')) {
+        //     $data['rera_certificate_id'] = 'true';
+        // } else {
+        //     $data['rera_certificate_id'] = 'false';
+        // }
+        // if($request->hasFile('broker_card_id')) {
+        //     $data['broker_card_id'] = 'true';
+        // } else {
+        //     $data['broker_card_id'] = 'false';
+        // }
+        // if($request->hasFile('valid_vat_certificate_or_noc_id')) {
+        //     $data['valid_vat_certificate_or_noc_id'] = 'true';
+        // } else {
+        //     $data['valid_vat_certificate_or_noc_id'] = 'false';
+        // }
+        // if($request->hasFile('passport_visa_eid_id')) {
+        //     $data['passport_visa_eid_id'] = 'true';
+        // } else {
+        //     $data['passport_visa_eid_id'] = 'false';
+        // }
 
         try{
             /**STAGE II */
-            $pdf = PDF::loadView('emails.pdf.brokerReg', $data);
-            $pdf->getDomPDF()->getCanvas()->get_cpdf()->setEncryption("viewer_password", "admin_password");
+            $pdf = PDF::loadView('emails.pdf.brokerReg', $this->data);
+            $pdf->getDomPDF()->getCanvas()->get_cpdf()->setEncryption("esnaad_12345", "admin_password");
 
             /**STAGE III */
             Mail::mailer('noreply')->send('emails.brokerReg', $data, function($message)use($data, $pdf, $request) {
                     $first_segment = $message->to("webmaster@esnaad.com")
                         ->subject("ESNAAD Notification - Broker Registration")
-                        ->attachData($pdf->output(), "text.pdf");
+                        ->attachData($pdf->output(), "Broker-registration-details.pdf");
                     
                     foreach($request->files as $file) {
                         $first_segment->attach($file->getRealPath(), [

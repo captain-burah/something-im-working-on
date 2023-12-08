@@ -5,7 +5,7 @@
         </caption>
         <tr>
             <td style="width: 235px">Authorized Person Name</td>
-            <td><input type="text" name="authorized_p_name" id="authorized_p_name" placeholder="eg: ABC Company L.L.C." class=" w-full"></td>
+            <td><input type="text" name="authorized_p_name" id="authorized_p_name" placeholder="eg: James Smith" class=" w-full"></td>
         </tr>
 
         <tr>

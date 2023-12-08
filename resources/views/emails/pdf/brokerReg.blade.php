@@ -25,7 +25,7 @@
                                         <tbody>
                                             <tr style="border-collapse:collapse">
                                             <td align="center" style="Margin:0;padding-left:10px;padding-right:10px;padding-top:25px;padding-bottom:25px;font-size:0">
-                                                <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:28px;font-family:lato, 'helvetica neue', helvetica, arial, sans-serif;line-height:27px;color:#666666">
+                                                <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:48px;font-family:'optima';line-height:27px;color:#FFF">
                                                     ESNAAD
                                                 </p>
                                             </td>
@@ -154,141 +154,440 @@
                             <td align="left" style="padding:0;Margin:0">
                                 <table width="100%" cellspacing="0" cellpadding="0" role="none" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
                                 <tbody>
-                                    <tr style="border-collapse:collapse">
-                                    <td valign="top" align="center" style="padding:0;Margin:0;width:600px">
-                                        <table style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;background-color:#FFFFFF" width="100%" cellspacing="0" cellpadding="0" bgcolor="#ffffff" role="presentation">
-                                        <tbody>
-                                            <tr style="border-collapse:collapse">
-                                            <td class="es-m-txt-l" bgcolor="#ffffff" align="left" style="Margin:0;padding-bottom:15px;padding-top:20px;padding-left:30px;padding-right:30px">
-                                                <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:14px;font-family:lato, 'helvetica neue', helvetica, arial, sans-serif;line-height:27px;color:#666666">
-                                                    Company Name : <br>
-                                                    Company Type : <br>
-                                                    Trade License Number : <br>
-                                                    Trade License Expiry : <br>
-                                                    RERA Certificate Number : <br>
-                                                    RERA Certificate Expiry	: <br>
-                                                </p>
-                                            </td>
-                                            <td class="es-m-txt-l" bgcolor="#ffffff" align="left" style="Margin:0;padding-bottom:15px;padding-top:20px;padding-left:30px;padding-right:30px">
-                                                <p style="text-align: right; Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:14px;font-family:lato, 'helvetica neue', helvetica, arial, sans-serif;line-height:27px;color:#666666">
-                                                    {{ $company_name }}<br>
-                                                    {{ $company_type }}<br> 
-                                                    {{ $trade_license }} : <br>
-                                                    {{ $trade_license_expiry}} : <br>
-                                                    {{ $rera_certificate }} : <br>
-                                                    {{ $rera_certificate_expiry }}	: <br>
-                                                </p>
-                                            </td>
-                                            </tr>
-                                            <tr style="border-collapse:collapse">
-                                            <td class="es-m-txt-l" bgcolor="#ffffff" align="left" style="Margin:0;padding-bottom:15px;padding-top:20px;padding-left:30px;padding-right:30px">
-                                                <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:14px;font-family:lato, 'helvetica neue', helvetica, arial, sans-serif;line-height:27px;color:#666666">
-                                                    Authorized Person Name	 :	<br>
-                                                    Country of Origin	 :	<br>
-                                                    Passport Numner	 :	<br>
-                                                    Designation / Posi :tion :	<br>
-                                                    Email :	<br>
-                                                    Address :	<br>
-                                                    City :	<br>
-                                                </p>
-                                            </td>
-                                            <td class="es-m-txt-l" bgcolor="#ffffff" align="left" style="Margin:0;padding-bottom:15px;padding-top:20px;padding-left:30px;padding-right:30px">
-                                                <p style="text-align: right; Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:14px;font-family:lato, 'helvetica neue', helvetica, arial, sans-serif;line-height:27px;color:#666666">
-                                                    {{ $authorized_p_name }} :	<br>
-                                                    {{ $authorized_p_country }} :	<br>
-                                                    {{ $authorized_p_passport }} :	<br>
-                                                    {{ $authorized_p_position }} :	<br>
-                                                    {{ $authorized_p_email }} :	<br>
-                                                    {{ $authorized_p_contact }} :	<br>
-                                                    {{ $authorized_p_address }} :	<br>
-                                                    {{ $authorized_p_email }} :	<br>
-                                                </p>
-                                            </td>
-                                            </tr>                                           
 
-                                            <tr style="border-collapse:collapse">
-                                            <td class="es-m-txt-l" bgcolor="#ffffff" align="left" style="Margin:0;padding-bottom:15px;padding-top:20px;padding-left:30px;padding-right:30px">
-                                                <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:14px;font-family:lato, 'helvetica neue', helvetica, arial, sans-serif;line-height:27px;color:#666666">
-                                                    Bank Name	    : <br>
-                                                    Bank Country    : <br>
-                                                    Bank City	    : <br>
-                                                    Account Number	: <br>
-                                                    IBAN Number     : <br>
-                                                    Account Title	: <br>
-                                                </p>
-                                            </td>
-                                            <td class="es-m-txt-l" bgcolor="#ffffff" align="left" style="Margin:0;padding-bottom:15px;padding-top:20px;padding-left:30px;padding-right:30px">
-                                                <p style="text-align: right; Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:14px;font-family:lato, 'helvetica neue', helvetica, arial, sans-serif;line-height:27px;color:#666666">
-                                                    {{ $bank_name }} : <br>
-                                                    {{ $bank_country }} : <br>
-                                                    {{ $bank_city }} : <br>
-                                                    {{ $account_no }} : <br>
-                                                    {{ $iban }} : <br>
-                                                    {{ $account_title }} : <br>
-                                                </p>
-                                            </td>
-                                            </tr>
 
-                                            <tr style="border-collapse:collapse">
-                                            <td colspan="2" class="es-m-txt-l" bgcolor="#ffffff" align="center" style="Margin:0;padding-bottom:0;padding-top:20px;padding-left:30px;padding-right:30px">
-                                                <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:14px;font-family:lato, 'helvetica neue', helvetica, arial, sans-serif;line-height:27px;color:#666666">
-                                                    <b><u>Documents Appended</u></b> <br>
-                                                </p>
-                                            </td>
-                                            </tr>
-                                            
+                                    {{-- <tr style="border-collapse:collapse">
+                                        <td valign="top" align="center" style="padding:0;Margin:0;width:600px">
+                                            <table style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;background-color:#FFFFFF" width="100%" cellspacing="0" cellpadding="0" bgcolor="#ffffff" role="presentation">
+                                            <tbody>
+                                                <tr style="border-collapse:collapse">
+                                                <td colspan="2" class="es-m-txt-l" bgcolor="#ffffff" align="center" style="Margin:0;padding-bottom:0;padding-top:20px;padding-left:30px;padding-right:30px">
+                                                    <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:14px;font-family:lato, 'helvetica neue', helvetica, arial, sans-serif;line-height:27px;color:#666666">
+                                                        <b><u>Company Information</u></b> <br>
+                                                    </p>
+                                                </td>
+                                                </tr>
 
-                                            <tr style="border-collapse:collapse">
-                                            <td class="es-m-txt-l" bgcolor="#ffffff" align="left" style="Margin:0;padding-bottom:15px;padding-top:0;padding-left:30px;padding-right:30px">
-                                                <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:14px;font-family:lato, 'helvetica neue', helvetica, arial, sans-serif;line-height:27px;color:#666666">
-                                                    Power of Atty / MOA	            : <br>
-                                                    Valid Trade License		        : <br>
-                                                    RERA Certificate		        : <br>
-                                                    Broker Card	                    : <br>
-                                                    Valid VAT Certificate / VAT NOC : <br>
-                                                    Passport, VISA and Emirates ID	: <br>
-                                                </p>
-                                            </td>
-                                            <td class="es-m-txt-l" bgcolor="#ffffff" align="left" style="Margin:0;padding-bottom:15px;padding-top:20px;padding-left:30px;padding-right:30px">
-                                                <p style="text-align: right; Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:14px;font-family:lato, 'helvetica neue', helvetica, arial, sans-serif;line-height:27px;color:#666666">
-                                                    @if($power_of_atty_or_moa_id == true)
-                                                        Attached<br>
-                                                    @else
-                                                        N/A
-                                                    @endif
-                                                    @if($valid_trade_license_id == true)
-                                                        Attached<br>
-                                                    @else
-                                                        N/A
-                                                    @endif
-                                                    @if($rera_certificate_id == true)
-                                                        Attached<br>
-                                                    @else
-                                                        N/A
-                                                    @endif
-                                                    @if($broker_card_id == true)
-                                                        Attached<br>
-                                                    @else
-                                                        N/A
-                                                    @endif
-                                                    @if($valid_vat_certificate_or_noc_id == true)
-                                                        Attached<br>
-                                                    @else
-                                                        N/A
-                                                    @endif
-                                                    @if($passport_visa_eid_id == true)
-                                                        Attached<br>
-                                                    @else
-                                                        N/A
-                                                    @endif
-                                                </p>
-                                            </td>
-                                            </tr>
-
-                                        </tbody>
-                                        </table>
-                                    </td>
+                                                <tr style="border-collapse:collapse;border:0.5px solid #000">
+                                                    <td class="es-m-txt-l" bgcolor="#ffffff" align="left" style="Margin:0;padding-bottom:10px;padding-top:10px;padding-left:30px;padding-right:30px">
+                                                        <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:14px;font-family:lato, 'helvetica neue', helvetica, arial, sans-serif;line-height:27px;color:#666666">
+                                                            Company Name : <br>
+                                                        </p>
+                                                    </td>
+                                                    <td class="es-m-txt-l" bgcolor="#ffffff" align="right" style="Margin:0;padding-bottom:10px;padding-top:10px;padding-left:30px;padding-right:30px">
+                                                        <p style="text-align: right; Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:14px;font-family:lato, 'helvetica neue', helvetica, arial, sans-serif;line-height:27px;color:#666666">
+                                                            {{ $company_name }}<br>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr  style="border-collapse:collapse;border:0.5px solid #000">
+                                                    <td class="es-m-txt-l" bgcolor="#ffffff" align="left" style="Margin:0;padding-bottom:10px;padding-top:10px;padding-left:30px;padding-right:30px">
+                                                        <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:14px;font-family:lato, 'helvetica neue', helvetica, arial, sans-serif;line-height:27px;color:#666666">
+                                                            Company Type : <br>
+                                                        </p>
+                                                    </td>
+                                                    <td class="es-m-txt-l" bgcolor="#ffffff" align="right" style="Margin:0;padding-bottom:10px;padding-top:10px;padding-left:30px;padding-right:30px">
+                                                        <p style="text-align: right; Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:14px;font-family:lato, 'helvetica neue', helvetica, arial, sans-serif;line-height:27px;color:#666666">
+                                                            {{ $company_type }}<br>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr style="border-collapse:collapse;border:0.5px solid #000">
+                                                    <td class="es-m-txt-l" bgcolor="#ffffff" align="left" style="Margin:0;padding-bottom:10px;padding-top:10px;padding-left:30px;padding-right:30px">
+                                                        <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:14px;font-family:lato, 'helvetica neue', helvetica, arial, sans-serif;line-height:27px;color:#666666">
+                                                            Trade License Number : <br>
+                                                        </p>
+                                                    </td>
+                                                    <td class="es-m-txt-l" bgcolor="#ffffff" align="right" style="Margin:0;padding-bottom:10px;padding-top:10px;padding-left:30px;padding-right:30px">
+                                                        <p style="text-align: right; Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:14px;font-family:lato, 'helvetica neue', helvetica, arial, sans-serif;line-height:27px;color:#666666">
+                                                            
+                                                            {{ $trade_license }} : <br>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr style="border-collapse:collapse;border:0.5px solid #000">
+                                                    <td class="es-m-txt-l" bgcolor="#ffffff" align="left" style="Margin:0;padding-bottom:10px;padding-top:10px;padding-left:30px;padding-right:30px">
+                                                        <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:14px;font-family:lato, 'helvetica neue', helvetica, arial, sans-serif;line-height:27px;color:#666666">
+                                                            Trade License Expiry : <br>
+                                                        </p>
+                                                    </td>
+                                                    <td class="es-m-txt-l" bgcolor="#ffffff" align="right" style="Margin:0;padding-bottom:10px;padding-top:10px;padding-left:30px;padding-right:30px">
+                                                        <p style="text-align: right; Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:14px;font-family:lato, 'helvetica neue', helvetica, arial, sans-serif;line-height:27px;color:#666666">
+                                                            
+                                                            {{ $trade_license_expiry}} : <br>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr style="border-collapse:collapse;border:0.5px solid #000">
+                                                    <td class="es-m-txt-l" bgcolor="#ffffff" align="left" style="Margin:0;padding-bottom:10px;padding-top:10px;padding-left:30px;padding-right:30px">
+                                                        <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:14px;font-family:lato, 'helvetica neue', helvetica, arial, sans-serif;line-height:27px;color:#666666">
+                                                            RERA Certificate Number : <br>
+                                                        </p>
+                                                    </td>
+                                                    <td class="es-m-txt-l" bgcolor="#ffffff" align="right" style="Margin:0;padding-bottom:10px;padding-top:10px;padding-left:30px;padding-right:30px">
+                                                        <p style="text-align: right; Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:14px;font-family:lato, 'helvetica neue', helvetica, arial, sans-serif;line-height:27px;color:#666666">
+                                                            
+                                                            {{ $rera_certificate }} : <br>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr style="border-collapse:collapse;border:0.5px solid #000">
+                                                    <td class="es-m-txt-l" bgcolor="#ffffff" align="left" style="Margin:0;padding-bottom:10px;padding-top:10px;padding-left:30px;padding-right:30px">
+                                                        <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:14px;font-family:lato, 'helvetica neue', helvetica, arial, sans-serif;line-height:27px;color:#666666">
+                                                            RERA Certificate Expiry	: <br>
+                                                        </p>
+                                                    </td>
+                                                    <td class="es-m-txt-l" bgcolor="#ffffff" align="right" style="Margin:0;padding-bottom:10px;padding-top:10px;padding-left:30px;padding-right:30px">
+                                                        <p style="text-align: right; Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:14px;font-family:lato, 'helvetica neue', helvetica, arial, sans-serif;line-height:27px;color:#666666">
+                                                            
+                                                            {{ $rera_certificate_expiry }}	: <br>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                            </table>
+                                        </td>
                                     </tr>
+
+
+                                    <tr style="border-collapse:collapse">
+                                        <td valign="top" align="center" style="padding:0;Margin:0;width:600px">
+                                            <table style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;background-color:#FFFFFF" width="100%" cellspacing="0" cellpadding="0" bgcolor="#ffffff" role="presentation">
+                                            <tbody>
+                                                <tr style="border-collapse:collapse">
+                                                <td colspan="2" class="es-m-txt-l" bgcolor="#ffffff" align="center" style="Margin:0;padding-bottom:0;padding-top:20px;padding-left:30px;padding-right:30px">
+                                                    <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:14px;font-family:lato, 'helvetica neue', helvetica, arial, sans-serif;line-height:27px;color:#666666">
+                                                        <b><u>Authorized Person Information</u></b> <br>
+                                                    </p>
+                                                </td>
+                                                </tr>
+
+                                                <tr style="border-collapse:collapse;border:0.5px solid #000">
+                                                    <td class="es-m-txt-l" bgcolor="#ffffff" align="left" style="Margin:0;padding-bottom:10px;padding-top:10px;padding-left:30px;padding-right:30px">
+                                                        <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:14px;font-family:lato, 'helvetica neue', helvetica, arial, sans-serif;line-height:27px;color:#666666">
+                                                            Authorized Person Name : <br>
+                                                        </p>
+                                                    </td>
+                                                    <td class="es-m-txt-l" bgcolor="#ffffff" align="right" style="Margin:0;padding-bottom:10px;padding-top:10px;padding-left:30px;padding-right:30px">
+                                                        <p style="text-align: right; Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:14px;font-family:lato, 'helvetica neue', helvetica, arial, sans-serif;line-height:27px;color:#666666">
+                                                            {{ $authorized_p_name }}<br>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr  style="border-collapse:collapse;border:0.5px solid #000">
+                                                    <td class="es-m-txt-l" bgcolor="#ffffff" align="left" style="Margin:0;padding-bottom:10px;padding-top:10px;padding-left:30px;padding-right:30px">
+                                                        <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:14px;font-family:lato, 'helvetica neue', helvetica, arial, sans-serif;line-height:27px;color:#666666">
+                                                            Country of Origin : <br>
+                                                        </p>
+                                                    </td>
+                                                    <td class="es-m-txt-l" bgcolor="#ffffff" align="right" style="Margin:0;padding-bottom:10px;padding-top:10px;padding-left:30px;padding-right:30px">
+                                                        <p style="text-align: right; Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:14px;font-family:lato, 'helvetica neue', helvetica, arial, sans-serif;line-height:27px;color:#666666">
+                                                            
+                                                            {{ $authorized_p_country }}<br>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr style="border-collapse:collapse;border:0.5px solid #000">
+                                                    <td class="es-m-txt-l" bgcolor="#ffffff" align="left" style="Margin:0;padding-bottom:10px;padding-top:10px;padding-left:30px;padding-right:30px">
+                                                        <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:14px;font-family:lato, 'helvetica neue', helvetica, arial, sans-serif;line-height:27px;color:#666666">
+                                                            Passport Numner : <br>
+                                                        </p>
+                                                    </td>
+                                                    <td class="es-m-txt-l" bgcolor="#ffffff" align="right" style="Margin:0;padding-bottom:10px;padding-top:10px;padding-left:30px;padding-right:30px">
+                                                        <p style="text-align: right; Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:14px;font-family:lato, 'helvetica neue', helvetica, arial, sans-serif;line-height:27px;color:#666666">
+                                                            
+                                                            {{ $authorized_p_passport }}<br>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr style="border-collapse:collapse;border:0.5px solid #000">
+                                                    <td class="es-m-txt-l" bgcolor="#ffffff" align="left" style="Margin:0;padding-bottom:10px;padding-top:10px;padding-left:30px;padding-right:30px">
+                                                        <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:14px;font-family:lato, 'helvetica neue', helvetica, arial, sans-serif;line-height:27px;color:#666666">
+                                                            Designation / Position  : <br>
+                                                        </p>
+                                                    </td>
+                                                    <td class="es-m-txt-l" bgcolor="#ffffff" align="right" style="Margin:0;padding-bottom:10px;padding-top:10px;padding-left:30px;padding-right:30px">
+                                                        <p style="text-align: right; Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:14px;font-family:lato, 'helvetica neue', helvetica, arial, sans-serif;line-height:27px;color:#666666">
+                                                            
+                                                            {{ $authorized_p_position}} <br>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr style="border-collapse:collapse;border:0.5px solid #000">
+                                                    <td class="es-m-txt-l" bgcolor="#ffffff" align="left" style="Margin:0;padding-bottom:10px;padding-top:10px;padding-left:30px;padding-right:30px">
+                                                        <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:14px;font-family:lato, 'helvetica neue', helvetica, arial, sans-serif;line-height:27px;color:#666666">
+                                                            Email : <br>
+                                                        </p>
+                                                    </td>
+                                                    <td class="es-m-txt-l" bgcolor="#ffffff" align="right" style="Margin:0;padding-bottom:10px;padding-top:10px;padding-left:30px;padding-right:30px">
+                                                        <p style="text-align: right; Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:14px;font-family:lato, 'helvetica neue', helvetica, arial, sans-serif;line-height:27px;color:#666666">
+                                                            
+                                                            {{ $authorized_p_email }} <br>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr style="border-collapse:collapse;border:0.5px solid #000">
+                                                    <td class="es-m-txt-l" bgcolor="#ffffff" align="left" style="Margin:0;padding-bottom:10px;padding-top:10px;padding-left:30px;padding-right:30px">
+                                                        <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:14px;font-family:lato, 'helvetica neue', helvetica, arial, sans-serif;line-height:27px;color:#666666">
+                                                            Contact	: <br>
+                                                        </p>
+                                                    </td>
+                                                    <td class="es-m-txt-l" bgcolor="#ffffff" align="right" style="Margin:0;padding-bottom:10px;padding-top:10px;padding-left:30px;padding-right:30px">
+                                                        <p style="text-align: right; Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:14px;font-family:lato, 'helvetica neue', helvetica, arial, sans-serif;line-height:27px;color:#666666">
+                                                            
+                                                            {{ $authorized_p_contact }}<br>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr style="border-collapse:collapse;border:0.5px solid #000">
+                                                    <td class="es-m-txt-l" bgcolor="#ffffff" align="left" style="Margin:0;padding-bottom:10px;padding-top:10px;padding-left:30px;padding-right:30px">
+                                                        <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:14px;font-family:lato, 'helvetica neue', helvetica, arial, sans-serif;line-height:27px;color:#666666">
+                                                            Address	: <br>
+                                                        </p>
+                                                    </td>
+                                                    <td class="es-m-txt-l" bgcolor="#ffffff" align="right" style="Margin:0;padding-bottom:10px;padding-top:10px;padding-left:30px;padding-right:30px">
+                                                        <p style="text-align: right; Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:14px;font-family:lato, 'helvetica neue', helvetica, arial, sans-serif;line-height:27px;color:#666666">
+                                                            
+                                                            {{ $authorized_p_address }} <br>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr style="border-collapse:collapse;border:0.5px solid #000">
+                                                    <td class="es-m-txt-l" bgcolor="#ffffff" align="left" style="Margin:0;padding-bottom:10px;padding-top:10px;padding-left:30px;padding-right:30px">
+                                                        <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:14px;font-family:lato, 'helvetica neue', helvetica, arial, sans-serif;line-height:27px;color:#666666">
+                                                            City	: <br>
+                                                        </p>
+                                                    </td>
+                                                    <td class="es-m-txt-l" bgcolor="#ffffff" align="right" style="Margin:0;padding-bottom:10px;padding-top:10px;padding-left:30px;padding-right:30px">
+                                                        <p style="text-align: right; Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:14px;font-family:lato, 'helvetica neue', helvetica, arial, sans-serif;line-height:27px;color:#666666">
+                                                            
+                                                            {{ $authorized_p_city }} <br>
+                                                        </p>
+                                                    </td>
+                                                </tr> 
+
+                                            </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+
+
+
+
+                                    <tr style="border-collapse:collapse">
+                                        <td valign="top" align="center" style="padding:0;Margin:0;width:600px">
+                                            <table style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;background-color:#FFFFFF" width="100%" cellspacing="0" cellpadding="0" bgcolor="#ffffff" role="presentation">
+                                            <tbody>
+                                                <tr style="border-collapse:collapse">
+                                                <td colspan="2" class="es-m-txt-l" bgcolor="#ffffff" align="center" style="Margin:0;padding-bottom:0;padding-top:20px;padding-left:30px;padding-right:30px">
+                                                    <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:14px;font-family:lato, 'helvetica neue', helvetica, arial, sans-serif;line-height:27px;color:#666666">
+                                                        <b><u>Banking Information</u></b> <br>
+                                                    </p>
+                                                </td>
+                                                </tr>
+
+                                                <tr style="border-collapse:collapse;border:0.5px solid #000">
+                                                    <td class="es-m-txt-l" bgcolor="#ffffff" align="left" style="Margin:0;padding-bottom:10px;padding-top:10px;padding-left:30px;padding-right:30px">
+                                                        <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:14px;font-family:lato, 'helvetica neue', helvetica, arial, sans-serif;line-height:27px;color:#666666">
+                                                            Bank Name : <br>
+                                                        </p>
+                                                    </td>
+                                                    <td class="es-m-txt-l" bgcolor="#ffffff" align="right" style="Margin:0;padding-bottom:10px;padding-top:10px;padding-left:30px;padding-right:30px">
+                                                        <p style="text-align: right; Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:14px;font-family:lato, 'helvetica neue', helvetica, arial, sans-serif;line-height:27px;color:#666666">
+                                                            {{ $bank_name }}<br>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr  style="border-collapse:collapse;border:0.5px solid #000">
+                                                    <td class="es-m-txt-l" bgcolor="#ffffff" align="left" style="Margin:0;padding-bottom:10px;padding-top:10px;padding-left:30px;padding-right:30px">
+                                                        <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:14px;font-family:lato, 'helvetica neue', helvetica, arial, sans-serif;line-height:27px;color:#666666">
+                                                            Bank Country : <br>
+                                                        </p>
+                                                    </td>
+                                                    <td class="es-m-txt-l" bgcolor="#ffffff" align="right" style="Margin:0;padding-bottom:10px;padding-top:10px;padding-left:30px;padding-right:30px">
+                                                        <p style="text-align: right; Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:14px;font-family:lato, 'helvetica neue', helvetica, arial, sans-serif;line-height:27px;color:#666666">
+                                                            
+                                                            {{ $bank_country }}<br>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr style="border-collapse:collapse;border:0.5px solid #000">
+                                                    <td class="es-m-txt-l" bgcolor="#ffffff" align="left" style="Margin:0;padding-bottom:10px;padding-top:10px;padding-left:30px;padding-right:30px">
+                                                        <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:14px;font-family:lato, 'helvetica neue', helvetica, arial, sans-serif;line-height:27px;color:#666666">
+                                                            Bank City : <br>
+                                                        </p>
+                                                    </td>
+                                                    <td class="es-m-txt-l" bgcolor="#ffffff" align="right" style="Margin:0;padding-bottom:10px;padding-top:10px;padding-left:30px;padding-right:30px">
+                                                        <p style="text-align: right; Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:14px;font-family:lato, 'helvetica neue', helvetica, arial, sans-serif;line-height:27px;color:#666666">
+                                                            
+                                                            {{ $bank_city }} : <br>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr style="border-collapse:collapse;border:0.5px solid #000">
+                                                    <td class="es-m-txt-l" bgcolor="#ffffff" align="left" style="Margin:0;padding-bottom:10px;padding-top:10px;padding-left:30px;padding-right:30px">
+                                                        <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:14px;font-family:lato, 'helvetica neue', helvetica, arial, sans-serif;line-height:27px;color:#666666">
+                                                            Account Number  : <br>
+                                                        </p>
+                                                    </td>
+                                                    <td class="es-m-txt-l" bgcolor="#ffffff" align="right" style="Margin:0;padding-bottom:10px;padding-top:10px;padding-left:30px;padding-right:30px">
+                                                        <p style="text-align: right; Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:14px;font-family:lato, 'helvetica neue', helvetica, arial, sans-serif;line-height:27px;color:#666666">
+                                                            
+                                                            {{ $account_no}} : <br>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr style="border-collapse:collapse;border:0.5px solid #000">
+                                                    <td class="es-m-txt-l" bgcolor="#ffffff" align="left" style="Margin:0;padding-bottom:10px;padding-top:10px;padding-left:30px;padding-right:30px">
+                                                        <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:14px;font-family:lato, 'helvetica neue', helvetica, arial, sans-serif;line-height:27px;color:#666666">
+                                                            IBAN Number : <br>
+                                                        </p>
+                                                    </td>
+                                                    <td class="es-m-txt-l" bgcolor="#ffffff" align="right" style="Margin:0;padding-bottom:10px;padding-top:10px;padding-left:30px;padding-right:30px">
+                                                        <p style="text-align: right; Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:14px;font-family:lato, 'helvetica neue', helvetica, arial, sans-serif;line-height:27px;color:#666666">
+                                                            
+                                                            {{ $iban }} : <br>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr style="border-collapse:collapse;border:0.5px solid #000">
+                                                    <td class="es-m-txt-l" bgcolor="#ffffff" align="left" style="Margin:0;padding-bottom:10px;padding-top:10px;padding-left:30px;padding-right:30px">
+                                                        <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:14px;font-family:lato, 'helvetica neue', helvetica, arial, sans-serif;line-height:27px;color:#666666">
+                                                            Account Title	: <br>
+                                                        </p>
+                                                    </td>
+                                                    <td class="es-m-txt-l" bgcolor="#ffffff" align="right" style="Margin:0;padding-bottom:10px;padding-top:10px;padding-left:30px;padding-right:30px">
+                                                        <p style="text-align: right; Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:14px;font-family:lato, 'helvetica neue', helvetica, arial, sans-serif;line-height:27px;color:#666666">
+                                                            
+                                                            {{ $account_title }}	: <br>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+
+                                            </tbody>
+                                            </table>
+                                        </td>
+                                    </tr> --}}
+
+
+
+                                    <tr style="border-collapse:collapse">
+                                        <td valign="top" align="center" style="padding:0;Margin:0;width:600px">
+                                            <table style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;background-color:#FFFFFF" width="100%" cellspacing="0" cellpadding="0" bgcolor="#ffffff" role="presentation">
+                                            <tbody>
+                                                <tr style="border-collapse:collapse">
+                                                <td colspan="2" class="es-m-txt-l" bgcolor="#ffffff" align="center" style="Margin:0;padding-bottom:0;padding-top:20px;padding-left:30px;padding-right:30px">
+                                                    <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:14px;font-family:lato, 'helvetica neue', helvetica, arial, sans-serif;line-height:27px;color:#666666">
+                                                        <b><u>Documents Appended</u></b> <br>
+                                                    </p>
+                                                </td>
+                                                </tr>
+
+
+                                                <tr style="border-collapse:collapse;border:0.5px solid #000">
+                                                    <td class="es-m-txt-l" bgcolor="#ffffff" align="left" style="Margin:0;padding-bottom:10px;padding-top:10px;padding-left:30px;padding-right:30px">
+                                                        <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:14px;font-family:lato, 'helvetica neue', helvetica, arial, sans-serif;line-height:27px;color:#666666">
+                                                            Power of Atty / MOA : <br>
+                                                        </p>
+                                                    </td>
+                                                    <td class="es-m-txt-l" bgcolor="#ffffff" align="left" style="Margin:0;padding-bottom:10px;padding-top:10px;padding-left:30px;padding-right:30px">
+                                                        <p style="text-align: right; Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:14px;font-family:lato, 'helvetica neue', helvetica, arial, sans-serif;line-height:27px;color:#666666">
+                                                            
+                                                            @if($power_of_atty_or_moa_id == true)
+                                                                Attached<br>
+                                                            @else
+                                                                N/A <br>
+                                                            @endif
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr  style="border-collapse:collapse;border:0.5px solid #000">
+                                                    <td class="es-m-txt-l" bgcolor="#ffffff" align="left" style="Margin:0;padding-bottom:10px;padding-top:10px;padding-left:30px;padding-right:30px">
+                                                        <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:14px;font-family:lato, 'helvetica neue', helvetica, arial, sans-serif;line-height:27px;color:#666666">
+                                                            Valid Trade License : <br>
+                                                        </p>
+                                                    </td>
+                                                    <td class="es-m-txt-l" bgcolor="#ffffff" align="left" style="Margin:0;padding-bottom:10px;padding-top:10px;padding-left:30px;padding-right:30px">
+                                                        <p style="text-align: right; Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:14px;font-family:lato, 'helvetica neue', helvetica, arial, sans-serif;line-height:27px;color:#666666">
+                                                            @if($valid_trade_license_id == true)
+                                                                Attached<br>
+                                                            @else
+                                                                N/A <br>
+                                                            @endif
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr style="border-collapse:collapse;border:0.5px solid #000">
+                                                    <td class="es-m-txt-l" bgcolor="#ffffff" align="left" style="Margin:0;padding-bottom:10px;padding-top:10px;padding-left:30px;padding-right:30px">
+                                                        <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:14px;font-family:lato, 'helvetica neue', helvetica, arial, sans-serif;line-height:27px;color:#666666">
+                                                            Rera Certificate : <br>
+                                                        </p>
+                                                    </td>
+                                                    <td class="es-m-txt-l" bgcolor="#ffffff" align="left" style="Margin:0;padding-bottom:10px;padding-top:10px;padding-left:30px;padding-right:30px">
+                                                        <p style="text-align: right; Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:14px;font-family:lato, 'helvetica neue', helvetica, arial, sans-serif;line-height:27px;color:#666666">
+                                                            @if($rera_certificate_id == true)
+                                                                Attached<br>
+                                                            @else
+                                                                N/A <br>
+                                                            @endif
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr style="border-collapse:collapse;border:0.5px solid #000">
+                                                    <td class="es-m-txt-l" bgcolor="#ffffff" align="left" style="Margin:0;padding-bottom:10px;padding-top:10px;padding-left:30px;padding-right:30px">
+                                                        <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:14px;font-family:lato, 'helvetica neue', helvetica, arial, sans-serif;line-height:27px;color:#666666">
+                                                            Broker Card : <br>
+                                                        </p>
+                                                    </td>
+                                                    <td class="es-m-txt-l" bgcolor="#ffffff" align="left" style="Margin:0;padding-bottom:10px;padding-top:10px;padding-left:30px;padding-right:30px">
+                                                        <p style="text-align: right; Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:14px;font-family:lato, 'helvetica neue', helvetica, arial, sans-serif;line-height:27px;color:#666666">
+                                                            @if($broker_card_id == true)
+                                                                Attached<br>
+                                                            @else
+                                                                N/A <br>
+                                                            @endif
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr style="border-collapse:collapse;border:0.5px solid #000">
+                                                    <td class="es-m-txt-l" bgcolor="#ffffff" align="left" style="Margin:0;padding-bottom:10px;padding-top:10px;padding-left:30px;padding-right:30px">
+                                                        <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:14px;font-family:lato, 'helvetica neue', helvetica, arial, sans-serif;line-height:27px;color:#666666">
+                                                            Valid VAT Certificate / VAT NOC  : <br>
+                                                        </p>
+                                                    </td>
+                                                    <td class="es-m-txt-l" bgcolor="#ffffff" align="left" style="Margin:0;padding-bottom:10px;padding-top:10px;padding-left:30px;padding-right:30px">
+                                                        <p style="text-align: right; Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:14px;font-family:lato, 'helvetica neue', helvetica, arial, sans-serif;line-height:27px;color:#666666">
+                                                            @if($valid_vat_certificate_or_noc_id == true)
+                                                                Attached<br>
+                                                            @else
+                                                                N/A <br>
+                                                            @endif
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr style="border-collapse:collapse;border:0.5px solid #000">
+                                                    <td class="es-m-txt-l" bgcolor="#ffffff" align="left" style="Margin:0;padding-bottom:10px;padding-top:10px;padding-left:30px;padding-right:30px">
+                                                        <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:14px;font-family:lato, 'helvetica neue', helvetica, arial, sans-serif;line-height:27px;color:#666666">
+                                                            Passport, VISA and Emirates ID : <br>
+                                                        </p>
+                                                    </td>
+                                                    <td class="es-m-txt-l" bgcolor="#ffffff" align="left" style="Margin:0;padding-bottom:10px;padding-top:10px;padding-left:30px;padding-right:30px">
+                                                        <p style="text-align: right; Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:14px;font-family:lato, 'helvetica neue', helvetica, arial, sans-serif;line-height:27px;color:#666666">
+                                                            @if($passport_visa_eid_id == true)
+                                                                Attached<br>
+                                                            @else
+                                                                N/A <br>
+                                                            @endif
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+
+
+
                                 </tbody>
                                 </table>
                             </td>
@@ -300,7 +599,6 @@
                     </tr>
                 </tbody>
                 </table>
-
 
 
                 <table class="es-content" cellspacing="0" cellpadding="0" align="center" role="none" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;table-layout:fixed !important;width:100%">

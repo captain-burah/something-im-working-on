@@ -177,13 +177,6 @@
 
                     var formData = new FormData(this);
 
-                    /**
-                     * INITIATE AN AJAX SCRIPT FOR THE FORM SUBMISSION
-                     * ALONG WITH POST ROUTE METHOD AND URL. IF RESPONSE
-                     * IS A SUCCESS DISPLAY THE THANK YOU MODAL AND
-                     * UPDATE THE FORM SESSION IN SESSION-STORAGE OF BROWSER
-                     *
-                    */
                     $.ajax({
                         type:'POST',
                         headers: {
@@ -201,13 +194,11 @@
                                 // console.log(data.success); // TEST THE DATA
                                 sessionStorage.setItem("agency_registration_submitted", "true");
 
+                                var successView = document.getElementById("agency-registration-form");
+                                successView.classList.add("hidden");
 
-                                // UPDATE LOCAL STORAGE
-                                // sessionStorage.removeItem("form_submission");
-                                // sessionStorage.setItem("form_submission", "true");
-
-                                // modalClose('mymodalcentered'); // CLOSE THE MODAL
-
+                                var formView = document.getElementById("agency-registration-form-submitted");
+                                formView.classList.remove("hidden");
                             }else{
                                 printErrorMsg(data.error);
                             }

@@ -6,7 +6,7 @@
                 <h2 class=" text-xl xl:text-4xl">
                     OUR STORY
                 </h2>
-                <p class="text-sm xl:text-base leading-8 mt-10 text-justify">
+                <p class="text-sm xl:text-base leading-8 mt-10 text-left">
                     Inspired by over  20 years of expertise within the real estate industry & construction, elevating your living experiences
                     with our thoughtfully crafted spaces, where every detail reflects our dedication to creating homes 
                     that stand as a testament to sophistication and superior craftsmanship.

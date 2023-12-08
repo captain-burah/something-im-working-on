@@ -94,7 +94,7 @@
             <div class="flex items-center">
 
                 <div class="hidden space-x-8 sm:-my-px sm:flex mx-auto no-underline pr-8">
-                    <x-nav-link href="{{ url('about-esnaad') }}" aria-label="navbar-route">
+                    <x-nav-link href="{{ url('about-us') }}" aria-label="navbar-route">
                         {{ __('ABOUT') }}
                     </x-nav-link>
                 </div>            

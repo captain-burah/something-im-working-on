@@ -156,7 +156,7 @@
                                 <tbody>
 
 
-                                    {{-- <tr style="border-collapse:collapse">
+                                    <tr style="border-collapse:collapse">
                                         <td valign="top" align="center" style="padding:0;Margin:0;width:600px">
                                             <table style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;background-color:#FFFFFF" width="100%" cellspacing="0" cellpadding="0" bgcolor="#ffffff" role="presentation">
                                             <tbody>
@@ -467,124 +467,9 @@
                                             </tbody>
                                             </table>
                                         </td>
-                                    </tr> --}}
-
-
-
-                                    <tr style="border-collapse:collapse">
-                                        <td valign="top" align="center" style="padding:0;Margin:0;width:600px">
-                                            <table style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;background-color:#FFFFFF" width="100%" cellspacing="0" cellpadding="0" bgcolor="#ffffff" role="presentation">
-                                            <tbody>
-                                                <tr style="border-collapse:collapse">
-                                                <td colspan="2" class="es-m-txt-l" bgcolor="#ffffff" align="center" style="Margin:0;padding-bottom:0;padding-top:20px;padding-left:30px;padding-right:30px">
-                                                    <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:14px;font-family:lato, 'helvetica neue', helvetica, arial, sans-serif;line-height:27px;color:#666666">
-                                                        <b><u>Documents Appended</u></b> <br>
-                                                    </p>
-                                                </td>
-                                                </tr>
-
-
-                                                <tr style="border-collapse:collapse;border:0.5px solid #000">
-                                                    <td class="es-m-txt-l" bgcolor="#ffffff" align="left" style="Margin:0;padding-bottom:10px;padding-top:10px;padding-left:30px;padding-right:30px">
-                                                        <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:14px;font-family:lato, 'helvetica neue', helvetica, arial, sans-serif;line-height:27px;color:#666666">
-                                                            Power of Atty / MOA : <br>
-                                                        </p>
-                                                    </td>
-                                                    <td class="es-m-txt-l" bgcolor="#ffffff" align="left" style="Margin:0;padding-bottom:10px;padding-top:10px;padding-left:30px;padding-right:30px">
-                                                        <p style="text-align: right; Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:14px;font-family:lato, 'helvetica neue', helvetica, arial, sans-serif;line-height:27px;color:#666666">
-                                                            
-                                                            @if($power_of_atty_or_moa_id == true)
-                                                                Attached<br>
-                                                            @else
-                                                                N/A <br>
-                                                            @endif
-                                                        </p>
-                                                    </td>
-                                                </tr>
-                                                <tr  style="border-collapse:collapse;border:0.5px solid #000">
-                                                    <td class="es-m-txt-l" bgcolor="#ffffff" align="left" style="Margin:0;padding-bottom:10px;padding-top:10px;padding-left:30px;padding-right:30px">
-                                                        <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:14px;font-family:lato, 'helvetica neue', helvetica, arial, sans-serif;line-height:27px;color:#666666">
-                                                            Valid Trade License : <br>
-                                                        </p>
-                                                    </td>
-                                                    <td class="es-m-txt-l" bgcolor="#ffffff" align="left" style="Margin:0;padding-bottom:10px;padding-top:10px;padding-left:30px;padding-right:30px">
-                                                        <p style="text-align: right; Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:14px;font-family:lato, 'helvetica neue', helvetica, arial, sans-serif;line-height:27px;color:#666666">
-                                                            @if($valid_trade_license_id == true)
-                                                                Attached<br>
-                                                            @else
-                                                                N/A <br>
-                                                            @endif
-                                                        </p>
-                                                    </td>
-                                                </tr>
-                                                <tr style="border-collapse:collapse;border:0.5px solid #000">
-                                                    <td class="es-m-txt-l" bgcolor="#ffffff" align="left" style="Margin:0;padding-bottom:10px;padding-top:10px;padding-left:30px;padding-right:30px">
-                                                        <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:14px;font-family:lato, 'helvetica neue', helvetica, arial, sans-serif;line-height:27px;color:#666666">
-                                                            Rera Certificate : <br>
-                                                        </p>
-                                                    </td>
-                                                    <td class="es-m-txt-l" bgcolor="#ffffff" align="left" style="Margin:0;padding-bottom:10px;padding-top:10px;padding-left:30px;padding-right:30px">
-                                                        <p style="text-align: right; Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:14px;font-family:lato, 'helvetica neue', helvetica, arial, sans-serif;line-height:27px;color:#666666">
-                                                            @if($rera_certificate_id == true)
-                                                                Attached<br>
-                                                            @else
-                                                                N/A <br>
-                                                            @endif
-                                                        </p>
-                                                    </td>
-                                                </tr>
-                                                <tr style="border-collapse:collapse;border:0.5px solid #000">
-                                                    <td class="es-m-txt-l" bgcolor="#ffffff" align="left" style="Margin:0;padding-bottom:10px;padding-top:10px;padding-left:30px;padding-right:30px">
-                                                        <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:14px;font-family:lato, 'helvetica neue', helvetica, arial, sans-serif;line-height:27px;color:#666666">
-                                                            Broker Card : <br>
-                                                        </p>
-                                                    </td>
-                                                    <td class="es-m-txt-l" bgcolor="#ffffff" align="left" style="Margin:0;padding-bottom:10px;padding-top:10px;padding-left:30px;padding-right:30px">
-                                                        <p style="text-align: right; Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:14px;font-family:lato, 'helvetica neue', helvetica, arial, sans-serif;line-height:27px;color:#666666">
-                                                            @if($broker_card_id == true)
-                                                                Attached<br>
-                                                            @else
-                                                                N/A <br>
-                                                            @endif
-                                                        </p>
-                                                    </td>
-                                                </tr>
-                                                <tr style="border-collapse:collapse;border:0.5px solid #000">
-                                                    <td class="es-m-txt-l" bgcolor="#ffffff" align="left" style="Margin:0;padding-bottom:10px;padding-top:10px;padding-left:30px;padding-right:30px">
-                                                        <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:14px;font-family:lato, 'helvetica neue', helvetica, arial, sans-serif;line-height:27px;color:#666666">
-                                                            Valid VAT Certificate / VAT NOC  : <br>
-                                                        </p>
-                                                    </td>
-                                                    <td class="es-m-txt-l" bgcolor="#ffffff" align="left" style="Margin:0;padding-bottom:10px;padding-top:10px;padding-left:30px;padding-right:30px">
-                                                        <p style="text-align: right; Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:14px;font-family:lato, 'helvetica neue', helvetica, arial, sans-serif;line-height:27px;color:#666666">
-                                                            @if($valid_vat_certificate_or_noc_id == true)
-                                                                Attached<br>
-                                                            @else
-                                                                N/A <br>
-                                                            @endif
-                                                        </p>
-                                                    </td>
-                                                </tr>
-                                                <tr style="border-collapse:collapse;border:0.5px solid #000">
-                                                    <td class="es-m-txt-l" bgcolor="#ffffff" align="left" style="Margin:0;padding-bottom:10px;padding-top:10px;padding-left:30px;padding-right:30px">
-                                                        <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:14px;font-family:lato, 'helvetica neue', helvetica, arial, sans-serif;line-height:27px;color:#666666">
-                                                            Passport, VISA and Emirates ID : <br>
-                                                        </p>
-                                                    </td>
-                                                    <td class="es-m-txt-l" bgcolor="#ffffff" align="left" style="Margin:0;padding-bottom:10px;padding-top:10px;padding-left:30px;padding-right:30px">
-                                                        <p style="text-align: right; Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:14px;font-family:lato, 'helvetica neue', helvetica, arial, sans-serif;line-height:27px;color:#666666">
-                                                            @if($passport_visa_eid_id == true)
-                                                                Attached<br>
-                                                            @else
-                                                                N/A <br>
-                                                            @endif
-                                                        </p>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                            </table>
-                                        </td>
                                     </tr>
+
+
 
 
 

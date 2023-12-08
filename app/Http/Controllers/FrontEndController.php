@@ -486,40 +486,10 @@ class FrontEndController extends Controller
             'account_title'      =>  $request->account_title, 
         ];
 
-        if($request->hasFile('power_of_atty_or_moa_id')) {
-            $data['power_of_atty_or_moa_id'] = 'true';
-        } else {
-            $data['power_of_atty_or_moa_id'] = 'false';
-        }
-        // if($request->hasFile('valid_trade_license_id')) {
-        //     $data['valid_trade_license_id'] = 'true';
-        // } else {
-        //     $data['valid_trade_license_id'] = 'false';
-        // }
-        // if($request->hasFile('rera_certificate_id')) {
-        //     $data['rera_certificate_id'] = 'true';
-        // } else {
-        //     $data['rera_certificate_id'] = 'false';
-        // }
-        // if($request->hasFile('broker_card_id')) {
-        //     $data['broker_card_id'] = 'true';
-        // } else {
-        //     $data['broker_card_id'] = 'false';
-        // }
-        // if($request->hasFile('valid_vat_certificate_or_noc_id')) {
-        //     $data['valid_vat_certificate_or_noc_id'] = 'true';
-        // } else {
-        //     $data['valid_vat_certificate_or_noc_id'] = 'false';
-        // }
-        // if($request->hasFile('passport_visa_eid_id')) {
-        //     $data['passport_visa_eid_id'] = 'true';
-        // } else {
-        //     $data['passport_visa_eid_id'] = 'false';
-        // }
 
         try{
             /**STAGE II */
-            $pdf = PDF::loadView('emails.pdf.brokerReg', $this->data);
+            $pdf = PDF::loadView('emails.pdf.brokerReg', $data);
             $pdf->getDomPDF()->getCanvas()->get_cpdf()->setEncryption("esnaad_12345", "admin_password");
 
             /**STAGE III */

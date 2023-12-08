@@ -93,7 +93,7 @@
     </div>
     
     <ul class="hidden bg-white lg:block space-y-6 pt-8 pb-4 pl-[10vw]  ">
-        <li ><a href="{{ url('about-esnaad') }}" class="text-dark">About</a></li>
+        <li ><a href="{{ url('about-us') }}" class="text-dark">About</a></li>
         <li ><a href="{{ url('projects') }}" class="text-dark">Projects</a></li>
         <li ><a href="{{ url('communities') }}" class="text-dark">Communities</a></li>
         <li ><a href="{{ url('invest-in-dubai') }}" class="text-dark">Invest in Dubai</a></li>

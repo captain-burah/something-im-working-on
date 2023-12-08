@@ -106,7 +106,7 @@
 
                             <ul class="list-none footer-li" style="padding-left:    0px !important;">
                                 <li class="text-md text-black my-2">
-                                    <a href="{{ url('about-us') }}" aria-label="about-esnaad">About ESNAAD</a>
+                                    <a href="{{ url('about-us') }}" aria-label="about-us">About ESNAAD</a>
                                 </li>
                                 <li class="text-md text-black my-2">
                                     <a href="{{ url('invest-in-dubai') }}" aria-label="invest-in-dubai">Why Invest In Dubai?</a>

@@ -89,7 +89,7 @@
         <div class="flex justify-between h-15">
             <div class="flex items-center">
                 <div class="hidden space-x-10 sm:flex mx-auto no-underline ">
-                    <x-nav-link-tablet href="{{ url('about-esnaad') }}" :active="request()->routeIs('dashboard')">
+                    <x-nav-link-tablet href="{{ url('about-us') }}" :active="request()->routeIs('dashboard')">
                         {{ __('ABOUT') }}
                     </x-nav-link-tablet>
                 </div>

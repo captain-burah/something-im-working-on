@@ -15,7 +15,7 @@
                     shop to our clients from around the world, looking beyond what is, to see what could be.
                 </p>
 
-                <p class="text-sm xl:text-base leading-8 mt-5 text-justify">
+                <p class="text-sm xl:text-base leading-8 mt-5 text-left">
                     Our objective is to build market leading new luxury homes in locations ready for regeneration. Professional in our approach, entrepreneurial in our thinking and loyal in our relationships, Esnaad Real Estate Developments is all about mutual benefit,We combine innovation and outstanding design to deliver uniquely crafted homes and neighbourhoods.
                 </p>
             </div>

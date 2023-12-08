@@ -1,4 +1,4 @@
-<div class="sm:container sm:mx-auto mx-0 px-0 sm:px-4 my-20 sm:my-4 mx-auto">
+<div class="sm:container sm:mx-auto mx-0 px-0 sm:px-4 my-20 sm:my-4 mx-auto" id="agency-registration-form">
     <div class="md:w-[80%] xl:w-[50%] mx-auto my-8">
         <form id="uploadForm" action="" method="post">
             @csrf
@@ -22,6 +22,30 @@
             <button type="submit" id="submitForm" class="w-full mt-8 bg-black hover:bg-white border hover:border-gray-500 text-white hover:text-black font-semibold p-3">Register Now</button>
         </form>
 
+    </div>
+</div>
+
+<div class="sm:container sm:mx-auto mx-0 px-0 sm:px-4 my-20 sm:my-4 mx-auto hidden" id="agency-registration-form-submitted">
+    <div class="md:w-[80%] xl:w-[50%] mx-auto my-8">
+        <!-- component -->
+        <!-- component -->
+        <div class="flex  items-center justify-center ">
+            <div class="rounded-lg  px-16 py-14">
+                <div class="flex justify-center">
+                <div class="rounded-full bg-green-200 p-6">
+                    <div class="flex h-16 w-16 items-center justify-center rounded-full bg-green-500 p-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-8 w-8 text-white">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                        </svg>
+                    </div>
+                </div>
+                </div>
+                <h3 class="my-4 text-center text-3xl font-semibold text-gray-700">Successful!</h3>
+                <p class="w-[100%] text-center font-normal text-gray-600">
+                    Thank you for submitting your information. Your registration has been recorded and is currently awaiting verification by our customer support team. You will receive a notification via email once the process is complete
+                </p>
+            </div>
+        </div>
     </div>
 </div>
 
@@ -131,65 +155,73 @@
     <script>
         $(document).ready(function () {
 
-        sessionStorage.setItem("agency_registration_submitted", "false");
+            // sessionStorage.setItem("agency_registration_submitted", "false");
+            // sessionStorage.getItem("agency_registration_submitted");
 
-        var agency_reg_form_bool = sessionStorage.getItem('agency_registration_submitted');
+            var agency_reg_form_bool = sessionStorage.getItem('agency_registration_submitted');
+
+            if(!agency_reg_form_bool) {
+
+                /**
+                 * INITIATE HEADERS WITH CSRF TOKENIZATION
+                 * FOR FORM SUBMISSION
+                 */
+                $.ajaxSetup({
+                    headers: {
+                        'X-CSRF-TOKEN': $('meta[name="XSRF-TOKEN"]').attr('content')
+                    }
+                });
+                $('#uploadForm').on('submit', function(e){
+
+                    e.preventDefault();
+
+                    var formData = new FormData(this);
+
+                    /**
+                     * INITIATE AN AJAX SCRIPT FOR THE FORM SUBMISSION
+                     * ALONG WITH POST ROUTE METHOD AND URL. IF RESPONSE
+                     * IS A SUCCESS DISPLAY THE THANK YOU MODAL AND
+                     * UPDATE THE FORM SESSION IN SESSION-STORAGE OF BROWSER
+                     *
+                    */
+                    $.ajax({
+                        type:'POST',
+                        headers: {
+                            'X-CSRF-TOKEN': $('meta[name="XSRF-TOKEN"]').attr('content'),
+                            'Access-Control-Allow-Origin': 'https://esnaad.com/agency-registration'
+                        },
+                        url:"{{ URL('/agency-registration-post') }}",
+                        data: formData,
+                        processData: false,
+                        contentType: false,
+                        success:function(data) 
+                        {
+                            if($.isEmptyObject(data.error)){
+
+                                // console.log(data.success); // TEST THE DATA
+                                sessionStorage.setItem("agency_registration_submitted", "true");
 
 
+                                // UPDATE LOCAL STORAGE
+                                // sessionStorage.removeItem("form_submission");
+                                // sessionStorage.setItem("form_submission", "true");
 
-        /**
-         * INITIATE HEADERS WITH CSRF TOKENIZATION
-         * FOR FORM SUBMISSION
-         */
-        $.ajaxSetup({
-            headers: {
-                'X-CSRF-TOKEN': $('meta[name="XSRF-TOKEN"]').attr('content')
+                                // modalClose('mymodalcentered'); // CLOSE THE MODAL
+
+                            }else{
+                                printErrorMsg(data.error);
+                            }
+                        }
+                    });
+                });
+            }
+             else {
+                var successView = document.getElementById("agency-registration-form");
+                successView.classList.add("hidden");
+
+                var formView = document.getElementById("agency-registration-form-submitted");
+                formView.classList.remove("hidden");
             }
         });
-        $('#uploadForm').on('submit', function(e){
-
-            e.preventDefault();
-
-            var formData = new FormData(this);
-
-            /**
-             * INITIATE AN AJAX SCRIPT FOR THE FORM SUBMISSION
-             * ALONG WITH POST ROUTE METHOD AND URL. IF RESPONSE
-             * IS A SUCCESS DISPLAY THE THANK YOU MODAL AND
-             * UPDATE THE FORM SESSION IN SESSION-STORAGE OF BROWSER
-             *
-            */
-           $.ajax({
-                type:'POST',
-                headers: {
-                    'X-CSRF-TOKEN': $('meta[name="XSRF-TOKEN"]').attr('content'),
-                    'Access-Control-Allow-Origin': 'https://esnaad.com/agency-registration'
-                },
-                url:"{{ URL('/agency-registration-post') }}",
-                data: formData,
-                processData: false,
-                contentType: false,
-                success:function(data) 
-                {
-                    if($.isEmptyObject(data.error)){
-
-                        console.log(data.success); // TEST THE DATA
-
-                        // UPDATE LOCAL STORAGE
-                        // sessionStorage.removeItem("form_submission");
-                        // sessionStorage.setItem("form_submission", "true");
-
-                        // modalClose('mymodalcentered'); // CLOSE THE MODAL
-
-                    }else{
-                        printErrorMsg(data.error);
-                    }
-                }
-            });
-            
-
-        });
-        });
     </script>
-
 @endsection

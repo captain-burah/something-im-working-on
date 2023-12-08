@@ -104,7 +104,6 @@
                         {{ __('DEVELOPMENT') }}
                     </x-nav-link>
                 </div>
-
             </div>
 
             <div class=" flex items-center ">
@@ -229,6 +228,7 @@
     </div>
 </div>
 @endtablet
+
 <script>
     window.addEventListener("scroll", function(event) {
 

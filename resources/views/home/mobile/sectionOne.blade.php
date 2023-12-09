@@ -1,5 +1,5 @@
 {{-- Desktop View --}}
-<div class="container mx-auto px-2 mt-10 mb-0">
+<div class="container mx-auto  mt-10 mb-0">
     <div class="row">
         <div class="grid md:grid-cols-1 mx-auto">
             <div>
@@ -21,7 +21,7 @@
         </div>
     </div>
 
-    <div class="row mt-8">
+    <div class="row mt-8 p-0">
         <img src="{{ asset('home/13.jpg')}}">
     </div>
 </div>

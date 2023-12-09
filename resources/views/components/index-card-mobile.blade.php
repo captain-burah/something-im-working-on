@@ -1,6 +1,6 @@
 <div class="max-w-full rounded-0 overflow-hidden" >
 
-    <div class="w-full  group p-4">
+    <div class="w-full  group p-1">
         <div class="relative overflow-hidden">
 
             <div class="grid grid-cols-1 ">
@@ -16,7 +16,7 @@
             
         </div>
         <div class=" h-full w-full flex items-center justify-center">
-            <span class="py-2 px-0 text-center text-md font-base leading-8">
+            <span class="pt-5 px-0 text-left text-md font-base leading-6">
                 {{$description}}
             </span>
         </div>

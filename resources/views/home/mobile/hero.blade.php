@@ -12,27 +12,28 @@
         }
         .video-wrapper {
             width: 100vw;
-            height: 80vh;
+            height: 400px;
             position: relative;
             overflow: hidden;
             text-align: center;
             display: flex;
             align-items: center;
             justify-content: center;
+            padding-top: 7vh;
         }
 
 </style>
 
 {{-- Mobile View --}}
-<div class="video-wrapper bg-hero bg-cover bg-no-repeat bg-top object-cover overflow-hidden max-w-full h-[100vh] ">
+<div class="video-wrapper bg-hero bg-cover bg-no-repeat bg-top object-cover overflow-hidden max-w-full ">
     <div class="relative isolate  h-full flex flex-1 flex-col justify-between">
-        <div></div>
+        
+        <div ></div>
     
         <video playsinline autoplay muted loop poster="/developments/6.jpg">
             {{-- <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4"> --}}
-            {{-- <source src="{{ asset('home/HERO.mp4') }}" type="video/mp4"> --}}
+            <source src="{{ asset('home/HERO.mp4') }}" type="video/mp4">
             Your browser does not support the video tag.
-
         </video>
 
         {{-- @notmobile

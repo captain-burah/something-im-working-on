@@ -10,7 +10,7 @@
     
 
       <div class="my-auto">
-          <button class="block lg:hidden text-white px-2 my-auto " id="mobile-menu-button" aria-label="mobile-hamburger-navbar">
+          <button class="block lg:hidden text-white px-2 my-auto" id="mobile-menu-button" aria-label="mobile-hamburger-navbar">
               <svg height="32px" id="Layer_1" style="enable-background:new 0 0 32 32;" version="1.1" 
               viewBox="0 0 32 32" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" 
               xmlns:xlink="http://www.w3.org/1999/xlink">

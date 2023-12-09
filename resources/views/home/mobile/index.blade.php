@@ -27,15 +27,9 @@
 
     @include('home.mobile.sectionTwo')
 
-    <div class="mt-10"></div>
+    <div class="mt-10"></div>   
 
     @include('home.mobile.sectionThree')
-
-    <div class="hidden md:block">
-        {{-- @include('home.mobile.community') --}}
-    </div>
-
-    {{-- @include('home.mobile.insights') --}}
 
 @endsection
 

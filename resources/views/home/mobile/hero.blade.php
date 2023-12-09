@@ -30,7 +30,7 @@
     
         <video playsinline autoplay muted loop poster="/developments/6.jpg">
             {{-- <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4"> --}}
-            <source src="{{ asset('home/HERO.mp4') }}" type="video/mp4">
+            {{-- <source src="{{ asset('home/HERO.mp4') }}" type="video/mp4"> --}}
             Your browser does not support the video tag.
 
         </video>

@@ -37,7 +37,7 @@
 
                                     <div class="flex-1">
                                         <div class="w-8 bg-white rounded-3xl p-1">
-                                                <a href="https://www.facebook.com/edgerealtydubai" target="_blank" aria-label="esnaad-facebook">
+                                                <a href="{{ env('COMPANY_FB') }}" target="_blank" aria-label="esnaad-facebook">
                                                 <img
                                                     src="{{ asset('front/icons/fb.svg') }}"
                                                     class="w-fit rounded"
@@ -49,7 +49,7 @@
 
                                     <div class="flex-1">
                                         <div class="w-8 bg-white rounded-3xl p-1">
-                                            <a href="https://www.instagram.com/edgerealtydubai/" target="_blank" aria-label="esnaad-instagram">
+                                            <a href="{{ env('COMPANY_IG') }}" target="_blank" aria-label="esnaad-instagram">
                                                 <img
                                                     src="{{ asset('front/icons/ig.png') }}"
                                                     class="w-fit rounded"
@@ -61,7 +61,7 @@
 
                                     <div class="flex-1">
                                         <div class="w-8 bg-white rounded-3xl p-1">
-                                            <a href="https://twitter.com/i/flow/login?redirect_after_login=%2Fedgerealtydubai" target="_blank" aria-label="esnaad-x">
+                                            <a href="{{ env('COMPANY_TW') }}" target="_blank" aria-label="esnaad-x">
                                                 <img
                                                     src="{{ asset('front/icons/x-logo-black.png') }}"
                                                     class="w-fit rounded"
@@ -73,7 +73,7 @@
 
                                     <div class="flex-1">
                                         <div class="w-8 bg-white rounded-3xl p-1">
-                                            <a href="https://www.linkedin.com/company/edgerealtydubai" target="_blank" aria-label="esnaad-linkedin">
+                                            <a href="{{ env('COMPANY_IN') }}" target="_blank" aria-label="esnaad-linkedin">
                                                 <img
                                                     src="{{ asset('front/icons/in2.png') }}"
                                                     class="w-fit rounded"
@@ -85,7 +85,7 @@
 
                                     <div class="flex-1">
                                         <div class="w-8 bg-footer rounded-3xl p-1">
-                                            <a href="https://wa.link/etkc3f" target="_blank" aria-label="esnaad-whatsapp">
+                                            <a href="{{ env('COMPANY_WA`') }}" target="_blank" aria-label="esnaad-whatsapp">
                                                 <img
                                                     src="{{ asset('front/icons/wa.png') }}"
                                                     class="w-fit rounded"
@@ -258,7 +258,7 @@
 
                                     <div class="flex-1">
                                         <div class="w-8 bg-footer rounded-3xl">
-                                                <a href="https://www.facebook.com/edgerealtydubai" target="_blank" aria-label="esnaad-facebook">
+                                                <a href="{{ env('COMPANY_FB') }}" target="_blank" aria-label="esnaad-facebook">
                                                     <img
                                                         src="{{ asset('front/icons/fb.svg') }}"
                                                         class="w-fit rounded"
@@ -270,7 +270,7 @@
 
                                     <div class="flex-1">
                                         <div class="w-8 bg-footer rounded-3xl p-1">
-                                            <a href="https://www.instagram.com/esnaaddevelopments/" target="_blank" aria-label="esnaad-instagram">
+                                            <a href="{{ env('COMPANY_IG') }}" target="_blank" aria-label="esnaad-instagram">
                                                 <img
                                                     src="{{ asset('front/icons/ig.png') }}"
                                                     class="w-fit rounded"
@@ -282,7 +282,7 @@
 
                                     <div class="flex-1">
                                         <div class="w-8 bg-footer rounded-3xl p-1">
-                                            <a href="https://twitter.com/EsnaadD" target="_blank" aria-label="esnaad-x">
+                                            <a href="{{ env('COMPANY_TW') }}" target="_blank" aria-label="esnaad-x">
                                                 <img
                                                     src="{{ asset('front/icons/x-logo-black.png') }}"
                                                     class="w-fit rounded"
@@ -294,7 +294,7 @@
 
                                     <div class="flex-1">
                                         <div class="w-8 bg-footer rounded-3xl p-1">
-                                            <a href="https://www.linkedin.com/company/esnaad-developments" target="_blank" aria-label="esnaad-linkedin">
+                                            <a href="{{ env('COMPANY_IN') }}" target="_blank" aria-label="esnaad-linkedin">
                                                 <img
                                                     src="{{ asset('front/icons/in2.png') }}"
                                                     class="w-fit rounded"
@@ -483,7 +483,7 @@
 
                                     <div class="flex-1">
                                         <div class="w-8  rounded-3xl p-0">
-                                                <a href="https://www.facebook.com/edgerealtydubai" target="_blank" aria-label="esnaad-facebook">
+                                                <a href="{{ env('COMPANY_FB') }}" target="_blank" aria-label="esnaad-facebook">
                                                 <svg  id="Layer_1" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M288,192v-38.1c0-17.2,3.8-25.9,30.5-25.9H352V64h-55.9c-68.5,0-91.1,31.4-91.1,85.3V192h-45v64h45v192h83V256h56.4l7.6-64  H288z M330.2,240h-41.1H272v15.5V432h-51V255.5V240h-14.9H176v-32h30.1H221v-16.5v-42.2c0-24.5,5.4-41.2,15.5-51.8  C247.7,85.5,267.6,80,296.1,80H336v32h-17.5c-12,0-27.5,1.1-37.1,11.7c-8.1,9-9.4,20.1-9.4,30.1v37.6V208h17.1H334L330.2,240z"/></svg>
                                                 </a>
                                         </div>
@@ -491,7 +491,7 @@
 
                                     <div class="flex-1">
                                         <div class="w-8  rounded-3xl p-1">
-                                            <a href="https://www.instagram.com/edgerealtydubai/" target="_blank" aria-label="esnaad-instagram">
+                                            <a href="{{ env('COMPANY_IG') }}" target="_blank" aria-label="esnaad-instagram">
                                                 <img
                                                     src="{{ asset('front/icons/ig.png') }}"
                                                     class="w-fit rounded"
@@ -503,7 +503,7 @@
 
                                     <div class="flex-1">
                                         <div class="w-8  rounded-3xl p-1">
-                                            <a href="https://twitter.com/i/flow/login?redirect_after_login=%2Fedgerealtydubai" target="_blank" aria-label="esnaad-x">
+                                            <a href="{{ env('COMPANY_TW') }}" target="_blank" aria-label="esnaad-x">
                                                 <img
                                                     src="{{ asset('front/icons/x-logo-black.png') }}"
                                                     class="w-fit rounded"
@@ -515,7 +515,7 @@
 
                                     <div class="flex-1">
                                         <div class="w-8  rounded-3xl p-1">
-                                            <a href="https://www.linkedin.com/company/edgerealtydubai" target="_blank" aria-label="esnaad-linkedin">
+                                            <a href="{{ env('COMPANY_IN') }}" target="_blank" aria-label="esnaad-linkedin">
                                                 <img
                                                     src="{{ asset('front/icons/in2.png') }}"
                                                     class="w-fit rounded"
@@ -527,7 +527,7 @@
 
                                     <div class="flex-1">
                                         <div class="w-8 bg-footer rounded-3xl p-1">
-                                            <a href="https://wa.link/etkc3f"  target="_blank" aria-label="esnaad-whatsapp">
+                                            <a href="{{ env('COMPANY_WA') }}"  target="_blank" aria-label="esnaad-whatsapp">
                                                 <img
                                                     src="{{ asset('front/icons/wa.png') }}"
                                                     class="w-fit rounded"

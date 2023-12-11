@@ -49,7 +49,7 @@
         <div class="flex items-center justify-left h-full w-full">
             <div class="container mx-6 my-auto">
                     
-                <h1 class="text-xl text-white font-bold uppercase mx-auto text-left mb-2">
+                <h1 class="text-xl text-white font-bold uppercase mx-auto text-left mb-2 mt-15">
                     ABOUT ESNAAD
                 </h1>
                 

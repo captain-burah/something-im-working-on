@@ -3,12 +3,12 @@
 @section('luxe_asset_css')
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/css/intlTelInput.css">
-
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css" />
 
     <link rel="stylesheet" href="{{ asset('owl/owl.carousel.min.css') }}">
     
     <link rel="stylesheet" href="{{ asset('owl/owl.theme.default.min.css') }}">
-
 
     <style>
         .iti {

@@ -24,17 +24,17 @@
 @endsection
 
 @section('content')
-    <div class="mt-[20vh]"></div>   
+    {{-- <div class="mt-[20vh]"></div>    --}}
 
-    {{-- @include('home.mobile.hero') --}}
+    @include('home.mobile.hero')
 
-    {{-- @include('home.mobile.sectionOne') --}}
+    @include('home.mobile.sectionOne')
 
     @include('home.mobile.sectionTwo')
 
-    <div class="mt-10"></div>   
+    <div class="mt-10"></div>
 
-    {{-- @include('home.mobile.sectionThree') --}}
+    @include('home.mobile.sectionThree')
 
 @endsection
 

@@ -476,10 +476,8 @@
                                     <img style="height: 60px !important;" src="{{ asset('logo-dark-2.png') }}" alt="esnaad-logo-footer" class="mb-5">
                                 </span>
 
-                                <p class="text-md text-black text-justify mb-6 w-full leading-6">
-                                    {{ __('
-                                        With a commitment to excellence and a passion for innovation, ESNAAD has carved a distinctive niche in the real estate industry, setting new standards in luxury living, urban development, and sustainable design
-                                    ') }}
+                                <p class="text-md text-black text-left mb-6 w-full leading-6">
+                                    With a commitment to excellence and a passion for innovation, ESNAAD has carved a distinctive niche in the real estate industry, setting new standards in luxury living, urban development, and sustainable design
                                 </p>
                                 <div class="flex justify-between my-8 text-justify my-auto inline-block align-middle ">
 
@@ -569,7 +567,7 @@
                                 class="h-full w-8 transition-all duration-500 group-focus:-rotate-180"
                             />
                         </div>
-                        <div class="invisible h-auto max-h-0 items-center opacity-0 transition-all group-focus:visible group-focus:max-h-screen group-focus:opacity-100 group-focus:duration-1000">
+                        <div class="hidden h-auto max-h-0 items-center opacity-0 transition-all group-focus:block group-focus:max-h-screen group-focus:opacity-100 group-focus:duration-1000">
                             <ul class="list-none footer-li capitalize leading-8" style="padding-left: 0px !important;">
                                 <li class="text-md text-black my-3">
                                     <a href="{{ url('about-us') }}" aria-label="about-us">About ESNAAD</a>

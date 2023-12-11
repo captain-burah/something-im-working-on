@@ -1,6 +1,6 @@
-<div class="mt-15  ">
+<div class="mt-15 bg-footer ">
 
-    <div class="mt-10 mb-5 px-6 w-full">
+    <div class="pt-5 mb-5 px-6 w-full">
         <h3 class="text-xl font-thin text-left w-[100%]">
             THE THREE PILLARS <br>OF ESNAADS  PHILOSOPHIES
         </h3>

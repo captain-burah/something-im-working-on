@@ -463,7 +463,7 @@
 
     @mobile
         <div class="block py-8 text-gray-50 bg-footer" id="footer" style="visibility:hidden">
-            <div class="container mx-auto px-2 lg:px-8">
+            <div class="container mx-auto px-4">
 
                 <!-- Footer Links -->
                 <div class="mx-auto max-w-full lg:mt-24 lg:max-w-full">

@@ -24,6 +24,7 @@
                 max-width: 100%;
                 overflow-x: hidden;
             }
+
             @font-face {
                 font-family: 'OptimaNew';
                 font-style: normal;
@@ -37,7 +38,6 @@
                 font-weight: normal;
                 src: local('Optima'), url('front/fonts/OPTIMA.woff') format('woff');
             }
-
 
             @font-face {
                 font-family: 'Optima Italic';

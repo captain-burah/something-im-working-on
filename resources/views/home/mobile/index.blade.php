@@ -24,7 +24,6 @@
 @endsection
 
 @section('content')
-    {{-- <div class="mt-[20vh]"></div>    --}}
 
     @include('home.mobile.hero')
 

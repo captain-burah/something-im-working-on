@@ -1,8 +1,8 @@
-<div class="sm:container sm:mx-auto mx-0 px-0 sm:px-4 mt-5 sm:my-4 mx-auto">
+<div class="sm:container  mx-0 px-6 mt-5 mx-auto">
     <div class="row mx-auto ">
         <div class="mx-auto">
-            <h1 class="text-3xl text-dark font-light uppercase mx-auto text-center">
-                About ESNAAD
+            <h1 class="text-2xl text-dark font-light uppercase mx-auto text-left">
+                OUR STORY
             </h1>
         </div>
 
@@ -14,19 +14,19 @@
 
 
 
-<div class="w-full px-4">
+<div class="w-full px-6">
     <div class="sm:container pt-0 sm:mx-auto mx-0 mt-4 sm:mb-4 mx-auto">
-        <h3 class="text-base font-thin text-justify mb-8 leading-8">
+        <h3 class="text-base font-thin text-left mb-8 leading-6">
             Experience unrivalled elegance with Dubai's one finest real estate developer ESNAAD, with our dedication to innovative thinking, consistent excellence, and the pursuit of perfection, we redefine luxury. Elevate your living experience with our thoughtfully crafted spaces, where every detail reflects our dedication to creating homes that stand as a testament to sophistication and superior craftsmanship 
             We are committed to creating spaces that celebrate life, encapsulate your dreams, and add value to the community
         </h3>
 
         <div class="row h-[100%] w-[100%] mt-10">
-            <p class="text-xl font-semibold mt-8 text-justify leading-8">
+            <p class="text-xl font-semibold mt-8 text-left leading-6">
                 Company Core Values
             </p>
 
-            <p class="text-base font-thin text-justify leading-8 mb-8">
+            <p class="text-base font-thin text-left leading-6 mb-8">
                 At ESNAAD, we are guided by our core values, which define who we are and what we do. 
                 With Integrity we act with honesty, transparency, and accountability in all our dealings with our
                 customers, partners, employees, and society following and pursuing excellence in everything we do, from the quality of our developments and
@@ -41,11 +41,11 @@
 
 
         <div class="row h-[100%] w-[100%] mt-10">
-            <p class="text-xl font-semibold mt-8 text-justify leading-8">
+            <p class="text-xl font-semibold mt-8 text-left leading-6">
                 Company Mission
             </p>
 
-            <p class="text-base font-thin text-left mb-8 leading-8">
+            <p class="text-base font-thin text-left mb-8 leading-6">
                 Our mission is to create innovative and sustainable living spaces that enhance the quality of life of our stakeholders and investors. 
                 We aim to achieve this by empowering dreams, building legacies while redefining luxury living in the heart of Dubai. 
                 With a commitment to excellence, we envision and create dynamic communities that 
@@ -58,11 +58,11 @@
 
 
         <div class="row h-[100%] w-[100%] mt-10">
-            <p class="text-xl font-semibold mt-8 text-justify leading-8">
+            <p class="text-xl font-semibold mt-8 text-left leading-6">
                 Company Vission
             </p>
 
-            <p class="text-base font-thin text-justify mb-8 leading-8">
+            <p class="text-base font-thin text-justify mb-8 leading-6">
                 Our vision is to be the region’s leading premium real estate development and investment company, with a 
                 Design, Quality and Excellence whilst, Developing our organization and culture, and fostering a work environment that
                 attracts, motivates, and retains the best talent in the industry. We innovate and improve our processes and developments, to adopt to the latest

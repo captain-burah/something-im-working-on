@@ -1,5 +1,5 @@
 {{-- Desktop View --}}
-<div class="container mx-auto  mt-10 mb-0">
+<div class="container mx-auto  px-4 m-0 mt-10 mb-0">
     <div class="row">
         <div class="grid md:grid-cols-1 mx-auto">
             <div>

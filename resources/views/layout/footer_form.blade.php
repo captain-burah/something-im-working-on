@@ -22,15 +22,11 @@
                 <p class="w-[75%] text-gray-800" id="submitIncomplete">
                     Stay in the loop and be the first to know about exciting news, exclusive offers, and important updates. Subscribe to our newsletter for a curated dose of inspiration delivered directly to your inbox.
                 </p>
-
-                    
                 <p class="w-[75%] text-gray-800 my-10" id="submitComplete">
                     Thank You!
                     Your Email subscription has been recorded. Feel free to check your emails regularly for important news on our latest trends.
                 </p>
             </div>
-
-            
 
             <div class="row">
                 <form id="subscriptionForm" >
@@ -111,9 +107,6 @@
         </div>
     </div>
 @endmobile
-
-
-
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

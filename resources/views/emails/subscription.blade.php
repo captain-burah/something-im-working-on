@@ -58,7 +58,7 @@
                                         <tbody>
                                             <tr style="border-collapse:collapse">
                                             <td align="center" style="Margin:0;padding-bottom:5px;padding-left:30px;padding-right:30px;padding-top:35px">
-                                                <h1 style="Margin:0;line-height:48px;mso-line-height-rule:exactly;font-family:lato, 'helvetica neue', helvetica, arial, sans-serif;font-size:25px;font-style:normal;font-weight:normal;color:#111111">LEAD NOTIFICATION - EMAIL SUBSCRIPTION</h1>
+                                                <h1 style="Margin:0;line-height:48px;mso-line-height-rule:exactly;font-family:lato, 'helvetica neue', helvetica, arial, sans-serif;font-size:25px;font-style:normal;font-weight:normal;color:#111111">NOTIFICATION - EMAIL SUBSCRIPTION</h1>
                                             </td>
                                             </tr>
                                             <tr style="border-collapse:collapse">

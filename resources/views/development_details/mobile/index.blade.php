@@ -1,13 +1,23 @@
 @extends('layoutv2.master')
+<?php $actual_link = (empty($_SERVER['HTTPS']) ? 'http' : 'https') . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]"; ?>
 
 @section('luxe_asset_css')
 
+
+
     <script src='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js'></script>
+
     <link href='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css' rel='stylesheet' />
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/css/intlTelInput.css">
 
     <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/js/intlTelInput.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css" />
+
+    <link rel="stylesheet" href="{{ asset('owl/owl.carousel.min.css') }}">
+    
+    <link rel="stylesheet" href="{{ asset('owl/owl.theme.default.min.css') }}">
 
     <style>
         .iti {
@@ -23,23 +33,35 @@
      <section class="my-0">
         @include('development_details.mobile.header')
     </section>
-{{-- 
+
     <section class="my-2">
         @include('development_details.mobile.bodyOne')
     </section>
 
-    <section class="my-2">
+    <section class="my-0">
         @include('development_details.mobile.bodyTwo')
     </section>
 
-    <section class="my-2 ">
+    <section class="my-0 ">
+        @include('development_details.mobile.bodyThree')
+    </section>
+
+    <section class="my-0 ">
         @include('development_details.mobile.bodyFour')
+    </section>
+
+    <section class="my-0 ">
+        @include('development_details.mobile.bodyFive')
+    </section>
+
+    <section class="my-0 ">
+        @include('development_details.mobile.bodySix')
     </section>
 
 
     <section class="my-0" id="project_detail_map_section">
         @include('development_details.mobile.map')
-    </section> --}}
+    </section>
 @endsection
 
 
@@ -47,6 +69,10 @@
 
 @section('luxe_asset_js')
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script src="{{ asset('owl/jquery.min.js') }}"></script>
+
+    <script src="{{ asset('owl/owl.carousel.min.js') }}"></script>
 
     @yield('intel-input')
 

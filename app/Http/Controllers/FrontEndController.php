@@ -37,6 +37,7 @@ use Mail;
 use App\Mail\DemoEmail;
 use App\Mail\CommunityInquiry;
 use App\Mail\SubscriptionInquiry;
+use App\Mail\ProjectInquiry;
 use App\Mail\BrokerRegistration;
 use Validator;
 use Illuminate\Support\Facades\Redirect;
@@ -620,7 +621,7 @@ class FrontEndController extends Controller
 
 
 
-    public function zcontact_form_post(Request $request) {
+    public function contact_form_post(Request $request) {
         $tel = $request->country_code + $request->phone;
         dd($tel);
         try{
@@ -689,6 +690,82 @@ class FrontEndController extends Controller
         } catch (\Exception $e) {
             dd($e->getMessage());
         }
+        
+    }
+
+
+
+
+    public function project_detail_inquiry(Request $request) {
+        $tel = $request->country_code + $request->phone;
+
+        try{
+            
+            $data = [
+                'name'      =>  $request->name, 
+                'email'     =>  $request->email,
+                'ip'     =>  $request->getClientIp(),
+                'enquiry_type'     =>  $request->enquiry_type,
+                'project'     =>  $request->project,
+                'phone'     =>  $request->phone,
+                'tel'     =>  $tel,
+                'country_code'     =>  $request->country_code,
+            ];
+
+            // Mail::to('lead@edgerealty.ae')->send(new DemoEmail($mailData));
+            // Mail::mailer('noreply')->to('lead@esnaad.com')->send(new SubscriptionInquiry($data));
+            Mail::mailer('noreply')->to('webmaster@esnaad.com')->send(new ProjectInquiry($data));
+
+        } catch (\Exception $e) {
+            dd($e->getMessage());
+        }
+
+        
+
+        // try{           
+
+        //     $data = [
+        //         'name' => $request->name,
+        //         'email' => $request->email,
+        //     ];
+
+
+        //     $curl = curl_init();
+
+        //     $url = 'https://mis.esnaad.com/api/email-subscription-v3';
+
+        //     curl_setopt_array($curl, array(
+        //         CURLOPT_URL => $url,    
+        //         CURLOPT_RETURNTRANSFER => true,
+        //         CURLOPT_ENCODING => '',
+        //         CURLOPT_MAXREDIRS => 10,
+        //         CURLOPT_TIMEOUT => 0,
+        //         CURLOPT_FOLLOWLOCATION => true,
+        //         CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+        //         CURLOPT_CUSTOMREQUEST => 'POST',
+        //         CURLOPT_POSTFIELDS => $data,
+        //         CURLOPT_HTTPHEADER => array(
+        //             'Cookie: XSRF-TOKEN=eyJpdiI6ImdjVUpXbDhCbk9BSGFWOTZsTTZSL0E9PSIsInZhbHVlIjoiUUJrWTlWOVVnb00zWDhzVk1kQTBTWWNYcHlvZXA0OXpEMWVVREUyTlZXR3Z2dkNMSlZZb1JMK3ppNjROazMzYlczalc0NHVBKzZ6WWhPYTloT3d4UmI0U0ptZUR6S0JsbmRrdlZzSThQSVNOUi90WGw0WkRhYXpTUFVIQXZGS0wiLCJtYWMiOiIxMTA2OWI1ZmZjMjZiY2I5ZGRjZWQyNmIwNGY1ZTRmMjgwNTk5YWFmODE1YzU4ODg3MWNmN2ViZTkzNjg4ODEzIiwidGFnIjoiIn0%3D'
+        //         ),
+        //     ));
+
+        //     $response = curl_exec($curl);
+
+        //     if ($response === false) {
+        //         $error = curl_error($curl);
+        //         $errno = curl_errno($curl);
+
+        //         echo "Error: " . $error . " (Error code: " . $errno . ")";
+        //     } else {
+        //         // Process successful response
+        //         echo $response;
+        //     }
+
+        //     curl_close($curl);
+
+        // } catch (\Exception $e) {
+        //     dd($e->getMessage());
+        // }
         
     }
 

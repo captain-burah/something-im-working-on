@@ -1,51 +1,41 @@
 <div class="container mx-0 px-0 mx-auto">
 
-    <div class="row-span-2 grid gap-4 h-[100%] w-[100%]">
+    <div class="row-span-2 grid gap-2 h-[100%] w-[100%]">
         <div>
-            <h2 class="text-esnaad_text text-justify font-base leading-8 my-8 text-xl ">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rhoncus augue ut ligula
-                accumsan dictum.
+            <h2 class="text-esnaad_text text-left font-semibold leading-6 my-8 text-xl ">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rhoncus
             </h2>
-            <p class="text-esnaad_text text-justify font-base my-8 w-full">
+            <p class="text-esnaad_text text-left font-base mt-4 w-full">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rhoncus augue ut ligula accumsan dictum. Phasellus euismod in lectus nec cursus. Curabitur in sem et elit dignissim
                 condimentum eget ac dui. Nulla non nisl mollis ipsum laoreet ultrices ac in sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rhoncus augue ut ligula accumsan dictum.
                 Phasellus euismod in lectus nec cursus. Curabitur in sem et elit dignissim condimentum eget ac dui. Nulla non nisl mollis ipsum laoreet ultrices ac in sapien.
             </p>
         </div>
-        <div class="text-esnaad_text text-justify font-light w-full">
+        <div class="text-esnaad_text text-justify font-light w-full mb-2">
             
-            <div class="row-span-2 grid grid-cols-1 gap-4 w-[100%]">
-                <div>
-                    <h2 class="text-esnaad_text text-justify font-thin textbasel w-full">
-                        Prices From
+            <div class="row-span-2 grid grid-cols-1 gap-0 w-[100%]">
+                <div class=" py-4 border-b border-gray-700">
+                    <h2 class="text-xl text-center font-thin textbasel w-full">
+                        Prices From <span class="font-bold">AED 2,184,564</span>
                     </h2>
-                    <p class="text-3xl text-justify font-semibold w-full">
-                        AED 2,184,564
-                    </p>
                 </div>
 
-                <div>
-                    <h2 class="text-esnaad_text text-justify font-thin text-base w-[90%]">
-                        Area (Sq.Ft) 
+                <div class=" py-4 border-b border-gray-700">
+                    <h2 class="text-xl text-center font-thin textbasel w-full">
+                        Apartments  <span class="font-bold">Studio, 1 & 2 Bedroom</span>
                     </h2>
-                    <p class="text-3xl text-justify font-semibold w-[90%]">
-                        1,235 - 1,235
-                    </p>
                 </div>
 
-                <div>
-                    <h2 class="text-esnaad_text text-justify font-thin text-base w-[90%]">
-                        Apartments
+                <div class=" py-4">
+                    <h2 class="text-xl text-center font-thin textbasel w-full">
+                        Area (Sq.Ft)  <span class="font-bold">1,235 - 1,235</span>
                     </h2>
-                    <p class="text-3xl text-justify font-semibold w-[90%]">
-                        Studio, 1 & 2
-                    </p>
                 </div>
             </div>
 
-            <div class="row-span-2  w-[100%]">
+            {{-- <div class="row-span-2  w-[100%]">
                 @include('development_details.mobile.buttons')
-            </div>
+            </div> --}}
         </div>
     </div>
 

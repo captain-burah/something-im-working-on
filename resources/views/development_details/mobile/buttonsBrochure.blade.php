@@ -29,39 +29,46 @@
             <div class="flex flex-col items-start w-full">
                 <div class="p-4 flex items-stretch w-full">
                     <div class="font-thin text-xl text-gray-900">Register Your Interest</div>
-                    <svg onclick="modalClose('mymodalcentered-community-register')" class="ml-auto fill-current text-gray-700 w-5 h-5 cursor-pointer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
+                    <svg onclick="modalClose('mymodalcentered-brochure-register')" class="ml-auto fill-current text-gray-700 w-5 h-5 cursor-pointer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
                         <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z" />
                     </svg>
                 </div>
-                <form class="flex flex-col items-start w-full"  method="post" action="{{ url('/communities/register-your-interest') }}">
-                    @csrf
+                <div class="p-4 w-full hidden" id="brochureDownloadCompletedForm">
+                    <p class="text-black my-5 w-full text-xl text-center">
+                        Thank You!
+                    </p>
+                    <p class="text-black my-5 w-full text-center">
+                        Our real estate agents will be in touch with you shortly
+                        {{-- An email with the details for your inquiry will be sent to the email address you provided --}}
+                    </p>
+                    {{-- <p class="text-gray-500 text-xs my-2 w-full text-left" >
+                        *Please don't forget to look in your spam or junk folder just in case
+                    </p> --}}
+                </div>
+                <form id="brochureForm" class="w-full" >
                     <div class="px-4  w-full" style="max-height: 40vh;">
 
                         <input type="hidden" id="community2" name="community_id" value="fdsaf">
                         <input type="hidden" id="country_code2" name="country_code">
                         <input type="hidden" id="url2" name="url" value="{{$actual_link}}">
+                        <input type="hidden" id="enquiry_type2" name="enquiry_type2" value="Project Name Here">
 
                         <div class="mb-6">
-                            <input type="text" id="name2" name="name" class="w-full px-4 py-2 border rounded-0 focus:outline-none focus:ring-2 focus:ring-gray-500" placeholder="Your Name"  required>
+                            <input type="text" id="name2" name="name2" class="w-full px-4 py-2 border rounded-0 focus:outline-none focus:ring-2 focus:ring-gray-500" placeholder="Your Name"  required>
                         </div>
 
                         <div class="mb-6">
-                            <input type="email" id="email2" name="email" class="w-full px-4 py-2 border rounded-0 focus:outline-none focus:ring-2 focus:ring-gray-500" placeholder="Email Address" required>
-                        </div>
-
-                        <div class="mb-6">
-                            <input type="tel" id="phone2" name="phone" class="w-max px-4 py-2 border rounded-0 focus:outline-none focus:ring-2 focus:ring-gray-500" placeholder="Phone" style="width: 100% !important" required>
+                            <input type="email" id="email2" name="email2" class="w-full px-4 py-2 border rounded-0 focus:outline-none focus:ring-2 focus:ring-gray-500" placeholder="Email Address" required>
                         </div>
                     </div>
 
                     <div class="p-4 flex justify-end items-center w-full">
-                        <button type="button" onclick="modalClose('mymodalcentered-community-register')" class="bg-transparent hover:bg-black text-black font-semibold hover:text-white py-2 px-4 border border-black hover:border-transparent rounded-0"   >
+                        <button type="button" onclick="modalClose('mymodalcentered-brochure-register')" class="bg-transparent hover:bg-black text-black font-semibold hover:text-white py-2 px-4 border border-black hover:border-transparent rounded-0"   >
                             Close
                         </button>
                         <button type="submit" class="bg-black hover:bg-white border border-black text-white hover:text-black font-bold py-2 px-4 rounded-0 ml-3">
                             Register Your Interest
-                        </button>
-                        
+                        </button>                        
                     </div>
                 </form>
             </div>
@@ -85,100 +92,93 @@
 </script>
 
 @section('intel-input')
-    {{-- INTEL INPUT --}}
+
     <script>
 
-        var input = document.querySelector("#phone2");
-
-        const iti = window.intlTelInput(input, {
-
-            initialCountry: "auto",
-
-            separateDialCode: true,
-
-            // utilsScript: "/build/js/utils.js", // for editing placeholders
-
-            geoIpLookup: function(success) {
-
-                fetch("https://api.ipdata.co/?api-key=1f9ecc1670c915b3ddd397d233297968ccf720c0861abf9ecac1a8ef")
-                .then(function(response) {
-                    if (!response.ok) return success("");
-                    return response.json();
-                })
-                .then(function(ipdata) {
-                    success(ipdata.country_code);
-                });
-            },
-        });
-
-        input.addEventListener("countrychange", function() {
-            // console.log(document.getElementById('phone').value);
-            document.getElementById('country_code2').value = iti.getSelectedCountryData().dialCode;
-        })
-
-
-    </script>
-
-    {{-- FORM SUBMIT --}}
-    <script>
-        /**
-         * INITIATE HEADERS WITH CSRF TOKENIZATION
-         * FOR FORM SUBMISSION
-         */
-        $.ajaxSetup({
-            headers: {
-                'X-CSRF-TOKEN': $('meta[name="XSRF-TOKEN"]').attr('content')
+        function setCookie(name, value, daysToExpire) {
+            
+            var expires = "";
+            
+            if (daysToExpire) {
+                var date = new Date();
+                date.setTime(date.getTime() + (daysToExpire * 60 * 60 * 1000));
+                expires = "; expires=" + date.toUTCString();
             }
-        });
-        $('#new-project-details-mobile-brochure<-form').on('submit', function(e){
+            
+            document.cookie = name + "=" + value + expires + "; path=/";
+        }
 
-            e.preventDefault();
+        // Function to get a specific cookie by name
+        function getCookie(cookieName) {
+            var name = cookieName + "=";
+            var decodedCookie = decodeURIComponent(document.cookie);
+            var cookieArray = decodedCookie.split(';');
 
-            var name = $("#name2").val();
-
-            var email = $("#email2").val();
-
-            var phone = $("#phone2").val();
-
-            var country_code = $("#country_code2").val();
-
-            var property_id = $("#community_id2").val();
-
-
-
-            /**
-             * INITIATE AN AJAX SCRIPT FOR THE FORM SUBMISSION
-             * ALONG WITH POST ROUTE METHOD AND URL. IF RESPONSE
-             * IS A SUCCESS DISPLAY THE THANK YOU MODAL AND
-             * UPDATE THE FORM SESSION IN SESSION-STORAGE OF BROWSER
-             *
-            */
-            $.ajax({
-                type:'POST',
-                url:"{{ URL('developments/register-your-interest') }}",
-                data:{
-                    name:name,
-                    email:email,
-                    phone:phone,
-                    country_code:country_code,
-                    community_id:community_id,
-                    success:function(data){
-                        if($.isEmptyObject(data.error)){
-
-                            // UPDATE LOCAL STORAGE
-                            sessionStorage.removeItem("form_submission");
-                            sessionStorage.setItem("form_submission", "true");
-
-                            modalClose('mymodalcentered-community-register'); // CLOSE THE MODAL
-
-                        }else{
-                            printErrorMsg(data.error);
-                        }
-                    }
+            for (var i = 0; i < cookieArray.length; i++) {
+                var cookie = cookieArray[i].trim();
+                if (cookie.indexOf(name) === 0) {
+                    return cookie.substring(name.length, cookie.length);
                 }
-            });
+            }
 
-        });
+            return null; // Return null if the cookie is not found
+        }
+
+        // Example: Get the value of the "user" cookie
+        var brochureInquiry = getCookie("project_brochure_download");
+
+        // Use the value as needed
+        if (!brochureInquiry) {
+           
+        // var agency_reg_form_bool = sessionStorage.getItem('project_inquiry_submitted');
+        // if(!agency_reg_form_bool) {
+
+            $('#brochureForm').on('submit', function(e){
+                e.preventDefault();
+
+                var formData = new FormData(this);
+
+                setCookie("project_brochure_download", "true", 1);
+
+                var successView = document.getElementById("brochureForm");
+                successView.classList.add("hidden");
+
+                var formView = document.getElementById("brochureDownloadCompletedForm");
+                formView.classList.remove("hidden");
+
+                $.ajaxSetup({
+                    headers: {
+                        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content'),
+                        'authkey': 'YOUR_SECRET_KEY',
+                    }
+                });
+
+                $.ajax({
+                    type:'POST',
+                    url:"{{ URL('/project-detail-brochure-download') }}",
+                    data: formData,
+                    processData: false,
+                    contentType: false,
+                    success:function(data)
+                    {
+                        // if($.isEmptyObject(data.error)){
+
+                        // }else{
+                        //     printErrorMsg(data.error);
+                        //     alert(data.error);
+
+                        // }
+                    }
+                });
+            });
+        }
+            else {
+            var successView = document.getElementById("brochureForm");
+            successView.classList.add("hidden");
+
+            var formView = document.getElementById("brochureDownloadCompletedForm");
+            formView.classList.remove("hidden");
+        }
     </script>
 
 @endsection

@@ -2,7 +2,7 @@
 
     <div class="row-span-2 grid gap-2 h-[100%] w-[100%]">
         <div>
-            <h2 class="text-esnaad_text text-left font-semibold leading-6 my-8 text-xl ">
+            <h2 class=" text-left font-semibold leading-6 my-8 text-lg ">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rhoncus
             </h2>
             <p class="text-esnaad_text text-left font-base mt-4 w-full">

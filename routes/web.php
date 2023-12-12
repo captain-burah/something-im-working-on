@@ -67,6 +67,8 @@ Route::post('/contact-form-post', [FrontEndController::class, 'contact_form_post
 
 Route::post('/project-detail-inquiry', [FrontEndController::class, 'project_detail_inquiry'])->name('project.detail.inquiry');
 
+Route::post('/project-detail-brochure-download', [FrontEndController::class, 'project_detail_brochure_download'])->name('project.detail.brochure.download');
+
 
 
 

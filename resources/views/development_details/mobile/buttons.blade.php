@@ -50,7 +50,7 @@
                         <input type="hidden" id="project" name="project" value="project_name">
                         <input type="hidden" id="country_code" name="country_code">
                         <input type="hidden" id="url" name="url" value="{{$actual_link}}">
-                        <input type="hidden" id="url" name="enquiry_type" value="">
+                        <input type="hidden" id="enquiry_type" name="enquiry_type" value="">
 
                         <div class="mb-6">
                             <input type="text" id="name" name="name" class="w-full px-4 py-2 border rounded-0 focus:outline-none focus:ring-2 focus:ring-gray-500" placeholder="Your Name"  required>
@@ -127,30 +127,55 @@
             console.log(document.querySelector('[name="phone"]').value);
             document.getElementById('country_code').value = iti.getSelectedCountryData().dialCode;
         })
-
-
     </script>
 
     {{-- FORM SUBMIT --}}
     <script>
 
-        var agency_reg_form_bool = sessionStorage.getItem('project_inquiry_submitted');
+        function setCookie(name, value, daysToExpire) {
+            var expires = "";
+            
+            if (daysToExpire) {
+                var date = new Date();
+                date.setTime(date.getTime() + (daysToExpire * 60 * 60 * 1000));
+                expires = "; expires=" + date.toUTCString();
+            }
+            
+            document.cookie = name + "=" + value + expires + "; path=/";
+        }
 
-        if(!agency_reg_form_bool) {
+        // Function to get a specific cookie by name
+        function getCookie(cookieName) {
+            var name = cookieName + "=";
+            var decodedCookie = decodeURIComponent(document.cookie);
+            var cookieArray = decodedCookie.split(';');
+
+            for (var i = 0; i < cookieArray.length; i++) {
+                var cookie = cookieArray[i].trim();
+                if (cookie.indexOf(name) === 0) {
+                    return cookie.substring(name.length, cookie.length);
+                }
+            }
+
+            return null; // Return null if the cookie is not found
+        }
+
+        // Example: Get the value of the "user" cookie
+        var projectInquiry = getCookie("project_inquiry_submitted");
+
+        // Use the value as needed
+        if (!projectInquiry) {
+           
+        // var agency_reg_form_bool = sessionStorage.getItem('project_inquiry_submitted');
+        // if(!agency_reg_form_bool) {
 
             $('#inquiryForm').on('submit', function(e){
                 e.preventDefault();
 
-                if (localStorage.getItem('project_inquiry_submitted')) {
-                    // alert('You have already submitted the form');
-                    
-                    return;
-                }
-
                 var formData = new FormData(this);
 
-                sessionStorage.setItem("project_inquiry_submitted", "true");
-                            
+                setCookie("project_inquiry_submitted", "true", 7);
+
                 var successView = document.getElementById("inquiryForm");
                 successView.classList.add("hidden");
 
@@ -172,21 +197,13 @@
                     contentType: false,
                     success:function(data)
                     {
-                        if($.isEmptyObject(data.error)){
+                        // if($.isEmptyObject(data.error)){
 
-                            sessionStorage.setItem("project_inquiry_submitted", "true");
-                            
-                            var successView = document.getElementById("inquiryForm");
-                            successView.classList.add("hidden");
+                        // }else{
+                        //     printErrorMsg(data.error);
+                        //     alert(data.error);
 
-                            var formView = document.getElementById("projectInquiryCompletedForm");
-                            formView.classList.remove("hidden");
-
-                        }else{
-                            printErrorMsg(data.error);
-                            alert(data.error);
-
-                        }
+                        // }
                     }
                 });
 

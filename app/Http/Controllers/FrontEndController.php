@@ -714,7 +714,7 @@ class FrontEndController extends Controller
 
             // Mail::to('lead@edgerealty.ae')->send(new DemoEmail($mailData));
             // Mail::mailer('noreply')->to('lead@esnaad.com')->send(new SubscriptionInquiry($data));
-            Mail::mailer('noreply')->to('webmaster@esnaad.com')->send(new ProjectInquiry($data));
+            // Mail::mailer('noreply')->to('webmaster@esnaad.com')->send(new ProjectInquiry($data));
 
         } catch (\Exception $e) {
             dd($e->getMessage());

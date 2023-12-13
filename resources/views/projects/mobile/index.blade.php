@@ -1,4 +1,5 @@
 @extends('layoutv2.master')
+<?php $actual_link = (empty($_SERVER['HTTPS']) ? 'http' : 'https') . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]"; ?>
 
 @section('luxe_asset_css')
 
@@ -18,6 +19,10 @@
 
 @section('content')
     @mobile
+        <section>
+            @include('projects.mobile.header')
+        </section>
+
         <section>
             @include('projects.mobile.body')
         </section>

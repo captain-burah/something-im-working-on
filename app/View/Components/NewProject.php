@@ -12,19 +12,19 @@ class NewProject extends Component
      * Create a new component instance.
      */
 
+    public $img;
+    public $logo;
+    public $name;
+    public $location;  
     public $id;
-    public $title;
-    public $titlear;
-    public $sluglink;  
-    public $thumbnail;
 
-    public function __construct($id, $title, $titlear, $sluglink, $thumbnail)
+    public function __construct($img, $logo, $name, $location, $id)
     {
-        $this->$id = $id;
-        $this->$title = $title;
-        $this->$titlear = $titlear;
-        $this->$sluglink = $sluglink;
-        $this->$thumbnail = $thumbnail;
+        $this->img = $img;
+        $this->logo = $logo;
+        $this->name = $name;
+        $this->location = $location;  
+        $this->id = $id;
     }
 
     /**

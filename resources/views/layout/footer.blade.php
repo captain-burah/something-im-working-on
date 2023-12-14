@@ -113,14 +113,17 @@
                                 <li class="text-md text-black my-2">
                                     <a href="{{ url('invest-in-dubai') }}" aria-label="invest-in-dubai">Why Invest In Dubai?</a>
                                 </li>
-                                <li class="text-md text-black my-2">
+                                {{-- <li class="text-md text-black my-2">
                                     <a href="{{ url('communities/') }}" aria-label="communities">Communities</a>
                                 </li>
                                 <li class="text-md text-black my-2">
                                     <a href="{{ url('projects/') }}" aria-label="projects">Projects</a>
-                                </li>
+                                </li> --}}
                                 <li class="text-md text-black my-2">
                                     <a href="{{ url('agency-registration') }}" aria-label="broker-registration">Broker Registration</a>
+                                </li>
+                                <li class="text-md text-black my-2">
+                                    <a href="#careers" aria-label="broker-registration">Careers</a>
                                 </li>
                                 <li class="text-md text-black my-2">
                                     <a href="{{ url('contact') }}" aria-label="contact-us">Contact Us</a>
@@ -315,9 +318,7 @@
                                             </a>
                                         </div>
                                     </div>
-
                                 </div>
-
                             </div>
                         </div>
 
@@ -333,14 +334,17 @@
                                 <li class="text-md text-black my-2">
                                     <a href="{{ url('invest-in-dubai') }}" aria-label="invest-in-dubai">Why Invest In Dubai?</a>
                                 </li>
-                                <li class="text-md text-black my-2">
+                                {{-- <li class="text-md text-black my-2">
                                     <a href="{{ url('communities/') }}" aria-label="communities">Communities</a>
                                 </li>
                                 <li class="text-md text-black my-2">
                                     <a href="{{ url('projects/') }}" aria-label="projects">Projects</a>
-                                </li>
+                                </li> --}}
                                 <li class="text-md text-black my-2" aria-label="">
                                     <a href="{{ url('agency-registration') }}" aria-label="broker-registration">Broker Registration</a>
+                                </li>
+                                <li class="text-md text-black my-2" aria-label="">
+                                    <a href="#careers" aria-label="broker-registration">Careers</a>
                                 </li>
                                 <li class="text-md text-black my-2">
                                     <a href="{{ url('contact') }}" aria-label="contact-us">Contact Us</a>
@@ -575,14 +579,17 @@
                                 <li class="text-md text-black my-3">
                                     <a href="{{ url('invest-in-dubai') }}" aria-label="invest-in-dubai">Why Invest In Dubai?</a>
                                 </li>
-                                <li class="text-md text-black my-3">
+                                {{-- <li class="text-md text-black my-3">
                                     <a href="{{ url('communities/') }}" aria-label="communities">Communities</a>
                                 </li>
                                 <li class="text-md text-black my-3">
                                     <a href="{{ url('projects/') }}" aria-label="projects">Projects</a>
-                                </li>
+                                </li> --}}
                                 <li class="text-md text-black my-3">
                                     <a href="{{ url('broker-registration') }}" aria-label="broker-registration">Broker Registration</a>
+                                </li>
+                                <li class="text-md text-black my-3">
+                                    <a href="#careers" aria-label="broker-registration">Careers</a>
                                 </li>
                                 <li class="text-md text-black my-3">
                                     <a href="{{ url('contact') }}" aria-label="contact-us">Contact Us</a>

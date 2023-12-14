@@ -26,7 +26,7 @@
         <section class="m-0" cl>
             @include('constructions.desktop.body')
         </section>
-{{-- 
+    {{-- 
 
         <section class="m-0">
             @include('community_details.desktop.buttons')

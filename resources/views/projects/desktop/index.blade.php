@@ -20,9 +20,9 @@
 @section('content')
     @notmobile
 
-        {{-- <section class="m-0">
+        <section class="m-0">
             @include('projects.desktop.header')
-        </section> --}}
+        </section>
 
         <section class="m-0">
             @include('projects.desktop.body')

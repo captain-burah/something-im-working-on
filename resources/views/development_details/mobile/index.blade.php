@@ -24,6 +24,14 @@
         }
         .iti__flag-container{
             overflow: visible;
+            z-index: 10 !important;
+            white-space:nowrap;
+        }
+        .iti-mobile .intl-tel-input .country-list {
+            max-height: 200px !important; 
+        }
+        .iti__country-list{
+            z-index: 10 !important;
         }
     </style>
 @endsection
@@ -113,7 +121,7 @@
 
         var lat = {!! json_encode($lat) !!};
 
-        console.log(long);
+        // console.log(long);
 
         var map = new mapboxgl.Map({
             container: 'map',

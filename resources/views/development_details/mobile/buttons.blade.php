@@ -1,15 +1,6 @@
 <?php $actual_link = (empty($_SERVER['HTTPS']) ? 'http' : 'https') . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]"; ?>
 
 
-<style>
-    .iti {
-        width: 100% !important;
-    }
-    .iti__flag-container{
-        overflow: visible;
-    }
-</style>
-
 
 <div class="mx-0 px-0 ">
     <div class="mx-0">

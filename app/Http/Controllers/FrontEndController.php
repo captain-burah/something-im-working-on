@@ -724,15 +724,19 @@ class FrontEndController extends Controller
 
     
     public function project_detail_brochure_download(Request $request) {
+        $tel = $request->country_code_brochure + $request->phone_brochure;
 
         try{
             
             $data = [
-                'name'      =>  $request->name, 
-                'email'     =>  $request->email,
+                'name'      =>  $request->name_brochure, 
+                'email'     =>  $request->email_brochure,
                 'ip'     =>  $request->getClientIp(),
-                'enquiry_type'     =>  $request->enquiry_type,
-                'project'     =>  $request->project,
+                'enquiry_type'     =>  $request->enquiry_type_brochure,
+                'project'     =>  $request->project_brochure,
+                'phone'     =>  $request->phone_brochure,
+                'tel'     =>  $tel,
+                'country_code'     =>  $request->country_code_brochure,
             ];
 
             // Mail::to('lead@edgerealty.ae')->send(new DemoEmail($mailData));

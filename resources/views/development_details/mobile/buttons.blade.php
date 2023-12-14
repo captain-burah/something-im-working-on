@@ -95,7 +95,7 @@
     }
 </script>
 
-@section('intel-input')
+@section('form1')
     {{-- INTEL INPUT --}}
     <script>
 
@@ -129,36 +129,10 @@
         })
     </script>
 
-    {{-- FORM SUBMIT --}}
+    {{-- FORM SUBMIT INTEREST --}}
     <script>
 
-        function setCookie(name, value, daysToExpire) {
-            var expires = "";
-            
-            if (daysToExpire) {
-                var date = new Date();
-                date.setTime(date.getTime() + (daysToExpire * 60 * 60 * 1000));
-                expires = "; expires=" + date.toUTCString();
-            }
-            
-            document.cookie = name + "=" + value + expires + "; path=/";
-        }
-
-        // Function to get a specific cookie by name
-        function getCookie(cookieName) {
-            var name = cookieName + "=";
-            var decodedCookie = decodeURIComponent(document.cookie);
-            var cookieArray = decodedCookie.split(';');
-
-            for (var i = 0; i < cookieArray.length; i++) {
-                var cookie = cookieArray[i].trim();
-                if (cookie.indexOf(name) === 0) {
-                    return cookie.substring(name.length, cookie.length);
-                }
-            }
-
-            return null; // Return null if the cookie is not found
-        }
+        
 
         // Example: Get the value of the "user" cookie
         var projectInquiry = getCookie("project_inquiry_submitted");

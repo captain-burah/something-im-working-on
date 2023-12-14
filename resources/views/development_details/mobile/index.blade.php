@@ -1,9 +1,8 @@
 @extends('layoutv2.master')
+
 <?php $actual_link = (empty($_SERVER['HTTPS']) ? 'http' : 'https') . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]"; ?>
 
 @section('luxe_asset_css')
-
-
 
     <script src='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js'></script>
 
@@ -30,7 +29,7 @@
 @endsection
 
 @section('content')
-     <section class="my-0">
+    <section class="my-0">
         @include('development_details.mobile.header')
     </section>
 
@@ -58,7 +57,6 @@
         @include('development_details.mobile.bodySix')
     </section>
 
-
     <section class="my-0" id="project_detail_map_section">
         @include('development_details.mobile.map')
     </section>
@@ -74,9 +72,37 @@
 
     <script src="{{ asset('owl/owl.carousel.min.js') }}"></script>
 
-    @yield('intel-input')
 
 
+    <script>
+        function setCookie(name, value, daysToExpire) {
+            var expires = "";
+            
+            if (daysToExpire) {
+                var date = new Date();
+                date.setTime(date.getTime() + (daysToExpire * 60 * 60 * 1000));
+                expires = "; expires=" + date.toUTCString();
+            }
+            
+            document.cookie = name + "=" + value + expires + "; path=/";
+        }
+
+        // Function to get a specific cookie by name
+        function getCookie(cookieName) {
+            var name = cookieName + "=";
+            var decodedCookie = decodeURIComponent(document.cookie);
+            var cookieArray = decodedCookie.split(';');
+
+            for (var i = 0; i < cookieArray.length; i++) {
+                var cookie = cookieArray[i].trim();
+                if (cookie.indexOf(name) === 0) {
+                    return cookie.substring(name.length, cookie.length);
+                }
+            }
+
+            return null; // Return null if the cookie is not found
+        }
+    </script>
 
     {{-- MAP --}}
     <script>
@@ -139,6 +165,12 @@
             }, 100);
         }
     </script>
+
+
+
+    @yield('form1')
+    @yield('form2')
+    
 
 
 @endsection

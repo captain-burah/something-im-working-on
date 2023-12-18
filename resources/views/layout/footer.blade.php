@@ -123,7 +123,7 @@
                                     <a href="{{ url('agency-registration') }}" aria-label="broker-registration">Broker Registration</a>
                                 </li>
                                 <li class="text-md text-black my-2">
-                                    <a href="#careers" aria-label="broker-registration">Careers</a>
+                                    <a href="{{ url('careers')}}" aria-label="broker-registration">Careers</a>
                                 </li>
                                 <li class="text-md text-black my-2">
                                     <a href="{{ url('contact') }}" aria-label="contact-us">Contact Us</a>
@@ -344,7 +344,7 @@
                                     <a href="{{ url('agency-registration') }}" aria-label="broker-registration">Broker Registration</a>
                                 </li>
                                 <li class="text-md text-black my-2" aria-label="">
-                                    <a href="#careers" aria-label="broker-registration">Careers</a>
+                                    <a href="{{ url('careers')}}" aria-label="broker-registration">Careers</a>
                                 </li>
                                 <li class="text-md text-black my-2">
                                     <a href="{{ url('contact') }}" aria-label="contact-us">Contact Us</a>
@@ -589,7 +589,7 @@
                                     <a href="{{ url('broker-registration') }}" aria-label="broker-registration">Broker Registration</a>
                                 </li>
                                 <li class="text-md text-black my-3">
-                                    <a href="#careers" aria-label="broker-registration">Careers</a>
+                                    <a href="{{ url('careers')}}" aria-label="broker-registration">Careers</a>
                                 </li>
                                 <li class="text-md text-black my-3">
                                     <a href="{{ url('contact') }}" aria-label="contact-us">Contact Us</a>

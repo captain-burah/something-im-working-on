@@ -69,9 +69,13 @@ Route::post('/project-detail-inquiry', [FrontEndController::class, 'project_deta
 
 Route::post('/project-detail-brochure-download', [FrontEndController::class, 'project_detail_brochure_download'])->name('project.detail.brochure.download');
 
+Route::get('/careers', [FrontEndController::class, 'careers'])->name('careers');
 
+Route::get('/career-registration', [FrontEndController::class, 'career_registration'])->name('career.registration');
 
+Route::post('/career-registration-post-v1', [FrontEndController::class, 'career_registration_post_v1'])->name('career.registration.post.v1');
 
+Route::post('/career-registration-post-v2', [FrontEndController::class, 'career_registration_post_v2'])->name('career.registration.post.v2');
 
 
 
@@ -82,7 +86,7 @@ Route::get('/thankyou', function() {
 
 
 Route::get('/email', function() {
-    return view('emails.pdf.brokerReg');
+    return view('emails.verificationEmail');
 });
 
 

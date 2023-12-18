@@ -37,6 +37,7 @@ use Mail;
 use App\Mail\DemoEmail;
 use App\Mail\CommunityInquiry;
 use App\Mail\SubscriptionInquiry;
+use App\Mail\verificationEmail;
 use App\Mail\ProjectInquiry;
 use App\Mail\BrokerRegistration;
 use App\Mail\ProjectBrochureDownload;
@@ -746,7 +747,7 @@ class FrontEndController extends Controller
 
         } catch (\Exception $e) {
             dd($e->getMessage());
-        }        
+        }
 
         // try{
 
@@ -800,6 +801,69 @@ class FrontEndController extends Controller
         // }
     }
 
+
+
+    public function careers() {
+        $jsonSEOData = $this->landingpageseos(11);
+        
+        $this->data['jsonSEOData'] =  $jsonSEOData->json();
+
+        return view('careers', $this->data);
+    }
+
+
+
+
+    public function career_registration_post_v1(Request $request) {
+        $verification_code = $request->input('4srMa62q63awVETd4mo9');
+        try{
+            $data = [
+                'verification_code' =>  $verification_code, 
+            ];
+
+            // Mail::mailer('noreply')->to($request->applicant_email)->send(new verificationEmail($data));
+
+        } catch (\Exception $e) {
+            dd($e->getMessage());
+        }
+        return Response::json(['message' => 'verification sent'], 200);
+    }
+
+
+    public function career_registration_post_v2(Request $request){
+        $data = [
+            'name'      =>  $request->applicant_name, 
+            'email'      =>  $request->applicant_email, 
+            'country'      =>  $request->applicant_country, 
+            'contact'      =>  $request->applicant_phone, 
+            'languages'      =>  $request->applicant_languages, 
+            'job'      =>  $request->applicant_job, 
+        ];
+
+
+        try{
+            /**STAGE II */
+            // $pdf = PDF::loadView('emails.pdf.brokerReg', $data);
+            // $pdf->getDomPDF()->getCanvas()->get_cpdf()->setEncryption("esnaad_12345", "admin_password");
+
+            /**STAGE III */
+            Mail::mailer('noreply')->send('emails.careerApplication', $data, function($message)use($data, $request) {
+                    $first_segment = $message->to(["hr@esnaad.com", "webmaster@esnaad.com"])
+                        ->subject("Notification - Career Application");
+                    
+                    foreach($request->files as $file) {
+                        $first_segment->attach($file->getRealPath(), [
+                            'as' => $file->getClientOriginalName(),
+                            'mime' => $file->getMimeType(),
+                        ]);
+                    }
+                }
+            );
+        } catch (\Exception $e) {   
+            return Response::json(['error' => $e->getMessage()], 500);
+        }
+        return Response::json(['success' => 'success'], 200);
+    }
 
 
 

@@ -60,7 +60,6 @@
                     <button onclick="openModal('mymodalcentered')" class="mt-4 px-4 py-2 w-full bg-black text-white text-xs uppercase font-medium rounded-sm  hover:bg-gray-100 hover:text-gray-800 focus:outline-none ring-1 ring-gray-200 ">
                         Register Your Interest
                     </button>
-
                 </div>
 
                 <div class="col-span-3 p-4 pr-0">

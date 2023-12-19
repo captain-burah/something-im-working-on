@@ -44,29 +44,20 @@
     </style>
 @endsection
 
-<header class="relative">
-    <div class="w-full bg-cover bg-center" style="height: 50vh;">
-        <div class="flex items-center justify-center h-full w-full bg-black bg-opacity-10">
-            <div class="container mx-0 px-0 mx-auto text-white my-auto">
-                <h1 class="text-xl font-semibold px-2">
-                    Construction Updates
+<header>
+    <div class="w-full bg-cover bg-center" style="margin-top: 60px; height: 40vh; background-image: url('{{ URL::asset('developments/4.jpg')}}'), url('{{ URL::asset('assets/img/img-error2.webp')}}');">
+        <div class="flex items-center justify-left h-full w-full bg-black bg-opacity-60">
+
+            <div class="container mx-0 px-0 mx-auto text-white">
+                <h1 class="text-xl font-light px-2">
+                    NEWS
                 </h1>
-                <h2 class="text-4xl font-light mt-2 px-2">
-                    Stay in the Know, Watch Our Progress Grow!
+                <h2 class="text-base font-thin leading-6 px-2 pt-2">
+                    Charting the future of real estate
                 </h2>
+                
             </div>
+            
         </div>
     </div>
 </header>
-
-{{-- @include('new_projects_detail.mobile.modals.galleryModal')
-@include('new_projects_detail.mobile.modals.inquiryModal') --}}
-<!-- component -->
-{{-- <div class="flex justify-center items-start h-full absolute top-0 w-full mt-7">
-    <button type="button" onclick="openModal('mymodalcentered')" class="px-4 py-2 bg-blue-500 text-white rounded mr-3">Open Modal Centered</button>
-    <button type="button"  class="px-4 py-2 bg-blue-500 text-white rounded">Open Modal Top</button>
-</div> --}}
-
-
-
-

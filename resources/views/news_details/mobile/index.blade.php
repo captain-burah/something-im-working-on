@@ -17,12 +17,23 @@
 @endsection
 
 @section('content')
+<?php
+    $id = $response['id'];
+    $title = $response['title'];
+    $titlear = $response['title_ar'];
+    $sluglink = $response['slug_link'];
+    $thumbnail = $response['thumbnail'];
+    $description = $response['description'];
+    $header_image = $response['header_image'];
+    $images = $response['website_news_images'];
+    $created_at = $response['created_at'];
+?>
     @mobile
+        {{-- <section>
+             @include('news_details.mobile.header')
+        </section> --}}
         <section>
-             @include('news.mobile.header')
-        </section>
-        <section>
-            @include('news.mobile.body')
+            @include('news_details.mobile.body')
         </section>
 {{-- 
 

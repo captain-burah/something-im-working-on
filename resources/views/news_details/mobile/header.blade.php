@@ -44,29 +44,47 @@
     </style>
 @endsection
 
-<header class="relative">
-    <div class="w-full bg-cover bg-center" style="height: 60vh;">
-        <div class="flex items-center justify-center h-full w-full bg-black bg-opacity-10">
-            <div class="container mx-0 px-0 mx-auto text-white my-auto">
-                <h1 class="text-xl font-semibold px-2">
-                    Construction Updates
-                </h1>
-                <h2 class="text-4xl font-light mt-2 px-2">
-                    Stay in the Know, Watch Our Progress Grow!
-                </h2>
+
+
+<header>
+
+   
+    <div class="container mx-auto max-w-7xl lg:max-w-8xl xl:max-w-8xl 2xl:px-w-8xl">
+        <div class=" flex flex-col items-start px-4">
+            <div class="ml-0 md:mr-12 sticky">
+                <div class="container mx-auto w-full h-full mt-[15vh]">
+                    <style>
+                        ul {
+                            padding-left: 30px;
+                        }
+                        li {
+                            list-style-type: disc;
+                            padding-left: 10px;
+                        }
+                    </style>
+                    <div class="flex items-center overflow-x-auto whitespace-nowrap">
+                        <a href="/news" class="text-base text-black">
+                            NEWS
+                        </a>
+                        <span class="mx-2 text-gray-500 dark:text-gray-400">
+                            /
+                        </span> 
+                        <p class="text-base capitalize text-black">
+                            {{ $title }}
+                        </p>
+                    </div>
+
+                    
+                </div>
             </div>
+            
         </div>
     </div>
+
+
+    
+
 </header>
-
-{{-- @include('new_projects_detail.mobile.modals.galleryModal')
-@include('new_projects_detail.mobile.modals.inquiryModal') --}}
-<!-- component -->
-{{-- <div class="flex justify-center items-start h-full absolute top-0 w-full mt-7">
-    <button type="button" onclick="openModal('mymodalcentered')" class="px-4 py-2 bg-blue-500 text-white rounded mr-3">Open Modal Centered</button>
-    <button type="button"  class="px-4 py-2 bg-blue-500 text-white rounded">Open Modal Top</button>
-</div> --}}
-
 
 
 

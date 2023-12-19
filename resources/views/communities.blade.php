@@ -24,6 +24,7 @@
 
 @section('content')
 
+    @include('communities.header')
     @include('communities.cards')
 
 @endsection

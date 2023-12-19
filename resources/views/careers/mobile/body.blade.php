@@ -62,23 +62,37 @@
     <div class="md:w-[80%] xl:w-[50%] mx-auto my-8">
         <!-- component -->
         <!-- component -->
-        <div class="flex  items-center justify-center ">
-            <div class="rounded-lg  px-16 py-14">
-                {{-- <h3 class="my-2 text-center text-3xl font-semibold text-gray-700">Verification!</h3> --}}
-                <p class="w-[100%] text-center font-normal text-gray-600">
-                    <div>
-                        <div class="icon bg-black text-white w-6 h-6 absolute flex items-center justify-center p-5" style="left:-40px"><i class="fal fa-phone-volume fa-fw text-2xl transform -rotate-45"></i></div>
-                        <h3 class="text-2xl text-gray-900 font-semibold text-center">Thank You!</h3>
-                        <table class="w-full">
-                            <tbody>
-                                <caption class="my-4">
-                                    Your submission has been recorded
-                                </caption>
-                            </tbody>
-                        </table>                    
-                    </form>
-                </p>
-            </div>
+        {{-- <h3 class="my-2 text-center text-3xl font-semibold text-gray-700">Verification!</h3> --}}
+        <div class="row">
+            <p class="w-[100%] text-center font-normal text-gray-600">
+                <div>
+                    <div class="icon bg-black text-white w-6 h-6 absolute flex items-center justify-center p-5" style="left:-40px"><i class="fal fa-phone-volume fa-fw text-2xl transform -rotate-45"></i></div>
+                    <h3 class="text-2xl text-gray-900 font-semibold text-center">Thank You!</h3>
+                    <table class="w-full">
+                        <tbody>
+                            <caption class="my-4">
+                                Your submission has been recorded
+                            </caption>
+                        </tbody>
+                    </table>                    
+                </form>
+            </p>
+        </div>
+        
+        <div class="row px-4">
+            <h2 class="text-2xl my-4">What's Next?</h2>
+            <h3 class="text-lg mb-2">Applciation Confirmation</h3>
+            <p class="text-base mb-4">You will receive an email shortly confirming that we have received your application. Please keep an eye on your inbox, including your spam folder.</p>
+
+            <h3 class="text-lg mb-">Application Review</h3>
+            <p class="text-base mb-4">Our hiring team will carefully review your application to assess your qualifications and experience. This process may take some time, so we appreciate your patience.</p>
+
+            <h3 class="text-lg mb-">Next Steps:</h3>
+            <p class="text-base mb-4">If your qualifications match our needs, we will contact you for the next steps, which may include interviews or additional assessments.</p>
+
+            <h2 class="text-2xl my-2">Stay Connected</h2>
+            <p class="text-base">We encourage you to explore our website to learn more about our company culture and values. We wish you the best of luck in the selection process!
+            </p>
         </div>
     </div>
 </div>

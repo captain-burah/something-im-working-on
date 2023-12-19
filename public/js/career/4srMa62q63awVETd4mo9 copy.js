@@ -40,6 +40,12 @@
             formView.classList.remove("hidden");
         }
 
+        /** GENERATE CODE*/
+            career_form_verification_code = Math.floor(100000 + Math.random() * 9000);
+
+            /** ENCRYPT CODE */
+            console.log(career_form_verification_code);
+
         $('#formViewSubmit').on('click', function(e){
 
             e.preventDefault();
@@ -72,9 +78,7 @@
             }
 
 
-            /** GENERATE CODE*/
-            career_form_verification_code = Math.floor(1000 + Math.random() * 9000);
-
+            
             /** SET A COOKIE*/
             setCookie("_NrJFRxtB1984WVogY2Ci", career_form_verification_code, 1);
 
@@ -96,7 +100,7 @@
                     'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content'),
                     'Access-Control-Allow-Origin': 'https://esnaad.com/career-registration-post-v1'
                 },
-                url:"{{ URL('/career-registration-post-v1') }}",
+                url:"/career-registration-post-v1",
                 data: formData,
                 processData: false,
                 contentType: false,
@@ -141,7 +145,7 @@
                         'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content'),
                         'Access-Control-Allow-Origin': 'https://esnaad.com/career-registration-post-v2'
                     },
-                    url:"{{ URL('/career-registration-post-v2') }}",
+                    url:"/career-registration-post-v2",
                     data: formData,
                     processData: false,
                     contentType: false,

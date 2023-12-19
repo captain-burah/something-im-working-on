@@ -3,20 +3,23 @@
         <caption class="my-4 underline">
             Candidate Application
         </caption>
+        <tr class="hidden" id="requiredNotice">
+            <td colspan="2" class="text-red-900 text-center font-bold py-4">*Please fill all the fields</td>
+        </tr>
         <tr>
             <td style="width: 235px">Applicant Name</td>
-            <td><input type="text" name="applicant_name" id="applicant_name" placeholder="Full Name" class=" w-full" ></td>
+            <td><input type="text" name="applicant_name" id="applicant_name" placeholder="Full Name" class=" w-full" required></td>
         </tr>
 
         <tr>
             <td>Applicant Email</td>
-            <td><input type="text" name="applicant_email" id="applicant_email" placeholder="someone@domain.com" class=" w-full" require ></td>
+            <td><input type="text" name="applicant_email" id="applicant_email" placeholder="someone@domain.com" class=" w-full" required ></td>
         </tr>
 
         <tr>
             <td>Applicant Country</td>
             <td>
-                <select id="applicant_country" name="applicant_country" class="w-full">
+                <select id="applicant_country" name="applicant_country" class="w-full"required>
                     <option value="">Country of Origin</option>
                     <option value="Afghanistan">Afghanistan</option>
                     <option value="Åland Islands">Åland Islands</option>
@@ -492,7 +495,7 @@
                                 </optgroup>
                             </select>
                         </td>
-                    <td><input type="text" name="applicant_phone" id="applicant_phone" placeholder="ex: 501234567" class="border w-full" ></td>
+                    <td><input type="text" name="applicant_phone" id="applicant_phone" placeholder="ex: 501234567" class="border w-full" required></td>
                         
                     </tr>
                 </table>
@@ -501,12 +504,12 @@
 
         <tr>
             <td>Known Languages</td>
-            <td><input type="text" name="appicant_languages" id="appicant_languages" placeholder="English, Arabic, Russian, etc." class=" w-full" ></td>
+            <td><input type="text" name="applicant_languages" id="applicant_languages" placeholder="English, Arabic, Russian, etc." class=" w-full" required></td>
         </tr>   
 
         <tr>
             <td>Job Role</td>
-            <td><input type="text" name="applicant_job" id="applicant_job" placeholder="Agent, Administration, Marketing, etc." class=" w-full" ></td>
+            <td><input type="text" name="applicant_job" id="applicant_job" placeholder="Agent, Administration, Marketing, etc." class=" w-full" required></td>
         </tr>        
 
         <tr>
@@ -521,7 +524,8 @@
                 file:text-sm file:font-semibold
                 file:bg-black file:text-gray-50
                 file:cursor-pointer
-                " />
+                " 
+                required/>
             </td>
         </tr>
 

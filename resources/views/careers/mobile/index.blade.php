@@ -19,11 +19,11 @@
 @section('content')
     @mobile
         <section class="my-3">
-             @include('brokers.mobile.header')
+             @include('careers.mobile.header')
         </section>
 
         <section class="my-3">
-            @include('brokers.mobile.body')
+            @include('careers.mobile.body')
         </section>
 
        {{-- <section class="my-3">
@@ -50,18 +50,17 @@
 @section('luxe_asset_js')
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-    @yield('intel-input')
 
-@endsection
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
-
-
-
-@section('luxe_asset_js')
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+
+    <script src="{{ asset('js/career/4srMa62q63awVETd4mo9.min.js') }}"></script>
+    
     @yield('intel-input')
 
 @endsection
-

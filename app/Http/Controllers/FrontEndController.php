@@ -357,6 +357,7 @@ class FrontEndController extends Controller
         if(count($jsonData[0]['website_news_images']) > 0){
             $this->data['available'] = '1';
         }
+
         
         // RETURN AS JSON
         $this->data['response'] = $jsonData[0];

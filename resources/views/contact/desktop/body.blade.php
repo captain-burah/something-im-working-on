@@ -6,8 +6,8 @@
                 
                     @csrf
                     <div class="icon bg-black text-white w-6 h-6 absolute flex items-center justify-center p-5" style="left:-40px"><i class="fal fa-phone-volume fa-fw text-2xl transform -rotate-45"></i></div>
-                    <h3 class="text-2xl text-gray-900 font-semibold">Lorem ipsum dolor sit amet,</h3>
-                    <p class="text-gray-600 mb-4"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rhoncus augue ut ligula</p>
+                    <h3 class="text-2xl text-gray-900 font-semibold">Reach out to us</h3>
+                    <p class="text-gray-600 mb-4"> We're delighted to assist you! Please use the form below to get in touch with our team. Whether you have questions, feedback, or inquiries, we're here to help.</p>
                     <input type="hidden" name="country_code" id="country_code">
                     <input type="text" name="name" id="name" placeholder="Full Name" class="border p-2  w-full">
                     <input type="text" name="name" id="phone" placeholder="Phone Number" class="border p-2 mt-3  w-full">

@@ -15,7 +15,7 @@
 
                             <div class="grid grid-cols-2 gap-4 place-content-between">
                                 <div class="">
-                                    <p class="text-sm mb-2">Posted - {{ \Carbon\Carbon::parse($created_at)->diffForhumans() }}</p>
+                                    <p class="text-sm mb-2">Published {{\Carbon\Carbon::parse($created_at)->format('j F, Y')}}</p>
                                 </div>
                                 <div class="text-right">
                                     <div class="inline-flex float-right text-right">

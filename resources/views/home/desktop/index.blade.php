@@ -13,10 +13,6 @@
         .iti__flag-container{
             overflow: visible;
         }
-        .bg-hero {
-            /* background-image: url(/home/HOME2.webp) */
-            background-image: url(/front/images/bg-hero2.jpg)
-        }
         .image-blurred-edge {
             background-image: url({{ asset('assets/img/img-error2.webp') }});
             height: 100%;

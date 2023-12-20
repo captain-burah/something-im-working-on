@@ -22,7 +22,6 @@
                                 <div class=" h-full bg-yellow-400 sm:bg-green-500 absolute" style="width:30%"><div class="h-full w-full mx-auto text-sm text-center pt-1 text-white font-bold">30%</div></div>
                             </div>
                         </div>
-                        
                     </div>
                 </a>
             @endforeach

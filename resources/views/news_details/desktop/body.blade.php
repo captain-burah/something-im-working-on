@@ -1,3 +1,4 @@
+<?php $actual_link = (empty($_SERVER['HTTPS']) ? 'http' : 'https') . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]"; ?>
 
     
     <div class="mx-auto max-w-7xl lg:max-w-8xl xl:max-w-8xl 2xl:px-w-8xl">
@@ -20,7 +21,7 @@
                                     <div class="inline-flex float-right text-right">
                                         <div class="flex-1">
                                             <div class="w-8  rounded-3xl">
-                                                    <a href="{{ env('COMPANY_FB') }}" target="_blank" aria-label="esnaad-facebook">
+                                                    <a href="https://www.facebook.com/sharer/sharer.php?u={{$actual_link}}" target="_blank" aria-label="esnaad-facebook">
                                                         <img
                                                             src="{{ asset('front/icons/fb.svg') }}"
                                                             class="w-fit rounded"
@@ -32,7 +33,7 @@
 
                                         <div class="flex-1">
                                             <div class="w-8  rounded-3xl p-1">
-                                                <a href="{{ env('COMPANY_IG') }}" target="_blank" aria-label="esnaad-instagram">
+                                                <a href="whatsapp://send?text={{$actual_link}}" target="_blank" aria-label="esnaad-instagram">
                                                     <img
                                                         src="{{ asset('front/icons/ig.png') }}"
                                                         class="w-fit rounded"
@@ -44,7 +45,7 @@
 
                                         <div class="flex-1">
                                             <div class="w-8  rounded-3xl p-1">
-                                                <a href="{{ env('COMPANY_TW') }}" target="_blank" aria-label="esnaad-x">
+                                                <a href="https://twitter.com/intent/tweet?url={{$actual_link}}" target="_blank" aria-label="esnaad-x">
                                                     <img
                                                         src="{{ asset('front/icons/x-logo-black.png') }}"
                                                         class="w-fit rounded"
@@ -56,7 +57,7 @@
 
                                         <div class="flex-1">
                                             <div class="w-8  rounded-3xl p-1">
-                                                <a href="{{ env('COMPANY_IN') }}" target="_blank" aria-label="esnaad-linkedin">
+                                                <a href="https://www.linkedin.com/sharing/share-offsite/?url={{$actual_link}}" target="_blank" aria-label="esnaad-linkedin">
                                                     <img
                                                         src="{{ asset('front/icons/in2.png') }}"
                                                         class="w-fit rounded"
@@ -68,7 +69,7 @@
 
                                         <div class="flex-1">
                                             <div class="w-8  rounded-3xl p-1">
-                                                <a href="https://wa.link/etkc3f" target="_blank" aria-label="esnaad-whatsapp">
+                                                <a href="whatsapp://send?text={{$actual_link}}" target="_blank" aria-label="esnaad-whatsapp">
                                                     <img
                                                         src="{{ asset('front/icons/wa.png') }}"
                                                         class="w-fit rounded"
@@ -85,7 +86,7 @@
                             <div class="place-content-between w-full">
                                     
                                     
-                                </div>
+                            </div>
 
 
                             <img src="{{ URL("https://mis.esnaad.com/uploads/news/".$id."/header_image/".$header_image)}}" alt="Ensaad-news-article-{{$title}}" class="object-cover w-full h-56 mb-6 rounded-0 shadow-md sm:h-80 2xl:h-96">                          

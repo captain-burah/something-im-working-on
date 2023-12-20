@@ -46,23 +46,20 @@
 
 
 
-<header class="xl:mt-[2 0vh]">
-    
-    {{-- <div class="w-full bg-cover bg-center" style="height: 60vh; background-image: url({{ asset('home/ABOUT.webp') }}), url('{{ URL::asset('assets/img/img-error2.webp')}}');"> --}}
-    <div class="w-full bg-cover bg-center" style="height: 50vh; background-image: url({{ asset('home/invest-in-dubai.webp') }}), url('{{ URL::asset('assets/img/img-error2.webp')}}');">
-        <div class="flex items-center justify-center h-full w-full">
-            <div class="md:container mx-auto">
-                    
-                
-
-                <br>
-                <br>
-                
-                {{-- <div class="w-[50%] mx-auto">
-                    <p class="text-white font-thin leading-8 text-base text-center">
-                        A  beacon of opulence in real estate development, redefining luxury living through unparalleled design, unwavering quality, and a commitment to excellence
-                    </p>
-                </div> --}}
+<header class="">
+    <div class="w-full bg-cover bg-center" style="height: 50vh; background-image: url('{{ URL::asset('home/invest-in-dubai.webp')}}'), url('{{ URL::asset('assets/img/img-error2.webp')}}');">
+    {{-- <div class="w-full bg-cover bg-center" style="height: 40vh;"> --}}
+        <div class="flex items-center justify-center h-full w-full bg-black bg-opacity-60" style="padding-top: 10vh;">
+            <div class="sm:container sm:mx-auto sm:px-4 sm:my-4 mx-auto  text-white">
+                <h1 class="text-4xl font-thin text-center">
+                    INVEST IN DUBAI
+                </h1>
+                <div class="w-[600px] text-center mx-auto">
+                    <h2 class="text-base w-200 text-center font-thin mt-2">
+                    Investing in Dubai presents a compelling opportunity for individuals and businesses seeking a dynamic and
+                    globally competitive environment.
+                    </h2>
+                </div>
             </div>
         </div>
     </div>

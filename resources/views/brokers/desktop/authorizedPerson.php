@@ -5,13 +5,13 @@
         </caption>
         <tr>
             <td style="width: 235px">Authorized Person Name</td>
-            <td><input type="text" name="authorized_p_name" id="authorized_p_name" placeholder="eg: James Smith" class=" w-full"></td>
+            <td><input type="text" name="authorized_p_name" id="authorized_p_name" placeholder="eg: James Smith" class=" w-full" required></td>
         </tr>
 
         <tr>
             <td>Country of Origin</td>
             <td>
-                <select id="authorized_p_country" name="authorized_p_country" class="w-full">
+                <select id="authorized_p_country" name="authorized_p_country" class="w-full" required>
                     <option value="">Choose a country</option>
                     <option value="Afghanistan">Afghanistan</option>
                     <option value="Åland Islands">Åland Islands</option>
@@ -264,32 +264,32 @@
 
         <tr>
             <td>Passport Numner</td>
-            <td><input type="text" name="authorized_p_passport" id="authorized_p_passport" placeholder="ex: 123456789" class=" w-full"></td>
+            <td><input type="text" name="authorized_p_passport" id="authorized_p_passport" placeholder="ex: 123456789" class=" w-full" required></td>
         </tr>
 
         <tr>
             <td>Designation / Position</td>
-            <td><input type="text" name="authorized_p_position" id="authorized_p_position" placeholder="ex: Managing Director of ABC Company" class=" w-full"></td>
+            <td><input type="text" name="authorized_p_position" id="authorized_p_position" placeholder="ex: Managing Director of ABC Company" class=" w-full" required></td>
         </tr>
 
         <tr>
             <td>Email</td>
-            <td><input type="text" name="authorized_p_email" id="authorized_p_email" placeholder="ex: someone@abc-company.com" class=" w-full"></td>
+            <td><input type="text" name="authorized_p_email" id="authorized_p_email" placeholder="ex: someone@abc-company.com" class=" w-full" required></td>
         </tr>
 
         <tr>
             <td>Contact Number</td>
-            <td><input type="text" name="authorized_p_contact" id="phone" placeholder="ex: 501234567" class="border p-2 mt-3  w-full"></td>
+            <td><input type="text" name="authorized_p_contact" id="phone" placeholder="ex: 501234567" class="border p-2 mt-3  w-full" required></td>
         </tr>
 
         <tr>
             <td>Address</td>
-            <td><input type="text" name="authorized_p_address" id="authorized_p_address" placeholder="ex: Aprt. 000, One Building, Two Street, Somewhere, UAE." class=" w-full"></td>
+            <td><input type="text" name="authorized_p_address" id="authorized_p_address" placeholder="ex: Aprt. 000, One Building, Two Street, Somewhere, UAE." class=" w-full" required></td>
         </tr>
 
         <tr>
             <td>City</td>
-            <td><input type="text" name="authorized_p_city" id="authorized_p_city" placeholder="ex: some city" class=" w-full"></td>
+            <td><input type="text" name="authorized_p_city" id="authorized_p_city" placeholder="ex: some city" class=" w-full" required></td>
         </tr>
         
     </tbody>

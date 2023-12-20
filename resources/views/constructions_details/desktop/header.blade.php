@@ -63,18 +63,16 @@
                         }
                     </style>
                     <div class="flex items-center overflow-x-auto whitespace-nowrap">
-                        <a href="/constructions" class="text-lg font-semibold text-gray-400 hover:underline">
+                        <a href="/constructions" class="text-sm font-base text-black hover:underline">
                             Construction Updates
                         </a>
                         <span class="mx-2 text-gray-500 dark:text-gray-400">
                             /
                         </span> 
-                        <p class="text-lg font-bold text-gray-800 capitalize text-black">
+                        <p class="text-sm font-base text-black ">
                             {{ $title }}
                         </p>
-                    </div>
-
-                    
+                    </div>                    
                 </div>
             </div>
             

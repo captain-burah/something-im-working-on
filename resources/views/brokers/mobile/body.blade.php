@@ -4,6 +4,7 @@
             @csrf
                
             <div class="icon bg-black text-white w-6 h-6 absolute flex items-center justify-center p-5" style="left:-40px"><i class="fal fa-phone-volume fa-fw text-2xl transform -rotate-45"></i></div>
+            
             <p class="text-gray-600 mb-4">We are excited to establish partnerships with esteemed real estate agencies or broker 
                 companies. Please complete the following form to initiate the registration process.
             </p>
@@ -16,10 +17,8 @@
 
             @include('brokers.mobile.documents')
 
-
             <button type="submit"  class="w-full mt-6 bg-black hover:bg-white border hover:border-gray-500 text-white hover:text-black font-semibold p-3">Submit</button>
         </form>
-
     </div>
 </div>
 
@@ -36,8 +35,6 @@
 
             separateDialCode: true,
 
-            // utilsScript: "/build/js/utils.js", // for editing placeholders
-
             geoIpLookup: function(success) {
 
                 fetch("https://api.ipdata.co/?api-key=1f9ecc1670c915b3ddd397d233297968ccf720c0861abf9ecac1a8ef")
@@ -51,8 +48,7 @@
             },
         });
 
-        input.addEventListener("countrychange", function() {
-            console.log(document.getElementById('phone').value);
+        input.addEventListener("countrychange", function() {    
             document.getElementById('country_code').value = iti.getSelectedCountryData().dialCode;
         })
 
@@ -61,64 +57,66 @@
 
     {{-- FORM SUBMIT --}}
     <script>
-        /**
-         * INITIATE HEADERS WITH CSRF TOKENIZATION
-         * FOR FORM SUBMISSION
-         */
-        $.ajaxSetup({
-            headers: {
-                'X-CSRF-TOKEN': $('meta[name="XSRF-TOKEN"]').attr('content')
+        $(document).ready(function () {
+
+            // sessionStorage.setItem("agency_registration_submitted", "false");
+            // sessionStorage.getItem("agency_registration_submitted");
+
+            var agency_reg_form_bool = sessionStorage.getItem('agency_registration_submitted');
+
+            if(!agency_reg_form_bool) {
+
+                /**
+                 * INITIATE HEADERS WITH CSRF TOKENIZATION
+                 * FOR FORM SUBMISSION
+                 */
+                $.ajaxSetup({
+                    headers: {
+                        'X-CSRF-TOKEN': $('meta[name="XSRF-TOKEN"]').attr('content')
+                    }
+                });
+                $('#uploadForm').on('submit', function(e){
+
+                    e.preventDefault();
+
+                    var formData = new FormData(this);
+
+                    $.ajax({
+                        type:'POST',
+                        headers: {
+                            'X-CSRF-TOKEN': $('meta[name="XSRF-TOKEN"]').attr('content'),
+                            'Access-Control-Allow-Origin': 'https://esnaad.com/agency-registration'
+                        },
+                        url:"{{ URL('/agency-registration-post') }}",
+                        data: formData,
+                        processData: false,
+                        contentType: false,
+                        success:function(data) 
+                        {
+                            if($.isEmptyObject(data.error)){
+
+                                // console.log(data.success); // TEST THE DATA
+                                sessionStorage.setItem("agency_registration_submitted", "true");
+
+                                var successView = document.getElementById("agency-registration-form");
+                                successView.classList.add("hidden");
+
+                                var formView = document.getElementById("agency-registration-form-submitted");
+                                formView.classList.remove("hidden");
+                            }else{
+                                printErrorMsg(data.error);
+                            }
+                        }
+                    });
+                });
+            }
+             else {
+                var successView = document.getElementById("agency-registration-form");
+                successView.classList.add("hidden");
+
+                var formView = document.getElementById("agency-registration-form-submitted");
+                formView.classList.remove("hidden");
             }
         });
-        $('#contact-desktop-form').on('submit', function(e){
-
-            e.preventDefault();
-
-            var name = $("#name").val();
-
-            var email = $("#email").val();
-
-            var phone = $("#phone").val();
-
-            var country_code = $("#country_code").val();
-
-            var msg = $("#msg").val();
-
-
-
-            /**
-             * INITIATE AN AJAX SCRIPT FOR THE FORM SUBMISSION
-             * ALONG WITH POST ROUTE METHOD AND URL. IF RESPONSE
-             * IS A SUCCESS DISPLAY THE THANK YOU MODAL AND
-             * UPDATE THE FORM SESSION IN SESSION-STORAGE OF BROWSER
-             *
-            */
-            $.ajax({
-                type:'POST',
-                url:"{{ URL('api/v1/esnaad/contact-form') }}",
-                headers : {
-                    'Authorizatio' : 'Bearer ' + 'schDv?8qat`6zLVZ;8Lwoy(g`/Asm%D88$a>7Wl,20amt[=uN1',
-                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-                },
-                contentType : 'application/x-www-form-urlencoded',
-                data:{
-                    name:name,
-                    email:email,
-                    phone:phone,
-                    country_code:country_code,
-                    msg:msg,
-                    
-                },
-                error : function(xhr, status, error) {
-                    var err = eval("(" + xhr.responseText + ")");
-                }
-            }).done(function(data){  
-                alert('Successfully');  
-             }).fail(function(jqXHR, ajaxOptions, thrownError){  
-                alert(jqXHR.responseText);  
-            });  
-
-        });
     </script>
-
 @endsection

@@ -1,13 +1,12 @@
 <div class="sm:container sm:mx-auto mx-0 px-4 sm:px-4 my-5 sm:my-4 mx-auto">
     <div class="row mx-auto mt-8">
         <div class="mx-auto">
-            <h1 class="text-5xl font-thin text-center mb-4">
+            {{-- <h1 class="text-5xl font-thin text-center mb-4">
                 Invest In Dubai
-            </h1>
+            </h1> --}}
 
             <p class=" font-thin leading-8 text-base text-justify">
-                Investing in Dubai presents a compelling opportunity for individuals and businesses seeking a dynamic and
-                globally competitive environment. One of the key attractions is Dubai's commitment to foreign investors,
+                 One of the key attractions is Dubai's commitment to foreign investors,
                 allowing them 100% ownership of their businesses. This policy underscores the city's dedication to facilitating
                 business growth and attracting international investments. Moreover, Dubai's strategic location serves as a
                 gateway to two-thirds of the world's most attractive growth markets, offering unparalleled access to diverse

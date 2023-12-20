@@ -5,13 +5,13 @@
         </caption>
         <tr>
             <td style="width: 235px !important">Bank Name</td>
-            <td><input type="text" name="bank_name" id="bank_name" placeholder="eg: ABC Financial Insitution." class=" w-full"></td>
+            <td><input type="text" name="bank_name" id="bank_name" placeholder="eg: ABC Financial Insitution." class=" w-full" required></td>
         </tr>
 
         <tr>
             <td>Bank Country</td>
             <td>
-                <select id="bank_country" name="bank_country" class="w-full">
+                <select id="bank_country" name="bank_country" class="w-full" required>
                     <option value="">Choose a country</option>
                     <option value="Afghanistan">Afghanistan</option>
                     <option value="Åland Islands">Åland Islands</option>
@@ -264,21 +264,21 @@
 
         <tr>
             <td>Bank City</td>
-            <td><input type="text" name="bank_city" id="bank_city" placeholder="ex: Dubai" class=" w-full"></td>
+            <td><input type="text" name="bank_city" id="bank_city" placeholder="ex: Dubai" class=" w-full" required></td>
         </tr>
 
         <tr>
             <td>Account Number</td>
-            <td><input type="text" name="account_no" id="account_no" placeholder="ex: xxxx-xxxx-xxxx-xxxx" class=" w-full"></td>
+            <td><input type="text" name="account_no" id="account_no" placeholder="ex: xxxx-xxxx-xxxx-xxxx" class=" w-full" required></td>
         </tr>
 
         <tr>
             <td>IBAN Number</td>
-            <td><input type="text" name="iban" id="iban" placeholder="ex: xxxxxxxxxxxxx" class=" w-full"></td>
+            <td><input type="text" name="iban" id="iban" placeholder="ex: xxxxxxxxxxxxx" class=" w-full" required></td>
         </tr>
         <tr>
             <td>Account Title</td>
-            <td><input type="text" name="account_title" id="account_title" placeholder="ex: JASON SMITH" class=" w-full"></td>
+            <td><input type="text" name="account_title" id="account_title" placeholder="ex: JASON SMITH" class=" w-full" required></td>
         </tr>
     </tbody>
 </table>

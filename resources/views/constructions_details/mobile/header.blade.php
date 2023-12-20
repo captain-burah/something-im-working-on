@@ -49,10 +49,10 @@
 <header>
 
    
-    <div class="mx-auto max-w-7xl lg:max-w-8xl xl:max-w-8xl 2xl:px-w-8xl ">
-        <div class="container mx-auto flex flex-col items-start md:flex-">
+    <div class="container mx-auto max-w-7xl lg:max-w-8xl xl:max-w-8xl 2xl:px-w-8xl">
+        <div class=" flex flex-col items-start px-4">
             <div class="ml-0 md:mr-12 sticky">
-                <div class="container mx-auto w-full h-full mt-[10vh]">
+                <div class="container mx-auto w-full h-full mt-[15vh]">
                     <style>
                         ul {
                             padding-left: 30px;
@@ -62,16 +62,19 @@
                             padding-left: 10px;
                         }
                     </style>
+                    <h1 class="text-2xl font-bold mb-0">
+                                {{$title}}
+                            </h1>
                     <div class="flex items-center overflow-x-auto whitespace-nowrap">
-                        <a href="/constructions" class="text-base xl:text-lg font-thin xl:font-semibold text-gray-400">
-                            Construction Updates
+                        <a href="/constructions" class="text-sm text-black">
+                            CONSTRUCTIONS
                         </a>
                         <span class="mx-2 text-gray-500 dark:text-gray-400">
                             /
                         </span> 
-                        <h3 class="text-base xl:text-lg font-thin xl:font-bold text-gray-800 capitalize text-black">
+                        <p class="text-sm capitalize text-black">
                             {{ $title }}
-                        </h3>
+                        </p>
                     </div>
 
                     

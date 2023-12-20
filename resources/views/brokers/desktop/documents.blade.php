@@ -4,6 +4,9 @@
             Documents
         </caption>
         <tr>
+            <td colspan="2" class="text-center pb-2 text-base">All documents must be uploaded in the format PDF / JPG</td>
+        </tr>
+        <tr>
             <td style="width: 235px">Power of Atty / MOA</td>
             <td><input type="file" name="power_of_atty_or_moa_id"
                 class="block w-full text-sm text-slate-500 
@@ -13,7 +16,9 @@
                 file:text-sm file:font-semibold
                 file:bg-black file:text-gray-50
                 file:cursor-pointer
-                "/>
+                "
+                accept=".pdf, .jpg, .jpeg"
+                required/>
             </td>
         </tr>
 
@@ -27,7 +32,9 @@
                 file:text-sm file:font-semibold
                 file:bg-black file:text-gray-50
                 file:cursor-pointer
-                "/>
+                "
+                accept=".pdf, .jpg, .jpeg"
+                required/>
             </td>
         </tr>
 
@@ -42,7 +49,9 @@
                 file:text-sm file:font-semibold
                 file:bg-black file:text-gray-50
                 file:cursor-pointer
-                "/>
+                "
+                accept=".pdf, .jpg, .jpeg"
+                required/>
             </td>
         </tr>
 
@@ -56,7 +65,9 @@
                 file:text-sm file:font-semibold
                 file:bg-black file:text-gray-50
                 file:cursor-pointer
-                "/>
+                "
+                accept=".pdf, .jpg, .jpeg"
+                required/>
             </td>
         </tr>
 
@@ -70,7 +81,9 @@
                 file:text-sm file:font-semibold
                 file:bg-black file:text-gray-50
                 file:cursor-pointer
-                "/>
+                "
+                accept=".pdf, .jpg, .jpeg"
+                required/>
             </td>
         </tr>
 
@@ -84,7 +97,9 @@
                 file:text-sm file:font-semibold
                 file:bg-black file:text-gray-50
                 file:cursor-pointer
-                "/>
+                "
+                accept=".pdf, .jpg, .jpeg"
+                required/>
                 <span class=" text-sm">(all three in one document)</span>
             </td>
         </tr>

@@ -23,7 +23,6 @@
                 <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
                     width="30.000000pt" height="30.000000pt" viewBox="0 0 512.000000 512.000000"
                     preserveAspectRatio="xMidYMid meet">
-
                     <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
                     fill="#000000" stroke="none">
                     <path d="M2495 4725 c-17 -9 -200 -185 -407 -393 -404 -405 -410 -412 -394
@@ -73,7 +72,7 @@
 
                                 <div class="flex-1 mx-auto">
                                     <div class="w-6 xl:w-10 bg-white rounded-3xl p-1 mx-auto">
-                                        <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fedgerealty.ae%2F" target="_blank" ria-label="facebook-share-community">
+                                        <a href="https://www.facebook.com/sharer/sharer.php?u={{$actual_link}}" target="_blank" ria-label="facebook-share-community">
                                             <img
                                                 src="{{ asset('front/icons/fb.png')}}"
                                                 class="w-fit rounded"
@@ -90,18 +89,6 @@
                                                 src="{{ asset('front/icons/wa.png')}}"
                                                 class="w-fit rounded"
                                                 alt="social-media-ig"
-                                            >
-                                        </a>
-                                    </div>
-                                </div>
-
-                                <div class="flex-1 mx-auto">
-                                    <div class="w-6 xl:w-10 bg-white rounded-3xl p-1 mx-auto">
-                                        <a href="https://www.linkedin.com/sharing/share-offsite/?url={{$actual_link}}" aria-label="community-linkedin-share">
-                                            <img
-                                                src="{{ asset('front/icons/in.png')}}"
-                                                class="w-fit rounded"
-                                                alt="social-media-in"
                                             >
                                         </a>
                                     </div>

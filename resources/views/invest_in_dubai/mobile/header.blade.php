@@ -45,23 +45,20 @@
 @endsection
 
 <header>
-    <div class="w-full bg-cover bg-center" style="height:30vh; background-image: url({{ asset('home/invest-in-dubai.webp') }}), url('{{ URL::asset('assets/img/img-error2.webp')}}');">
-        <div class="flex items-center justify-center h-full w-full">
-            <div class="container">
-                    
-                {{-- <h1 class="text-3xl text-white font-light uppercase mx-auto text-center">
-                    Invest In Dubai
-                </h1>
+    <div class="w-full bg-cover bg-center" style="margin-top: 60px; height: 40vh; background-image: url('{{ URL::asset('home/invest-in-dubai.webp')}}'), url('{{ URL::asset('assets/img/img-error2.webp')}}');">
+        <div class="flex items-center justify-left h-full w-full bg-black bg-opacity-60">
 
-                <br>
+            <div class="container mx-0 px-0 mx-auto text-white">
+                <h1 class="text-xl font-light px-2">
+                    INVEST IN DUBAI
+                </h1>
+                <h2 class="text-base font-thin leading-6 px-2 pt-2">
+                    Investing in Dubai presents a compelling opportunity for individuals and businesses seeking a dynamic and
+                    globally competitive environment.
+                </h2>
                 
-                <p class="text-white font-thin leading-8 text-base text-center">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rhoncus augue ut
-                        ligula accumsan dictum. Phasellus euismod in lectus nec cursus. Curabitur in sem et elit
-                        dignissim condimentum eget ac dui. Nulla non nisl mollis ipsum laoreet ultrices ac in
-                        sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rhoncus
-                    </p> --}}
             </div>
+            
         </div>
     </div>
 </header>

@@ -62,14 +62,17 @@
                             padding-left: 10px;
                         }
                     </style>
+                    <h1 class="text-2xl font-bold mb-0">
+                                {{$title}}
+                            </h1>
                     <div class="flex items-center overflow-x-auto whitespace-nowrap">
-                        <a href="/news" class="text-base text-black">
+                        <a href="/news" class="text-sm text-black">
                             NEWS
                         </a>
                         <span class="mx-2 text-gray-500 dark:text-gray-400">
                             /
                         </span> 
-                        <p class="text-base capitalize text-black">
+                        <p class="text-sm capitalize text-black">
                             {{ $title }}
                         </p>
                     </div>

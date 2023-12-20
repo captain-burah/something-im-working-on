@@ -27,6 +27,7 @@
     $description = $response['description'];
     $header_image = $response['header_image'];
     $images = $response['website_construction_images'];
+    $created_at = $response['created_at'];
 ?>
     
         <section>

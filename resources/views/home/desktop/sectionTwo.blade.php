@@ -1,8 +1,8 @@
 <div class="sm:container sm:mx-auto mx-0 px-0 sm:px-4 my-20 sm:my-4 mx-auto">
     <div class="mt-10 mb-15">
-        <h3 class="text-4xl font-thin text-center">
+        <h2 class="text-4xl font-thin text-center">
             THE THREE PILLARS <br>OF ESNAAD'S  PHILOSOPHIES
-        </h3>
+        </h2>
     </div>
 
     <div class="grid md:grid-cols-3 gap-25 mb-5 mx-auto" >

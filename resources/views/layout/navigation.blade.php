@@ -91,19 +91,19 @@
 
                 <!-- Navigation Links -->
                 <div class="hidden space-x-8 sm:-my-px sm:flex mx-auto no-underline w-auto xl:pr-8">
-                    <x-nav-link href="{{ url('about-us') }}" aria-label="navbar-route">
+                    <x-nav-link href="{{ url('about-us') }}" aria-label="navbar-route" rel='canonical'>
                         {{ __('ABOUT US') }}
                     </x-nav-link>
                 </div>
 
                 <div class="hidden space-x-8 sm:-my-px sm:flex mx-auto no-underline px-8">
-                    <x-nav-link href="{{ url('projects') }}" aria-label="navbar-route">
+                    <x-nav-link href="{{ url('projects') }}" aria-label="navbar-route" rel='canonical'>
                         {{ __('PROJECTS') }}
                     </x-nav-link>
                 </div>
 
                 <div class="hidden space-x-8 sm:-my-px sm:flex mx-auto no-underline px-8">
-                    <x-nav-link href="{{ url('communities') }}" aria-label="navbar-route">
+                    <x-nav-link href="{{ url('communities') }}" aria-label="navbar-route" rel='canonical'>
                         {{ __('COMMUNITIES') }}
                     </x-nav-link>
                 </div>
@@ -172,7 +172,7 @@
             <div class=" flex items-center ">
                 <div class="shrink-0 flex items-center hidden md:hidden lg:block text-2xl font-thin">
                     @tablet
-                        <a href="{{ url('/') }}" aria-label="home-route">
+                        <a href="{{ url('/') }}" aria-label="home-route" rel='canonical'>
                             {{-- <img style="height: 30px !important;" src="{{ asset('logo-dark.png') }}" alt="esnaad-logo-navbar"> --}}
                             <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
                                 width="100%" height="30.000000pt" viewBox="0 0 1000.000000 269.000000"
@@ -221,7 +221,7 @@
                     @endtablet
 
                     @desktop
-                        <a href="{{ url('/') }}" aria-label="home-route">
+                        <a href="{{ url('/') }}" aria-label="home-route" rel='canonical'>
                             {{-- <img style="height: 60px !important;" src="{{ asset('logo-dark.png') }}" alt="esnaad-logo-navbar"> --}}
                             <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
                                 width="100%" height="60.000000pt" viewBox="0 0 1000.000000 269.000000"
@@ -275,7 +275,7 @@
             <div class="flex items-center">
 
                 <div class="hidden space-x-8 sm:-my-px sm:flex mx-auto no-underline px-8">
-                    <x-nav-link href="{{ url('constructions') }}"  aria-label="navbar-route">
+                    <x-nav-link href="{{ url('constructions') }}"  aria-label="navbar-route" rel='canonical'>
                         {{ __('CONSTRUCTION') }}
                     </x-nav-link>
                 </div>
@@ -288,13 +288,13 @@
 
 
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex text-center">
-                    <x-nav-link href="{{ url('/news') }}"  aria-label="navbar-route">
+                    <x-nav-link href="{{ url('/news') }}"  aria-label="navbar-route" rel='canonical'>
                         {{ __('NEWS') }}
                     </x-nav-link>
                 </div> 
 
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex text-center pl-8">
-                    <x-nav-link href="{{ url('contact') }}"   aria-label="navbar-route">
+                    <x-nav-link href="{{ url('contact') }}"   aria-label="navbar-route" rel='canonical'>
                         {{ __('CONTACT US') }}
                     </x-nav-link>
                 </div>

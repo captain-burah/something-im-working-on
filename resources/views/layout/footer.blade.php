@@ -37,7 +37,7 @@
 
                                     <div class="flex-1">
                                         <div class="w-8 bg-white rounded-3xl p-1">
-                                                <a href="{{ env('COMPANY_FB') }}" target="_blank" aria-label="esnaad-facebook">
+                                                <a href="{{ env('COMPANY_FB') }}" target="_blank" aria-label="esnaad-facebook" rel="canonical">
                                                 <img
                                                     src="{{ asset('front/icons/fb.svg') }}"
                                                     class="w-fit rounded"
@@ -49,7 +49,7 @@
 
                                     <div class="flex-1">
                                         <div class="w-8 bg-white rounded-3xl p-1">
-                                            <a href="{{ env('COMPANY_IG') }}" target="_blank" aria-label="esnaad-instagram">
+                                            <a href="{{ env('COMPANY_IG') }}" target="_blank" aria-label="esnaad-instagram" rel="canonical">
                                                 <img
                                                     src="{{ asset('front/icons/ig.png') }}"
                                                     class="w-fit rounded"
@@ -61,7 +61,7 @@
 
                                     <div class="flex-1">
                                         <div class="w-8 bg-white rounded-3xl p-1">
-                                            <a href="{{ env('COMPANY_TW') }}" target="_blank" aria-label="esnaad-x">
+                                            <a href="{{ env('COMPANY_TW') }}" target="_blank" aria-label="esnaad-x" rel="canonical">
                                                 <img
                                                     src="{{ asset('front/icons/x-logo-black.png') }}"
                                                     class="w-fit rounded"
@@ -73,7 +73,7 @@
 
                                     <div class="flex-1">
                                         <div class="w-8 bg-white rounded-3xl p-1">
-                                            <a href="{{ env('COMPANY_IN') }}" target="_blank" aria-label="esnaad-linkedin">
+                                            <a href="{{ env('COMPANY_IN') }}" target="_blank" aria-label="esnaad-linkedin" rel="canonical">
                                                 <img
                                                     src="{{ asset('front/icons/in2.png') }}"
                                                     class="w-fit rounded"
@@ -85,7 +85,7 @@
 
                                     <div class="flex-1">
                                         <div class="w-8 bg-footer rounded-3xl p-1">
-                                            <a href="{{ env('COMPANY_WA`') }}" target="_blank" aria-label="esnaad-whatsapp">
+                                            <a href="{{ env('COMPANY_WA`') }}" target="_blank" aria-label="esnaad-whatsapp" rel="canonical">
                                                 <img
                                                     src="{{ asset('front/icons/wa.png') }}"
                                                     class="w-fit rounded"
@@ -108,10 +108,10 @@
 
                             <ul class="list-none footer-li" style="padding-left:    0px !important;">
                                 <li class="text-md text-black my-2">
-                                    <a href="{{ url('about-us') }}" aria-label="about-us">About ESNAAD</a>
+                                    <a href="{{ url('about-us') }}" aria-label="about-us" rel="canonical">About ESNAAD</a>
                                 </li>
                                 <li class="text-md text-black my-2">
-                                    <a href="{{ url('invest-in-dubai') }}" aria-label="invest-in-dubai">Why Invest In Dubai?</a>
+                                    <a href="{{ url('invest-in-dubai') }}" aria-label="invest-in-dubai" rel="canonical">Why Invest In Dubai?</a>
                                 </li>
                                 {{-- <li class="text-md text-black my-2">
                                     <a href="{{ url('communities/') }}" aria-label="communities">Communities</a>
@@ -120,13 +120,13 @@
                                     <a href="{{ url('projects/') }}" aria-label="projects">Projects</a>
                                 </li> --}}
                                 <li class="text-md text-black my-2">
-                                    <a href="{{ url('agency-registration') }}" aria-label="broker-registration">Broker Registration</a>
+                                    <a href="{{ url('agency-registration') }}" aria-label="broker-registration" rel="canonical">Broker Registration</a>
                                 </li>
                                 <li class="text-md text-black my-2">
-                                    <a href="{{ url('careers')}}" aria-label="broker-registration">Careers</a>
+                                    <a href="{{ url('careers')}}" aria-label="broker-registration" rel="canonical">Careers</a>
                                 </li>
                                 <li class="text-md text-black my-2">
-                                    <a href="{{ url('contact') }}" aria-label="contact-us">Contact Us</a>
+                                    <a href="{{ url('contact') }}" aria-label="contact-us" rel="canonical">Contact Us</a>
                                 </li>
 
                             </ul>
@@ -261,60 +261,41 @@
 
                                     <div class="flex-1">
                                         <div class="w-8 bg-footer rounded-3xl">
-                                                <a href="{{ env('COMPANY_FB') }}" target="_blank" aria-label="esnaad-facebook">
-                                                    <img
-                                                        src="{{ asset('front/icons/fb.svg') }}"
-                                                        class="w-fit rounded"
-                                                        alt="social-media-fb"
-                                                    >
+                                                <a href="{{ env('COMPANY_FB') }}" target="_blank" aria-label="esnaad-facebook" rel="canonical">
+                                                    <svg  id="Layer_1" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M288,192v-38.1c0-17.2,3.8-25.9,30.5-25.9H352V64h-55.9c-68.5,0-91.1,31.4-91.1,85.3V192h-45v64h45v192h83V256h56.4l7.6-64  H288z M330.2,240h-41.1H272v15.5V432h-51V255.5V240h-14.9H176v-32h30.1H221v-16.5v-42.2c0-24.5,5.4-41.2,15.5-51.8  C247.7,85.5,267.6,80,296.1,80H336v32h-17.5c-12,0-27.5,1.1-37.1,11.7c-8.1,9-9.4,20.1-9.4,30.1v37.6V208h17.1H334L330.2,240z"/></svg>
                                                 </a>
                                         </div>
                                     </div>
 
                                     <div class="flex-1">
                                         <div class="w-8 bg-footer rounded-3xl p-1">
-                                            <a href="{{ env('COMPANY_IG') }}" target="_blank" aria-label="esnaad-instagram">
-                                                <img
-                                                    src="{{ asset('front/icons/ig.png') }}"
-                                                    class="w-fit rounded"
-                                                    alt="social-media-ig"
-                                                >
+                                            <a href="{{ env('COMPANY_IG') }}" target="_blank" aria-label="esnaad-instagram" rel="canonical">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="instagram"><g fill="none" stroke="#000" stroke-miterlimit="10"><path d="M11.5 15.5h-7a4 4 0 0 1-4-4v-7a4 4 0 0 1 4-4h7a4 4 0 0 1 4 4v7a4 4 0 0 1-4 4z"></path><circle cx="8" cy="8" r="3.5"></circle><circle cx="12.5" cy="3.5" r=".5"></circle></g></svg>
                                             </a>
                                         </div>
                                     </div>
 
                                     <div class="flex-1">
                                         <div class="w-8 bg-footer rounded-3xl p-1">
-                                            <a href="{{ env('COMPANY_TW') }}" target="_blank" aria-label="esnaad-x">
-                                                <img
-                                                    src="{{ asset('front/icons/x-logo-black.png') }}"
-                                                    class="w-fit rounded"
-                                                    alt="social-media-tw"
-                                                >
+                                            <a href="{{ env('COMPANY_TW') }}" target="_blank" aria-label="esnaad-x" rel="canonical">
+                                                <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 1668.56 1221.19" height="26px" viewBox="0 0 1668.56 1221.19" id="twitter-x"><path d="M283.94,167.31l386.39,516.64L281.5,1104h87.51l340.42-367.76L984.48,1104h297.8L874.15,558.3l361.92-390.99
+		h-87.51l-313.51,338.7l-253.31-338.7H283.94z M412.63,231.77h136.81l604.13,807.76h-136.81L412.63,231.77z" transform="translate(52.39 -25.059)"></path></svg>
                                             </a>
                                         </div>
                                     </div>
 
                                     <div class="flex-1">
                                         <div class="w-8 bg-footer rounded-3xl p-1">
-                                            <a href="{{ env('COMPANY_IN') }}" target="_blank" aria-label="esnaad-linkedin">
-                                                <img
-                                                    src="{{ asset('front/icons/in2.png') }}"
-                                                    class="w-fit rounded"
-                                                    alt="social-media-in"
-                                                >
+                                            <a href="{{ env('COMPANY_IN') }}" target="_blank" aria-label="esnaad-linkedin" rel="canonical">
+                                                <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" viewBox="0 0 24 24" height="27px" id="linkedin"><path d="M7.5006104,9C7.5003662,9,7.5001831,9,7.5,9h-4C3.223999,8.9998169,3.0001831,9.2234497,3,9.4993896C3,9.4996338,3,9.4998169,3,9.5v12c-0.0001831,0.276001,0.2234497,0.4998169,0.4993896,0.5C3.4996338,22,3.4998169,22,3.5,22h4c0.276001,0.0001831,0.4998169-0.2234497,0.5-0.4994507C8,21.5003662,8,21.5001831,8,21.5v-12C8.0001831,9.223999,7.7765503,9.0001831,7.5006104,9z M7,21H4V10h3V21z M18,9c-1.0848389,0.000061-2.1393433,0.3580933-3,1.0185547V9.5c0.0001831-0.276001-0.2234497-0.4998169-0.4993896-0.5C14.5003662,9,14.5001831,9,14.5,9h-4c-0.276001-0.0001831-0.4998169,0.2234497-0.5,0.4993896C10,9.4996338,10,9.4998169,10,9.5v12c-0.0001831,0.276001,0.2234497,0.4998169,0.4994507,0.5c0.0001831,0,0.0003662,0,0.0005493,0h4c0.276001,0.0001831,0.4998169-0.2234497,0.5-0.4994507c0-0.0001831,0-0.0003662,0-0.0005493V16c0-0.8284302,0.6715698-1.5,1.5-1.5S18,15.1715698,18,16v5.5c-0.0001831,0.276001,0.2234497,0.4998169,0.4994507,0.5c0.0001831,0,0.0003662,0,0.0005493,0h4c0.276001,0.0001831,0.4998169-0.2234497,0.5-0.4994507c0-0.0001831,0-0.0003662,0-0.0005493V14C22.9967651,11.2399292,20.7600708,9.0032349,18,9z M22,21h-3v-5c0-1.3807373-1.1192627-2.5-2.5-2.5S14,14.6192627,14,16v5h-3V10h3v1.203125c0,0.2124634,0.1343994,0.4016724,0.335022,0.4716797c0.2001343,0.0721436,0.4240112,0.0079956,0.5556641-0.1591797c1.3625488-1.7268066,3.8669434-2.0220337,5.59375-0.6594238C21.4462891,11.6152344,22.0053101,12.7747192,22,14V21z M5.867981,2.0018311C5.7503662,1.9935913,5.6323242,1.992981,5.5146484,2C4.0053711,1.8969116,2.6983032,3.0368652,2.5952148,4.5461426c-0.0041504,0.06073-0.0062256,0.121521-0.0063477,0.182373c-0.0130005,1.49646,1.1895752,2.7200928,2.6860352,2.7330933c0.0610962,0.0005493,0.1221313-0.0010376,0.1831055-0.0046387h0.0283203c1.5064087,0.1054077,2.8129883-1.0303345,2.918396-2.5367432S7.3743896,2.1072388,5.867981,2.0018311z M5.8334351,6.4598389C5.7179565,6.470459,5.6016235,6.4695435,5.4863281,6.4569702H5.4580078C4.5018921,6.5304565,3.6672974,5.8150024,3.593811,4.8588867C3.5203247,3.902832,4.2357788,3.0681763,5.1918945,2.9946899C5.2994385,2.9864502,5.4074707,2.9882202,5.5146484,3C6.4700317,2.9119873,7.315918,3.6151123,7.4039917,4.5704956C7.4920044,5.5259399,6.7888794,6.3718262,5.8334351,6.4598389z"></path></svg>
                                             </a>
                                         </div>
                                     </div>
 
                                     <div class="flex-1">
                                         <div class="w-8 bg-footer rounded-3xl p-1">
-                                            <a href="https://wa.link/etkc3f" target="_blank" aria-label="esnaad-whatsapp">
-                                                <img
-                                                    src="{{ asset('front/icons/wa.png') }}"
-                                                    class="w-fit rounded"
-                                                    alt="social-media-wa"
-                                                >
+                                            <a href="https://wa.link/etkc3f" target="_blank" aria-label="esnaad-whatsapp" rel="canonical">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="whatsapp"><g fill="none" stroke="#000" stroke-miterlimit="10"><path d="M8.002.5h-.004C3.863.5.5 3.864.5 8c0 1.64.529 3.161 1.428 4.396l-.935 2.787 2.883-.921A7.448 7.448 0 0 0 8.002 15.5c4.135 0 7.498-3.364 7.498-7.5S12.137.5 8.002.5z"></path><path d="M12.175 10.931c-.172.484-.858.884-1.405 1.001-.374.079-.862.142-2.507-.534-2.103-.863-3.457-2.982-3.562-3.119-.1-.138-.849-1.122-.849-2.139 0-1.017.522-1.514.732-1.726.172-.175.458-.254.732-.254.088 0 .168.004.24.008.21.008.315.021.454.35.172.413.593 1.43.643 1.534.05.104.101.246.029.384-.067.142-.126.204-.231.325-.105.121-.206.213-.311.342-.097.113-.206.234-.084.442.122.204.542.884 1.161 1.43.799.705 1.447.93 1.678 1.026.172.071.378.054.505-.079.16-.171.358-.454.559-.734.143-.2.324-.225.513-.154.193.067 1.215.567 1.426.671.21.104.349.154.4.242.049.087.049.5-.123.984z"></path></g></svg>
                                             </a>
                                         </div>
                                     </div>
@@ -329,25 +310,19 @@
 
                             <ul class="list-none footer-li" style="padding-left: 0px !important;">
                                 <li class="text-md text-black my-2">
-                                    <a href="{{ url('about-us') }}" aria-label="about-us">About ESNAAD</a>
+                                    <a href="{{ url('about-us') }}" aria-label="about-us" rel="canonical">About ESNAAD</a>
                                 </li>
                                 <li class="text-md text-black my-2">
-                                    <a href="{{ url('invest-in-dubai') }}" aria-label="invest-in-dubai">Why Invest In Dubai?</a>
-                                </li>
-                                {{-- <li class="text-md text-black my-2">
-                                    <a href="{{ url('communities/') }}" aria-label="communities">Communities</a>
-                                </li>
-                                <li class="text-md text-black my-2">
-                                    <a href="{{ url('projects/') }}" aria-label="projects">Projects</a>
-                                </li> --}}
-                                <li class="text-md text-black my-2" aria-label="">
-                                    <a href="{{ url('agency-registration') }}" aria-label="broker-registration">Broker Registration</a>
+                                    <a href="{{ url('invest-in-dubai') }}" aria-label="invest-in-dubai" rel="canonical">Why Invest In Dubai?</a>
                                 </li>
                                 <li class="text-md text-black my-2" aria-label="">
-                                    <a href="{{ url('careers')}}" aria-label="broker-registration">Careers</a>
+                                    <a href="{{ url('agency-registration') }}" aria-label="broker-registration" rel="canonical">Broker Registration</a>
+                                </li>
+                                <li class="text-md text-black my-2" aria-label="">
+                                    <a href="{{ url('careers')}}" aria-label="broker-registration" rel="canonical">Careers</a>
                                 </li>
                                 <li class="text-md text-black my-2">
-                                    <a href="{{ url('contact') }}" aria-label="contact-us">Contact Us</a>
+                                    <a href="{{ url('contact') }}" aria-label="contact-us" rel="canonical">Contact Us</a>
                                 </li>
 
                             </ul>
@@ -487,7 +462,7 @@
 
                                     <div class="flex-1">
                                         <div class="w-8  rounded-3xl p-0">
-                                                <a href="{{ env('COMPANY_FB') }}" target="_blank" aria-label="esnaad-facebook">
+                                                <a href="{{ env('COMPANY_FB') }}" target="_blank" aria-label="esnaad-facebook" rel="canonical">
                                                 <svg  id="Layer_1" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M288,192v-38.1c0-17.2,3.8-25.9,30.5-25.9H352V64h-55.9c-68.5,0-91.1,31.4-91.1,85.3V192h-45v64h45v192h83V256h56.4l7.6-64  H288z M330.2,240h-41.1H272v15.5V432h-51V255.5V240h-14.9H176v-32h30.1H221v-16.5v-42.2c0-24.5,5.4-41.2,15.5-51.8  C247.7,85.5,267.6,80,296.1,80H336v32h-17.5c-12,0-27.5,1.1-37.1,11.7c-8.1,9-9.4,20.1-9.4,30.1v37.6V208h17.1H334L330.2,240z"/></svg>
                                                 </a>
                                         </div>
@@ -495,7 +470,7 @@
 
                                     <div class="flex-1">
                                         <div class="w-8  rounded-3xl p-1">
-                                            <a href="{{ env('COMPANY_IG') }}" target="_blank" aria-label="esnaad-instagram">
+                                            <a href="{{ env('COMPANY_IG') }}" target="_blank" aria-label="esnaad-instagram" rel="canonical">
                                                 <img
                                                     src="{{ asset('front/icons/ig.png') }}"
                                                     class="w-fit rounded"
@@ -507,7 +482,7 @@
 
                                     <div class="flex-1">
                                         <div class="w-8  rounded-3xl p-1">
-                                            <a href="{{ env('COMPANY_TW') }}" target="_blank" aria-label="esnaad-x">
+                                            <a href="{{ env('COMPANY_TW') }}" target="_blank" aria-label="esnaad-x" rel="canonical">
                                                 <img
                                                     src="{{ asset('front/icons/x-logo-black.png') }}"
                                                     class="w-fit rounded"
@@ -519,7 +494,7 @@
 
                                     <div class="flex-1">
                                         <div class="w-8  rounded-3xl p-1">
-                                            <a href="{{ env('COMPANY_IN') }}" target="_blank" aria-label="esnaad-linkedin">
+                                            <a href="{{ env('COMPANY_IN') }}" target="_blank" aria-label="esnaad-linkedin" rel="canonical">
                                                 <img
                                                     src="{{ asset('front/icons/in2.png') }}"
                                                     class="w-fit rounded"
@@ -531,7 +506,7 @@
 
                                     <div class="flex-1">
                                         <div class="w-8 bg-footer rounded-3xl p-1">
-                                            <a href="{{ env('COMPANY_WA') }}"  target="_blank" aria-label="esnaad-whatsapp">
+                                            <a href="{{ env('COMPANY_WA') }}"  target="_blank" aria-label="esnaad-whatsapp" rel="canonical">
                                                 <img
                                                     src="{{ asset('front/icons/wa.png') }}"
                                                     class="w-fit rounded"
@@ -574,43 +549,32 @@
                         <div class="hidden h-auto max-h-0 items-center opacity-0 transition-all group-focus:block group-focus:max-h-screen group-focus:opacity-100 group-focus:duration-1000">
                             <ul class="list-none footer-li capitalize leading-8" style="padding-left: 0px !important;">
                                 <li class="text-md text-black my-3">
-                                    <a href="{{ url('about-us') }}" aria-label="about-us">About ESNAAD</a>
+                                    <a href="{{ url('about-us') }}" aria-label="about-us" rel="canonical">About ESNAAD</a>
                                 </li>
                                 <li class="text-md text-black my-3">
-                                    <a href="{{ url('invest-in-dubai') }}" aria-label="invest-in-dubai">Why Invest In Dubai?</a>
-                                </li>
-                                {{-- <li class="text-md text-black my-3">
-                                    <a href="{{ url('communities/') }}" aria-label="communities">Communities</a>
+                                    <a href="{{ url('invest-in-dubai') }}" aria-label="invest-in-dubai" rel="canonical">Why Invest In Dubai?</a>
                                 </li>
                                 <li class="text-md text-black my-3">
-                                    <a href="{{ url('projects/') }}" aria-label="projects">Projects</a>
-                                </li> --}}
-                                <li class="text-md text-black my-3">
-                                    <a href="{{ url('broker-registration') }}" aria-label="broker-registration">Broker Registration</a>
+                                    <a href="{{ url('broker-registration') }}" aria-label="broker-registration" rel="canonical">Broker Registration</a>
                                 </li>
                                 <li class="text-md text-black my-3">
-                                    <a href="{{ url('careers')}}" aria-label="broker-registration">Careers</a>
+                                    <a href="{{ url('careers')}}" aria-label="broker-registration" rel="canonical">Careers</a>
                                 </li>
                                 <li class="text-md text-black my-3">
-                                    <a href="{{ url('contact') }}" aria-label="contact-us">Contact Us</a>
+                                    <a href="{{ url('contact') }}" aria-label="contact-us" rel="canonical">Contact Us</a>
                                 </li>
-
                             </ul>
                         </div>
-
                     </div>
                 </div>
 
                 <div class="col-span-2 mx-auto my-2">
-
-                    {{-- <div class="flex-grow border-t border-gray-950 "></div> --}}
-
                     <div class="flex justify-center mt  mt-6">
                         <div>
                             <p class="text-base font-thin text-black leading-8">
                                 ESNAAD © {{ now()->year }} All Rights Reserved <br>
-                                <a href="{{ url('terms-and-conditions') }}" aria-label="terms-and-conditions">Terms & Conditions</a>
-                                <a href="{{ url('privacy-and-policy') }}" aria-label="privacy-and-policy">| Privacy & Policy</a>
+                                <a href="{{ url('terms-and-conditions') }}" aria-label="terms-and-conditions" rel="canonical">Terms & Conditions</a>
+                                <a href="{{ url('privacy-and-policy') }}" aria-label="privacy-and-policy" rel="canonical">| Privacy & Policy</a>
                             </p>
                             
                         </div>

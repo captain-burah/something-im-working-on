@@ -4,7 +4,7 @@
     <div class="mx-auto max-w-7xl lg:max-w-8xl xl:max-w-8xl 2xl:px-w-8xl">
         <div class="container mx-auto flex flex-col items-start mt-[10vh]">
             
-            <div class="mt-8 lg:flex lg:gap-x-28 xl:gap-x-full w-full">
+            <div class="mt-8 px-2 lg:flex lg:gap-x-28 xl:gap-x-full w-full">
                 <div class="w-full">
                     <div class="space-y-10">
                         <div>
@@ -24,11 +24,6 @@
                                         
                                 </div>
                             </div>
-
-                            <div class="place-content-between w-full">
-                                    
-                                    
-                                </div>
 
 
                             <img src="{{ URL("https://mis.esnaad.com/uploads/news/".$id."/header_image/".$header_image)}}" alt="Ensaad-news-article-{{$title}}" class="object-cover w-full h-56 mb-6 rounded-0 shadow-md sm:h-80 2xl:h-96">                          

@@ -1,7 +1,7 @@
 <?php $actual_link = (empty($_SERVER['HTTPS']) ? 'http' : 'https') . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]"; ?>
 
     <div class="mx-auto max-w-7xl lg:max-w-8xl xl:max-w-8xl 2xl:px-w-8xl">
-        <div class="container mx-auto flex flex-col items-start md:flex-">
+        <div class="container px-2 mx-auto flex flex-col items-start md:flex-">
             
             <div class="mt-2 lg:flex lg:gap-x-28 xl:gap-x-full w-full">
                 <div class="lg:w-4/5">

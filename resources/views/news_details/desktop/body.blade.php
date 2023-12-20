@@ -8,11 +8,9 @@
                 <div class="w-full">
                     <div class="space-y-10">
                         <div>
-
                             <h1 class="text-2xl font-bold mb-4">
                                 {{$title}}
                             </h1>
-
                             <div class="grid grid-cols-2 gap-4 place-content-between">
                                 <div class="">
                                     <p class="text-sm mb-2">Published {{\Carbon\Carbon::parse($created_at)->format('j F, Y')}}</p>
@@ -23,12 +21,6 @@
                                     </div>
                                 </div>
                             </div>
-
-                            <div class="place-content-between w-full">
-                                    
-                                    
-                            </div>
-
 
                             <img src="{{ URL("https://mis.esnaad.com/uploads/news/".$id."/header_image/".$header_image)}}" alt="Ensaad-news-article-{{$title}}" class="object-cover w-full h-56 mb-6 rounded-0 shadow-md sm:h-80 2xl:h-96">                          
 

@@ -821,7 +821,7 @@ class FrontEndController extends Controller
                 'verification_code' =>  $verification_code, 
             ];
 
-            // Mail::mailer('noreply')->to($request->applicant_email)->send(new verificationEmail($data));
+            Mail::mailer('noreply')->to($request->applicant_email)->send(new verificationEmail($data));
 
         } catch (\Exception $e) {
             dd($e->getMessage());

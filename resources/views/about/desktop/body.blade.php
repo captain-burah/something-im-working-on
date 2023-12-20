@@ -9,7 +9,7 @@
                         Company Core Values
                     </h2>
 
-                    <p class="text-base font-thin text-justify leading-8 mb-8">
+                    <p class="text-base font-thin text-justify leading-8 mb-8 px-3">
                         At ESNAAD, we are guided by our core values, which define who we are and what we do. 
                         With Integrity we act with honesty, transparency, and accountability in all our dealings with our
                         customers, partners, employees, and society following and pursuing excellence in everything we do, from the quality of our developments and
@@ -27,7 +27,7 @@
                         Company Mission
                     </h2>
 
-                    <p class="text-base font-thin text-justify mb-8 leading-8">
+                    <p class="text-base font-thin text-justify mb-8 leading-8 px-3">
                         Our mission is to create innovative and sustainable living spaces that enhance the quality of life of our stakeholders and investors. 
                         We aim to achieve this by empowering dreams, building legacies while redefining luxury living in the heart of Dubai. 
                         With a commitment to excellence, we envision and create dynamic communities that 
@@ -42,7 +42,7 @@
                         Company Vission
                     </h2>
 
-                    <p class="text-base font-thin text-justify mb-8 leading-8">
+                    <p class="text-base font-thin text-justify mb-8 leading-8 px-3">
                         Our vision is to be the region’s leading premium real estate development and investment company, with a 
                         Design, Quality and Excellence whilst, Developing our organization and culture, and fostering a work environment that
                         attracts, motivates, and retains the best talent in the industry. We innovate and improve our processes and developments, to adopt to the latest

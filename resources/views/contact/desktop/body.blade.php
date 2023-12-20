@@ -2,8 +2,14 @@
     <div class="grid grid-cols-2 gap-16">
         <div>
             <div class="mx-auto my-16">
-                <form id="contact-desktop-form" action="{{ url('') }}" method="post">
-                
+                @if (\Session::has('success'))
+                    <div class="w-full bg-green-100 rounded-lg p-4">
+                        <ul>
+                            <li>{!! \Session::get('success') !!}</li>
+                        </ul>
+                    </div>
+                @endif
+                <form id="contact-desktop-form" action="{{ url('contact-form-post') }}" method="post">
                     @csrf
                     <div class="icon bg-black text-white w-6 h-6 absolute flex items-center justify-center p-5" style="left:-40px"><i class="fal fa-phone-volume fa-fw text-2xl transform -rotate-45"></i></div>
                     <h3 class="text-2xl text-gray-900 font-semibold">Reach out to us</h3>

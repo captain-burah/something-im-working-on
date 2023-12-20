@@ -52,11 +52,11 @@
                 <h1 class="text-xl font-light px-2">
                     OUR DEVELOPMENTS
                 </h1>
-                <h2 class="text-base font-thin leading-6 px-2 pt-2">
+                <p class="text-base font-thin leading-6 px-2 pt-2">
                     Our projects are a reflection of our commitment to excellence. From luxurious
                     residential complexes to state-of-the-art commercial spaces, each project is
                     designed with attention to detail and a focus on quality.
-                </h2>
+                </p>
                 
             </div>
             

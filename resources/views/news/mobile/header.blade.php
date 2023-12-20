@@ -52,9 +52,9 @@
                 <h1 class="text-xl font-light px-2">
                     NEWS
                 </h1>
-                <h2 class="text-base font-thin leading-6 px-2 pt-2">
+                <p class="text-base font-thin leading-6 px-2 pt-2">
                     Charting the future of real estate
-                </h2>
+                </p>
                 
             </div>
             

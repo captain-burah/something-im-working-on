@@ -58,9 +58,9 @@
                         OUR COMMUNITIES
                     </h1>
                     <div class="w-[900px] text-center mx-auto">
-                        <h2 class="text-base w-200 text-center font-thin mt-2">
+                        <p class="text-base w-200 text-center font-thin mt-2">
                             At ESNAAD, we're not just a real estate developer; we're a new player in the Dubai property market. Our focus goes beyond constructing homes to shaping vibrant communities. Our projects are meticulously designed to go beyond mere living spaces, aiming to cultivate a profound sense of belonging and identity for those who reside and work within them. With abundant amenities and open spaces, ESNAAD is dedicated to fostering a strong sense of community among its residents
-                        </h2>
+                        </p>
                     </div>
                 </div>
             </div>

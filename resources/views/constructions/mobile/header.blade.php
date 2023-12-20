@@ -52,9 +52,9 @@
                 <h1 class="text-xl font-light px-2">
                     CONSTRUCTIONS
                 </h1>
-                <h2 class="text-base font-thin leading-6 px-2 pt-2">
+                <p class="text-base font-thin leading-6 px-2 pt-2">
                     Stay in the know, watch our progress grow
-                </h2>
+                </p>
                 
             </div>
             

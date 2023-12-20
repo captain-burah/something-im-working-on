@@ -52,7 +52,7 @@
         <div class="flex items-center justify-center h-full w-full">
             <div class="md:container mx-auto pt-20">
                     
-                <h1 class="xl:text-6xl md:text-4xl mx-auto text-white font-light uppercase text-center">
+                <h1 class="xl:text-4xl md:text-4xl mx-auto text-white font-light uppercase text-center">
                     CONTACT US
                 </h1>
                 <br>

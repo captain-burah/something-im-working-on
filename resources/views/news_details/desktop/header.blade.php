@@ -63,13 +63,13 @@
                         }
                     </style>
                     <div class="flex items-center overflow-x-auto whitespace-nowrap">
-                        <a href="/news" class="text-lg font-semibold text-black hover:underline">
+                        <a href="/news" class="text-sm font-semibold text-black hover:underline">
                             NEWS
                         </a>
                         <span class="mx-2 text-gray-500 dark:text-gray-400">
                             /
                         </span> 
-                        <p class="text-lg font-bold text-gray-800 capitalize text-black">
+                        <p class="text-sm font-bold text-gray-800 capitalize text-black">
                             {{ $title }}
                         </p>
                     </div>

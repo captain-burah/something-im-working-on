@@ -52,10 +52,10 @@
                 <h1 class="text-xl font-light px-2">
                     INVEST IN DUBAI
                 </h1>
-                <h2 class="text-base font-thin leading-6 px-2 pt-2">
+                <p class="text-base font-thin leading-6 px-2 pt-2">
                     Investing in Dubai presents a compelling opportunity for individuals and businesses seeking a dynamic and
                     globally competitive environment.
-                </h2>
+                </p>
                 
             </div>
             

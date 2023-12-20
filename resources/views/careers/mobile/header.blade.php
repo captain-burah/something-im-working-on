@@ -51,9 +51,9 @@
                 <h1 class="text-lg font-semibold px-2">
                     AGENCY REGISTRATION
                 </h1>
-                <h2 class="text-lg font-light mt-2 px-2">
+                <p class="text-lg font-light mt-2 px-2">
                     Welcome to the Real Estate Brokerage Registration Portal!
-                </h2>
+                </p>
             </div>
         </div>
     </div>

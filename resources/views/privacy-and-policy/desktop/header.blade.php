@@ -52,7 +52,7 @@
             <div class="sm:container sm:mx-auto sm:px-4 sm:my-4 mx-auto  text-white">
                 
                 <h1 class="text-4xl font-thin mt-2">
-                    Privacy & Policy
+                    PRIVACY AND POLICY
                 </h1>
             </div>
         </div>

@@ -11,7 +11,6 @@
                     $thumbnail = $data['thumbnail'];
                 ?>
                 <a href="{{ url('/news/'.$id) }}" aria-label="news-artcile">
-                
                     <div class="max-w-sm rounded overflow-clip shadow">
                         <img class="object-cover w-full h-[200px] " src="{{ url('https://mis.esnaad.com/uploads/news/'.$id.'/thumbnail/'.$thumbnail)}}" alt="Sunset in the mountains">
                         <div class="px-6 py-4 ">

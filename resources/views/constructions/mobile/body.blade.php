@@ -17,9 +17,9 @@
                             <h3 class="font-bold text-base">{{$title}}</h3>
                         </div>
 
-                        <div class="h-4 mx-auto m-2 relative w-[100%] rounded-full overflow-hidden">
+                        <div class="mt-2 h-6 relative w-auto rounded-full overflow-hidden">
                             <div class=" w-full h-full bg-gray-200 absolute "></div>
-                            <div class=" h-full bg-yellow-400 sm:bg-green-500 absolute" style="width:30%"></div>
+                            <div class=" h-full bg-green-500 absolute" style="width:30%"><div class="h-full w-full mx-auto text-sm text-center pt-1 text-white font-bold">30%</div></div>
                         </div>
                     </div>
                 </a>

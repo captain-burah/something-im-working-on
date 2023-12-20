@@ -116,7 +116,7 @@
 @endsection
 
 <header>
-    <div class="w-full bg-cover bg-center mb-4" style="margin-top: 60px; height: 40vh; background-image: url('{{ URL::asset('developments/4.jpg')}}'), url('{{ URL::asset('assets/img/img-error2.webp')}}');">
+    <div class="w-full bg-cover bg-center mb-4" style="margin-top: 60px; height: 40vh; background-image: url('{{ URL::asset('developments/5.jpg')}}'), url('{{ URL::asset('assets/img/img-error2.webp')}}');">
         <div class="flex items-center justify-left h-full w-full bg-black bg-opacity-60">
 
             <div class="container mx-0 px-0 mx-auto text-white">

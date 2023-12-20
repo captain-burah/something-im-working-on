@@ -1,5 +1,5 @@
 <div class="sm:container sm:mx-auto mx-0 px-0 sm:px-4 my-8 sm:my-4 mx-auto">
-    <div class="container mx-auto my-8">
+    <div class="container px-4 mx-auto my-8">
         @if (\Session::has('success'))
             <div class="w-full bg-green-100 rounded-lg p-4">
                 <ul>

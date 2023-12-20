@@ -45,15 +45,15 @@
 @endsection
 
 <header>
-    <div class="w-full bg-cover bg-center" style="margin-top: 60px; height: 40vh; background-image: url('{{ URL::asset('developments/4.jpg')}}'), url('{{ URL::asset('assets/img/img-error2.webp')}}');">
-        <div class="flex items-center justify-left h-full w-full bg-black bg-opacity-60">
+    <div class="w-full bg-cover bg-center" style="margin-top: 60px; height: 40vh; background-image: url('{{ URL::asset('home/9.jpg')}}'), url('{{ URL::asset('assets/img/img-error2.webp')}}');">
+        <div class="flex items-center justify-left h-full w-full bg-black bg-opacity-70">
 
             <div class="container mx-0 px-0 mx-auto text-white">
                 <h1 class="text-xl font-light px-2">
                     NEWS
                 </h1>
                 <p class="text-base font-thin leading-6 px-2 pt-2">
-                    Charting the future of real estate
+                    From property developments to investment strategies, stay ahead with our in-depth coverage.
                 </p>
                 
             </div>

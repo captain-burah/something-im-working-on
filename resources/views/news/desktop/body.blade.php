@@ -15,7 +15,7 @@
                     <div class="max-w-sm rounded overflow-clip shadow">
                         <img class="w-full" src="{{ url('https://mis.esnaad.com/uploads/news/'.$id.'/thumbnail/'.$thumbnail)}}" alt="Sunset in the mountains">
                         <div class="px-6 py-4 ">
-                            <h3 class="font-bold text-xl mb-2">{{$title}}</h3>
+                            <h2 class="font-thin text-lg mb-2">{{$title}}</h2>
                         </div>
                     </div>
                 </a>

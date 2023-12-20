@@ -64,7 +64,6 @@
             transform: translateY(-5px);
         }
     }
-
     @keyframes fadeIn {
         from {
             opacity: 0;
@@ -81,7 +80,6 @@
     .navbar-scrolled {
         background-color: #1c1c1c !important;
     }
-
 </style>
 @tablet
     <!-- Primary Navigation Menu -->
@@ -108,7 +106,6 @@
             </div>
 
             <div class="flex items-center">
-
                 <div class="hidden space-x-10 sm:flex mx-auto no-underline ">
                     <x-nav-link-tablet href="{{ url('our-communities') }}" :active="request()->routeIs('dashboard')" rel="canonical">
                         {{ __('COMMUNITY') }}

@@ -24,10 +24,9 @@
         <li ><a href="{{ url('about-us') }}" class="text-dark" rel="canonical">About</a></li>
         <li ><a href="{{ url('projects') }}" class="text-dark" rel="canonical">Projects</a></li>
         <li ><a href="{{ url('communities') }}" class="text-dark" rel="canonical">Communities</a></li>
-        <li ><a href="{{ url('invest-in-dubai') }}" class="text-dark" rel="canonical">Invest in Dubai</a></li>
         <li ><a href="{{ url('/constructions') }}" class="text-dark" rel="canonical">Construction</a></li>
         <li ><a href="{{ url('/news') }}" class="text-dark" rel="canonical">News</a></li>
-        <li ><a href="{{ url('contact') }}" class="text-dark" rel="canonical">Contact</a></li>
+        <li ><a href="{{ url('contact') }}" class="text-dark" rel="canonical">Contact Us</a></li>
       </ul>
     
   </nav>

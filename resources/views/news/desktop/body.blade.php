@@ -10,7 +10,7 @@
                     $sluglink = $data['slug_link'];
                     $thumbnail = $data['thumbnail'];
                 ?>
-                <a href="{{ url('/news/'.$id) }}">
+                <a href="{{ url('/news/'.$slug_link) }}">
                 
                     <div class="max-w-sm rounded overflow-clip shadow">
                         <img class="w-full" src="{{ url('https://mis.esnaad.com/uploads/news/'.$id.'/thumbnail/'.$thumbnail)}}" alt="Sunset in the mountains">

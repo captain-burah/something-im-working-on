@@ -42,10 +42,10 @@ Route::get('/contact', [FrontEndController::class, 'contact'])->name('esnaad.con
 Route::get('/invest-in-dubai', [FrontEndController::class, 'invest'])->name('esnaad.invest_in_dubai');
 
 Route::get('/constructions', [FrontEndController::class, 'constructions'])->name('esnaad.constructions');
-Route::get('/constructions/{id}', [FrontEndController::class, 'constructions_details'])->name('esnaad.constructions.detail');
+Route::get('/constructions/{slug}', [FrontEndController::class, 'constructions_details'])->name('esnaad.constructions.detail');
 
 Route::get('/news', [FrontEndController::class, 'news'])->name('esnaad.news');
-Route::get('/news/{id}', [FrontEndController::class, 'news_details'])->name('esnaad.news.detail');
+Route::get('/news/{slug}', [FrontEndController::class, 'news_details'])->name('esnaad.news.detail');
 
 Route::post('/communities/register-your-interest', [FrontEndController::class, 'communities_registration'])->name('esnaad.communities.registration');
 

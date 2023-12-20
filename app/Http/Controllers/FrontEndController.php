@@ -336,7 +336,7 @@ class FrontEndController extends Controller
     }
 
 
-    public function news_details($id) {
+    public function news_details($slug) {
 
         $jsonSEOData = $this->landingpageseos(3);
 
@@ -345,7 +345,7 @@ class FrontEndController extends Controller
         // CALL API FROM MIS
         $response = Http::withHeaders([
             'authkey' => 'YOUR_SECRET_KEY'
-        ])->get('www.mis.esnaad.com/api/v1/esnaad/news/'.$id);
+        ])->get('www.mis.esnaad.com/api/v1/esnaad/news/'.$slug);
 
         $jsonData = $response->json();  
 
@@ -366,7 +366,7 @@ class FrontEndController extends Controller
     }
 
 
-    public function constructions_details($id) {
+    public function constructions_details($slug) {
 
         $jsonSEOData = $this->landingpageseos(3);
 
@@ -375,7 +375,7 @@ class FrontEndController extends Controller
         // CALL API FROM MIS
         $response = Http::withHeaders([
             'authkey' => 'YOUR_SECRET_KEY'
-        ])->get('www.mis.esnaad.com/api/v1/esnaad/constructions/'.$id);
+        ])->get('www.mis.esnaad.com/api/v1/esnaad/constructions/'.$slug);
 
         $jsonData = $response->json();  
 

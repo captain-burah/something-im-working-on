@@ -13,8 +13,7 @@
 
 @notmobile
     <div class="block py-24 sm:py-12 bg-footer_form" id="footer_form" style="visibility:hidden">
-        <div class="container mx-auto px-2 lg:px-8">
-
+        <div class="container mx-auto px-2 lg:px-8">    
             <div class="row mb-5">
                 <h3 class="text-4xl font-base">
                     Subscribe for Updates
@@ -35,11 +34,11 @@
                         <input type="hidden" name="ip_address" value="{{$ip_address}}">
                     
                         <div class="border-b border-gray-500">
-                            <input class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none focus:border-gray-400 focus:ring-gray-400" type="text" placeholder="Full Name" name="name" aria-label="Full name" autocomplete="off">
+                            <input class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none focus:border-gray-400 focus:ring-gray-400" type="text" placeholder="Full Name" name="name" aria-label="Full name" autocomplete="off" required>
                         </div>
 
                         <div class="border-b border-gray-500">
-                            <input class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none focus:border-gray-400 focus:ring-gray-400" type="email" placeholder="Email" name="email" aria-label="Email">
+                            <input class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none focus:border-gray-400 focus:ring-gray-400" type="email" placeholder="Email" name="email" aria-label="Email" required>
                         </div>
 
                         <div id="submitComplete">

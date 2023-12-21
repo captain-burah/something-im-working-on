@@ -55,7 +55,7 @@
                     ABOUT US
                 </h1>
                 <div class="w-[600px] text-center mx-auto">
-                    <p class="text-base w-200 text-center font-thin mt-2">
+                    <p class="text-base w-200 text-center font-thin mt-2 leading-8">
                         Experience unrivalled elegance with Dubai's one finest real estate developer ESNAAD, with our dedication to innovative thinking, consistent excellence, and the pursuit of perfection, we redefine luxury.
                         We are committed to creating spaces that celebrate life, encapsulate your dreams, and add value to the community
                     </p>

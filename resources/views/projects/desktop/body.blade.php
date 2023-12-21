@@ -58,9 +58,9 @@
                             <x-new-project-desktop
                                 img="{{asset('/home/COMING_SOON.jpeg')}}"
                                 id="hfdsokanidon"
-                                logo="{{asset('/home/f1.png')}}"
-                                name="Coming Soon"
-                                location="Location"
+                                logo="{{asset('/home/ed.png')}}"
+                                name="THE GULF AVENUE"
+                                location="Nad Al Sheba"
                             ></x-new-project-desktop>
                         </div>
                     </div>

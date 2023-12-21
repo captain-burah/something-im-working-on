@@ -4,7 +4,7 @@
             <div class="w-full bg-white rounded-0 sahdow-lg overflow-hidden flex flex-col justify-center items-center">
                 <div class="relative overflow-hidden rounded-0 lg:h-[20rem] max-h-[34rem]">
                     <div
-                        class="text-white text-xl rounded-xl absolute inset-0  bg-black bg-opacity-20 flex justify-center items-center ">
+                        class="text-white text-xl rounded-0 absolute inset-0  bg-black bg-opacity-80 flex justify-center items-center ">
                     </div>
                     <img class="h-full w-full object-cover "
                     src="{{$img}}"
@@ -13,15 +13,15 @@
                 </div>
                 <div class="row grid grid-cols-3 mt-4">
                     <div>
-                        <div class="absolute ml-[-12vw] mt-[-8vh] w-30">
-                            <img class="h-full w-full object-cover m-0 p-0 border border-gray-700"
+                        <div class="absolute ml-[5px] mt-[-8vh] w-30">
+                            <img class="h-full w-full object-cover m-0 p-0 "
                                 src="{{$logo}}"
                                 alt="esnaad-project-card"
                             >
                         </div>
                     </div>
-                    <div class="col-span-2">
-                        <p class="text-xl text-black font-bold text-left">{{$name}}</p>
+                    <div class="col-span-2 min-w-[100vw]">
+                        <p class="text-xl text-black font-bold text-left min-w-[100vw]">{{$name}}</p>
                         <p class="text-base text-black font-thin text-left">{{$location}}</p>
                     </div>
                 </div>

@@ -46,9 +46,9 @@
 
 
 <x-new-project
-    img="{{asset('/developments/3.jpg')}}"
+    img="{{asset('/home/COMING_SOON.jpeg')}}"
     id="hfdsokanidon"
-    logo="{{asset('/assets/img/theme/react.jpg')}}"
-    name="Innovative Living"
+    logo="{{asset('/home/ed.png')}}"
+    name="THE GULF AVENUE"
     location="Nad Al Sheba"
 ></x-new-project>

@@ -22,6 +22,8 @@
 @endsection
 
 @section('content')
+
+
         <section class="my-0">
             @include('development_details.desktop.header')
         </section>
@@ -52,8 +54,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></scrip>
 
     @yield('intel-input')
+
     @yield('developments_gallery_js')
-    
 
 
     {{-- MAP --}}
@@ -65,7 +67,6 @@
 
         var lat = {!! json_encode($lat) !!};
 
-        console.log(long);
 
         var map = new mapboxgl.Map({
             container: 'map',

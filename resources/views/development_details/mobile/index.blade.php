@@ -41,7 +41,7 @@
         @include('development_details.mobile.header')
     </section>
 
-    <section class="my-2">
+    <section class="my-2 px-4">
         @include('development_details.mobile.bodyOne')
     </section>
 
@@ -49,19 +49,19 @@
         @include('development_details.mobile.bodyTwo')
     </section>
 
-    <section class="my-0 ">
+    <section class="my-0">
         @include('development_details.mobile.bodyThree')
     </section>
 
-    <section class="my-0 ">
+    <section class="my-0">
         @include('development_details.mobile.bodyFour')
     </section>
 
-    <section class="my-0 ">
+    <section class="my-0  px-4">
         @include('development_details.mobile.bodyFive')
     </section>
 
-    <section class="my-0 ">
+    <section class="my-0">
         @include('development_details.mobile.bodySix')
     </section>
 

@@ -46,6 +46,38 @@
 
     @yield('intel-input')
 
+    {{-- MODALS --}}
+    <script>
+        $(document).ready(function() {
+            var form_submission = sessionStorage.removeItem("form_submission");
+        });
+
+        function openModal(key) {
+            document.getElementById(key).showModal();
+            document.body.setAttribute('style', 'overflow: hidden;');
+            document.getElementById(key).children[0].scrollTop = 0;
+            document.getElementById(key).children[0].classList.remove('opacity-0');
+            document.getElementById(key).children[0].classList.add('opacity-100')
+        }
+
+        function modalClose(key) {
+            document.getElementById(key).children[0].classList.remove('opacity-100');
+            document.getElementById(key).children[0].classList.add('opacity-0');
+            setTimeout(function () {
+                document.getElementById(key).close();
+                document.body.removeAttribute('style');
+            }, 100);
+        }
+
+        function copyText() {
+            navigator.clipboard.writeText(document.getElementById("linksys").innerHTML);
+            document.querySelector('#linksysbutton').textContent = 'Copied';
+            document.getElementById('linksysbutton').classList.remove('bg-black');
+            document.getElementById('linksysbutton').classList.add('bg-gray-300');
+            document.getElementById('linksysbutton').classList.add('text-black');
+        }
+    </script>
+
 @endsection
 
 

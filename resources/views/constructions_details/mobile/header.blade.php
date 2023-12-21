@@ -58,7 +58,7 @@
                             padding-left: 30px;
                         }
                         li {
-                            list-style-type: disc;
+                            /* list-style-type: disc; */
                             padding-left: 10px;
                         }
                     </style>

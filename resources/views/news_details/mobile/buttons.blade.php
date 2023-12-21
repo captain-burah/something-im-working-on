@@ -53,14 +53,14 @@
                     <div class="px-7  w-full" style="max-height: 40vh;">
 
                         <div class="mb-6">
-                            <p class="text-lg">{{$title}}</p>
+                            <p class="text-lg text-left">{{$title}}</p>
                         </div>
 
                         <div class="mb-6">
                             <div class="flex my-8 w-full text-center mx-auto">
 
                                 <div class="flex-1 mx-auto">
-                                    <div class="w-6 xl:w-10 bg-white rounded-3xl p-1 mx-auto">
+                                    <div class="w-9 xl:w-10 bg-white rounded-3xl p-1 mx-auto">
                                         <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fedgerealty.ae%2F" target="_blank" ria-label="facebook-share-community">
                                             <img
                                                 src="{{ asset('front/icons/fb.png')}}"
@@ -72,19 +72,7 @@
                                 </div>
 
                                 <div class="flex-1 mx-auto">
-                                    <div class="w-6 xl:w-10 bg-white rounded-3xl p-1 mx-auto">
-                                        <a href="whatsapp://send?text={{$actual_link}}" data-action="share/whatsapp/share" aria-label="whatsapp-share-community">
-                                            <img
-                                                src="{{ asset('front/icons/wa.png')}}"
-                                                class="w-fit rounded"
-                                                alt="social-media-ig"
-                                            >
-                                        </a>
-                                    </div>
-                                </div>
-
-                                <div class="flex-1 mx-auto">
-                                    <div class="w-6 xl:w-10 bg-white rounded-3xl p-1 mx-auto">
+                                    <div class="w-9 xl:w-10 bg-white rounded-3xl p-1 mx-auto">
                                         <a href="https://www.linkedin.com/sharing/share-offsite/?url={{$actual_link}}" aria-label="community-linkedin-share">
                                             <img
                                                 src="{{ asset('front/icons/in.png')}}"
@@ -96,7 +84,7 @@
                                 </div>
 
                                 <div class="flex-1 mx-auto">
-                                    <div class="w-6 xl:w-10 bg-white rounded-3xl p-1 mx-auto">
+                                    <div class="w-9 xl:w-10 bg-white rounded-3xl p-1 mx-auto">
                                         <a href="https://twitter.com/intent/tweet?url={{$actual_link}}" aria-label="twitter-X-share-community">
                                             <img
                                                 src="{{ asset('front/icons/x.png')}}"
@@ -111,12 +99,21 @@
                         </div>
                     </div>
 
-                    <div class="p-7 flex justify-end items-center w-full">
-                        <div class="w-full font-base text-base border border-gray-500 rounded-0 py-2 px-4 mr-2">
+                    <div class="p-7 pt-0 flex justify-end items-center w-full">
+                        <style>
+
+                            .linksys{
+                                white-space: nowrap;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                            }
+
+                        </style>
+                        <div class="w-full font-base text-base border border-gray-500 text-left rounded-0 py-2 px-4 mr-2 linksys" id="linksys">
                             {{{$actual_link}}}
                         </div>
-                        <button type="button" onclick="modalClose('mymodalcentered-community-share')" class="bg-transparent hover:bg-gray-500 text-gray-800 font-semibold hover:text-white py-2 px-4 border border-gray-500 hover:border-transparent rounded-0"   >
-                            Close
+                        <button id="linksysbutton" onclick="copyText()" class="bg-black  text-white  font-semibold py-2 px-4 border  rounded-0"   >
+                            Copy
                         </button>
                     </div>
                 </div>
@@ -125,3 +122,4 @@
     </div>
 
 </dialog>
+

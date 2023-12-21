@@ -61,6 +61,18 @@
 
                                 <div class="flex-1 mx-auto">
                                     <div class="w-9 xl:w-10 bg-white rounded-3xl p-1 mx-auto">
+                                        <a href="whatsapp://send?text={{$actual_link}}" target="_blank" ria-label="whatsapp-share">
+                                            <img
+                                                src="{{ asset('front/icons/wa.png')}}"
+                                                class="w-fit rounded"
+                                                alt="social-media-wa"
+                                            >
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="flex-1 mx-auto">
+                                    <div class="w-9 xl:w-10 bg-white rounded-3xl p-1 mx-auto">
                                         <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fedgerealty.ae%2F" target="_blank" ria-label="facebook-share-community">
                                             <img
                                                 src="{{ asset('front/icons/fb.png')}}"

@@ -47,15 +47,17 @@
 
 
 <header class="">
-    <div class="w-full bg-cover bg-center" style="height: 70vh; background-image: url('home/15.jpg'), url('{{ URL::asset('assets/img/img-error2.webp')}}');">
-        <div class="flex items-center justify-center h-full w-full bg-gray-950/70">
-            <div class="sm:container sm:mx-auto mx-0 px-0 sm:px-4 my-20 sm:my-4 mx-auto text-white">
-                <h1 class="text-3xl font-bold ">
-                    Career Portal   
+    <div class="w-full bg-cover bg-center  grayscale" style="height: 50vh; background-image: url('{{ URL::asset('developments/15.jpg')}}'), url('{{ URL::asset('assets/img/img-error2.webp')}}');">
+        <div class="flex items-center justify-center h-full w-full bg-black bg-opacity-40 grayscale" style="padding-top: 10vh;">
+            <div class="sm:container sm:mx-auto sm:px-4 sm:my-4 mx-auto  text-white">
+                <h1 class="text-4xl font-thin text-center">
+                    CAREERS
                 </h1>
-                <h2 class="text-3xl font-light mt-2 leading-8">
-                    Join us in shaping the future. Your journey starts here.
-                </h2>
+                <div class="w-[600px] text-center mx-auto">
+                    <P class="text-base w-200 text-center font-thin mt-2">
+                        Join us in shaping the future. Your journey starts here
+                    </P>
+                </div>
             </div>
         </div>
     </div>

@@ -22,7 +22,7 @@
                                 </div>
                             </div>
                             
-                            <img src="{{ URL("https://mis.esnaad.com/uploads/construction/".$id."/header_image/".$header_image)}}" alt="Ensaad-constructions-article-{{$title}}" class="object-cover w-full h-56 mb-6 rounded-0 shadow-md sm:h-80 2xl:h-96"> 
+                            <img src="{{ URL("https://mis.esnaad.com/uploads/construction/".$id."/header_image/".$header_image)}}" alt="Ensaad-constructions-article-{{$title}}" class="object-cover w-full h-96 mb-6 rounded-0 shadow-md sm:h-96 2xl:h-[60vh]"> 
 
                             {!! $description !!}
                         </div>

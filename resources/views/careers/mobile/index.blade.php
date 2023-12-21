@@ -18,7 +18,7 @@
 @endsection
 @section('content')
     @mobile
-        <section class="my-3">
+        <section class="">
              @include('careers.mobile.header')
         </section>
 

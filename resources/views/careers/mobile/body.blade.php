@@ -1,5 +1,5 @@
-<div class="sm:container sm:mx-auto mx-0 px-0 sm:px-4 my-20 sm:my-4 mx-auto " id="career-registration-form">
-    <div class="md:w-[80%] xl:w-[50%] mx-auto my-8 px-4">
+<div class="sm:container sm:mx-auto mx-0 px-0 sm:px-4 my-8 sm:my-4 mx-auto " id="career-registration-form">
+    <div class="md:w-[80%] xl:w-[50%] mx-auto my-2 px-4">
         <form id="formView">
             
             <div class="icon bg-black text-white w-6 h-6 absolute flex items-center justify-center p-5" style="left:-40px"><i class="fal fa-phone-volume fa-fw text-2xl transform -rotate-45"></i></div>

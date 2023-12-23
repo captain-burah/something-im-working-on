@@ -14,10 +14,8 @@
                         With Integrity we act with honesty, transparency, and accountability in all our dealings with our
                         customers, partners, employees, and society following and pursuing excellence in everything we do, from the quality of our developments and
                         services, to the performance of our teams, to the satisfaction of our stakeholders.
-                        Embracing innovation as a way to create value, solve problems, and improve our
-                        processes and developments while caring about the environment and the future generations in sustainability that 
-                        engages to improving community well-being through planned development and community-building programs whilst 
-                        maintaining the highest standards of honesty and openness in all of our relationships.
+                        We embrace innovation as a way to create value, solve problems, and improve our
+                        processes and developments.
                     </p>
                 </div>
             </div>
@@ -46,7 +44,8 @@
                         Our vision is to be the region’s leading premium real estate development and investment company, with a 
                         Design, Quality and Excellence whilst, Developing our organization and culture, and fostering a work environment that
                         attracts, motivates, and retains the best talent in the industry. We innovate and improve our processes and developments, to adopt to the latest
-                        trends in technologies and best practices as to the code of conduct within the real estate realm.
+                        trends in technologies and best practices as to the code of conduct within the realm of real estate while maintaining the highest standards of 
+                        honesty and openness in all of our relationships.
                     </p>
                 </div>    
             </div>  

@@ -1,4 +1,4 @@
-<div class="container mx-0 px-0 mx-auto">
+<div class="container mx-0 px-4 mx-auto">
 
     <h2 class="text-esnaad_text text-justify  my-8 text-2xl leading-8">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.

@@ -48,7 +48,7 @@
     <div class="w-full bg-cover bg-center" style="height: 70vh; background-image: url('home/15.jpg'), url('{{ URL::asset('assets/img/img-error2.webp')}}');">
         <div class="flex items-center justify-center h-full w-full bg-gray-950/70">
             <div class="container mx-0 px-0 mx-auto text-white">
-                <h1 class="text-4xl font-semibold px-2">
+                <h1 class="text-2xl font-semibold px-2">
                     Our Diversified Communities
                 </h1>
                 <h2 class="text-lg font-light mt-2 px-2 leading-8">

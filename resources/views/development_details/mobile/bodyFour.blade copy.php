@@ -51,7 +51,7 @@
 
     <div class="row-span-2 grid sm:grid-cols-2 gap-4 h-[100%] w-[100%]">
         <div>
-            <h2 class="text-esnaad_text text-justify font-base leading-10 my-8 text-2xl xl:text-3xl w-[90%]">
+            <h2 class="text-esnaad_text text-justify font-base my-8 text-2xl xl:text-3xl w-[90%]">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rhoncus augue ut ligula
                 accumsan dictum.
             </h2>

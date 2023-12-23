@@ -55,8 +55,8 @@
                     CONSTRUCTIONS
                 </h1>
                 <div class="w-[600px] text-center mx-auto">
-                    <h2 class="text-base w-200 text-center font-thin mt-2">
-                        Stay in the know, watch our progress grow
+                    <h2 class="text-base w-200 text-center font-thin mt-2 leading-8">
+                        Shaping Dubai's Skyline: Discover our latest constructions and witness the future unfold. Dive into unparalleled progress in the heart of the city's dynamic landscape. Your vision, our expertise—building tomorrow, today.
                     </h2>
                 </div>
             </div>

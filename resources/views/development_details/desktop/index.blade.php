@@ -31,8 +31,6 @@
             @include('development_details.desktop.bodyOne')
         </section>
 
-        
-
         <section class="my-15 ">
             @include('development_details.desktop.bodyFour')
         </section>

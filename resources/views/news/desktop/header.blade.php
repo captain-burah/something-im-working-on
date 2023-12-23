@@ -55,8 +55,8 @@
                     NEWS
                 </h1>
                 <div class="w-[600px] text-center mx-auto">
-                    <p class="text-base w-200 text-center font-thin mt-2">
-                        From property developments to investment strategies, stay ahead with our in-depth coverage.
+                    <p class="text-base w-200 text-center font-thin mt-2 leading-8">
+                        Breaking Grounds and Headlines: Stay abreast of Dubai's dynamic real estate landscape with our News Hub. Unearth the latest updates on our cutting-edge projects, government initiatives, and industry trends shaping the city's future.
                     </p>
                 </div>
             </div>

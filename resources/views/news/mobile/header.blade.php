@@ -53,7 +53,7 @@
                     NEWS
                 </h1>
                 <p class="text-base font-thin leading-6 px-2 pt-2">
-                    From property developments to investment strategies, stay ahead with our in-depth coverage.
+                    Breaking Grounds and Headlines: Stay abreast of Dubai's dynamic real estate landscape with our News Hub. Unearth the latest updates on our cutting-edge projects, government initiatives, and industry trends shaping the city's future.
                 </p>
                 
             </div>

@@ -55,7 +55,7 @@
                     OUR DEVELOPMENTS
                 </h1>
                 <div class="w-[600px] text-center mx-auto">
-                    <h2 class="text-base w-200 text-center font-thin mt-2">
+                    <h2 class="text-base w-200 text-center font-thin mt-2 leading-8">
                         Our projects are a reflection of our commitment to excellence. From luxurious residential complexes to state-of-the-art commercial spaces, each project is designed with attention to detail and a focus on quality
                     </h2>
                 </div>

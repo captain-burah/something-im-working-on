@@ -14,7 +14,7 @@
 <div class="sm:container sm:mx-auto mx-0 px-0 my-20 sm:my-4 mx-auto">
     <div class="flex justify-left ...">
         <div class="mr-4">
-            <button onclick="openModal('mymodalcentered-community-register')"  class=" lg:w-100 text-xl text-white font-bold hover:text-black px-2 lg:py-6 bg-black hover:bg-transparent border border-black hover:border-black rounded-0" type="button">
+            <button onclick="openModal('mymodalcentered-community-register')"  class="lg:w-75 text-xl text-white font-bold hover:text-black px-2 lg:py-4 bg-black hover:bg-transparent border border-black hover:border-black rounded-0" type="button">
                 Register Your Interest
             </button>
         </div>
@@ -70,9 +70,24 @@
                         <div class="mb-6">
                             <div class="flex my-8 w-full text-center mx-auto">
 
+                                
+                                
+
                                 <div class="flex-1 mx-auto">
-                                    <div class="w-6 xl:w-10 bg-white rounded-3xl p-1 mx-auto">
-                                        <a href="https://www.facebook.com/sharer/sharer.php?u={{$actual_link}}" target="_blank" ria-label="facebook-share-community">
+                                    <div class="w-9 xl:w-10 bg-white rounded-3xl p-1 mx-auto">
+                                        <a href="whatsapp://send?text={{$actual_link}}" target="_blank" ria-label="whatsapp-share">
+                                            <img
+                                                src="{{ asset('front/icons/wa.png')}}"
+                                                class="w-fit rounded"
+                                                alt="social-media-wa"
+                                            >
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="flex-1 mx-auto">
+                                    <div class="w-9 xl:w-10 bg-white rounded-3xl p-1 mx-auto">
+                                        <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fedgerealty.ae%2F" target="_blank" ria-label="facebook-share-community">
                                             <img
                                                 src="{{ asset('front/icons/fb.png')}}"
                                                 class="w-fit rounded"
@@ -83,19 +98,19 @@
                                 </div>
 
                                 <div class="flex-1 mx-auto">
-                                    <div class="w-6 xl:w-10 bg-white rounded-3xl p-1 mx-auto">
-                                        <a href="whatsapp://send?text={{$actual_link}}" data-action="share/whatsapp/share" aria-label="whatsapp-share-community">
+                                    <div class="w-9 xl:w-10 bg-white rounded-3xl p-1 mx-auto">
+                                        <a href="https://www.linkedin.com/sharing/share-offsite/?url={{$actual_link}}" aria-label="community-linkedin-share">
                                             <img
-                                                src="{{ asset('front/icons/wa.png')}}"
+                                                src="{{ asset('front/icons/in.png')}}"
                                                 class="w-fit rounded"
-                                                alt="social-media-ig"
+                                                alt="social-media-in"
                                             >
                                         </a>
                                     </div>
                                 </div>
 
                                 <div class="flex-1 mx-auto">
-                                    <div class="w-6 xl:w-10 bg-white rounded-3xl p-1 mx-auto">
+                                    <div class="w-9 xl:w-10 bg-white rounded-3xl p-1 mx-auto">
                                         <a href="https://twitter.com/intent/tweet?url={{$actual_link}}" aria-label="twitter-X-share-community">
                                             <img
                                                 src="{{ asset('front/icons/x.png')}}"

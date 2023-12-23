@@ -47,17 +47,14 @@
 <header>
     <div class="w-full bg-cover bg-center" style="margin-top: 60px; height: 40vh; background-image: url('{{ URL::asset('developments/4.jpg')}}'), url('{{ URL::asset('assets/img/img-error2.webp')}}');">
         <div class="flex items-center justify-left h-full w-full bg-black bg-opacity-60">
-
             <div class="container mx-0 px-0 mx-auto text-white">
                 <h1 class="text-xl font-light px-2">
                     CONSTRUCTIONS
                 </h1>
                 <p class="text-base font-thin leading-6 px-2 pt-2">
-                    Stay in the know, watch our progress grow
+                    Shaping Dubai's Skyline: Discover our latest constructions and witness the future unfold. Dive into unparalleled progress in the heart of the city's dynamic landscape.
                 </p>
-                
-            </div>
-            
+            </div>            
         </div>
     </div>
 </header>

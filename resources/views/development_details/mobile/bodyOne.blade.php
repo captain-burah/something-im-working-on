@@ -2,10 +2,10 @@
 
     <div class="row-span-2 grid gap-2 h-[100%] w-[100%]">
         <div>
-            <h2 class=" text-left font-semibold leading-6 my-8 text-lg ">
+            <h2 class=" text-left mt-8 text-xl ">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rhoncus
             </h2>
-            <p class="text-esnaad_text text-left font-base mt-4 w-full">
+            <p class="text-esnaad_text  text-left font-base mt-4 w-full leading-6">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rhoncus augue ut ligula accumsan dictum. Phasellus euismod in lectus nec cursus. Curabitur in sem et elit dignissim
                 condimentum eget ac dui. Nulla non nisl mollis ipsum laoreet ultrices ac in sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rhoncus augue ut ligula accumsan dictum.
                 Phasellus euismod in lectus nec cursus. Curabitur in sem et elit dignissim condimentum eget ac dui. Nulla non nisl mollis ipsum laoreet ultrices ac in sapien.

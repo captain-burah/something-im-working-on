@@ -45,7 +45,7 @@
 @endsection
 
 <header>
-    <div class="w-full bg-cover bg-center" style="height: 75vh; background-image: url('{{ URL::asset('developments/7.jpg')}}'), url('{{ URL::asset('assets/img/img-error2.webp')}}');">
+    <div class="w-full bg-cover bg-center" style="height: 100vh; background-image: url('{{ URL::asset('developments/7.jpg')}}'), url('{{ URL::asset('assets/img/img-error2.webp')}}');">
         <div class="flex items-center justify-left h-full w-full bg-gray-950/70">
 
             <div class="sm:container sm:mx-auto mx-0 px-0 sm:px-4 my-20 sm:my-4 mx-auto text-white">

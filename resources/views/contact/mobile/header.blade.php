@@ -59,10 +59,18 @@
                     Address: Unit G07, City Walk Building #1, Al Wasl, Dubai.
                 </p>
                 <p class="w-[75%] mx-auto text-white font-base leading-8 text-base text-center">
-                    Phone:  971 4 123 4567
+                    <a href="tel:{{ env('COMPANY_PHONE') }}" >
+                        Phone: 
+                        &nbsp;
+                        +971 4 287 9506
+                    </a>
                 </p>
                 <p class="w-[75%] mx-auto text-white font-base leading-8 text-base text-center">
-                    Email: info@esnaad.com
+                    <a href="mailto:{{env('COMPANY_EMAIL')}}" class="inline-flex items-center">
+                        Email:
+                        &nbsp;
+                        &#105;&#110;&#102;&#111;&#064;&#101;&#115;&#110;&#097;&#097;&#100;&#046;&#099;&#111;&#109;
+                    </a>
                 </p>
             </div>
         </div>

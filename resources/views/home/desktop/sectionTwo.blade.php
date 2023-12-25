@@ -1,11 +1,11 @@
 <div class="sm:container sm:mx-auto mx-0 px-0 sm:px-4 my-20 sm:my-4 mx-auto">
-    <div class="mt-10 mb-15">
-        <h2 class="text-4xl font-thin text-center">
+    <div class="mt-10 mb-10">
+        <h2 class="text-xl xl:text-3xl font-thin text-center">
             THE THREE PILLARS <br>OF ESNAAD'S  PHILOSOPHIES
         </h2>
     </div>
 
-    <div class="grid md:grid-cols-3 gap-25 mb-5 mx-auto" >
+    <div class="grid md:grid-cols-3 gap-17 mb-5 mx-auto" >
 
         <?php //LOAD COMPONENT INDEX CARD ?>
         <x-index-card

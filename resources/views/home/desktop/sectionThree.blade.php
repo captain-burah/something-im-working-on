@@ -1,7 +1,7 @@
 {{-- Desktop View --}}
 <div class="container px-0 px-4 mx-auto">
     <div class="mt-10 mb-10">
-        <h3 class="text-4xl font-thin text-center">
+        <h3 class="text-xl xl:text-3xl font-thin text-center">
             OUR LATEST PROJECTS
             
         </h3>

@@ -71,15 +71,16 @@
                             <div class="flex my-8 w-full text-center mx-auto">
 
                                 
-                                
-
-                                <div class="flex-1 mx-auto">
-                                    <div class="w-9 xl:w-10 bg-white rounded-3xl p-1 mx-auto">
-                                        <a href="whatsapp://send?text={{$actual_link}}" target="_blank" ria-label="whatsapp-share">
+                
+                                <div class="flex-1 mx-auto my-auto">
+                                    <div class="w-10 xl:w-10 bg-white rounded-3xl p-1 mx-auto my-auto">
+                                        <a href="whatsapp://send?text={{$actual_link}}" data-action="share/whatsapp/share" aria-label="whatsapp-share-community">
                                             <img
-                                                src="{{ asset('front/icons/wa.png')}}"
-                                                class="w-fit rounded"
-                                                alt="social-media-wa"
+                                                src="{{ asset('front/icons/wa.svg')}}"
+                                                class="w-fit rounded h-full"
+                                                alt="social-media-ig"
+                                                height="auto"
+                                                width="auto"
                                             >
                                         </a>
                                     </div>

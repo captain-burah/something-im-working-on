@@ -13,7 +13,7 @@
                 </div>
                 <div class="row grid grid-cols-3 mt-4">
                     <div>
-                        <div class="absolute ml-[5vw] mt-[-6vh] w-22">
+                        <div class="absolute xs:ml-[5vw] xs:mt-[-6vh]  sm:w-22">
                             <img class="h-full w-full object-cover m-0 p-0 "
                                 src="{{$logo}}"
                                 alt="esnaad-project-card"

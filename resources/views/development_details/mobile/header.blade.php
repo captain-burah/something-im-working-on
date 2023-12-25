@@ -114,18 +114,22 @@
                                                 src="{{ asset('front/icons/fb.png')}}"
                                                 class="w-fit rounded"
                                                 alt="social-media-fb"
+                                                height="auto"
+                                                width="auto"
                                             >
                                         </a>
                                     </div>
                                 </div>
 
-                                <div class="flex-1 mx-auto">
-                                    <div class="w-10 xl:w-10 bg-white rounded-3xl p-1 mx-auto">
+                                <div class="flex-1 mx-auto my-auto">
+                                    <div class="w-10 xl:w-10 bg-white rounded-3xl p-1 mx-auto my-auto">
                                         <a href="whatsapp://send?text={{$actual_link}}" data-action="share/whatsapp/share" aria-label="whatsapp-share-community">
                                             <img
-                                                src="{{ asset('front/icons/wa.png')}}"
-                                                class="w-fit rounded"
+                                                src="{{ asset('front/icons/wa2.svg')}}"
+                                                class="w-fit rounded h-full"
                                                 alt="social-media-ig"
+                                                height="auto"
+                                                width="auto"
                                             >
                                         </a>
                                     </div>
@@ -138,6 +142,8 @@
                                                 src="{{ asset('front/icons/in.png')}}"
                                                 class="w-fit rounded"
                                                 alt="social-media-in"
+                                                height="auto"
+                                                width="auto"
                                             >
                                         </a>
                                     </div>
@@ -150,6 +156,8 @@
                                                 src="{{ asset('front/icons/x.png')}}"
                                                 class="w-fit rounded"
                                                 alt="social-media-tw"
+                                                height="auto"
+                                                width="auto"
                                             >
                                         </a>
                                     </div>

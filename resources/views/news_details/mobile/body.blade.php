@@ -9,11 +9,23 @@
                     <div class="space-y-10">
                         <div>
 
-                            <h1 class="text-2xl font-bold mb-4">
+                            <h1 class="text-2xl font-bold mb-2">
                                 {{$title}}
                             </h1>
 
-                            <div class="grid grid-cols-2 gap-4 place-content-between">
+                            <div class="flex items-center overflow-x-auto whitespace-nowrap">
+                                <a href="/news" class="text-sm text-black">
+                                    News
+                                </a>
+                                <span class="mx-2 text-sm text-black">
+                                    /
+                                </span> 
+                                <p class="text-sm capitalize text-black">
+                                    {{ $title }}
+                                </p>
+                            </div>
+
+                            <div class="grid grid-cols-2 mt-2 gap-4 place-content-between">
                                 <div class="">
                                     <p class="text-sm mb-2">Published {{\Carbon\Carbon::parse($created_at)->format('j F, Y')}}</p>
                                 </div>
@@ -21,10 +33,8 @@
                                     <div class="inline-flex float-right text-right">
                                         @include('news_details.mobile.buttons')
                                     </div>
-                                        
                                 </div>
                             </div>
-
 
                             <img src="{{ URL("https://mis.esnaad.com/uploads/news/".$id."/header_image/".$header_image)}}" alt="Ensaad-news-article-{{$title}}" class="object-cover w-full h-56 mb-6 rounded-0 shadow-md sm:h-80 2xl:h-96">                          
 
@@ -32,7 +42,6 @@
                         </div>
                     </div>
                 </div>
-                
             </div>
 
             @if(isset($available))

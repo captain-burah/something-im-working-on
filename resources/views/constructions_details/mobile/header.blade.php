@@ -67,26 +67,19 @@
                             </h1>
                     <div class="flex items-center overflow-x-auto whitespace-nowrap">
                         <a href="/constructions" class="text-sm text-black">
-                            CONSTRUCTIONS
+                            Constructions
                         </a>
-                        <span class="mx-2 text-gray-500 dark:text-gray-400">
+                        <span class="mx-2 text-sm text-black">
                             /
                         </span> 
                         <p class="text-sm capitalize text-black">
                             {{ $title }}
                         </p>
                     </div>
-
-                    
                 </div>
-            </div>
-            
+            </div>            
         </div>
     </div>
-
-
-    
-
 </header>
 
 

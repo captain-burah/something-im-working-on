@@ -62,14 +62,16 @@
                             padding-left: 10px;
                         }
                     </style>
+                    
                     <h1 class="text-2xl font-bold mb-0">
-                                {{$title}}
-                            </h1>
+                        {{$title}}
+                    </h1>
+
                     <div class="flex items-center overflow-x-auto whitespace-nowrap">
                         <a href="/news" class="text-sm text-black">
                             NEWS
                         </a>
-                        <span class="mx-2 text-gray-500 dark:text-gray-400">
+                        <span class="mx-2 text-sm text-black">
                             /
                         </span> 
                         <p class="text-sm capitalize text-black">

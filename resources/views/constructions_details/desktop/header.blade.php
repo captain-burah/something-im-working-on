@@ -63,10 +63,10 @@
                         }
                     </style>
                     <div class="flex items-center overflow-x-auto whitespace-nowrap">
-                        <a href="/constructions" class="text-sm font-base text-black hover:underline">
-                            Construction Updates
+                        <a href="/constructions" class="text-sm font-thin text-black">
+                            Constructions
                         </a>
-                        <span class="mx-2 text-gray-500 dark:text-gray-400">
+                        <span class="mx-2 text-sm text-black">
                             /
                         </span> 
                         <p class="text-sm font-base text-black ">

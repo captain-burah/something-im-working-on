@@ -15,9 +15,9 @@
         <div class="text-esnaad_text text-justify font-light m-8 w-full">
             <div class="row-span-2 grid sm:grid-cols-2 gap-4 w-[100%] mb-8">
                 <div>
-                    <h2 class="text-esnaad_text text-justify font-thin text-xl xl:text-xl w-[90%] tracking-wider">
+                    <h3 class="text-esnaad_text text-justify font-thin text-xl xl:text-xl w-[90%] tracking-wider">
                         Prices From
-                    </h2>
+                    </h3>
                     <p class="text-xl xl:text-2xl text-justify font-semibold w-[90%] tracking-wider">
                         AED 2,184,564
                     </p>
@@ -25,9 +25,9 @@
 
 
                 <div>
-                    <h2 class="text-esnaad_text text-justify font-thin text-xl xl:text-xl w-[90%] tracking-wider">
+                    <h3 class="text-esnaad_text text-justify font-thin text-xl xl:text-xl w-[90%] tracking-wider">
                         Area (Sq.Ft) 
-                    </h2>
+                    </h3>
                     <p class="text-xl xl:text-2xl text-justify font-semibold w-[90%] tracking-wider">
                         1,235 - 1,235
                     </p>
@@ -41,9 +41,9 @@
                 <div></div>
 
                 <div>
-                    <h2 class="text-esnaad_text text-justify font-thin text-xl xl:text-xl w-[90%] tracking-wider">
+                    <h3 class="text-esnaad_text text-justify font-thin text-xl xl:text-xl w-[90%] tracking-wider">
                         Apartments
-                    </h2>
+                    </h3>
                     <p class="text-xl xl:text-2xl text-justify font-semibold w-[90%] tracking-wider">
                         Studio, 1 & 2
                     </p>

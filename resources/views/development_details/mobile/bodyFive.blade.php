@@ -3,10 +3,6 @@
         <div class="group flex flex-col gap-2 rounded-lg text-black " tabindex="1">
             <div class="flex cursor-pointer items-center justify-between border-b border-gray-700">
                 <h3 class="font-semibold text-lg"> Amenities </h3>
-                <img
-                    src="https://demo.esnaad.com/public/home/down-arrow.png"
-                    class="h-full w-8 "
-                />
             </div>
             <div class="">
 

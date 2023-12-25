@@ -45,7 +45,7 @@
 @endsection
 
 <header>
-    <div class="w-full bg-cover bg-center" style="margin-top: 60px; height: 40vh; background-image: url('{{ URL::asset('developments/7.jpg')}}'), url('{{ URL::asset('assets/img/img-error2.webp')}}');">
+    <div class="w-full bg-cover bg-center" style="margin-top: 60px; height: 50vh; background-image: url('{{ URL::asset('developments/7.jpg')}}'), url('{{ URL::asset('assets/img/img-error2.webp')}}');">
         <div class="flex items-center justify-left h-full w-full bg-black bg-opacity-40">
 
             <div class="container mx-0 px-0 mx-auto text-white">
@@ -55,7 +55,7 @@
                 <h2 class="text-xl font-light px-2">
                     Nad Al Sheba
                 </h2>
-                <div class="absolute mt-[8vh] w-[85vw] mx-auto text-right">
+                <div class="absolute mt-[8vh] w-[90vw] mx-auto text-right">
                     <button onclick="openModal('mymodalcentered-community-share')" class="text-center align-middle rounded-0 cursor-pointer">
                         <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="20.000000pt" height="20.000000pt" viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet">
 

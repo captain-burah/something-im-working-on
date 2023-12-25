@@ -49,10 +49,10 @@
         <div class="flex items-center justify-left h-full w-full bg-gray-950/70">
 
             <div class="sm:container sm:mx-auto mx-0 px-0 sm:px-4 my-20 sm:my-4 mx-auto text-white">
-                <h1 class="text-7xl font-semibold ">
+                <h1 class="text-4xl font-semibold ">
                     The Gulf Villas
                 </h1>
-                <p class="text-base font-light mt-2 leading-8 w-[75%]">
+                <p class="text-base font-light leading-8 w-[45%]">
                     Our projects are a reflection of our commitment to excellence. From luxurious
                     residential complexes to state-of-the-art commercial spaces, each project is
                     designed with attention to detail and a focus on quality.

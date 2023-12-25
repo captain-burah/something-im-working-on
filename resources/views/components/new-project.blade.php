@@ -13,7 +13,7 @@
                 </div>
                 <div class="row grid grid-cols-3 mt-4">
                     <div>
-                        <div class="absolute ml-[5px] mt-[-8vh] w-30">
+                        <div class="absolute ml-[5vw] mt-[-6vh] w-22">
                             <img class="h-full w-full object-cover m-0 p-0 "
                                 src="{{$logo}}"
                                 alt="esnaad-project-card"
@@ -25,8 +25,8 @@
                         <p class="text-base text-black font-thin text-left">{{$location}}</p>
                     </div>
                 </div>
-                <div class="text-center py-8 sm:py-6 w-full">
-                    <a href="{{url('project-details')}}" class="bg-black border-black text-sm text-white font-thin py-3 px-10 rounded-0">
+                <div class="text-center py-8 sm:py-6 w-[100%]">
+                    <a href="{{url('project-details')}}" class="bg-black border-black text-sm text-white font-thin py-4 px-20 rounded-0">
                         Explore More
                     </a>
                 </div>

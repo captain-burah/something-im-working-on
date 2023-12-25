@@ -48,7 +48,7 @@
 
 <header class="]">
     
-    <div class="w-full bg-cover bg-center" style="height: 50vh; background-image: url({{ asset('home/CONTACT.webp') }}), url('{{ URL::asset('assets/img/img-error2.webp')}}');">
+    <div class="w-full bg-cover bg-center" style="height: 75vh; background-image: url({{ asset('home/CONTACT.webp') }}), url('{{ URL::asset('assets/img/img-error2.webp')}}');">
         <div class="flex items-center justify-center h-full w-full">
             <div class="md:container mx-auto pt-20">
                     
@@ -56,10 +56,7 @@
                     CONTACT US
                 </h1>
                 <br>
-                <br>
-
                 {{-- <br>
-                
                 <p class="w-[60%] mx-auto text-white font-thin leading-8 text-base text-center">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rhoncus augue ut

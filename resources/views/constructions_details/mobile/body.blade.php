@@ -1,7 +1,7 @@
 <?php $actual_link = (empty($_SERVER['HTTPS']) ? 'http' : 'https') . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]"; ?>
 
     <div class="mx-auto max-w-7xl lg:max-w-8xl xl:max-w-8xl 2xl:px-w-8xl">
-        <div class="container px-4 mx-auto flex flex-col items-start md:flex-">
+        <div class="px-4 mx-auto">
             
             <div class="mt-2 lg:flex lg:gap-x-28 xl:gap-x-full w-full">
                 <div class="lg:w-4/5">
@@ -11,16 +11,73 @@
                                 <div class="">
                                     <p class="text-sm mb-2">Published {{\Carbon\Carbon::parse($created_at)->format('j F, Y')}}</p>
                                 </div>
-                                <div class="text-right">
+                                {{-- <div class="text-right">
                                     <div class="inline-flex float-right text-right">
                                         @include('constructions_details.mobile.buttons')
                                     </div>
-                                        
-                                </div>
+                                </div> --}}
                             </div>
                             <img src="{{ URL("https://mis.esnaad.com/uploads/construction/".$id."/header_image/".$header_image)}}" alt="Ensaad-constructions-article-{{$title}}" class="object-cover w-full h-56 mb-6 rounded-0 shadow-md sm:h-80 2xl:h-96"> 
 
                             {!! $description !!}
+
+                            <div class="row ">
+                                <div class="mb-6">
+                                    <div class="flex my-8 w-full text-center mx-auto">
+
+                                        <div class="flex-1 mx-auto my-auto">
+                                            <div class="w-10 xl:w-10 bg-white rounded-3xl p-1 mx-auto my-auto">
+                                                <a href="whatsapp://send?text={{$actual_link}}" data-action="share/whatsapp/share" aria-label="whatsapp-share-community">
+                                                    <img
+                                                        src="{{ asset('front/icons/wa.svg')}}"
+                                                        class="w-fit rounded h-full"
+                                                        alt="social-media-ig"
+                                                        height="auto"
+                                                        width="auto"
+                                                    >
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="flex-1 mx-auto">
+                                            <div class="w-9 xl:w-10 bg-white rounded-3xl p-1 mx-auto">
+                                                <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fedgerealty.ae%2F" target="_blank" ria-label="facebook-share-community">
+                                                    <img
+                                                        src="{{ asset('front/icons/fb.png')}}"
+                                                        class="w-fit rounded"
+                                                        alt="social-media-fb"
+                                                    >
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="flex-1 mx-auto">
+                                            <div class="w-9 xl:w-10 bg-white rounded-3xl p-1 mx-auto">
+                                                <a href="https://www.linkedin.com/sharing/share-offsite/?url={{$actual_link}}" aria-label="community-linkedin-share">
+                                                    <img
+                                                        src="{{ asset('front/icons/in.png')}}"
+                                                        class="w-fit rounded"
+                                                        alt="social-media-in"
+                                                    >
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="flex-1 mx-auto">
+                                            <div class="w-9 xl:w-10 bg-white rounded-3xl p-1 mx-auto">
+                                                <a href="https://twitter.com/intent/tweet?url={{$actual_link}}" aria-label="twitter-X-share-community">
+                                                    <img
+                                                        src="{{ asset('front/icons/x.png')}}"
+                                                        class="w-fit rounded"
+                                                        alt="social-media-tw"
+                                                    >
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -52,7 +52,7 @@
     <div class="container mx-auto max-w-7xl lg:max-w-8xl xl:max-w-8xl 2xl:px-w-8xl">
         <div class=" flex flex-col items-start px-4">
             <div class="ml-0 md:mr-12 sticky">
-                <div class="container mx-auto w-full h-full mt-[15vh]">
+                <div class="container mx-auto w-full h-full mt-[12vh]">
                     <style>
                         ul {
                             padding-left: 30px;
@@ -63,8 +63,8 @@
                         }
                     </style>
                     <h1 class="text-2xl font-bold mb-0">
-                                {{$title}}
-                            </h1>
+                        {{$title}}
+                    </h1>
                     <div class="flex items-center overflow-x-auto whitespace-nowrap">
                         <a href="/constructions" class="text-sm text-black">
                             Constructions

@@ -1,14 +1,14 @@
-{{-- @if(isset($available)) --}}
+@if(isset($available))
     <div class="sm:container sm:mx-auto sm:px-4 sm:my-4 mx-auto">
         <div class="grid xl:grid-cols-3- lg:grid-cols-3 sm:grid-cols-2 gap-2 mb-5">
 
-            {{-- @foreach($response as $data) --}}
+            @foreach($response as $data)
                 <?php
-                    // $id = $data['id'];
-                    // $title = $data['title'];
-                    // $titlear = $data['title_ar'];
-                    // $sluglink = $data['slug_link'];
-                    // $thumbnail = $data['thumbnail'];
+                    $id = $data['id'];
+                    $title = $data['title'];
+                    $titlear = $data['title_ar'];
+                    $sluglink = $data['slug_link'];
+                    $thumbnail = $data['thumbnail'];
                 ?>
                 <div class="">
                     <div class="mx-auto px-0 ">
@@ -34,7 +34,7 @@
                                 </div>
                             </div>
                             <div class="row text-center pb-5 pt-2">
-                                <a href="{{ url('constructions/the-gulf-villas') }}" 
+                                <a href="{{ url('news/'.$sluglink) }}" 
                                     class="bg-black text-white px-15 py-3">
                                     Explore
                                 </a>
@@ -42,7 +42,7 @@
                         </div>
                     </div>
                 </div>
-            {{-- @endforeach --}}
+            @endforeach
         </div>
     </div>
-{{-- @endif --}}
+@endif

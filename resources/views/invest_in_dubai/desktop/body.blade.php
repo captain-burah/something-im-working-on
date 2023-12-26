@@ -14,49 +14,76 @@
     </div>
 
     <div class="mx-auto mt-10">
-        <h1 class="text-3xl font-thin text-center">
+        <h2 class="text-3xl font-thin text-center">
             Why Invest In Dubai?
-        </h1>
+        </h2>
 
-        <p class=" font-thin leading-8 text-base text-justify">
-            <span class="font-bold">Strategic Location</span><br>
-            Dubai is a major hub for international business due to its advantageous location at the intersection of Europe,
-            Asia, and Africa. Its proximity to important markets makes connectivity and access simple.<br><br>
-            
-            <span class="font-bold">Tax Advantages</span><br>
-            Dubai offers both individuals and businesses a tax-free environment. It is a desirable location for investors
-            seeking to avoid corporate taxes, capital gains taxes, and personal income taxes. optimize their financial
-            returns.<br><br>
-            
-            <span class="font-bold">Stable Political Environment</span><br>
-            Due to its political stability, doing business in Dubai is safe and predictable. A favourable investment climate is
-            influenced by the government's dedication to economic development and diversification.<br><br>
-            
-            <span class="font-bold">Robust Population Growth</span><br>
-            The city's strong population growth propels investment opportunities, which benefits Dubai's real estate
-            market. Due to its strong economy and excellent standard of living, Dubai has seen a substantial increase in the
-            number of local and foreign residents over time. The demand for residential and commercial real estate is
-            fueled by this population growth, which is good news for real estate investors.<br><br>
-            
-            <span class="font-bold">Exclusive 10-Year Golden Visa</span><br>
-            Dubai offers a 10-year Golden Visa program to certain real estate investors. For example, if you invest two
-            million AED in a ESNAAD Property, you may be eligible for a Golden Visa, which will grant you the ability to long
-            term resident rights in UAE. Investors can easily renew their Golden Visa as long as they are eligible, and it
-            provides them with convenient long-term residency, with a five- to ten-year duration.<br><br>
-            
-            <span class="font-bold">Creating Sustainable Communities</span><br>
-            At ESNAAD, we prioritize sustainability in all of our developments to ensure that modern living, technology, and
-            the natural world coexist peacefully. Our projects include green areas, eco-friendly practices, and energy-
-            efficient designs to give residents a sustainable and well-rounded lifestyle. Setting environmental stewardship
-            as a top priority helps Dubai realize its goal of becoming a sustainable city and gives investors a chance to
-            match their capital with responsible development ideals.<br><br>
-            
-            <span class="font-bold">Tourism Hub</span><br>
-            In addition to its popularity as a travel destination, Dubai offers a consistent stream of new clients to
-            companies. The tourism industry is still expanding, which is good news for companies in the hospitality,
-            entertainment, and related sectors.<br><br>
-            
-        </p>
+        <div class="grid grid-cols-3 gap-4 mt-5">
+            <div class="border p-4 shadow-sm">
+                <h3 class="font-bold">Strategic Location</h3>
+                <p class=" font-thin leading-8 text-base text-justify">
+                    Dubai is a major hub for international business due to its advantageous location at the intersection of Europe,
+                    Asia, and Africa. Its proximity to important markets makes connectivity and access simple.
+                </p>
+            </div>
+
+            <div class="border p-4 shadow-sm">
+                <h3 class="font-bold">Tax Advantage</h3>
+                <p class=" font-thin leading-8 text-base text-justify">
+                    Dubai offers both individuals and businesses a tax-free environment. It is a desirable location for investors
+                    seeking to avoid corporate taxes, capital gains taxes, and personal income taxes. optimize their financial
+                    returns.
+                </p>
+            </div>
+
+            <div class="border p-4 shadow-sm">
+                <h3 class="font-bold">Stable Political Environment</h3>
+                <p class=" font-thin leading-8 text-base text-justify">
+                    Due to its political stability, doing business in Dubai is safe and predictable. A favourable investment climate is
+                    influenced by the government's dedication to economic development and diversification.<br><br> 
+                </p>
+            </div>
+
+            <div class="border p-4 shadow-sm">
+                <h3 class="font-bold">Robust Population Growth</h3>
+                <p class=" font-thin leading-8 text-base text-justify">
+                    The city's strong population growth propels investment opportunities, which benefits Dubai's real estate
+                    market. Due to its strong economy and excellent standard of living, Dubai has seen a substantial increase in the
+                    number of local and foreign residents over time. The demand for residential and commercial real estate is
+                    fueled by this population growth, which is good news for real estate investors.<br><br> 
+                </p>
+            </div>
+
+            <div class="border p-4 shadow-sm">
+                <h3 class="font-bold">Exclusive 10-Year Golden Visa</h3>
+                <p class=" font-thin leading-8 text-base text-justify">
+                    Dubai offers a 10-year Golden Visa program to certain real estate investors. For example, if you invest two
+                    million AED in a ESNAAD Property, you may be eligible for a Golden Visa, which will grant you the ability to long
+                    term resident rights in UAE. Investors can easily renew their Golden Visa as long as they are eligible, and it
+                    provides them with convenient long-term residency, with a five- to ten-year duration.<br><br> 
+                </p>
+            </div>
+
+            <div class="border p-4 shadow-sm">
+                <h3 class="font-bold">Creating Sustainable Communities</h3>
+                <p class=" font-thin leading-8 text-base text-justify">
+                    At ESNAAD, we prioritize sustainability in all of our developments to ensure that modern living, technology, and
+                    the natural world coexist peacefully. Our projects include green areas, eco-friendly practices, and energy-
+                    efficient designs to give residents a sustainable and well-rounded lifestyle. Setting environmental stewardship
+                    as a top priority helps Dubai realize its goal of becoming a sustainable city and gives investors a chance to
+                    match their capital with responsible development ideals.<br><br> 
+                </p>
+            </div>
+
+            <div class="border p-4 shadow-sm">
+                <h3 class="font-bold">Tourism Hub</h3>
+                <p class=" font-thin leading-8 text-base text-justify">
+                    In addition to its popularity as a travel destination, Dubai offers a consistent stream of new clients to
+                    companies. The tourism industry is still expanding, which is good news for companies in the hospitality,
+                    entertainment, and related sectors.<br><br> 
+                </p>
+            </div>
+        </div>
     </div>
 </div>
 

@@ -291,47 +291,49 @@ class FrontEndController extends Controller
 
 
     public function constructions() {
-        $jsonSEOData = $this->landingpageseos(6);
-        $this->data['jsonSEOData'] =  $jsonSEOData->json();
+        // $jsonSEOData = $this->landingpageseos(6);
+        // $this->data['jsonSEOData'] =  $jsonSEOData->json();
 
         // CALL API FROM MIS
-        $response = Http::withHeaders([
-            'authkey' => 'YOUR_SECRET_KEY'
-        ])->get('www.mis.esnaad.com/api/v1/esnaad/constructions');
-        $jsonData = $response->json();
+        // $response = Http::withHeaders([
+        //     'authkey' => 'YOUR_SECRET_KEY'
+        // ])->get('www.mis.esnaad.com/api/v1/esnaad/constructions');
+        // $jsonData = $response->json();
         
         // RETURN AS JSON
         // dd($jsonData);
-        $this->data['response'] = $jsonData;
+        // $this->data['response'] = $jsonData;
 
-        if(count($jsonData) > 0){
-            $this->data['available'] = '1';
-        }
+        // if(count($jsonData) > 0){
+        //     $this->data['available'] = '1';
+        // }
 
-        return view('constructions', $this->data);
+        // return view('constructions', $this->data);
+        return view('constructions');
 
     }
 
 
     public function news() {
-        $jsonSEOData = $this->landingpageseos(7);
-        $this->data['jsonSEOData'] =  $jsonSEOData->json();
+        // $jsonSEOData = $this->landingpageseos(7);
+        // $this->data['jsonSEOData'] =  $jsonSEOData->json();
 
-        // CALL API FROM MIS
-        $response = Http::withHeaders([
-            'authkey' => 'YOUR_SECRET_KEY'
-        ])->get('www.mis.esnaad.com/api/v1/esnaad/news');
-        $jsonData = $response->json();  
+        // // CALL API FROM MIS
+        // $response = Http::withHeaders([
+        //     'authkey' => 'YOUR_SECRET_KEY'
+        // ])->get('www.mis.esnaad.com/api/v1/esnaad/news');
+        // $jsonData = $response->json();  
 
 
-        if(count($jsonData) > 0){
-            $this->data['available'] = '1';
-        }
+        // if(count($jsonData) > 0){
+        //     $this->data['available'] = '1';
+        // }
         
-        // RETURN AS JSON
-        $this->data['response'] = $jsonData;
+        // // RETURN AS JSON
+        // $this->data['response'] = $jsonData;
 
-        return view('news', $this->data);
+        // return view('news', $this->data);
+        return view('news');
 
     }
 

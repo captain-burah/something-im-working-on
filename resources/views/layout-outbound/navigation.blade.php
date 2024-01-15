@@ -96,13 +96,13 @@
             <div class=" flex items-center ">
                 <div class="shrink-0 flex items-center hidden lg:block text-2xl font-thin">
                     @tablet
-                        <a href="{{ url('/') }}" aria-label="home-route">
+                        <a href="{{ URL($langSeg.'/') }}" aria-label="home-route">
                             <img style="height: 30px !important;" src="{{ asset('logo-dark.png') }}" alt="esnaad-logo-navbar">
                         </a>
                     @endtablet
 
                     @desktop
-                        <a href="{{ url('/') }}" aria-label="home-route">
+                        <a href="{{ URL($langSeg.'/') }}" aria-label="home-route">
                             <img style="height: 50px !important;" src="{{ asset('logo-dark.png') }}" alt="esnaad-logo-navbar">
                         </a>
                     @enddesktop

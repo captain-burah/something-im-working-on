@@ -1,7 +1,7 @@
 <!-- Nothing in life is to be feared, it is only to be understood. Now is the time to understand more, so that we may fear less. - Marie Curie -->
 
     <div class="max-w-full h-fit mx-auto" >
-        <a href="{{ URL('/blogs/'.$updated->format('Y').'/'.$updated->format('m').'/'.$sluglink) }}">
+        <a href="{{ URL($langSeg.'/blogs/'.$updated->format('Y').'/'.$updated->format('m').'/'.$sluglink) }}">
 
 
             <div class="w-full h-full group">
@@ -14,7 +14,7 @@
                         alt="lpd-blogs-{{$sluglink}}"
                     >
                     <div class="absolute h-full w-full bg-black/20 flex items-center justify-center -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
-                        <a href="{{ URL('/blogs/'.$updated->format('Y').'/'.$updated->format('m').'/'.$sluglink) }}"
+                        <a href="{{ URL($langSeg.'/blogs/'.$updated->format('Y').'/'.$updated->format('m').'/'.$sluglink) }}"
                         aria-label="lpd-blogs-{{$sluglink}}">
                             <button class="bg-white text-black py-2 px-5">More Details</button>
                         </a>
@@ -24,14 +24,14 @@
 
 
             <div class="p-5 flex flex-col  h-full justify-between">
-                <a href="{{ URL('/blogs/'.$updated->format('Y').'/'.$updated->format('m').'/'.$sluglink) }}"
+                <a href="{{ URL($langSeg.'/blogs/'.$updated->format('Y').'/'.$updated->format('m').'/'.$sluglink) }}"
                 aria-label="lpd-blogs-{{$sluglink}}">
                     <h5 class="mb-2 text-lg font-normal tracking-tight text-gray-900 ">
                         {{ Str::limit($name, 65)}}
                     </h5>
                 </a>
 
-                <a href="{{ URL('/blogs/'.$updated->format('Y').'/'.$updated->format('m').'/'.$sluglink) }}" class="inline-flex items-center px-0 py-2 text-sm font-light uppercase"
+                <a href="{{ URL($langSeg.'/blogs/'.$updated->format('Y').'/'.$updated->format('m').'/'.$sluglink) }}" class="inline-flex items-center px-0 py-2 text-sm font-light uppercase"
                 aria-label="lpd-blogs-{{$sluglink}}">
                     {{$updated->format('Y - M')}} |
                     4 min read

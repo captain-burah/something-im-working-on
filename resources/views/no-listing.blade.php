@@ -14,7 +14,7 @@
                 <h2 class="text-2xl font-bold">
                     Request an Inquiry
                 </h2>
-                <form class="mt-8 space-y-6" method="post" action="{{ url('property-request-inquiry') }}">
+                <form class="mt-8 space-y-6" method="post" action="{{ URL('en/property-request-inquiry') }}">
                     @csrf
                     <input type="hidden" id="country_code" name="country_code">
                     <input type="hidden" id="url" name="url" value="{{Request::url()}}">

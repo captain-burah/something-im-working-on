@@ -118,13 +118,13 @@
 
         <div>
             <p class="text-sm font-bold">
-                <a href="{{ URL('/dubai-communities') }}">{{ __('Communities') }}</a>
+                <a href="{{ URL($langSeg.'/dubai-communities') }}">{{ __('Communities') }}</a>
             </p>
 
             <ul class="list-none">
                 @foreach($footer_communities as $data)
                     <li class="text-sm text-gray-400 my-2">
-                        <a href=" {{ URL('/dubai-communities/'.$data->slug_link) }}">{{ $data->title_en }}</a>
+                        <a href=" {{ URL($langSeg.'/dubai-communities/'.$data->slug_link) }}">{{ $data->title_en }}</a>
                     </li>
                 @endforeach
             </ul>
@@ -132,13 +132,13 @@
 
         <div>
             <p class="text-sm font-bold">
-                <a href="{{ URL('/dubai-developers') }}">{{ __('Developers') }}</a>
+                <a href="{{ URL($langSeg.'/dubai-developers') }}">{{ __('Developers') }}</a>
             </p>
 
             <ul class="list-none">
                 @foreach($footer_developers as $data)
                     <li class="text-sm text-gray-400 my-2">
-                        <a href=" {{ URL('/dubai-developers/'.$data->slug_link) }}">{{ $data->name_en }}</a>
+                        <a href=" {{ URL($langSeg.'/dubai-developers/'.$data->slug_link) }}">{{ $data->name_en }}</a>
                     </li>
                 @endforeach
             </ul>
@@ -146,13 +146,13 @@
 
         <div>
             <p class="text-sm font-bold">
-                <a href="{{ URL('/dubai-new-projects') }}">{{ __('New Projects') }}</a>
+                <a href="{{ URL($langSeg.'/dubai-new-projects') }}">{{ __('New Projects') }}</a>
             </p>
 
             <ul class="list-none">
                 @foreach($footer_new_projects as $data)
                     <li class="text-sm text-gray-400 my-2">
-                        <a href=" {{ URL('/dubai-new-projects/'.$data->slug_link) }}">{{ $data->title_en }}</a>
+                        <a href=" {{ URL($langSeg.'/dubai-new-projects/'.$data->slug_link) }}">{{ $data->title_en }}</a>
                     </li>
                 @endforeach
             </ul>
@@ -160,13 +160,13 @@
 
         <div>
             <p class="text-sm font-bold">
-                <a href="{{ URL('/ready-properties-for-sale-in-dubai') }}">{{ __('Ready Projects') }}</a>
+                <a href="{{ URL($langSeg.'/ready-properties-for-sale-in-dubai') }}">{{ __('Ready Projects') }}</a>
             </p>
 
             <ul class="list-none">
                 @foreach($footer_ready_projects as $data)
                     <li class="text-sm text-gray-400 my-2 lowercase">
-                        <a href=" {{ URL('/buy/'.strtolower(@$data->project_types->first()->name_en).'/'.$data->slug_link) }}">{{ $data->title_en }}</a>
+                        <a href=" {{ URL($langSeg.'/buy/'.strtolower(@$data->project_types->first()->name_en).'/'.$data->slug_link) }}">{{ $data->title_en }}</a>
                     </li>
                 @endforeach
             </ul>
@@ -329,13 +329,13 @@
         <div class="grid grid-cols-2 gap-4">
             <div>
                 <p class="text-sm font-bold">
-                    <a href="{{ URL('/dubai-communities') }}">{{ __('Communities') }}</a>
+                    <a href="{{ URL($langSeg.'/dubai-communities') }}">{{ __('Communities') }}</a>
                 </p>
 
                 <ul class="list-none">
                     @foreach($footer_communities as $data)
                         <li class="text-sm text-gray-400 my-2">
-                            <a href=" {{ URL('/dubai-communities/'.$data->slug_link) }}">{{ $data->title_en }}</a>
+                            <a href=" {{ URL($langSeg.'/dubai-communities/'.$data->slug_link) }}">{{ $data->title_en }}</a>
                         </li>
                     @endforeach
                 </ul>
@@ -343,13 +343,13 @@
 
             <div>
                 <p class="text-sm font-bold">
-                    <a href="{{ URL('/dubai-developers') }}">{{ __('Developers') }}</a>
+                    <a href="{{ URL($langSeg.'/dubai-developers') }}">{{ __('Developers') }}</a>
                 </p>
 
                 <ul class="list-none">
                     @foreach($footer_developers as $data)
                         <li class="text-sm text-gray-400 my-2">
-                            <a href=" {{ URL('/dubai-developers/'.$data->slug_link) }}">{{ $data->name_en }}</a>
+                            <a href=" {{ URL($langSeg.'/dubai-developers/'.$data->slug_link) }}">{{ $data->name_en }}</a>
                         </li>
                     @endforeach
                 </ul>
@@ -359,13 +359,13 @@
         <div class="grid grid-cols-2 gap-4 my-8">
             <div>
                 <p class="text-sm font-bold">
-                    <a href="{{ URL('/dubai-new-projects') }}">{{ __('New Projects') }}</a>
+                    <a href="{{ URL($langSeg.'/dubai-new-projects') }}">{{ __('New Projects') }}</a>
                 </p>
 
                 <ul class="list-none">
                     @foreach($footer_new_projects as $data)
                         <li class="text-sm text-gray-400 my-2">
-                            <a href=" {{ URL('/dubai-new-projects/'.$data->slug_link) }}">{{ $data->title_en }}</a>
+                            <a href=" {{ URL($langSeg.'/dubai-new-projects/'.$data->slug_link) }}">{{ $data->title_en }}</a>
                         </li>
                     @endforeach
                 </ul>
@@ -373,13 +373,13 @@
 
             <div>
                 <p class="text-sm font-bold">
-                    <a href="{{ URL('/ready-properties-for-sale-in-dubai') }}">{{ __('Ready Projects') }}</a>
+                    <a href="{{ URL($langSeg.'/ready-properties-for-sale-in-dubai') }}">{{ __('Ready Projects') }}</a>
                 </p>
 
                 <ul class="list-none">
                     @foreach($footer_ready_projects as $data)
                         <li class="text-sm text-gray-400 my-2 lowercase">
-                            <a href=" {{ URL('/buy/'.strtolower(@$data->project_types->first()->name_en).'/'.$data->slug_link) }}">{{ $data->title_en }}</a>
+                            <a href=" {{ URL($langSeg.'/buy/'.strtolower(@$data->project_types->first()->name_en).'/'.$data->slug_link) }}">{{ $data->title_en }}</a>
                         </li>
                     @endforeach
                 </ul>

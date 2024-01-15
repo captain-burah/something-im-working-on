@@ -83,13 +83,13 @@
     </div>
 {{--     
     <ul class="hidden bg-white lg:block space-y-6 pt-8 pb-4 pl-[10vw]  ">
-        <li ><a href="{{ url('about-esnaad') }}" class="text-dark">About</a></li>
-        <li ><a href="{{ url('projects') }}" class="text-dark">Projects</a></li>
-        <li ><a href="{{ url('communities') }}" class="text-dark">Communities</a></li>
-        <li ><a href="{{ url('invest-in-dubai') }}" class="text-dark">Invest in Dubai</a></li>
-        <li ><a href="{{ url('/constructions') }}" class="text-dark">Construction</a></li>
-        <li ><a href="{{ url('/news') }}" class="text-dark">NEWS</a></li>
-        <li ><a href="{{ url('contact') }}" class="text-dark">Contact</a></li>
+        <li ><a href="{{ URL($langSeg.'/about-esnaad') }}" class="text-dark">About</a></li>
+        <li ><a href="{{ URL($langSeg.'/projects') }}" class="text-dark">Projects</a></li>
+        <li ><a href="{{ URL($langSeg.'/communities') }}" class="text-dark">Communities</a></li>
+        <li ><a href="{{ URL($langSeg.'/invest-in-dubai') }}" class="text-dark">Invest in Dubai</a></li>
+        <li ><a href="{{ URL($langSeg.'/constructions') }}" class="text-dark">Construction</a></li>
+        <li ><a href="{{ URL($langSeg.'/news') }}" class="text-dark">NEWS</a></li>
+        <li ><a href="{{ URL($langSeg.'/contact') }}" class="text-dark">Contact</a></li>
       </ul> --}}
     
   </nav>

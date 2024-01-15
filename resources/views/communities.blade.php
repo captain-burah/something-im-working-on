@@ -133,7 +133,7 @@
             */
             $.ajax({
                 type:'POST',
-                url:"{{ URL('dubai-new-projects/register-your-interest') }}",
+                {{ URL('en/dubai-new-projects/register-your-interest') }}",
                 data:{
                     name:name,
                     email:email,

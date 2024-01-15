@@ -155,7 +155,7 @@
 
                 $.ajax({
                     type:'POST',
-                    url:"{{ URL('/project-detail-brochure-download') }}",
+                    {{ URL('en/project-detail-brochure-download') }}",
                     data: formData,
                     processData: false,
                     contentType: false,

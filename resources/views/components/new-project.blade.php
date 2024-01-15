@@ -26,7 +26,7 @@
                     </div>
                 </div>
                 <div class="text-center py-8 sm:py-6 w-[100%]">
-                    <a href="{{url('project-details')}}" class="bg-black border-black text-sm text-white font-thin py-4 px-20 rounded-0">
+                    <a href="{{url($langSeg.'/project-details')}}" class="bg-black border-black text-sm text-white font-thin py-4 px-20 rounded-0">
                         Explore More
                     </a>
                 </div>

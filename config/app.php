@@ -55,7 +55,7 @@ return [
     |
     */
 
-    'url' => env('APP_URL', 'http://localhost'),
+    'url' => env('APP_URL', 'http://esnaad.com'),
 
     'asset_url' => env('ASSET_URL'),
 
@@ -84,6 +84,8 @@ return [
     */
 
     'locale' => 'en',
+
+    'locales' => ['en', 'ar'],
 
     /*
     |--------------------------------------------------------------------------

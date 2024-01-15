@@ -9,7 +9,7 @@
                         </ul>
                     </div>
                 @endif
-                <form id="contact-desktop-form" action="{{ url('contact-form-post') }}" method="post">
+                <form id="contact-desktop-form" action="{{ URL('en/contact-form-post') }}" method="post">
                     @csrf
                     <div class="icon bg-black text-white w-6 h-6 absolute flex items-center justify-center p-5" style="left:-40px"><i class="fal fa-phone-volume fa-fw text-2xl transform -rotate-45"></i></div>
                     <h3 class="text-3xl text-gray-900 font-thin">Reach out to us</h3>

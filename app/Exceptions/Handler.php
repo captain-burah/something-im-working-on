@@ -27,4 +27,17 @@ class Handler extends ExceptionHandler
             //
         });
     }
+
+
+    public function render($request, Throwable $exception)
+    {
+        // Redirect 404 errors to a custom URL
+        if ($exception instanceof \Symfony\Component\HttpKernel\Exception\NotFoundHttpException) {
+            return redirect()->to('https://esnaad.com/en');
+        }
+
+        // Handle other exceptions as needed
+
+        return parent::render($request, $exception);
+    }
 }

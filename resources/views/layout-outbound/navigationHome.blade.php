@@ -94,13 +94,13 @@
             <div class="flex items-center">
 
                 <div class="hidden space-x-8 sm:-my-px sm:flex mx-auto no-underline pr-8">
-                    <x-nav-link href="{{ url('about-esnaad') }}" aria-label="navbar-route">
+                    <x-nav-link href="{{ URL($langSeg.'/about-esnaad') }}" aria-label="navbar-route">
                         {{ __('ABOUT') }}
                     </x-nav-link>
                 </div>            
 
                 <div class="hidden space-x-8 sm:-my-px sm:flex mx-auto no-underline px-8">
-                    <x-nav-link href="{{ url('developments/Feil-Cummerata') }}" aria-label="navbar-route">
+                    <x-nav-link href="{{ URL($langSeg.'/developments/Feil-Cummerata') }}" aria-label="navbar-route">
                         {{ __('DEVELOPMENT') }}
                     </x-nav-link>
                 </div>
@@ -110,13 +110,13 @@
             <div class=" flex items-center ">
                 <div class="shrink-0 flex items-center  text-2xl font-thin">
                     @tablet
-                        <a href="{{ url('/') }}" aria-label="home-route">
+                        <a href="{{ URL($langSeg.'/') }}" aria-label="home-route">
                             <img style="height: 50px !important;" src="{{ asset('logo-dark.png') }}" alt="esnaad-logo-navbar">
                         </a>
                     @endtablet
 
                     @desktop
-                        <a href="{{ url('/') }}" aria-label="home-route">
+                        <a href="{{ URL($langSeg.'/') }}" aria-label="home-route">
                             <img style="height: 70px !important;" src="{{ asset('logo-dark.png') }}" alt="esnaad-logo-navbar">
                         </a>
                     @enddesktop
@@ -126,26 +126,26 @@
             <div class="flex items-center">
 
                 <div class="hidden space-x-8 sm:-my-px sm:flex mx-auto no-underline px-8">
-                    <x-nav-link href="{{ url('communities/fdsad') }}"  aria-label="navbar-route">
+                    <x-nav-link href="{{ URL($langSeg.'/communities/fdsad') }}"  aria-label="navbar-route">
                         {{ __('COMMUNITY') }}
                     </x-nav-link>
                 </div>
 
                 {{-- <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex text-center">
-                    <x-nav-link href="{{ url('invest-in-dubai') }}"  aria-label="navbar-route">
+                    <x-nav-link href="{{ URL($langSeg.'/invest-in-dubai') }}"  aria-label="navbar-route">
                         {{ __('INVEST IN DUBAI') }}
                     </x-nav-link>
                 </div>
 
 
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex text-center">
-                    <x-nav-link href="{{ url('/media-center') }}"  aria-label="navbar-route">
+                    <x-nav-link href="{{ URL($langSeg.'/media-center') }}"  aria-label="navbar-route">
                         {{ __('MEDIA CENTER') }}
                     </x-nav-link>
                 </div> --}}
 
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex text-center pl-8">
-                    <x-nav-link href="{{ url('contact') }}"   aria-label="navbar-route">
+                    <x-nav-link href="{{ URL($langSeg.'/contact') }}"   aria-label="navbar-route">
                         {{ __('CONTACT') }}
                     </x-nav-link>
                 </div>
@@ -172,13 +172,13 @@
             <div class="flex items-center">
 
                 <div class="hidden space-x-8 sm:-my-px sm:flex mx-auto no-underline pr-4">
-                    <x-nav-link href="{{ url('about-esnaad') }}" aria-label="navbar-route">
+                    <x-nav-link href="{{ URL($langSeg.'/about-esnaad') }}" aria-label="navbar-route">
                         {{ __('ABOUT') }}
                     </x-nav-link>
                 </div>            
 
                 <div class="hidden space-x-8 sm:-my-px sm:flex mx-auto no-underline px-4">
-                    <x-nav-link href="{{ url('our-developments') }}" aria-label="navbar-route">
+                    <x-nav-link href="{{ URL($langSeg.'/our-developments') }}" aria-label="navbar-route">
                         {{ __('DEVELOPMENT') }}
                     </x-nav-link>
                 </div>
@@ -188,13 +188,13 @@
             <div class=" flex items-center ">
                 <div class="shrink-0 flex items-center  text-2xl font-thin">
                     @tablet
-                        <a href="{{ url('/') }}" aria-label="home-route">
+                        <a href="{{ URL($langSeg.'/') }}" aria-label="home-route">
                             <img style="height: 50px !important;" src="{{ asset('logo-dark.png') }}" alt="esnaad-logo-navbar">
                         </a>
                     @endtablet
 
                     @desktop
-                        <a href="{{ url('/') }}" aria-label="home-route">
+                        <a href="{{ URL($langSeg.'/') }}" aria-label="home-route">
                             <img style="height: 60px !important;" src="{{ asset('logo-dark.png') }}" alt="esnaad-logo-navbar">
                         </a>
                     @enddesktop
@@ -204,13 +204,13 @@
             <div class="flex items-center">
 
                 <div class="hidden space-x-8 sm:-my-px sm:flex mx-auto no-underline px-4">
-                    <x-nav-link href="{{ url('our-communities') }}"  aria-label="navbar-route">
+                    <x-nav-link href="{{ URL($langSeg.'/our-communities') }}"  aria-label="navbar-route">
                         {{ __('COMMUNITY') }}
                     </x-nav-link>
                 </div>
 
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex text-center pl-4">
-                    <x-nav-link href="{{ url('contact') }}"   aria-label="navbar-route">
+                    <x-nav-link href="{{ URL($langSeg.'/contact') }}"   aria-label="navbar-route">
                         {{ __('CONTACT') }}
                     </x-nav-link>
                 </div>

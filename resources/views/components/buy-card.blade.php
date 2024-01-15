@@ -31,19 +31,19 @@
                     <a
                         @if($type == '1')
                             @if($category == 'Apartment')
-                                href="{{ URL('buy/off-plan/apartments-for-sale/'. $sluglink) }}"
+                                href="{{ URL($langSeg.'/buy/off-plan/apartments-for-sale/'. $sluglink) }}"
                             @elseif($category == 'Villa')
-                                href="{{ URL('buy/off-plan/villas-for-sale/'. $sluglink) }}"
+                                href="{{ URL($langSeg.'/buy/off-plan/villas-for-sale/'. $sluglink) }}"
                             @elseif($category == 'Townhouses')
-                                href="{{ URL('buy/off-plan/townhouses-for-sale/'. $sluglink) }}"
+                                href="{{ URL($langSeg.'/buy/off-plan/townhouses-for-sale/'. $sluglink) }}"
                             @endif
                         @elseif($type == '2')
                             @if($category == 'Apartment')
-                                href="{{ URL('buy/ready/apartments-for-sale/'. $sluglink) }}"
+                                href="{{ URL($langSeg.'/buy/ready/apartments-for-sale/'. $sluglink) }}"
                             @elseif($category == 'Villa')
-                                href="{{ URL('buy/ready/villas-for-sale/'. $sluglink) }}"
+                                href="{{ URL($langSeg.'/buy/ready/villas-for-sale/'. $sluglink) }}"
                             @elseif($category == 'Townhouses')
-                                href="{{ URL('buy/ready/townhouses-for-sale/'. $sluglink) }}"
+                                href="{{ URL($langSeg.'/buy/ready/townhouses-for-sale/'. $sluglink) }}"
                             @endif
                         @endif
                         alt="luxe-properties-dubai-{{$titleen}}"
@@ -61,19 +61,19 @@
             <a
                 @if($type == '1')
                     @if($category == 'Apartment')
-                        href="{{ URL('buy/off-plan/apartments-for-sale/'. $sluglink) }}"
+                        href="{{ URL($langSeg.'/buy/off-plan/apartments-for-sale/'. $sluglink) }}"
                     @elseif($category == 'Villa')
-                        href="{{ URL('buy/off-plan/villas-for-sale/'. $sluglink) }}"
+                        href="{{ URL($langSeg.'/buy/off-plan/villas-for-sale/'. $sluglink) }}"
                     @elseif($category == 'Townhouses')
-                        href="{{ URL('buy/off-plan/townhouses-for-sale/'. $sluglink) }}"
+                        href="{{ URL($langSeg.'/buy/off-plan/townhouses-for-sale/'. $sluglink) }}"
                     @endif
                 @elseif($type == '2')
                     @if($category == 'Apartment')
-                        href="{{ URL('buy/ready/apartments-for-sale/'. $sluglink) }}"
+                        href="{{ URL($langSeg.'/buy/ready/apartments-for-sale/'. $sluglink) }}"
                     @elseif($category == 'Villa')
-                        href="{{ URL('buy/ready/villas-for-sale/'. $sluglink) }}"
+                        href="{{ URL($langSeg.'/buy/ready/villas-for-sale/'. $sluglink) }}"
                     @elseif($category == 'Townhouses')
-                        href="{{ URL('buy/ready/townhouses-for-sale/'. $sluglink) }}"
+                        href="{{ URL($langSeg.'/buy/ready/townhouses-for-sale/'. $sluglink) }}"
                     @endif
                 @endif
                 alt="luxe-properties-dubai-{{$titleen}}"

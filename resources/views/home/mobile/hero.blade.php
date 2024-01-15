@@ -44,14 +44,14 @@
                         <div class="flex items-center">
 
                             <div class="hidden space-x-8 sm:-my-px sm:flex mx-auto no-underline pr-8">
-                                <x-nav-link2 href="{{ url('about-esnaad') }}" :active="request()->routeIs('dashboard')">
+                                <x-nav-link2 href="{{ URL($langSeg.'/about-esnaad') }}" :active="request()->routeIs('dashboard')">
                                     {{ __('ABOUT') }}
                                 </x-nav-link2>
                             </div>
                             
 
                             <div class="hidden space-x-8 sm:-my-px sm:flex mx-auto no-underline px-8">
-                                <x-nav-link2 href="{{ url('our-developments') }}" >
+                                <x-nav-link2 href="{{ URL($langSeg.'/our-developments') }}" >
                                     {{ __('DEVELOPMENT') }}
                                 </x-nav-link2>
                             </div>
@@ -72,13 +72,13 @@
                         <div class="flex items-center">
 
                             <div class="hidden space-x-8 sm:-my-px sm:flex mx-auto no-underline px-8">
-                                <x-nav-link2 href="{{ url('our-communities') }}" :active="request()->routeIs('dashboard')">
+                                <x-nav-link2 href="{{ URL($langSeg.'/our-communities') }}" :active="request()->routeIs('dashboard')">
                                     {{ __('COMMUNITY') }}
                                 </x-nav-link2>
                             </div>
 
                             <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex text-center pl-8">
-                                <x-nav-link2 href="{{ url('contact') }}" :active="request()->routeIs('home')">
+                                <x-nav-link2 href="{{ URL($langSeg.'/contact') }}" :active="request()->routeIs('home')">
                                     {{ __('CONTACT') }}
                                 </x-nav-link2>
                             </div>

@@ -13,7 +13,7 @@
                 <div class="mx-auto px-0 ">
                     <div class="max-w-full cursor-pointer rounded-0 bg-white p-2 shadow">
                         <div class="row">
-                            {{-- <img class="w-full rounded-0 object-cover object-center" src="{{ url('https://mis.esnaad.com/uploads/construction/'.$id.'/thumbnail/'.$thumbnail)}}" alt="product" /> --}}
+                            {{-- <img class="w-full rounded-0 object-cover object-center" src="{{ URL($langSeg.'/https://mis.esnaad.com/uploads/construction/'.$id.'/thumbnail/'.$thumbnail)}}" alt="product" /> --}}
                             <img class="w-full rounded-0 object-cover object-center" src="{{ asset('developments/3.jpg')}}" alt="product" />
                         </div>
                         <div class="row">
@@ -33,7 +33,7 @@
                                         <div class=" w-full h-full bg-gray-200 absolute "></div>
                                         <div class=" h-full bg-black sm:bg-black absolute" style="width:30%"><div class="h-full w-full mx-auto text-xs text-center text-white font-bold">30%</div></div>
                                     </div>
-                                    <a href="{{ url('constructions/'.$sluglink) }}" 
+                                    <a href="{{ URL($langSeg.'/constructions/'.$sluglink) }}" 
                                         class="mt-4 ml-4 mb-4 bg-black text-white px-15 py-3">
                                         Explore
                                     </a>
@@ -41,7 +41,7 @@
                             </div>
                         </div>
                         {{-- <div class="row text-center pb-5 pt-2">
-                            <a href="{{ url('constructions/the-gulf-villas') }}" 
+                            <a href="{{ URL($langSeg.'/constructions/the-gulf-villas') }}" 
                                 class="bg-black text-white px-15 py-3">
                                 Explore
                             </a>
@@ -55,7 +55,7 @@
 
 
 {{-- <div class="max-w-sm rounded overflow-clip shadow">
-                        <img class="w-full" src="{{ url('https://mis.esnaad.com/uploads/construction/'.$id.'/thumbnail/'.$thumbnail)}}" alt="Sunset in the mountains">
+                        <img class="w-full" src="{{ URL($langSeg.'/https://mis.esnaad.com/uploads/construction/'.$id.'/thumbnail/'.$thumbnail)}}" alt="Sunset in the mountains">
                         <div class="px-6 py-4 ">
                             <h3 class="font-thin text-base mb-2">{{$title}}</h3>
 

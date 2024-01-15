@@ -87,13 +87,13 @@
         <div class="flex justify-between h-15">
             <div class="flex items-center">
                 <div class="hidden space-x-10 sm:flex mx-auto no-underline ">
-                    <x-nav-link-tablet href="{{ url('about-us') }}" :active="request()->routeIs('dashboard')" rel="canonical">
+                    <x-nav-link-tablet href="{{ url($langSeg.'/about-us') }}" :active="request()->routeIs('dashboard')" rel="canonical">
                         {{ __('ABOUT') }}
                     </x-nav-link-tablet>
                 </div>
 
                 <div class="hidden space-x-10 sm:flex mx-auto no-underline ">
-                    <x-nav-link-tablet href="{{ url('our-developments') }}" :active="request()->routeIs('dashboard')" rel="canonical">
+                    <x-nav-link-tablet href="{{ url($langSeg.'/our-developments') }}" :active="request()->routeIs('dashboard')" rel="canonical">
                         {{ __('DEVELOPMENT') }}
                     </x-nav-link-tablet>
                 </div>
@@ -107,14 +107,14 @@
 
             <div class="flex items-center">
                 <div class="hidden space-x-10 sm:flex mx-auto no-underline ">
-                    <x-nav-link-tablet href="{{ url('our-communities') }}" :active="request()->routeIs('dashboard')" rel="canonical">
+                    <x-nav-link-tablet href="{{ url($langSeg.'/our-communities') }}" :active="request()->routeIs('dashboard')" rel="canonical">
                         {{ __('COMMUNITY') }}
                     </x-nav-link-tablet>
                 </div>
 
 
                 <div class="hidden space-x-10 sm:flex text-center">
-                    <x-nav-link-tablet href="{{ url('contact') }}" :active="request()->routeIs('home')" rel="canonical">
+                    <x-nav-link-tablet href="{{ url($langSeg.'/contact') }}" :active="request()->routeIs('home')" rel="canonical">
                         {{ __('CONTACT') }}
                     </x-nav-link-tablet>
                 </div>

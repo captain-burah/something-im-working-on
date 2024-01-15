@@ -108,25 +108,25 @@
 
                             <ul class="list-none footer-li" style="padding-left:    0px !important;">
                                 <li class="text-md text-black my-2">
-                                    <a href="{{ url('about-us') }}" aria-label="about-us" rel="canonical">About ESNAAD</a>
+                                    <a href="{{ URL($langSeg.'/about-us') }}" aria-label="about-us" rel="canonical">About ESNAAD</a>
                                 </li>
                                 <li class="text-md text-black my-2">
-                                    <a href="{{ url('invest-in-dubai') }}" aria-label="invest-in-dubai" rel="canonical">Why Invest In Dubai?</a>
+                                    <a href="{{ URL($langSeg.'/invest-in-dubai') }}" aria-label="invest-in-dubai" rel="canonical">Why Invest In Dubai?</a>
                                 </li>
                                 {{-- <li class="text-md text-black my-2">
-                                    <a href="{{ url('communities/') }}" aria-label="communities">Communities</a>
+                                    <a href="{{ URL($langSeg.'/communities/') }}" aria-label="communities">Communities</a>
                                 </li>
                                 <li class="text-md text-black my-2">
-                                    <a href="{{ url('projects/') }}" aria-label="projects">Projects</a>
+                                    <a href="{{ URL($langSeg.'/projects/') }}" aria-label="projects">Projects</a>
                                 </li> --}}
                                 <li class="text-md text-black my-2">
-                                    <a href="{{ url('agency-registration') }}" aria-label="broker-registration" rel="canonical">Broker Registration</a>
+                                    <a href="{{ URL($langSeg.'/agency-registration') }}" aria-label="broker-registration" rel="canonical">Broker Registration</a>
                                 </li>
                                 <li class="text-md text-black my-2">
-                                    <a href="{{ url('careers')}}" aria-label="broker-registration" rel="canonical">Careers</a>
+                                    <a href="{{ URL($langSeg.'/careers')}}" aria-label="broker-registration" rel="canonical">Careers</a>
                                 </li>
                                 <li class="text-md text-black my-2">
-                                    <a href="{{ url('contact') }}" aria-label="contact-us" rel="canonical">Contact Us</a>
+                                    <a href="{{ URL($langSeg.'/contact') }}" aria-label="contact-us" rel="canonical">Contact Us</a>
                                 </li>
 
                             </ul>
@@ -310,19 +310,19 @@
 
                             <ul class="list-none footer-li" style="padding-left: 0px !important;">
                                 <li class="text-md text-black my-2">
-                                    <a href="{{ url('about-us') }}" aria-label="about-us" rel="canonical">About ESNAAD</a>
+                                    <a href="{{ URL($langSeg.'/about-us') }}" aria-label="about-us" rel="canonical">About ESNAAD</a>
                                 </li>
                                 <li class="text-md text-black my-2">
-                                    <a href="{{ url('invest-in-dubai') }}" aria-label="invest-in-dubai" rel="canonical">Why Invest In Dubai?</a>
+                                    <a href="{{ URL($langSeg.'/invest-in-dubai') }}" aria-label="invest-in-dubai" rel="canonical">Why Invest In Dubai?</a>
                                 </li>
                                 <li class="text-md text-black my-2" aria-label="">
-                                    <a href="{{ url('agency-registration') }}" aria-label="broker-registration" rel="canonical">Broker Registration</a>
+                                    <a href="{{ URL($langSeg.'/agency-registration') }}" aria-label="broker-registration" rel="canonical">Broker Registration</a>
                                 </li>
                                 <li class="text-md text-black my-2" aria-label="">
-                                    <a href="{{ url('careers')}}" aria-label="broker-registration" rel="canonical">Careers</a>
+                                    <a href="{{ URL($langSeg.'/careers')}}" aria-label="broker-registration" rel="canonical">Careers</a>
                                 </li>
                                 <li class="text-md text-black my-2">
-                                    <a href="{{ url('contact') }}" aria-label="contact-us" rel="canonical">Contact Us</a>
+                                    <a href="{{ URL($langSeg.'/contact') }}" aria-label="contact-us" rel="canonical">Contact Us</a>
                                 </li>
 
                             </ul>
@@ -427,7 +427,7 @@
                     <div class="flex justify-left my-2">
                         <div>
                             <p class="text-base text-black">
-                                ESNAAD © {{ now()->year }} All Rights Reserved | <a href="{{ url('terms-and-conditions') }}" aria-label="terms-and-conditions" > Terms & Conditions</a> | <a href="{{ url('privacy-and-policy') }}" aria-label="privacy-and-policy" > Privacy & Policy </a>
+                                ESNAAD © {{ now()->year }} All Rights Reserved | <a href="{{ URL($langSeg.'/terms-and-conditions') }}" aria-label="terms-and-conditions" > Terms & Conditions</a> | <a href="{{ URL($langSeg.'/privacy-and-policy') }}" aria-label="privacy-and-policy" > Privacy & Policy </a>
                             </p>
                         </div>
                     </div>
@@ -549,19 +549,19 @@
                         <div class="hidden h-auto max-h-0 items-center opacity-0 transition-all group-focus:block group-focus:max-h-screen group-focus:opacity-100 group-focus:duration-1000">
                             <ul class="list-none footer-li capitalize leading-8" style="padding-left: 0px !important;">
                                 <li class="text-md text-black my-3">
-                                    <a href="{{ url('about-us') }}" aria-label="about-us" rel="canonical">About ESNAAD</a>
+                                    <a href="{{ URL($langSeg.'/about-us') }}" aria-label="about-us" rel="canonical">About ESNAAD</a>
                                 </li>
                                 <li class="text-md text-black my-3">
-                                    <a href="{{ url('invest-in-dubai') }}" aria-label="invest-in-dubai" rel="canonical">Why Invest In Dubai?</a>
+                                    <a href="{{ URL($langSeg.'/invest-in-dubai') }}" aria-label="invest-in-dubai" rel="canonical">Why Invest In Dubai?</a>
                                 </li>
                                 <li class="text-md text-black my-3">
-                                    <a href="{{ url('broker-registration') }}" aria-label="broker-registration" rel="canonical">Broker Registration</a>
+                                    <a href="{{ URL($langSeg.'/broker-registration') }}" aria-label="broker-registration" rel="canonical">Broker Registration</a>
                                 </li>
                                 <li class="text-md text-black my-3">
-                                    <a href="{{ url('careers')}}" aria-label="broker-registration" rel="canonical">Careers</a>
+                                    <a href="{{ URL($langSeg.'/careers')}}" aria-label="broker-registration" rel="canonical">Careers</a>
                                 </li>
                                 <li class="text-md text-black my-3">
-                                    <a href="{{ url('contact') }}" aria-label="contact-us" rel="canonical">Contact Us</a>
+                                    <a href="{{ URL($langSeg.'/contact') }}" aria-label="contact-us" rel="canonical">Contact Us</a>
                                 </li>
                             </ul>
                         </div>
@@ -573,8 +573,8 @@
                         <div>
                             <p class="text-base font-thin text-black leading-8">
                                 ESNAAD © {{ now()->year }} All Rights Reserved <br>
-                                <a href="{{ url('terms-and-conditions') }}" aria-label="terms-and-conditions" rel="canonical">Terms & Conditions</a>
-                                <a href="{{ url('privacy-and-policy') }}" aria-label="privacy-and-policy" rel="canonical">| Privacy & Policy</a>
+                                <a href="{{ URL($langSeg.'/terms-and-conditions') }}" aria-label="terms-and-conditions" rel="canonical">Terms & Conditions</a>
+                                <a href="{{ URL($langSeg.'/privacy-and-policy') }}" aria-label="privacy-and-policy" rel="canonical">| Privacy & Policy</a>
                             </p>
                             
                         </div>

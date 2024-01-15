@@ -13,7 +13,7 @@
           <h4 class="mb-6 text-lg font-semibold">
             {{$last_blog->updated_at->format('Y - M')}} | Latest Read
           </h4>
-          <a href="{{ URL('/blogs/'.$last_blog->updated_at->format('Y').'/'.$last_blog->updated_at->format('m').'/'.$last_blog->slug_link) }}">
+          <a href="{{ URL($langSeg.'/blogs/'.$last_blog->updated_at->format('Y').'/'.$last_blog->updated_at->format('m').'/'.$last_blog->slug_link) }}">
             <button
               type="button"
               class="rounded border-2 border-neutral-50 px-7 pb-[8px] pt-[10px] text-sm font-medium uppercase leading-normal text-neutral-50 transition duration-150 ease-in-out hover:border-neutral-100 hover:bg-neutral-500 hover:bg-opacity-10 hover:text-neutral-100 focus:border-neutral-100 focus:text-neutral-100 focus:outline-none focus:ring-0 active:border-neutral-200 active:text-neutral-200 dark:hover:bg-neutral-100 dark:hover:bg-opacity-10"

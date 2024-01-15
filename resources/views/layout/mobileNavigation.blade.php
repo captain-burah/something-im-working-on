@@ -3,7 +3,7 @@
     <div class="flex justify-between bg-white p-0 w-full h-full">
 
         <div>
-            <a href="#"
+            <a href="{{ url($langSeg.'/') }}"
                 class="h-full inline-block w-full px-1 py-2 text-white font-light  text-center  align-middle transition-all bg-transparent  rounded-0 cursor-pointer leading-normal ease-in tracking-tight-rem shadow-xs bg-150  hover:-translate-y-px active:opacity-85 hover:shadow-md">
                     <img style="height: 40px !important;" 
                     
@@ -42,12 +42,12 @@
             </button>
             <div class="w-full flex-grow bg-white py-2 px-4 mt-1 rounded shadow-lg">
                 <ul class="flex flex-col space-y-2">
-                    <li ><a href="{{ url('about-us') }}" class="block px-2 py-1 text-gray-800 rounded hover:bg-gray-200"">About</a></li>
-                    <li ><a href="{{ url('our-communities') }}" class="block px-2 py-1 text-gray-800 rounded hover:bg-gray-200">Communities</a></li>
-                    <li ><a href="{{ url('our-developments') }}" class="block px-2 py-1 text-gray-800 rounded hover:bg-gray-200">Developments</a></li>
-                    <li ><a href="{{ url('invest-in-dubai') }}" class="block px-2 py-1 text-gray-800 rounded hover:bg-gray-200">Invest in Dubai</a></li>
-                    <li ><a href="{{ url('/media-center') }}" class="block px-2 py-1 text-gray-800 rounded hover:bg-gray-200">Media Center</a></li>
-                    <li ><a href="{{ url('contact') }}" class="block px-2 py-1 text-gray-800 rounded hover:bg-gray-200">Contact</a></li>
+                    <li ><a href="{{ url($langSeg.'/about-us') }}" class="block px-2 py-1 text-gray-800 rounded hover:bg-gray-200"">About</a></li>
+                    <li ><a href="{{ url($langSeg.'/our-communities') }}" class="block px-2 py-1 text-gray-800 rounded hover:bg-gray-200">Communities</a></li>
+                    <li ><a href="{{ url($langSeg.'/our-developments') }}" class="block px-2 py-1 text-gray-800 rounded hover:bg-gray-200">Developments</a></li>
+                    <li ><a href="{{ url($langSeg.'/invest-in-dubai') }}" class="block px-2 py-1 text-gray-800 rounded hover:bg-gray-200">Invest in Dubai</a></li>
+                    <li ><a href="{{ url($langSeg.'/media-center') }}" class="block px-2 py-1 text-gray-800 rounded hover:bg-gray-200">Media Center</a></li>
+                    <li ><a href="{{ url($langSeg.'/contact') }}" class="block px-2 py-1 text-gray-800 rounded hover:bg-gray-200">Contact</a></li>
                 </ul>
             </div>
         </div>

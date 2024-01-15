@@ -29,9 +29,9 @@
                 <div class="absolute h-full w-full bg-black/20 flex items-center justify-center -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
                     <a
                         @if($type == '1')
-                            href="{{ URL('/buy/off-plan/' . strtolower($property_type) .'/' . $sluglink ) }}"
+                            href="{{ URL($langSeg.'/buy/off-plan/' . strtolower($property_type) .'/' . $sluglink ) }}"
                         @elseif($type == '2')
-                            href="{{ URL('/buy/ready/' . strtolower($property_type) . '/' . $sluglink) }}"
+                            href="{{ URL($langSeg.'/buy/ready/' . strtolower($property_type) . '/' . $sluglink) }}"
                         @endif
                         alt="{{$titleen}}"
                         aria-label="view-more-{{$sluglink}}"

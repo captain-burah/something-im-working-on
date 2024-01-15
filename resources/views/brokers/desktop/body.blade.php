@@ -180,7 +180,7 @@
                             'X-CSRF-TOKEN': $('meta[name="XSRF-TOKEN"]').attr('content'),
                             'Access-Control-Allow-Origin': 'https://esnaad.com/agency-registration'
                         },
-                        url:"{{ URL('/agency-registration-post') }}",
+                        {{ URL('en/agency-registration-post') }}",
                         data: formData,
                         processData: false,
                         contentType: false,

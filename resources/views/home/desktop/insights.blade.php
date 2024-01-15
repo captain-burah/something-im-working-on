@@ -4,7 +4,7 @@
         @foreach($blogs as $data)
 
             <div class="max-w-sm  h-full" >
-                <a href="{{ URL('/blogs/'.$data->updated_at->format('Y').'/'.$data->updated_at->format('m').'/'.$data->slug_link) }}"
+                <a href="{{ URL($langSeg.'/blogs/'.$data->updated_at->format('Y').'/'.$data->updated_at->format('m').'/'.$data->slug_link) }}"
                 aria-label="luxe-properties-dubai-home-page-blog-links">
 
                     <img class="object-none"

@@ -169,7 +169,7 @@
 
         $.ajax({
             type:'POST',
-            url:"{{ URL('/subscription-form') }}",
+            {{ URL('en/en/subscription-form') }}",
             data: formData,
             processData: false,
             contentType: false,
@@ -228,7 +228,7 @@
             type:'POST',
             headers: {
                 'X-CSRF-TOKEN': $('meta[name="XSRF-TOKEN"]').attr('content')            },
-            url:"{{ URL('/subscription-form') }}",
+            {{ URL('en/subscription-form') }}",
             data: formData,
             processData: false,
             contentType: false,

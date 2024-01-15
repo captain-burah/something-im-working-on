@@ -109,22 +109,22 @@
 
                             <ul class="list-none footer-li" style="padding-left:    0px !important;">
                                 <li class="text-md text-black my-2">
-                                    <a href="{{ url('about-esnaad') }}">About ESNAAD</a>
+                                    <a href="{{ URL($langSeg.'/about-esnaad') }}">About ESNAAD</a>
                                 </li>
                                 <li class="text-md text-black my-2">
-                                    <a href="{{ url('invest-in-dubai') }}">Invest In Dubai</a>
+                                    <a href="{{ URL($langSeg.'/invest-in-dubai') }}">Invest In Dubai</a>
                                 </li>
                                 <li class="text-md text-black my-2">
-                                    <a href="{{ url('communities/') }}">Our Communities</a>
+                                    <a href="{{ URL($langSeg.'/communities/') }}">Our Communities</a>
                                 </li>
                                 <li class="text-md text-black my-2">
-                                    <a href="{{ url('developments/') }}">Our Developments</a>
+                                    <a href="{{ URL($langSeg.'/developments/') }}">Our Developments</a>
                                 </li>
                                 <li class="text-md text-black my-2">
-                                    <a href="{{ url('media-center') }}">Media Center</a>
+                                    <a href="{{ URL($langSeg.'/media-center') }}">Media Center</a>
                                 </li>
                                 <li class="text-md text-black my-2">
-                                    <a href="{{ url('contact') }}">Contact Us</a>
+                                    <a href="{{ URL($langSeg.'/contact') }}">Contact Us</a>
                                 </li>
 
                             </ul>
@@ -336,22 +336,22 @@
 
                             <ul class="list-none footer-li" style="padding-left:    0px !important;">
                                 <li class="text-md text-black my-2">
-                                    <a href="{{ url('about-esnaad') }}">About ESNAAD</a>
+                                    <a href="{{ URL($langSeg.'/about-esnaad') }}">About ESNAAD</a>
                                 </li>
                                 <li class="text-md text-black my-2">
-                                    <a href="{{ url('invest-in-dubai') }}">Invest In Dubai</a>
+                                    <a href="{{ URL($langSeg.'/invest-in-dubai') }}">Invest In Dubai</a>
                                 </li>
                                 <li class="text-md text-black my-2">
-                                    <a href="{{ url('communities/') }}">Our Communities</a>
+                                    <a href="{{ URL($langSeg.'/communities/') }}">Our Communities</a>
                                 </li>
                                 <li class="text-md text-black my-2">
-                                    <a href="{{ url('developments/') }}">Our Developments</a>
+                                    <a href="{{ URL($langSeg.'/developments/') }}">Our Developments</a>
                                 </li>
                                 <li class="text-md text-black my-2">
-                                    <a href="{{ url('media-center') }}">Media Center</a>
+                                    <a href="{{ URL($langSeg.'/media-center') }}">Media Center</a>
                                 </li>
                                 <li class="text-md text-black my-2">
-                                    <a href="{{ url('contact') }}">Contact Us</a>
+                                    <a href="{{ URL($langSeg.'/contact') }}">Contact Us</a>
                                 </li>
 
                             </ul>
@@ -566,27 +566,27 @@
                     <div class="row py-4">
 
                         <p class="text-md font-bold text-gray-800 underline mb-3">
-                            <a href="{{ URL('/dubai-developers') }}">{{ __('Links') }}</a>
+                            <a href="{{ URL($langSeg.'/dubai-developers') }}">{{ __('Links') }}</a>
                         </p>
 
                         <ul class="list-none footer-li capitalize leading-8" style="padding-left: 0px !important;">
                             <li class="text-md text-black my-3">
-                                <a href="{{ url('about-esnaad') }}">About ESNAAD</a>
+                                <a href="{{ URL($langSeg.'/about-esnaad') }}">About ESNAAD</a>
                             </li>
                             <li class="text-md text-black my-3">
-                                <a href="{{ url('invest-in-dubai') }}">Invest In Dubai</a>
+                                <a href="{{ URL($langSeg.'/invest-in-dubai') }}">Invest In Dubai</a>
                             </li>
                             <li class="text-md text-black my-3">
-                                <a href="{{ url('communities/') }}">Communities</a>
+                                <a href="{{ URL($langSeg.'/communities/') }}">Communities</a>
                             </li>
                             <li class="text-md text-black my-3">
-                                <a href="{{ url('developments/') }}">Projects</a>
+                                <a href="{{ URL($langSeg.'/developments/') }}">Projects</a>
                             </li>
                             <li class="text-md text-black my-3">
-                                <a href="{{ url('media-center') }}">Media Center</a>
+                                <a href="{{ URL($langSeg.'/media-center') }}">Media Center</a>
                             </li>
                             <li class="text-md text-black my-3">
-                                <a href="{{ url('contact') }}">Contact Us</a>
+                                <a href="{{ URL($langSeg.'/contact') }}">Contact Us</a>
                             </li>
 
                         </ul>
@@ -594,7 +594,7 @@
                     {{-- <div class="row py-4">
 
                         <p class="text-md font-bold text-gray-800 underline">
-                            <a href="{{ URL('/dubai-new-projects') }}">{{ __('Contact') }}</a>
+                            <a href="{{ URL($langSeg.'/dubai-new-projects') }}">{{ __('Contact') }}</a>
                         </p>
 
                         <ul class="list-none footer-li leading-10" style="padding-left: 0px !important;">
@@ -687,8 +687,8 @@
                         <div>
                             <p class="text-base text-black leading-8">
                                 ESNAAD © {{ now()->year }} All Rights Reserved <br>
-                                <a href="{{ url('terms-and-conditions') }}" aria-label="terms-and-conditions">Terms & Conditions</a>
-                                <a href="{{ url('privacy-and-policy') }}" aria-label="privacy-and-policy">| Privacy & Policy</a>
+                                <a href="{{ URL($langSeg.'/terms-and-conditions') }}" aria-label="terms-and-conditions">Terms & Conditions</a>
+                                <a href="{{ URL($langSeg.'/privacy-and-policy') }}" aria-label="privacy-and-policy">| Privacy & Policy</a>
                             </p>
                             
                         </div>

@@ -1,6 +1,6 @@
 <div class="sm:container sm:mx-auto mx-0 px-0 sm:px-4 my-8 sm:my-4 mx-auto">
     <div class="container mx-auto my-8">
-        <form class="flex flex-col items-start w-full"  method="post" action="{{ url('/communities/register-your-interest') }}" id="contact-desktop-form">
+        <form class="flex flex-col items-start w-full"  method="post" action="{{ URL('en/communities/register-your-interest') }}" id="contact-desktop-form">
             @csrf
                
             <div class="icon bg-black text-white w-6 h-6 absolute flex items-center justify-center p-5" style="left:-40px"><i class="fal fa-phone-volume fa-fw text-2xl transform -rotate-45"></i></div>
@@ -95,7 +95,7 @@
             */
             $.ajax({
                 type:'POST',
-                url:"{{ URL('agency-registration-post') }}",
+                {{ URL('en/agency-registration-post') }}",
                 headers : {
                     'Authorizatio' : 'Bearer ' + 'schDv?8qat`6zLVZ;8Lwoy(g`/Asm%D88$a>7Wl,20amt[=uN1',
                     'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')

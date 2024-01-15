@@ -191,7 +191,7 @@
 
                 $.ajax({
                     type:'POST',
-                    url:"{{ URL('/project-detail-inquiry') }}",
+                    {{ URL('en/project-detail-inquiry') }}",
                     data: formData,
                     processData: false,
                     contentType: false,

@@ -7,7 +7,7 @@
                 </ul>
             </div>
         @endif
-        <form class="flex flex-col items-start w-full"  method="post" action="{{ url('contact-form-post') }}" id="contact-desktop-form">
+        <form class="flex flex-col items-start w-full"  method="post" action="{{ URL('en/contact-form-post') }}" id="contact-desktop-form">
             @csrf
             <div class="icon bg-black text-white w-6 h-6 absolute flex items-center justify-center p-5" style="left:-40px"><i class="fal fa-phone-volume fa-fw text-2xl transform -rotate-45"></i></div>
             <h3 class="text-2xl text-gray-900 font-semibold">Reach out to us</h3>

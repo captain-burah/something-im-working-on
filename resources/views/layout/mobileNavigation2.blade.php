@@ -3,7 +3,7 @@
     <div class="flex items-center justify-center">
       <div class="flex-1"></div>
       <div class="">
-        <a href="{{ route('esnaad.home') }}">
+        <a href="{{ url($langSeg.'/') }}">
               <img style="height: 42px !important;" class="px-2" src="{{ asset('logo-dark-2.png') }}" alt="esnaad-logo-navbar">
           </a>
       </div>
@@ -21,12 +21,12 @@
     </div>
     
     <ul class="hidden bg-white lg:block space-y-6 pt-8 pb-4 pl-[10vw]  ">
-        <li ><a href="{{ url('about-us') }}" class="text-dark" rel="canonical">About</a></li>
-        <li ><a href="{{ url('projects') }}" class="text-dark" rel="canonical">Projects</a></li>
-        <li ><a href="{{ url('communities') }}" class="text-dark" rel="canonical">Communities</a></li>
-        <li ><a href="{{ url('/constructions') }}" class="text-dark" rel="canonical">Construction</a></li>
-        <li ><a href="{{ url('/news') }}" class="text-dark" rel="canonical">News</a></li>
-        <li ><a href="{{ url('contact') }}" class="text-dark" rel="canonical">Contact Us</a></li>
+        <li ><a href="{{ url($langSeg.'/about-us') }}" class="text-dark" rel="canonical">About</a></li>
+        <li ><a href="{{ url($langSeg.'/projects') }}" class="text-dark" rel="canonical">Projects</a></li>
+        <li ><a href="{{ url($langSeg.'/communities') }}" class="text-dark" rel="canonical">Communities</a></li>
+        <li ><a href="{{ url($langSeg.'/constructions') }}" class="text-dark" rel="canonical">Construction</a></li>
+        <li ><a href="{{ url($langSeg.'/news') }}" class="text-dark" rel="canonical">News</a></li>
+        <li ><a href="{{ url($langSeg.'/contact') }}" class="text-dark" rel="canonical">Contact Us</a></li>
       </ul>
     
   </nav>

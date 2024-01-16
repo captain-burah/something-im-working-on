@@ -17,7 +17,7 @@
         </div>
         <div class=" h-full w-full flex items-center justify-center">
             <span class="pt-5 px-0 text-left text-md font-base leading-6">
-                {{$description}}
+                {{ __('frontend.'.$description) }}
             </span>
         </div>
     </div>

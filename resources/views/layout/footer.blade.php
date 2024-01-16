@@ -20,7 +20,7 @@
                 <!-- Footer Links -->
                 <div class="mx-auto mt-4 max-w-full lg:mt-24 lg:max-w-full">
 
-                    <div class="grid grid-cols-2 gap-4 reverse">
+                    <div class="grid grid-cols-2 gap-4 reverse"  @if($langSeg == 'ar') dir="RTL" @endif>
 
                         <div class="col-span-2">
                             <div class="mx-auto">
@@ -29,9 +29,7 @@
                                 </span>
 
                                 <p class="text-md text-black w-full text-justify mb-6">
-                                    {{ __('
-                                        With a commitment to excellence and a passion for innovation, ESNAAD has carved a distinctive niche in the real estate industry, setting new standards in luxury living, urban development, and sustainable design
-                                    ') }}
+                                    {{ __('frontend.footerEsnaadP') }}
                                 </p>
                                 <div class="flex my-8 w-full text-justify my-auto inline-block align-middle w-50">
 
@@ -101,40 +99,34 @@
                             </div>
                         </div>
 
-                        <div class="mt-5">
+                        <div class="mt-5"  @if($langSeg == 'ar') dir="RTL" @endif>
                             <p class="text-md font-bold text-gray-800">
-                                {{ __('Links') }}
+                                {{ __('frontend.footerLinks') }}
                             </p>
 
                             <ul class="list-none footer-li" style="padding-left:    0px !important;">
                                 <li class="text-md text-black my-2">
-                                    <a href="{{ URL($langSeg.'/about-us') }}" aria-label="about-us" rel="canonical">About ESNAAD</a>
+                                    <a href="{{ URL($langSeg.'/about-us') }}" aria-label="about-us" rel="canonical">{{ __('frontend.footerLinksAboutEsnaad') }}</a>
                                 </li>
                                 <li class="text-md text-black my-2">
-                                    <a href="{{ URL($langSeg.'/invest-in-dubai') }}" aria-label="invest-in-dubai" rel="canonical">Why Invest In Dubai?</a>
-                                </li>
-                                {{-- <li class="text-md text-black my-2">
-                                    <a href="{{ URL($langSeg.'/communities/') }}" aria-label="communities">Communities</a>
+                                    <a href="{{ URL($langSeg.'/invest-in-dubai') }}" aria-label="invest-in-dubai" rel="canonical">{{ __('frontend.footerLinksWhyInvest') }}</a>
                                 </li>
                                 <li class="text-md text-black my-2">
-                                    <a href="{{ URL($langSeg.'/projects/') }}" aria-label="projects">Projects</a>
-                                </li> --}}
-                                <li class="text-md text-black my-2">
-                                    <a href="{{ URL($langSeg.'/agency-registration') }}" aria-label="broker-registration" rel="canonical">Broker Registration</a>
+                                    <a href="{{ URL($langSeg.'/agency-registration') }}" aria-label="broker-registration" rel="canonical">{{ __('frontend.footerLinksBrokerReg') }}</a>
                                 </li>
                                 <li class="text-md text-black my-2">
-                                    <a href="{{ URL($langSeg.'/careers')}}" aria-label="broker-registration" rel="canonical">Careers</a>
+                                    <a href="{{ URL($langSeg.'/careers')}}" aria-label="broker-registration" rel="canonical">{{ __('frontend.footerLinksCareers') }}</a>
                                 </li>
                                 <li class="text-md text-black my-2">
-                                    <a href="{{ URL($langSeg.'/contact') }}" aria-label="contact-us" rel="canonical">Contact Us</a>
+                                    <a href="{{ URL($langSeg.'/contact') }}" aria-label="contact-us" rel="canonical">{{ __('frontend.footerLinksContact') }}</a>
                                 </li>
 
                             </ul>
                         </div>
 
-                        <div class="mt-5">
+                        <div class="mt-5"  @if($langSeg == 'ar') dir="RTL" @endif>
                             <p class="text-md font-bold text-gray-800">
-                                {{ __('Contacts') }}
+                                {{ __('frontend.footerContacts') }}
                             </p>
 
                             <ul class="list-none footer-li leading-10" style="padding-left: 0px !important;">
@@ -163,7 +155,7 @@
                                             </g>
                                         </svg>
                                         &nbsp;
-                                        Building No. 1 - City Walk, Dubai
+                                        {{ __('frontend.footerAddress') }}
                                     </div>
                                 </li>
                                 <li class="text-md text-black my-2">
@@ -186,7 +178,7 @@
                                             </g>
                                         </svg>
                                         &nbsp;
-                                        +971 4287 9506
+                                        {{ __('frontend.footerContacts') }}
                                     </div>
                                 </li>
                                 <li class="text-md text-black my-2">
@@ -244,18 +236,16 @@
                 <!-- Footer Links -->
                 <div class="mx-auto mt-4 max-w-full lg:mt-0 lg:max-w-full">
 
-                    <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 reverse">
+                    <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 reverse"  @if($langSeg == 'ar') dir="RTL" @endif>
 
-                        <div class="col-span-2">
+                        <div class="col-span-2" @if($langSeg == 'ar') dir="RTL" @endif>
                             <div class="mx-auto">
                                 <span class="text-3xl text-gray-900 text-center mx-auto py-5" >
                                     <img style="height: 60px !important;" src="{{ asset('logo-dark-2.png') }}" alt="esnaad-logo-footer" class="mb-5">
                                 </span>
 
                                 <p class="text-md text-black text-justify mb-6 w-[80%]">
-                                    {{ __('
-                                        With a commitment to excellence and a passion for innovation, ESNAAD has carved a distinctive niche in the real estate industry, setting new standards in luxury living, urban development, and sustainable design
-                                    ') }}
+                                    {{ __('frontend.footerEsnaadP') }}
                                 </p>
                                 <div class="flex my-8 text-justify my-auto inline-block align-middle w-[50%]">
 
@@ -279,7 +269,7 @@
                                         <div class="w-8 bg-footer rounded-3xl p-1">
                                             <a href="{{ env('COMPANY_TW') }}" target="_blank" aria-label="esnaad-x" rel="canonical">
                                                 <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 1668.56 1221.19" height="26px" viewBox="0 0 1668.56 1221.19" id="twitter-x"><path d="M283.94,167.31l386.39,516.64L281.5,1104h87.51l340.42-367.76L984.48,1104h297.8L874.15,558.3l361.92-390.99
-		h-87.51l-313.51,338.7l-253.31-338.7H283.94z M412.63,231.77h136.81l604.13,807.76h-136.81L412.63,231.77z" transform="translate(52.39 -25.059)"></path></svg>
+		                                            h-87.51l-313.51,338.7l-253.31-338.7H283.94z M412.63,231.77h136.81l604.13,807.76h-136.81L412.63,231.77z" transform="translate(52.39 -25.059)"></path></svg>
                                             </a>
                                         </div>
                                     </div>
@@ -303,34 +293,34 @@
                             </div>
                         </div>
 
-                        <div >
+                        <div @if($langSeg == 'ar') dir="RTL" @endif>
                             <p class="text-md font-bold text-black">
-                                {{ __('Links') }}
+                                {{ __('frontend.footerLinks') }}
                             </p>
 
                             <ul class="list-none footer-li" style="padding-left: 0px !important;">
                                 <li class="text-md text-black my-2">
-                                    <a href="{{ URL($langSeg.'/about-us') }}" aria-label="about-us" rel="canonical">About ESNAAD</a>
+                                    <a href="{{ URL($langSeg.'/about-us') }}" aria-label="about-us" rel="canonical">{{ __('frontend.footerLinksAboutEsnaad') }}</a>
                                 </li>
                                 <li class="text-md text-black my-2">
-                                    <a href="{{ URL($langSeg.'/invest-in-dubai') }}" aria-label="invest-in-dubai" rel="canonical">Why Invest In Dubai?</a>
+                                    <a href="{{ URL($langSeg.'/invest-in-dubai') }}" aria-label="invest-in-dubai" rel="canonical">{{ __('frontend.footerLinksWhyInvest') }}</a>
                                 </li>
                                 <li class="text-md text-black my-2" aria-label="">
-                                    <a href="{{ URL($langSeg.'/agency-registration') }}" aria-label="broker-registration" rel="canonical">Broker Registration</a>
+                                    <a href="{{ URL($langSeg.'/agency-registration') }}" aria-label="broker-registration" rel="canonical">{{ __('frontend.footerLinksBrokerReg') }}</a>
                                 </li>
                                 <li class="text-md text-black my-2" aria-label="">
-                                    <a href="{{ URL($langSeg.'/careers')}}" aria-label="broker-registration" rel="canonical">Careers</a>
+                                    <a href="{{ URL($langSeg.'/careers')}}" aria-label="career-registration" rel="canonical">{{ __('frontend.footerLinksCareers') }}</a>
                                 </li>
                                 <li class="text-md text-black my-2">
-                                    <a href="{{ URL($langSeg.'/contact') }}" aria-label="contact-us" rel="canonical">Contact Us</a>
+                                    <a href="{{ URL($langSeg.'/contact') }}" aria-label="contact-us" rel="canonical">{{ __('frontend.footerLinksContact') }}</a>
                                 </li>
 
                             </ul>
                         </div>
 
-                        <div >
+                        <div @if($langSeg == 'ar') dir="RTL" @endif>
                             <p class="text-md font-bold text-black">
-                                {{ __('Contacts') }}
+                                {{ __('frontend.footerContacts') }}
                             </p>
 
                             <ul class="list-none footer-li leading-10" style="padding-left: 0px !important;">
@@ -359,7 +349,7 @@
                                             </g>
                                         </svg>
                                         &nbsp;
-                                        Building No. 1 - City Walk, Dubai
+                                        {{ __('frontend.footerAddress') }}
                                     </div>
                                 </li>
                                 <li class="text-md text-black my-2">
@@ -383,7 +373,7 @@
                                                 </g>
                                             </svg>
                                             &nbsp;
-                                            +971 4 287 9506
+                                            {{ __('frontend.footerContact') }}                                            
                                         </a>
                                     </div>
                                 </li>
@@ -437,17 +427,14 @@
         </div>
     @enddesktop
 
-
-
-
     @mobile
         <div class="block py-8 text-gray-50 bg-footer" id="footer" style="visibility:hidden">
-            <div class="container mx-auto px-4">
+            <div class="container mx-auto px-4"  @if($langSeg == 'ar') dir="RTL" @endif>
 
                 <!-- Footer Links -->
                 <div class="mx-auto max-w-full lg:mt-24 lg:max-w-full">
 
-                    <div class="row ">
+                    <div class="row "  @if($langSeg == 'ar') dir="RTL" @endif>
 
                         <div class="py-4">
                             <div class="mx-auto">
@@ -455,16 +442,16 @@
                                     <img style="height: 60px !important;" src="{{ asset('logo-dark-2.png') }}" alt="esnaad-logo-footer" class="mb-5">
                                 </span>
 
-                                <p class="text-md text-black text-left mb-6 w-full leading-6">
-                                    With a commitment to excellence and a passion for innovation, ESNAAD has carved a distinctive niche in the real estate industry, setting new standards in luxury living, urban development, and sustainable design
+                                <p class="text-md text-black text-justify mb-6 w-full leading-6" >
+                                    {{ __('frontend.footerEsnaadP') }}
                                 </p>
                                 <div class="flex justify-between my-8 text-justify my-auto inline-block align-middle ">
 
                                     <div class="flex-1">
                                         <div class="w-8  rounded-3xl p-0">
-                                                <a href="{{ env('COMPANY_FB') }}" target="_blank" aria-label="esnaad-facebook" rel="canonical">
+                                            <a href="{{ env('COMPANY_FB') }}" target="_blank" aria-label="esnaad-facebook" rel="canonical">
                                                 <svg  id="Layer_1" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M288,192v-38.1c0-17.2,3.8-25.9,30.5-25.9H352V64h-55.9c-68.5,0-91.1,31.4-91.1,85.3V192h-45v64h45v192h83V256h56.4l7.6-64  H288z M330.2,240h-41.1H272v15.5V432h-51V255.5V240h-14.9H176v-32h30.1H221v-16.5v-42.2c0-24.5,5.4-41.2,15.5-51.8  C247.7,85.5,267.6,80,296.1,80H336v32h-17.5c-12,0-27.5,1.1-37.1,11.7c-8.1,9-9.4,20.1-9.4,30.1v37.6V208h17.1H334L330.2,240z"/></svg>
-                                                </a>
+                                            </a>
                                         </div>
                                     </div>
 
@@ -540,7 +527,7 @@
 
                     <div class="group flex flex-col gap-2 rounded-lg text-black " tabindex="1">
                         <div class="flex cursor-pointer items-center justify-between border-b border-gray-700">
-                            <span> Links </span>
+                            <span> {{ __('frontend.footerLinks') }} </span>
                             <img
                                 src="https://demo.esnaad.com/public/home/down-arrow.png"
                                 class="h-full w-8 transition-all duration-500 group-focus:-rotate-180"
@@ -549,19 +536,19 @@
                         <div class="hidden h-auto max-h-0 items-center opacity-0 transition-all group-focus:block group-focus:max-h-screen group-focus:opacity-100 group-focus:duration-1000">
                             <ul class="list-none footer-li capitalize leading-8" style="padding-left: 0px !important;">
                                 <li class="text-md text-black my-3">
-                                    <a href="{{ URL($langSeg.'/about-us') }}" aria-label="about-us" rel="canonical">About ESNAAD</a>
+                                    <a href="{{ URL($langSeg.'/about-us') }}" aria-label="about-us" rel="canonical">{{ __('frontend.footerLinksAboutEsnaad') }}</a>
                                 </li>
                                 <li class="text-md text-black my-3">
-                                    <a href="{{ URL($langSeg.'/invest-in-dubai') }}" aria-label="invest-in-dubai" rel="canonical">Why Invest In Dubai?</a>
+                                    <a href="{{ URL($langSeg.'/invest-in-dubai') }}" aria-label="invest-in-dubai" rel="canonical">{{ __('frontend.footerLinksWhyInvest') }}</a>
                                 </li>
                                 <li class="text-md text-black my-3">
-                                    <a href="{{ URL($langSeg.'/broker-registration') }}" aria-label="broker-registration" rel="canonical">Broker Registration</a>
+                                    <a href="{{ URL($langSeg.'/broker-registration') }}" aria-label="broker-registration" rel="canonical">{{ __('frontend.footerLinksBrokerReg') }}</a>
                                 </li>
                                 <li class="text-md text-black my-3">
-                                    <a href="{{ URL($langSeg.'/careers')}}" aria-label="broker-registration" rel="canonical">Careers</a>
+                                    <a href="{{ URL($langSeg.'/careers')}}" aria-label="broker-registration" rel="canonical">{{ __('frontend.footerLinksCareers') }}</a>
                                 </li>
                                 <li class="text-md text-black my-3">
-                                    <a href="{{ URL($langSeg.'/contact') }}" aria-label="contact-us" rel="canonical">Contact Us</a>
+                                    <a href="{{ URL($langSeg.'/contact') }}" aria-label="contact-us" rel="canonical">{{ __('frontend.footerLinksContact') }}</a>
                                 </li>
                             </ul>
                         </div>
@@ -584,11 +571,7 @@
             </div>
         </div>
     @endmobile
-
-
-
-
-    
+ 
     <script>
         setTimeout(function(){
             if(document.getElementById('footer')) {

@@ -77,51 +77,24 @@
             $uri_path = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
             $uri_segments = explode('/', $uri_path);
             $seg1 = $uri_segments[1];
-            if($seg1 == 'en' || $seg1 == 'ar')
-            {
+            if($seg1 == 'en' || $seg1 == 'ar'){
                 $langSeg = $uri_segments[1];
-            }
-            else
-            {
+            }else{
                 $langSeg = 'en';
             }
         ?>
-
-
         <?php
             $finalUrl = '/ar/home';
             $finalUrlen = '/en/home';
             $uri_path = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
-
-
-
-
-            if($uri_path == '/' || $uri_path == '/home' )
-            {
+            if($uri_path == '/' || $uri_path == '/home' ){
                 $finalUrl = '/ar/home';
                 $finalUrlen = '/en/home';
-
-
-            }
-
-
-            else
-            {
-
-
+            } else {
                 $uri_segments = explode('/', $uri_path);
                 $seg1 = $uri_segments[1];
-
-
-
-
-                if($seg1)
-                {
-
-                    if($seg1 == 'en')
-                    {
-
-
+                if($seg1) {
+                    if($seg1 == 'en'){
                         $replacements1 = array(1 => "en");
                         $replacements2 = array(1 => "ar");
                         $basket1 = array_replace($uri_segments, $replacements1);
@@ -129,9 +102,7 @@
                         $finalUrlen = implode("/",$basket1);
                         $finalUrl = implode("/",$basket2);
 
-                    }
-                    elseif($seg1 == 'ar')
-                    {
+                    } elseif($seg1 == 'ar'){
                         $replacements1 = array(1 => "en");
                         $replacements2 = array(1 => "ar");
                         $basket1 = array_replace($uri_segments, $replacements1);
@@ -139,9 +110,7 @@
                         $finalUrlen = implode("/",$basket1);
                         $finalUrl = implode("/",$basket2);
 
-                    }
-                    elseif($seg1 == 'ru')
-                    {
+                    }elseif($seg1 == 'ru'){
                         $replacements1 = array(1 => "en");
                         $replacements2 = array(1 => "ar");
                         $basket1 = array_replace($uri_segments, $replacements1);
@@ -149,9 +118,7 @@
                         $finalUrlen = implode("/",$basket1);
                         $finalUrl = implode("/",$basket2);
                     }
-                }
-                else
-                {
+                }else{
                     $replacements2 = array(1 => "ar");
                     $basket = array_replace($uri_segments, $replacements2);
                     $finalUrl = implode("/",$basket);
@@ -160,15 +127,7 @@
         ?>
         <div class="min-h-screen ">
 
-            @notmobile
-                {{-- @if($route_name == 'esnaad.home')
-                    @include('layout.navigationHome')
-                @else
-                    <nav x-data="{ open: false }" class="absolute bg-white p-0 m-0 border-b sm:block sticky top-0 z-50 shadow " id="sample" style="position: fixed; width: 100vw !important" >
-                        @include('layout.navigation')
-                    </nav>
-                @endif --}}
-                
+            @notmobile                
                 <nav x-data="{ open: false }" class="bg-white p-0 m-0 z-50 shadow " id="sample" style="position: fixed; width: 100vw !important" >
                     @include('layout.navigation')
                 </nav>

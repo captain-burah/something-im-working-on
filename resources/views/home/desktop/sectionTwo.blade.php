@@ -1,7 +1,7 @@
 <div class="sm:container sm:mx-auto mx-0 px-0 sm:px-4 my-20 sm:my-4 mx-auto">
     <div class="mt-10 mb-10">
         <h2 class="text-xl xl:text-3xl font-thin text-center">
-            THE THREE PILLARS <br>OF ESNAAD'S  PHILOSOPHIES
+            {{__('frontend.homeSectionTwoH1')}} <br> {{__('frontend.homeSectionTwoH2')}}
         </h2>
     </div>
 
@@ -9,24 +9,19 @@
 
         <?php //LOAD COMPONENT INDEX CARD ?>
         <x-index-card
-            description="Our designs blend aesthetics with functionality, creating homes that are as beautiful as they are comfortable while we weave architectural dreams into reality
-            "
-            base="QUALITY"
+            description="homeSectionTwoDesign"
+            base="Design"
             url="{{ asset('home/DESIGN.webp') }}"
         />
 
         <x-index-card
-            description="We are committed to delivering quality in every aspect of its projects, from the choice of materials and equipment, to the execution and supervision of the
-construction
-            "
+            description="homeSectionTwoQuality"
             base="QUALITY"
             url="{{ asset('home/QUALITY.webp') }}"
         />
 
         <x-index-card
-            description="Relentless pursuit of the highest standards, achieved through dedication, skill and a commitment
-to surpassing expectations
-"
+            description="homeSectionTwoExcelence"
             base="EXCELENCE"
             url="{{ asset('home/EXCELLENCE.webp') }}"
         />

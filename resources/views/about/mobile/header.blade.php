@@ -50,11 +50,11 @@
             <div class="container mx-6 my-auto">
                     
                 <h1 class="text-xl text-white font-bold uppercase mx-auto text-left mb-2 mt-15">
-                    ABOUT ESNAAD
+                    {{__('frontend.aboutH')}}
                 </h1>
                 
                 <p class="text-white font-thin leading-relax text-base text-left">
-                    Experience unrivalled elegance with Dubai’s one ﬁnest real estate developer ESNAAD
+                    {{__('frontend.aboutMobileP1')}}
                 </p>
             </div>
         </div>

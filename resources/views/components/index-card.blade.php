@@ -26,7 +26,7 @@
         </div>
         <div class=" h-full w-full flex items-center justify-center">
                 <span class="mt-10 px-4 text-center text-base font-base  leading-8">
-                    {{$description}}
+                    {{ __('frontend.'.$description) }}
                 </span>
             </div>
     </div>

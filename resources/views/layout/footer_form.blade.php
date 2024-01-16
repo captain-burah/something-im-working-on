@@ -13,17 +13,16 @@
 
 @notmobile
     <div class="block py-24 sm:py-12 bg-footer_form" id="footer_form" style="visibility:hidden">
-        <div class="container mx-auto px-2 lg:px-8">    
+        <div class="container mx-auto px-2 lg:px-8"  @if($langSeg == 'ar') dir="RTL" @endif>    
             <div class="row mb-5">
-                <h3 class="text-4xl font-base">
-                    Subscribe for Updates
-                </h3>
+                <h2 class="text-4xl font-base">
+                    {{__('frontend.footerFormH2')}}
+                </h2>
                 <p class="w-[75%] text-gray-800" id="submitIncomplete">
-                    Stay in the loop and be the first to know about exciting news, exclusive offers, and important updates. Subscribe to our newsletter for a curated dose of inspiration delivered directly to your inbox.
+                    {{__('frontend.footerFormP1')}}
                 </p>
                 <p class="w-[75%] text-gray-800 my-10" id="submitComplete">
-                    Thank You!
-                    Your Email subscription has been recorded. Feel free to check your emails regularly for important news on our latest trends.
+                    {{__('frontend.footerFormP2')}}
                 </p>
             </div>
 
@@ -34,19 +33,19 @@
                         <input type="hidden" name="ip_address" value="{{$ip_address}}">
                     
                         <div class="border-b border-gray-500">
-                            <input class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none focus:border-gray-400 focus:ring-gray-400" type="text" placeholder="Full Name" name="name" aria-label="Full name" autocomplete="off" required>
+                            <input class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none focus:border-gray-400 focus:ring-gray-400" type="text" placeholder="{{__('frontend.footerFormFullName')}}" name="name" aria-label="Full name" autocomplete="off" required>
                         </div>
 
                         <div class="border-b border-gray-500">
-                            <input class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none focus:border-gray-400 focus:ring-gray-400" type="email" placeholder="Email" name="email" aria-label="Email" required>
+                            <input class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none focus:border-gray-400 focus:ring-gray-400" type="email" placeholder="{{__('frontend.footerFormEmail')}}" name="email" aria-label="Email" required>
                         </div>
 
                         <div id="submitComplete">
                             <button type="button" id="submitButtonDone" class=" w-full text-sm text-gray-500 px-2 py-2 bg-transparent border border-gray-500 rounded-0">
-                                SUBMISSION COMPLETED
+                                {{__('frontend.footerFormSubmissionCompleted')}}
                             </button>
                             <button type="submit" id="submitButton" class=" w-full text-sm text-white hover:text-black px-2 py-2 bg-black hover:bg-transparent border border-black hover:border-black rounded-0">
-                                SUBSCRIBE
+                                {{__('frontend.footerFormSubscribe')}}
                             </button>
                         </div>
                     </div>
@@ -63,15 +62,14 @@
         <div class="container mx-auto px-2 lg:px-8">
 
             <div class="row mb-5">
-                <h3 class="text-3xl font-base" >
-                    Subscribe for Updates
-                </h3>
+                <h2 class="text-3xl font-base" >
+                    {{__('frontend.footerFormH2')}}
+                </h2>
                 <p id="submitIncompleteMobile" class="leading-8 text-justify">
-                    Stay in the loop and be the first to know about exciting news, exclusive offers, and important updates. Subscribe to our newsletter for a curated dose of inspiration delivered directly to your inbox.
+                    {{__('frontend.footerFormP1')}}
                 </p>
                 <p class="my-5 leading-8 text-justify" id="submitCompleteMobile">
-                    Thank You!
-                    Your Email subscription has been recorded. Feel free to check your emails regularly for important news on our latest trends.
+                    {{__('frontend.footerFormP2')}}
                 </p>
             </div>
 
@@ -84,19 +82,19 @@
                         <input type="hidden" name="ip_address" value="{{$ip_address}}">
 
                         <div class="border-b border-gray-500 my-2">
-                            <input class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none focus:border-gray-400 focus:ring-gray-400" type="text" placeholder="Full Name" name="name" aria-label="Full name">
+                            <input class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none focus:border-gray-400 focus:ring-gray-400" type="text" placeholder="{{__('frontend.footerFormFullName')}}" name="name" aria-label="Full name">
                         </div>
 
                         <div class="border-b border-gray-500 my-2">
-                            <input class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none focus:border-gray-400 focus:ring-gray-400" type="email" placeholder="Email" name="email" aria-label="Email">
+                            <input class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none focus:border-gray-400 focus:ring-gray-400" type="email" placeholder="{{__('frontend.footerFormEmail')}}" name="email" aria-label="Email">
                         </div>
 
                         <div class=" my-2">
                             <button type="submit" id="submitButtonMobile" class=" w-full text-sm text-white hover:text-black px-2 py-2 bg-black hover:bg-transparent border border-black hover:border-black rounded-0">
-                                SUBMIT
+                                {{__('frontend.footerFormSubscribe')}}
                             </button>
                             <button type="button" id="submitButtonMobileDone" class=" w-full text-sm text-black text-gray-500 px-2 py-2 bg-black bg-transparent border border-gray-500 rounded-0">
-                                SUBMISSION COMPLETED
+                                {{__('frontend.footerFormSubmissionCompleted')}}
                             </button>
                         </div>
                     </div>
@@ -169,7 +167,7 @@
 
         $.ajax({
             type:'POST',
-            {{ URL('en/en/subscription-form') }}",
+            url: "{{ URL('en/subscription-form') }}",
             data: formData,
             processData: false,
             contentType: false,
@@ -227,8 +225,8 @@
         $.ajax({
             type:'POST',
             headers: {
-                'X-CSRF-TOKEN': $('meta[name="XSRF-TOKEN"]').attr('content')            },
-            {{ URL('en/subscription-form') }}",
+                'X-CSRF-TOKEN': $('meta[name="XSRF-TOKEN"]').attr('content')},
+            url: "{{ URL('en/subscription-form') }}",
             data: formData,
             processData: false,
             contentType: false,

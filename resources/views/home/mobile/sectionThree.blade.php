@@ -4,7 +4,7 @@
         <div class="grid md:grid-cols-2 gap-12 mx-auto">
             <div>
                 <h2 class="text-left text-xl">
-                    OUR LATEST PROJECTS
+                    {{ __('frontend.homeSectionThreeH') }}
                 </h2>
             </div>
         </div>
@@ -15,7 +15,7 @@
     <div class="relative overflow-hidden max-h-[24rem] ">
         <div
             class="text-white text-2xl absolute inset-0 flex justify-center items-center" style="background-color: #000; opacity: .9">
-            COMING SOON 
+            {{ __('frontend.homeSectionThreeImage') }}
         </div>
         <img class="max-h-[24rem] w-full object-cover "
         src="{{ asset('home/COMING_SOON.jpeg')}}"                    
@@ -29,7 +29,7 @@
         <div class="grid md:grid-cols-2 gap-12 mx-auto">
             <div>
                 <p class="text-base text-left leading-relax ">
-                    Embrace the Journey of Life and Investments: Building a Home, Nurturing Dreams, and Securing Futures - Where Every Brick Holds the Promise of a Lifetime
+                    {{ __('frontend.homeSectionThreeP') }}  
                 </p>
             </div>
         </div>

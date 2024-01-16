@@ -2,16 +2,8 @@
     <div class="row">
         <div class="grid md:grid-cols-1 mx-auto">
             <div class="">
-                <h2 class="py-1 font-thin text-xl">OUR STORY</h2>
                 <p class="leading-6 text-base text-justify">
-                    Experience unrivalled elegance with Dubai's one finest real estate developer ESNAAD, with our dedication to innovative thinking, 
-                    consistent excellence, and the pursuit of perfection, we redefine luxury. Elevate your living experience with our thoughtfully crafted spaces, where every detail reflects our dedication to 
-                    <span class="hidden" id="more-text">
-                        creating homes that stand as a testament to sophistication and superior craftsmanship 
-                        We are committed to creating spaces that celebrate life, encapsulate your dreams, and add value to the community
-                    </span>
-                    <button id="toggle-btn" class=" text-black focus:outline-none underline">Read More...</button>
-                    <button id="hide-btn" class="hidden text-black focus:outline-none underline">Hide...</button>
+                    {{__('frontend.aboutP2')}}                    
                 </p>
 
             </div>
@@ -30,11 +22,11 @@
         <div class="space-y-2">
             <div
                 class="group flex flex-col gap-2 rounded-0 text-black"
-                tabindex="3"
+                tabindex="3" @if($langSeg == 'ar') dir="rtl" @endif
             >
                 <div class="flex cursor-pointer items-center justify-between border-b border-gray-700">
                 <h3 class="text-xl font-thin text-left leading-6 py-4">
-                    Company Core Values
+                    {{__('frontend.aboutH1')}}
                 </h3>
                 <img
                     src="https://demo.esnaad.com/public/home/down-arrow.png"
@@ -44,17 +36,17 @@
                 <div
                 class="invisible h-auto max-h-0 items-center opacity-0 transition-all group-focus:visible group-focus:max-h-screen group-focus:opacity-100 group-focus:duration-1000 leading-6 text-justify"
                 >
-                    At ESNAAD, we are guided by our core values, which define who we are and what we do. With Integrity we act with honesty, transparency, and accountability in all our dealings with our customers, partners, employees, and society following and pursuing excellence in everything we do, from the quality of our developments and services, to the performance of our teams, to the satisfaction of our stakeholders. Embracing innovation as a way to create value, solve problems, and improve our processes and developments while caring about the environment and the future generations in sustainability that engages to improving community well-being through planned development and community-building programs and maintaining the highest standards of honesty and openness in all of our relationships.
+                    {{__('frontend.aboutP1')}}
                 </div>
             </div>
 
             <div
                 class="group flex flex-col gap-2 rounded-0 text-black"
-                tabindex="1"
+                tabindex="1" @if($langSeg == 'ar') dir="rtl" @endif
             >
                 <div class="flex cursor-pointer items-center justify-between border-b border-gray-700">
                 <h3 class="text-xl font-thin text-left leading-6 py-4">
-                    Company Mission
+                    {{__('frontend.aboutH2')}}
                 </h3>
                 <img
                     src="https://demo.esnaad.com/public/home/down-arrow.png"
@@ -64,17 +56,17 @@
                 <div
                 class="invisible h-auto max-h-0 items-center opacity-0 transition-all group-focus:visible group-focus:max-h-screen group-focus:opacity-100 group-focus:duration-1000 leading-6 text-justify"
                 >
-                    Our mission is to create innovative and sustainable living spaces that enhance the quality of life of our stakeholders and investors. We aim to achieve this by empowering dreams, building legacies while redefining luxury living in the heart of Dubai. With a commitment to excellence, we envision and create dynamic communities that inspire a lifestyle of distinction working with talented and professional partners that share our vision and values, and that provide us with the best expertise and resources in the industry.
+                    {{__('frontend.aboutP2')}}
                 </div>
             </div>
 
             <div
                 class="group flex flex-col gap-2 rounded-0 text-black"
-                tabindex="2"
+                tabindex="2" @if($langSeg == 'ar') dir="rtl" @endif
             >
                 <div class="flex cursor-pointer items-center justify-between border-b border-gray-700">
                 <h3 class="text-xl font-thin text-left leading-6 py-4">
-                    Company Vission
+                    {{__('frontend.aboutH3')}}
                 </h3>
                 <img
                     src="https://demo.esnaad.com/public/home/down-arrow.png"
@@ -84,7 +76,7 @@
                 <div
                 class="invisible h-auto max-h-0 items-center opacity-0 transition-all group-focus:visible group-focus:max-h-screen group-focus:opacity-100 group-focus:duration-1000 leading-6 text-justify"
                 >
-                    Our vision is to be the region’s leading premium real estate development and investment company, with a Design, Quality and Excellence whilst, Developing our organization and culture, and fostering a work environment that attracts, motivates, and retains the best talent in the industry. We innovate and improve our processes and developments, to adopt to the latest trends in technologies and best practices as to the code of conduct within the real estate realm.
+                    {{__('frontend.aboutP3')}}
                 </div>
             </div>
         </div>

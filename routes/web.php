@@ -23,14 +23,15 @@ use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\App;
 
 Route::get('/', function () {
-    return redirect()->to('http://esnaad.com/en');
+    return redirect()->to('http://esnaad.com/en', 301);
 });
 
 Route::get('/public', function () {
-    return redirect()->to('http://esnaad.com/en');
+    return redirect()->to('http://esnaad.com/en', 301);
 });
 
 Route::prefix('{lang?}')->middleware('LocaleRoute')->group(function() {
+
     Route::get('/', [FrontEndController::class, 'home'])->name('esnaad.home');
 
     Route::get('/about-us', [FrontEndController::class, 'about'])->name('esnaad.about');
@@ -54,9 +55,11 @@ Route::prefix('{lang?}')->middleware('LocaleRoute')->group(function() {
     Route::get('/invest-in-dubai', [FrontEndController::class, 'invest'])->name('esnaad.invest_in_dubai');
 
     Route::get('/constructions', [FrontEndController::class, 'constructions'])->name('esnaad.constructions');
+    
     Route::get('/constructions/{slug}', [FrontEndController::class, 'constructions_details'])->name('esnaad.constructions.detail');
 
     Route::get('/news', [FrontEndController::class, 'news'])->name('esnaad.news');
+
     Route::get('/news/{slug}', [FrontEndController::class, 'news_details'])->name('esnaad.news.detail');
 
     Route::post('/communities/register-your-interest', [FrontEndController::class, 'communities_registration'])->name('esnaad.communities.registration');

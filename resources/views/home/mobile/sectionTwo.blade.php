@@ -32,31 +32,28 @@
 
     <div class="pt-5 mb-5 px-6 w-full">
         <h3 class="text-xl font-thin text-left w-[100%]">
-            THE THREE PILLARS <br>OF ESNAADS  PHILOSOPHIES
+            {{__('frontend.homeSectionTwoH1')}} <br> {{__('frontend.homeSectionTwoH2')}}
         </h3>
     </div>
 
     <div class="owl-carousel">
         <div class="item">  
             <x-index-card-mobile
-                description="Our designs blend aesthetics with functionality, creating homes that are as beautiful as they are comfortable while we weave architectural dreams into reality
-                "
+                description="homeSectionTwoDesign"
                 base="DESIGN"
                 url="{{ asset('home/DESIGN.webp') }}"
             />  
         </div>
         <div class="item">
             <x-index-card-mobile
-                description="We are committed to delivering quality in every aspect of its projects, from the choice of materials and equipment, to the execution and supervision of the construction
-                "
+                description="homeSectionTwoQuality"
                 base="QUALITY"
                 url="{{ asset('home/QUALITY.webp') }}"
             />
         </div>
         <div class="item">
             <x-index-card-mobile
-                description="Relentless pursuit of the highest standards, achieved through dedication, skill and a commitment to surpassing expectations
-                "
+                description="homeSectionTwoExcelence"
                 base="EXCELENCE"
                 url="{{ asset('home/EXCELLENCE.webp') }}"
             />

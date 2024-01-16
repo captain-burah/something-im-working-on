@@ -50,24 +50,22 @@
             <div class="container">
                     
                 <h1 class="text-3xl text-white font-light uppercase mx-auto text-center">
-                    CONTACT US
+                    {{__('frontend.contactH')}}
                 </h1>
 
                 <br>
                 
                 <p class="w-[75%] mx-auto text-white font-base leading-8 text-base text-center">
-                    Address: Unit G07, City Walk Building #1, Al Wasl, Dubai.
+                    {{__('frontend.contactAddress')}}
                 </p>
                 <p class="w-[75%] mx-auto text-white font-base leading-8 text-base text-center">
                     <a href="tel:{{ env('COMPANY_PHONE') }}" >
-                        Phone: 
-                        &nbsp;
-                        +971 4 287 9506
+                        {{__('frontend.contactPhone')}} 
                     </a>
                 </p>
                 <p class="w-[75%] mx-auto text-white font-base leading-8 text-base text-center">
                     <a href="mailto:{{env('COMPANY_EMAIL')}}" class="inline-flex items-center">
-                        Email:
+                        {{__('frontend.contactEmail')}}
                         &nbsp;
                         &#105;&#110;&#102;&#111;&#064;&#101;&#115;&#110;&#097;&#097;&#100;&#046;&#099;&#111;&#109;
                     </a>

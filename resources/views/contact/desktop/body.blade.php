@@ -1,4 +1,4 @@
-<div class="sm:container sm:mx-auto mx-0 px-0 sm:px-4 my-20 sm:my-4 mx-auto">
+<div class="sm:container sm:mx-auto mx-0 px-0 sm:px-4 my-20 sm:my-4 mx-auto" @if($langSeg == 'ar') dir="rtl" @endif>
     <div class="grid grid-cols-2 gap-16">
         <div>
             <div class="mx-auto my-16">
@@ -12,14 +12,14 @@
                 <form id="contact-desktop-form" action="{{ URL('en/contact-form-post') }}" method="post">
                     @csrf
                     <div class="icon bg-black text-white w-6 h-6 absolute flex items-center justify-center p-5" style="left:-40px"><i class="fal fa-phone-volume fa-fw text-2xl transform -rotate-45"></i></div>
-                    <h3 class="text-3xl text-gray-900 font-thin">Reach out to us</h3>
-                    <p class="text-black mb-4"> We're delighted to assist you! Please use the form below to get in touch with our team. Whether you have questions, feedback, or inquiries, we're here to help.</p>
+                    <h3 class="text-3xl text-gray-900 font-thin">{{__('frontend.contactFormH')}}</h3>
+                    <p class="text-black mb-4"> {{__('frontend.contactFormP')}}</p>
                     <input type="hidden" name="country_code" id="country_code">
-                    <input type="text" name="name" id="name" placeholder="Full Name" class="border p-2  w-full">
-                    <input type="text" name="name" id="phone" placeholder="Phone Number" class="border p-2 mt-3  w-full">
-                    <input type="email" name="email" id="email" placeholder="Email" class="border p-2 mt-3 w-full mt-3">
-                    <textarea name="msg" id="" cols="10" rows="3" placeholder="Tell us about your inquiry" class="border p-2 mt-3 w-full"></textarea>
-                    <button type="submit"  class="w-full mt-6 bg-black hover:bg-white border hover:border-gray-500 text-white hover:text-black font-semibold p-3">Submit</button>
+                    <input type="text" name="name" id="name" placeholder="{{__('frontend.formFullName')}}" class="border p-2  w-full">
+                    <input type="text" name="phone" id="phone" placeholder="{{__('frontend.formPhone')}}" class="border p-2 mt-3 w-full" style="text-indent: 40px;">
+                    <input type="email" name="email" id="email" placeholder="{{__('frontend.formEmail')}}" class="border p-2 mt-3 w-full mt-3">
+                    <textarea name="msg" id="" cols="10" rows="3" placeholder="{{__('frontend.formMsg')}}" class="border p-2 mt-3 w-full"></textarea>
+                    <button type="submit"  class="w-full mt-6 bg-black hover:bg-white border hover:border-gray-500 text-white hover:text-black font-semibold p-3">{{__('frontend.formSubmit')}}</button>
                 </form>
             </div>
         </div>

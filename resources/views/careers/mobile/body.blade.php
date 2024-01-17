@@ -7,9 +7,7 @@
             <h3 class="text-2xl text-gray-900 font-semibold"> </h3>
             
             <p class="text-black mb-4">
-                Ready to take the next step in your career? 
-                Submit your application now! We eagerly anticipate the addition of motivated and skilled 
-                individuals to the ESNAAD community
+                {{__('frontend.careersP1')}}
             </p>
 
             <div id="status"></div>
@@ -35,22 +33,22 @@
                 <p class="w-[100%] text-center font-normal text-gray-600">
                     <form id="verificationForm">
                         <div class="icon bg-black text-white w-6 h-6 absolute flex items-center justify-center p-5" style="left:-40px"><i class="fal fa-phone-volume fa-fw text-2xl transform -rotate-45"></i></div>
-                        <h3 class="text-2xl text-gray-900 font-semibold text-center">Enter Verification Code</h3>
+                        <h3 class="text-2xl text-gray-900 font-semibold text-center">{{__('frontend.careersEnterVerification')}}</h3>
                         <table class="w-full">
                             <tbody>
                                 <caption class="my-4">
-                                    We've sent a code to <span id="email_placeholder"></span>
+                                    {{__('frontend.careersSentToEmail')}} <span id="email_placeholder"></span>
                                 </caption>
                                 <tr class="mx-auto text-center">
                                     <td class="mx-auto text-center"><input type="text" class="text-center mx-auto" name="applicant_code" id="applicant_code" placeholder="xxxx - xxxx - xxxx - xxxx" class=" w-full" ></td>
                                 </tr>
                                 <tr class="mx-auto text-center hidden">
-                                    <td class="mx-auto text-center text-red-900"><small>Verification Failed! Enter the code sent to your email</small></td>
+                                    <td class="mx-auto text-center text-red-900"><small>{{__('frontend.careersVerificationFailed')}}</small></td>
                                 </tr>
                             </tbody>
                         </table>
-                        <button type="button"  id="verificationFormSubmit" class="w-full mt-8 bg-black hover:bg-white border hover:border-gray-500 text-white hover:text-black font-semibold p-3">Verify</button>
-                        <button type="button" id="ResendVerificationCode" class="w-full mt-4 text-black font-thin">Didn't get a code? <span class="font-bold">Click to resend</button>
+                        <button type="button"  id="verificationFormSubmit" class="w-full mt-8 bg-black hover:bg-white border hover:border-gray-500 text-white hover:text-black font-semibold p-3">{{__('frontend.careersVerify')}}</button>
+                        <button type="button" id="ResendVerificationCode" class="w-full mt-4 text-black font-thin">{{__('frontend.careersVerifyAgain')}}</button>
                     </form>
                 </p>
             </div>
@@ -67,11 +65,11 @@
             <p class="w-[100%] text-center font-normal text-gray-600">
                 <div>
                     <div class="icon bg-black text-white w-6 h-6 absolute flex items-center justify-center p-5" style="left:-40px"><i class="fal fa-phone-volume fa-fw text-2xl transform -rotate-45"></i></div>
-                    <h3 class="text-2xl text-gray-900 font-semibold text-center">Thank You!</h3>
+                    <h3 class="text-2xl text-gray-900 font-semibold text-center">{{__('frontend.careersVerifyAgain')}}</h3>
                     <table class="w-full">
                         <tbody>
                             <caption class="my-4">
-                                Your submission has been recorded
+                                {{__('frontend.careersSuccessMsg')}}
                             </caption>
                         </tbody>
                     </table>                    
@@ -80,18 +78,18 @@
         </div>
         
         <div class="row px-4">
-            <h2 class="text-2xl my-4">What's Next?</h2>
-            <h3 class="text-lg mb-2">Applciation Confirmation</h3>
-            <p class="text-base mb-4">You will receive an email shortly confirming that we have received your application. Please keep an eye on your inbox, including your spam folder.</p>
+            <h2 class="text-2xl my-4">{{__('frontend.careersSuccessMsgH')}}</h2>
+            <h3 class="text-lg mb-2">{{__('frontend.careersSuccessMsgH1')}}</h3>
+            <p class="text-base mb-4">{{__('frontend.careersSuccessMsgP1')}}</p>
 
-            <h3 class="text-lg mb-">Application Review</h3>
-            <p class="text-base mb-4">Our hiring team will carefully review your application to assess your qualifications and experience. This process may take some time, so we appreciate your patience.</p>
+            <h3 class="text-lg mb-">{{__('frontend.careersSuccessMsgH2')}}</h3>
+            <p class="text-base mb-4">{{__('frontend.careersSuccessMsgP2')}}</p>
 
-            <h3 class="text-lg mb-">Next Steps:</h3>
-            <p class="text-base mb-4">If your qualifications match our needs, we will contact you for the next steps, which may include interviews or additional assessments.</p>
+            <h3 class="text-lg mb-">{{__('frontend.careersSuccessMsgH3')}}</h3>
+            <p class="text-base mb-4">{{__('frontend.careersSuccessMsgP3')}}</p>
 
-            <h2 class="text-2xl my-2">Stay Connected</h2>
-            <p class="text-base">We encourage you to explore our website to learn more about our company culture and values. We wish you the best of luck in the selection process!
+            <h2 class="text-2xl my-2">{{__('frontend.careersSuccessMsgH4')}}</h2>
+            <p class="text-base">{{__('frontend.careersSuccessMsgP4')}}
             </p>
         </div>
     </div>

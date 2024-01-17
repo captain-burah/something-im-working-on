@@ -19,7 +19,6 @@
             <textarea name="msg" id="" cols="10" rows="3" placeholder="{{__('frontend.formMsg')}}" class="border p-2 mt-3 w-full" @if($langSeg == 'ar') dir="rtl" @endif></textarea>
             <button type="submit"  class="w-full mt-6 bg-black hover:bg-white border hover:border-gray-500 text-white hover:text-black font-semibold p-3">{{__('frontend.formSubmit')}}</button>
         </form>
-
     </div>
 
     <div class="py-10">

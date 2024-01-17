@@ -1,5 +1,5 @@
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-4 py-12">
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6" >
 
             <div class="w-full bg-white rounded-0 sahdow-lg overflow-hidden flex flex-col justify-center items-center">
                 <div class="relative overflow-hidden rounded-0 lg:h-[20rem] max-h-[34rem]">
@@ -20,8 +20,8 @@
                             >
                         </div>
                     </div>
-                    <div class="col-span-2 min-w-[100vw]">
-                        <p class="text-xl text-black font-bold text-left min-w-[100vw]">{{$name}}</p>
+                    <div class="col-span-2 min-w-[100vw]" @if($langSeg == 'ar') dir="rtl" @endif>
+                        <h2 class="text-xl text-black font-bold text-left min-w-[100vw]">{{$name}}</h2>
                         <p class="text-base text-black font-thin text-left">{{$location}}</p>
                     </div>
                 </div>

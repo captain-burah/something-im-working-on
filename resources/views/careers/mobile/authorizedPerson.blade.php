@@ -1,24 +1,31 @@
-<table class="w-full mt-8">
+<table class="w-full mt-8" @if($langSeg == 'ar') dir="rtl" @endif>
     <tbody>
         <caption class="my-4 underline">
-            Candidate Application
+            {{__('frontend.careerFormH')}}
         </caption>
         <tr class="hidden" id="requiredNotice">
-            <td colspan="2" class="text-red-900 text-center font-bold py-4">*Please fill all the fields</td>
-        </tr>
-        <tr>
-            <td style="width: 235px">Applicant Name</td>
-            <td><input type="text" name="applicant_name" id="applicant_name" placeholder="Full Name" class=" w-full" required></td>
+            <td class="pb-4" colspan="2" class="text-red-900 text-center font-bold py-4">{{__('frontend.careerFormError')}}</td>
         </tr>
 
         <tr>
-            <td>Applicant Email</td>
-            <td><input type="text" name="applicant_email" id="applicant_email" placeholder="someone@domain.com" class=" w-full" required ></td>
+            <td style="width: 235px">{{__('frontend.careerFormName')}}</td>
+        </tr>
+        <tr>
+            <td class="pb-4"><input type="text" name="applicant_name" id="applicant_name"  class=" w-full" required></td>
         </tr>
 
         <tr>
-            <td>Applicant Country</td>
-            <td>
+            <td>{{__('frontend.careerFormEmail')}}</td>
+        </tr>
+        <tr>
+            <td class="pb-4"><input type="text" name="applicant_email" id="applicant_email"  class=" w-full" required ></td>
+        </tr>
+        
+        <tr>
+            <td>{{__('frontend.careerFormCountry')}}</td>
+        </tr>
+        <tr>
+            <td class="pb-4">
                 <select id="applicant_country" name="applicant_country" class="w-full"required>
                     <option value="">Country of Origin</option>
                     <option value="Afghanistan">Afghanistan</option>
@@ -270,8 +277,10 @@
         </tr>
 
         <tr>
-            <td>Applicant Contact</td>
-            <td>
+            <td>{{__('frontend.careerFormContact')}}</td>
+        </tr>
+        <tr>
+            <td class="pb-4">
                 <table class="w-full">
                     <tr>
                         <td>
@@ -495,36 +504,57 @@
                                 </optgroup>
                             </select>
                         </td>
-                    <td><input type="text" name="applicant_phone" id="applicant_phone" placeholder="ex: 501234567" class="border w-full" required></td>
-                        
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="applicant_phone" id="applicant_phone" placeholder="501234567" class="border w-full" required></td>
                     </tr>
                 </table>
                 
             </tr>
-
         <tr>
-            <td>Known Languages</td>
-            <td><input type="text" name="applicant_languages" id="applicant_languages" placeholder="English, Arabic, Russian, etc." class=" w-full" required></td>
+            <td>{{__('frontend.careerFormLang')}}</td>
+        </tr>
+        <tr>
+            <td class="pb-4"><input type="text" name="applicant_languages" id="applicant_languages"  class=" w-full" required></td>
         </tr>   
 
-        <tr>
-            <td>Job Role</td>
-            <td><input type="text" name="applicant_job" id="applicant_job" placeholder="Agent, Administration, Marketing, etc." class=" w-full" required></td>
-        </tr>        
 
         <tr>
-            <td>Curriculum Vitae</td>
-            <td><input 
+            <td>{{__('frontend.careerFormRole')}}</td>
+        </tr>
+        <tr>
+            <td class="pb-4"><input type="text" name="applicant_job" id="applicant_job" class=" w-full" required></td>
+        </tr>        
+
+
+        <tr>
+            <td>{{__('frontend.careerFormCV')}}</td>
+        </tr>
+        <tr>
+            <td class="pb-4"><input 
                 type="file" 
                 name="applicant_cv"
-                class="block w-full text-sm text-slate-500
-                border border-gray-600
-                file:mr-4 file:py-2 file:px-4
-                file:rounded-0 file:border-0
-                file:text-sm file:font-semibold
-                file:bg-black file:text-gray-50
-                file:cursor-pointer
-                " 
+                @if($langSeg == 'ar')
+                    class="
+                        block w-full text-sm text-slate-500
+                        border border-gray-600
+                        file:ml-4 file:py-2 file:px-4
+                        file:rounded-0 file:border-0
+                        file:text-sm file:font-semibold
+                        file:bg-black file:text-gray-50
+                        file:cursor-pointer
+                    "
+                @else
+                    class="
+                        block w-full text-sm text-slate-500
+                        border border-gray-600
+                        file:mr-4 file:py-2 file:px-4
+                        file:rounded-0 file:border-0
+                        file:text-sm file:font-semibold
+                        file:bg-black file:text-gray-50
+                        file:cursor-pointer
+                    "
+                @endif 
                 required/>
             </td>
         </tr>

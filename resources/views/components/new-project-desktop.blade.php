@@ -18,7 +18,7 @@
                             alt="esnaad-project-card"
                         >
                     </div>
-                    <div class="col-span-3">
+                    <div class="col-span-3" >
                         <h2 class="text-xl text-black font-bold text-left">{{$name}}</h2>
                         <p class="text-base text-black font-thin text-left">{{$location}}</p>
                     </div>

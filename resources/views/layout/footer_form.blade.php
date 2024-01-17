@@ -33,11 +33,11 @@
                         <input type="hidden" name="ip_address" value="{{$ip_address}}">
                     
                         <div class="border-b border-gray-500">
-                            <input class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none focus:border-gray-400 focus:ring-gray-400" type="text" placeholder="{{__('frontend.footerFormFullName')}}" name="name" aria-label="Full name" autocomplete="off" required>
+                            <input class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none focus:border-gray-400 focus:ring-gray-400" type="text" placeholder="{{__('frontend.formFullName')}}" name="name" aria-label="Full name" autocomplete="off" required>
                         </div>
 
                         <div class="border-b border-gray-500">
-                            <input class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none focus:border-gray-400 focus:ring-gray-400" type="email" placeholder="{{__('frontend.footerFormEmail')}}" name="email" aria-label="Email" required>
+                            <input class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none focus:border-gray-400 focus:ring-gray-400" type="email" placeholder="{{__('frontend.formEmail')}}" name="email" aria-label="Email" required>
                         </div>
 
                         <div id="submitComplete">
@@ -82,11 +82,11 @@
                         <input type="hidden" name="ip_address" value="{{$ip_address}}">
 
                         <div class="border-b border-gray-500 my-2">
-                            <input class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none focus:border-gray-400 focus:ring-gray-400" type="text" placeholder="{{__('frontend.footerFormFullName')}}" name="name" aria-label="Full name">
+                            <input class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none focus:border-gray-400 focus:ring-gray-400" type="text" placeholder="{{__('frontend.formFullName')}}" name="name" aria-label="Full name">
                         </div>
 
                         <div class="border-b border-gray-500 my-2">
-                            <input class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none focus:border-gray-400 focus:ring-gray-400" type="email" placeholder="{{__('frontend.footerFormEmail')}}" name="email" aria-label="Email">
+                            <input class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none focus:border-gray-400 focus:ring-gray-400" type="email" placeholder="{{__('frontend.formEmail')}}" name="email" aria-label="Email">
                         </div>
 
                         <div class=" my-2">

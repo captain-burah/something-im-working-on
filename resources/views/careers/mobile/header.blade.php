@@ -49,10 +49,10 @@
         <div class="flex items-center justify-left h-full w-full bg-black bg-opacity-40">
             <div class="container mx-0 px-0 mx-auto text-white">
                 <h1 class="text-xl font-light px-2">
-                    CAREERS
+                    {{(__('frontend.careersH'))}}
                 </h1>
                 <p class="text-base font-thin leading-6 px-2 pt-2">
-                    Join us in shaping the future. Your journey starts here
+                    {{(__('frontend.careersP'))}}
                 </p>
             </div>
         </div>

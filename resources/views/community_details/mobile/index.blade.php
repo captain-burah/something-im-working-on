@@ -1,7 +1,15 @@
 @extends('layoutv2.master')
-
+<?php
+    $uri_path = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
+    $uri_segments = explode('/', $uri_path);
+    $seg1 = $uri_segments[1];
+    if($seg1 == 'en' || $seg1 == 'ar'){
+        $langSeg = $uri_segments[1];
+    }else{
+        $langSeg = 'en';
+    }
+?>
 @section('luxe_asset_css')
-
     <script src='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js'></script>
 
     <link href='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css' rel='stylesheet' />
@@ -118,5 +126,3 @@
 
 
 @endsection
-
-

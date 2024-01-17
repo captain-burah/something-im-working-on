@@ -1,5 +1,14 @@
 @extends('layoutv2.master')
-
+<?php
+    $uri_path = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
+    $uri_segments = explode('/', $uri_path);
+    $seg1 = $uri_segments[1];
+    if($seg1 == 'en' || $seg1 == 'ar'){
+        $langSeg = $uri_segments[1];
+    }else{
+        $langSeg = 'en';
+    }
+?>
 @section('luxe_asset_css')
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/css/intlTelInput.css">
@@ -19,7 +28,6 @@
 
 @section('content')
     @notmobile
-
         <section class="m-0">
             @include('projects.desktop.header')
         </section>
@@ -27,19 +35,6 @@
         <section class="m-0">
             @include('projects.desktop.body')
         </section>
-{{-- 
-
-        <section class="m-0">
-            @include('community_details.desktop.buttons')
-        </section>
-
-        <section class="m-0">
-            @include('community_details.desktop.gallery')
-        </section>
-
-        <section class="my-0" id="project_detail_map_section">
-            @include('community_details.desktop.map')
-        </section> --}}
     @endnotmobile
 @endsection
 
@@ -47,10 +42,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
     @yield('intel-input')
-
-
-
-
 
     {{-- MODALS --}}
     <script>

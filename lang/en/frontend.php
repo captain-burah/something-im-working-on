@@ -102,16 +102,129 @@ return [
         "contactEmail" => "Email: ",
         "contactFormH" => "Reach out to us",
         "contactFormP" => "We're delighted to assist you! Please use the form below to get in touch with our team. Whether you have questions, feedback, or inquiries, we're here to help.",
-        "contactH" => "Contact Us",
-        "contactH" => "Contact Us",
-        "contactH" => "Contact Us",
-        "contactH" => "Contact Us",
-        "contactH" => "Contact Us",
-        "contactH" => "Contact Us",
+        
+        
 
+        /**
+         * INVEST IN DUBAI
+         */
+        "investH" => "INVEST IN DUBAI",
+        "investP" => "Investing in Dubai presents a compelling opportunity for individuals and businesses seeking a dynamic and globally competitive environment.",
+        "investP1" => "One of the key attractions is Dubai's commitment to foreign investors,
+                allowing them 100% ownership of their businesses. This policy underscores the city's dedication to facilitating
+                business growth and attracting international investments. Moreover, Dubai's strategic location serves as a
+                gateway to two-thirds of the world's most attractive growth markets, offering unparalleled access to diverse
+                opportunities. The pro-business environment in Dubai, coupled with a high standard of living and a pool of
+                global talents, creates an ecosystem conducive to innovation and success.",
+        
+        "investH2" => "Why Invest In Dubai?",
 
+        "investH3" => "Strategic Location",
+        "investP3" => "Dubai is a major hub for international business due to its advantageous location at the intersection of Europe,
+                    Asia, and Africa. Its proximity to important markets makes connectivity and access simple.",
+        
+        "investH4" => "Tax Advantage",
+        "investP4" => "Dubai offers both individuals and businesses a tax-free environment. It is a desirable location for investors
+                    seeking to avoid corporate taxes, capital gains taxes, and personal income taxes. optimize their financial
+                    returns.",
+        
+        "investH5" => "Stable Political Environment",
+        "investP5" => "Due to its political stability, doing business in Dubai is safe and predictable. A favourable investment climate is
+                    influenced by the government's dedication to economic development and diversification.",
+        
+        "investH6" => "Robust Population Growth",
+        "investP6" => "The city's strong population growth propels investment opportunities, which benefits Dubai's real estate
+                    market. Due to its strong economy and excellent standard of living, Dubai has seen a substantial increase in the
+                    number of local and foreign residents over time. The demand for residential and commercial real estate is
+                    fueled by this population growth, which is good news for real estate investors.",
+        
+        "investH7" => "Exclusive 10-Year Golden Visa",
+        "investP7" => "Dubai offers a 10-year Golden Visa program to certain real estate investors. For example, if you invest two
+                    million AED in a ESNAAD Property, you may be eligible for a Golden Visa, which will grant you the ability to long
+                    term resident rights in UAE. Investors can easily renew their Golden Visa as long as they are eligible, and it
+                    provides them with convenient long-term residency, with a five- to ten-year duration.",
+        
+        "investH8" => "Creating Sustainable Communities",
+        "investP8" => "At ESNAAD, we prioritize sustainability in all of our developments to ensure that modern living, technology, and
+                    the natural world coexist peacefully. Our projects include green areas, eco-friendly practices, and energy-
+                    efficient designs to give residents a sustainable and well-rounded lifestyle. Setting environmental stewardship
+                    as a top priority helps Dubai realize its goal of becoming a sustainable city and gives investors a chance to
+                    match their capital with responsible development ideals.",
+        
+        "investH9" => "Tourism Hub",
+        "investP9" => "In addition to its popularity as a travel destination, Dubai offers a consistent stream of new clients to
+                    companies. The tourism industry is still expanding, which is good news for companies in the hospitality,
+                    entertainment, and related sectors.",
 
+        
+        /**
+         * CAREERS
+         */
 
+        "careersH" => "CAREERS",
+        "careersP" => "Join us in shaping the future. Your journey starts here",
+        "careersP1" => "Ready to take the next step in your career? 
+                Submit your application now! We eagerly anticipate the addition of motivated and skilled 
+                individuals to the ESNAAD community",
+        "careersEnterVerification" => "Enter Verification Code",
+        "careersSentToEmail" => "We've sent a code to",
+        "careersVerificationFailed" => "Verification Failed! Enter the code sent to your email",
+        "careersVerify" => "Verify",
+        "careersSendAgain" => "Didn't get a code? Click to resend",
+        "careersSuccessMsg" => "Your submission has been recorded",
+        "careersSuccessMsgH" => "What's Next?",
+        "careersSuccessMsgH1" => "Applciation Confirmation",
+        "careersSuccessMsgP1" => "You will receive an email shortly confirming that we have received your application. Please keep an eye on your inbox, including your spam folder.",
+        "careersSuccessMsgH2" => "Application Review",
+        "careersSuccessMsgP2" => "Our hiring team will carefully review your application to assess your qualifications and experience. This process may take some time, so we appreciate your patience.",
+        "careersSuccessMsgH3" => "Next Steps:",
+        "careersSuccessMsgP3" => "If your qualifications match our needs, we will contact you for the next steps, which may include interviews or additional assessments.",
+        "careersSuccessMsgH4" => "Stay Connected",
+        "careersSuccessMsgP4" => "We encourage you to explore our website to learn more about our company culture and values. We wish you the best of luck in the selection process!",
+        "careerFormH" => "Candidate Application",
+        "careerFormError" => "*Please fill all the fields",
+        "careerFormName" => "Applicant Name",
+        "careerFormEmail" => "Applicant Email",
+        "careerFormCountry" => "Applicant Country",
+        "careerFormContact" => "Applicant Contact",
+        "careerFormLang" => "Known Languages",
+        "careerFormRole" => "Job Role",
+        "careerFormCV" => "Curriculum Vitae",
+
+        /**
+         * PROJECT PAGE
+         */
+        "projectH" => "OUR DEVELOPMENTS",
+        "projectP" => "Our projects are a reflection of our commitment to excellence. From luxurious residential complexes to state-of-the-art commercial spaces, each project is designed with attention to detail and a focus on quality",
+        
+        
+        /**
+         * CONSTRUCTION PAGE
+         */
+        "constructionH" => "CONSTRUCTIONS",
+        "constructionP" => "Shaping Dubai's Skyline: Discover our latest constructions and witness the future unfold. Dive into unparalleled progress in the heart of the city's dynamic landscape. Your vision, our expertise—building tomorrow, today.",
+        
+        /**
+         * NEWS PAGE
+         */
+        "newsH" => "NEWS",
+        "newsP" => "Breaking Grounds and Headlines: Stay abreast of Dubai's dynamic real estate landscape with our News Hub. Unearth the latest updates on our cutting-edge projects, government initiatives, and industry trends shaping the city's future.",
+        
+        
+        /**
+         * COMMUNITY PAGE
+         */
+        "communityH" => "OUR COMMUNITIES",
+        "communityP" => "At ESNAAD, we're not just a real estate developer; we're a new player in the Dubai property market. Our focus goes beyond constructing homes to shaping vibrant communities.",
+        
+
+        /**
+         * COMMUNITY DETAILS
+         */
+        "communityDetailsH" => "Our Diversified Communities",
+        "communityDetailsP" => "We would like to give you a guide to each of the many appealing neighborhoods in Dubai, 
+                    each with its own unique facilities, so you may choose the one that's best for you.ode",
+        
 
 
 

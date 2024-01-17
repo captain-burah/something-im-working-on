@@ -373,7 +373,9 @@
                                                 </g>
                                             </svg>
                                             &nbsp;
-                                            {{ __('frontend.footerContact') }}                                            
+                                            <span style="direction: ltr !important;">
+                                                {{ __('frontend.footerContact') }}                                            
+                                            </span>
                                         </a>
                                     </div>
                                 </li>

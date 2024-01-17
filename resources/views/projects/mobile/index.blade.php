@@ -1,6 +1,15 @@
 @extends('layoutv2.master')
 <?php $actual_link = (empty($_SERVER['HTTPS']) ? 'http' : 'https') . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]"; ?>
-
+<?php
+    $uri_path = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
+    $uri_segments = explode('/', $uri_path);
+    $seg1 = $uri_segments[1];
+    if($seg1 == 'en' || $seg1 == 'ar'){
+        $langSeg = $uri_segments[1];
+    }else{
+        $langSeg = 'en';
+    }
+?>
 @section('luxe_asset_css')
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/css/intlTelInput.css">
@@ -26,19 +35,6 @@
         <section>
             @include('projects.mobile.body')
         </section>
-{{-- 
-
-        <section class="my-3">
-            @include('community_details.mobile.buttons')
-        </section>
-
-        <section class="my-3">
-            @include('community_details.mobile.gallery')
-        </section>
-
-        <section class="my-3" id="project_detail_map_section">
-            @include('community_details.mobile.map')
-        </section> --}}
 
     @endmobile
 

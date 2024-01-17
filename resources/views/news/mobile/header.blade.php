@@ -50,10 +50,10 @@
 
             <div class="container mx-0 px-0 mx-auto text-white">
                 <h1 class="text-xl font-light px-2">
-                    NEWS
+                    {{__('frontend.newsH')}}
                 </h1>
                 <p class="text-base font-thin leading-6 px-2 pt-2">
-                    Breaking Grounds and Headlines: Stay abreast of Dubai's dynamic real estate landscape with our News Hub. Unearth the latest updates on our cutting-edge projects, government initiatives, and industry trends shaping the city's future.
+                    {{__('frontend.newsP')}}
                 </p>
                 
             </div>

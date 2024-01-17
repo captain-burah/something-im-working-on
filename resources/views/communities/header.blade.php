@@ -55,11 +55,12 @@
             <div class="flex items-center justify-center h-full w-full bg-black bg-opacity-60" style="padding-top: 10vh;">
                 <div class="sm:container sm:mx-auto sm:px-4 sm:my-4 mx-auto  text-white">
                     <h1 class="text-4xl font-thin text-center">
-                        OUR COMMUNITIES
+                    {{__('frontend.communityH')}}
+                        
                     </h1>
                     <div class="w-[900px] text-center mx-auto">
                         <p class="text-base w-200 text-center font-thin mt-2 leading-8">
-                            At ESNAAD, we're not just a real estate developer; we're a new player in the Dubai property market. Our focus goes beyond constructing homes to shaping vibrant communities. Our projects are meticulously designed to go beyond mere living spaces, aiming to cultivate a profound sense of belonging and identity for those who reside and work within them. With abundant amenities and open spaces, ESNAAD is dedicated to fostering a strong sense of community among its residents
+                            {{__('frontend.communityP')}}
                         </p>
                     </div>
                 </div>
@@ -121,10 +122,10 @@
 
             <div class="container mx-0 px-0 mx-auto text-white">
                 <h1 class="text-xl font-light px-2">
-                    OUR COMMUNITIES
+                    {{__('frontend.communityH')}}
                 </h1>
                 <h2 class="text-base font-thin leading-6 px-2 pt-2 ">
-                    At ESNAAD, we're not just a real estate developer; we're a new player in the Dubai property market. Our focus goes beyond constructing homes to shaping vibrant communities.
+                    {{__('frontend.communityP')}}
                 </h2>
             </div>            
         </div>

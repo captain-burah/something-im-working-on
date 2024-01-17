@@ -1,7 +1,7 @@
 {{-- Desktop View --}}
-<div class="container px-0 px-4 mx-auto">
+<div class="container px-0 px-4 mx-auto" >
     <div class="row my-20">
-        <div class="grid grid-cols-2 gap-12 mb-5 mx-auto">
+        <div class="grid grid-cols-2 gap-12 mb-5 mx-auto" @if($langSeg == 'ar') dir="rtl" @endif>
             <div class="my-auto">
                 <h1 class=" text-xl xl:text-3xl font-thin">
                     {{__('frontend.homeSectionOneH')}}
